@@ -1,13 +1,191 @@
 {
-  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. See the 'Approach 7' section of the project doc and the docstring in mqtt_excel_logger_action.py for the full design. Each topic's payload is expected to be a pipe-delimited list of raw tag values with NO tag names and NO timestamp embedded (the CM5 Publisher's 200-char/6-variable-per-message budget didn't leave room for that) -- e.g. topic 'raiv-tracker/truck-2/hmi/g1' carrying payload '42|1|0|103.5|1' means tag list[0]'s value is 42, list[1]'s is 1, and so on, IN THE SAME LEFT-TO-RIGHT ORDER you build the message template in C-more Programming Software (Setup ribbon -> Function tab -> MQTT -> Publisher). Add one entry per topic/message you configure there, keep the order in sync any time you edit the template in C-more, and remove the example entry below once real ones are added.",
+  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. Updated 2026-08-06: this is now ONE tag per topic (matching the real Publisher export the user sent, PayloadType=1 = raw tag value, not a multi-tag static-text template), so every list below has exactly one entry. See the 'Approach 7' section of the project doc and the docstring in mqtt_excel_logger_action.py for the full design. If a topic is ever changed in C-more to combine multiple tag values into one pipe-delimited payload (the original 6-tag-per-topic idea), just list the tag names for that topic in the same left-to-right order they're built into the message there -- the parser already handles either case positionally.",
   "topics": {
     "raiv-tracker/truck-2/hmi/g1": [
-      "ExampleTag1",
-      "ExampleTag2",
-      "ExampleTag3",
-      "ExampleTag4",
-      "ExampleTag5",
-      "ExampleTag6"
+      "CountLaidDetector"
+    ],
+    "raiv-tracker/truck-2/hmi/g2": [
+      "CountPickedAccept14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g3": [
+      "CountPickedReject14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g4": [
+      "CountLaid18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g5": [
+      "CountPicked18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g6": [
+      "CountPickedAccept18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g7": [
+      "CountPickedReject18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g8": [
+      "CountLaidPandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g9": [
+      "CountPickedPandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g10": [
+      "CountPickedAcceptPandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g11": [
+      "CountPickedRejectPandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g12": [
+      "CountLaidEncoder"
+    ],
+    "raiv-tracker/truck-2/hmi/g13": [
+      "CountPickedOTM"
+    ],
+    "raiv-tracker/truck-2/hmi/g14": [
+      "CountPickedAcceptOTM"
+    ],
+    "raiv-tracker/truck-2/hmi/g15": [
+      "CountPickedRejectOTM"
+    ],
+    "raiv-tracker/truck-2/hmi/g16": [
+      "CountLaidButton"
+    ],
+    "raiv-tracker/truck-2/hmi/g17": [
+      "CountInchesTraved"
+    ],
+    "raiv-tracker/truck-2/hmi/g18": [
+      "CountFeetTraveled"
+    ],
+    "raiv-tracker/truck-2/hmi/g19": [
+      "CountMilesTraveled"
+    ],
+    "raiv-tracker/truck-2/hmi/g20": [
+      "CountAcceptedTotal"
+    ],
+    "raiv-tracker/truck-2/hmi/g21": [
+      "usr_TPStime 500ms"
+    ],
+    "raiv-tracker/truck-2/hmi/g22": [
+      "usr_Servotime 500ms"
+    ],
+    "raiv-tracker/truck-2/hmi/g23": [
+      "CountRejectedTotal"
+    ],
+    "raiv-tracker/truck-2/hmi/g24": [
+      "CountLaid14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g25": [
+      "CountPicked14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g26": [
+      "SUM_PlatesLaid"
+    ],
+    "raiv-tracker/truck-2/hmi/g27": [
+      "DoubleLayOffset_inch x"
+    ],
+    "raiv-tracker/truck-2/hmi/g28": [
+      "temp_dsi"
+    ],
+    "raiv-tracker/truck-2/hmi/g29": [
+      "temp_J1motor"
+    ],
+    "raiv-tracker/truck-2/hmi/g30": [
+      "temp_J2motor"
+    ],
+    "raiv-tracker/truck-2/hmi/g31": [
+      "temp_J3motor"
+    ],
+    "raiv-tracker/truck-2/hmi/g32": [
+      "temp_J4motor"
+    ],
+    "raiv-tracker/truck-2/hmi/g33": [
+      "temp_J5motor"
+    ],
+    "raiv-tracker/truck-2/hmi/g34": [
+      "temp_J6motor"
+    ],
+    "raiv-tracker/truck-2/hmi/g35": [
+      "tk_Cycle hrs"
+    ],
+    "raiv-tracker/truck-2/hmi/g36": [
+      "FindingParts min"
+    ],
+    "raiv-tracker/truck-2/hmi/g37": [
+      "PickingParts min"
+    ],
+    "raiv-tracker/truck-2/hmi/g38": [
+      "PlacingParts min"
+    ],
+    "raiv-tracker/truck-2/hmi/g39": [
+      "SCREEN_RAIVview"
+    ],
+    "raiv-tracker/truck-2/hmi/g40": [
+      "TkCycle_ServosON"
+    ],
+    "raiv-tracker/truck-2/hmi/g41": [
+      "TPSjam_usr min"
+    ],
+    "raiv-tracker/truck-2/hmi/g42": [
+      "TieDetectOffset_A"
+    ],
+    "raiv-tracker/truck-2/hmi/g43": [
+      "TieDetectOffset_B"
+    ],
+    "raiv-tracker/truck-2/hmi/g44": [
+      "Tie Detector"
+    ],
+    "raiv-tracker/truck-2/hmi/g45": [
+      "TPS Connected"
+    ],
+    "raiv-tracker/truck-2/hmi/g46": [
+      "AirEagle Eject Plate"
+    ],
+    "raiv-tracker/truck-2/hmi/g47": [
+      "TPS_Enable_ Button"
+    ],
+    "raiv-tracker/truck-2/hmi/g48": [
+      "RobStowed"
+    ],
+    "raiv-tracker/truck-2/hmi/g49": [
+      "Magnet_ON"
+    ],
+    "raiv-tracker/truck-2/hmi/g50": [
+      "Picked_14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g51": [
+      "Picked_18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g52": [
+      "Picked_Pandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g53": [
+      "Picked_OTM"
+    ],
+    "raiv-tracker/truck-2/hmi/g54": [
+      "PartAccepted"
+    ],
+    "raiv-tracker/truck-2/hmi/g55": [
+      "PartRejected"
+    ],
+    "raiv-tracker/truck-2/hmi/g56": [
+      "Eject Tie Plate"
+    ],
+    "raiv-tracker/truck-2/hmi/g57": [
+      "TPS Enabled"
+    ],
+    "raiv-tracker/truck-2/hmi/g58": [
+      "TPS BACKUP ALARM"
+    ],
+    "raiv-tracker/truck-2/hmi/g59": [
+      "desired_14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g60": [
+      "desired_18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g61": [
+      "desired_Pandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g62": [
+      "desired_OTM"
     ]
   }
 }
