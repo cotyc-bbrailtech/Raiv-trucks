@@ -1,63 +1,41 @@
 Enable,BrokerTopic,PayloadType,PayloadStatic,PayloadTagName,UseTerminate,TerminateType,TerminateCode1,TerminateCode2,UseByteSwap,ByteSwapType,UseRetain
-1,raiv-tracker/truck-2/hmi/g1,1,,CountLaidDetector,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g2,1,,CountPickedAccept14in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g3,1,,CountPickedReject14in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g4,1,,CountLaid18in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g5,1,,CountPicked18in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g6,1,,CountPickedAccept18in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g7,1,,CountPickedReject18in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g8,1,,CountLaidPandral,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g9,1,,CountPickedPandral,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g10,1,,CountPickedAcceptPandral,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g11,1,,CountPickedRejectPandral,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g12,1,,CountLaidEncoder,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g13,1,,CountPickedOTM,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g14,1,,CountPickedAcceptOTM,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g15,1,,CountPickedRejectOTM,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g16,1,,CountLaidButton,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g17,1,,CountInchesTraved,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g18,1,,CountFeetTraveled,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g19,1,,CountMilesTraveled,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g20,1,,CountAcceptedTotal,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g21,1,,usr_TPStime 500ms,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g22,1,,usr_Servotime 500ms,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g23,1,,CountRejectedTotal,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g24,1,,CountLaid14in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g25,1,,CountPicked14in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g26,1,,SUM_PlatesLaid,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g27,1,,DoubleLayOffset_inch x,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g28,1,,temp_dsi,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g29,1,,temp_J1motor,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g30,1,,temp_J2motor,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g31,1,,temp_J3motor,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g32,1,,temp_J4motor,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g33,1,,temp_J5motor,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g34,1,,temp_J6motor,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g35,1,,tk_Cycle hrs,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g36,1,,FindingParts min,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g37,1,,PickingParts min,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g38,1,,PlacingParts min,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g39,1,,SCREEN_RAIVview,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g40,1,,TkCycle_ServosON,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g41,1,,TPSjam_usr min,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g42,1,,TieDetectOffset_A,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g43,1,,TieDetectOffset_B,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g44,1,,Tie Detector,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g45,1,,TPS Connected,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g46,1,,AirEagle Eject Plate,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g47,1,,TPS_Enable_ Button,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g48,1,,RobStowed,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g49,1,,Magnet_ON,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g50,1,,Picked_14in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g51,1,,Picked_18in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g52,1,,Picked_Pandral,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g53,1,,Picked_OTM,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g54,1,,PartAccepted,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g55,1,,PartRejected,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g56,1,,Eject Tie Plate,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g57,1,,TPS Enabled,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g58,1,,TPS BACKUP ALARM,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g59,1,,desired_14in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g60,1,,desired_18in,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g61,1,,desired_Pandral,0,0,0,0,0,0,0
-1,raiv-tracker/truck-2/hmi/g62,1,,desired_OTM,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g1,1,,TotalTiePlatesLaid,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g2,1,,CountLaidButton,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g3,1,,CountLaidDetector,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g4,1,,CountLaidEncoder,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g5,1,,CountLaid14in,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g6,1,,CountLaid18in,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g7,1,,CountLaidPandral,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g8,1,,usr_TPStime Hours10th,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g9,1,,usrTPS_miles xxx,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g10,1,,TPS Connected,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g11,1,,TPS Enabled,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g12,1,,14in Job,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g13,1,,18in Job,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g14,1,,Pandral Job,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g15,1,,CountAcceptedTotal,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g16,1,,CountRejectedTotal,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g17,1,,Servos_Enabled,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g18,1,,TotalPickPartsCount,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g19,1,,AcceptsPartsCount,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g20,1,,RejectPartsCount,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g21,1,,tk_Cycle hrs,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g22,1,,day_Servotime Hours10th,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g23,1,,tk_Cycle,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g24,1,,tk_Abort,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g25,1,,tk_ClearPos,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g26,1,,tk_Warmup,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g27,1,,FindingParts min,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g28,1,,PickingParts min,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g29,1,,PlacingParts min,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g30,1,,CountPickedReject14in,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g31,1,,temp_dsi,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g32,1,,temp_J1motor,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g33,1,,temp_J2motor,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g34,1,,temp_J3motor,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g35,1,,temp_J4motor,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g36,1,,temp_J5motor,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g37,1,,temp_J6motor,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g38,1,,CountPickedRejectOTM,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g39,1,,CountPickedRejectPandral,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g40,1,,CountPickedReject18in,0,0,0,0,0,0,0
