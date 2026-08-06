@@ -1,0 +1,13 @@
+{
+  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. See the 'Approach 7' section of the project doc and the docstring in mqtt_excel_logger_action.py for the full design. Each topic's payload is expected to be a pipe-delimited list of raw tag values with NO tag names and NO timestamp embedded (the CM5 Publisher's 200-char/6-variable-per-message budget didn't leave room for that) -- e.g. topic 'raiv-tracker/truck-2/hmi/g1' carrying payload '42|1|0|103.5|1' means tag list[0]'s value is 42, list[1]'s is 1, and so on, IN THE SAME LEFT-TO-RIGHT ORDER you build the message template in C-more Programming Software (Setup ribbon -> Function tab -> MQTT -> Publisher). Add one entry per topic/message you configure there, keep the order in sync any time you edit the template in C-more, and remove the example entry below once real ones are added.",
+  "topics": {
+    "raiv-tracker/truck-2/hmi/g1": [
+      "ExampleTag1",
+      "ExampleTag2",
+      "ExampleTag3",
+      "ExampleTag4",
+      "ExampleTag5",
+      "ExampleTag6"
+    ]
+  }
+}
