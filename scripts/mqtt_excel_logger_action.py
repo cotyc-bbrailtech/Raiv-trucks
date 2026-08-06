@@ -41,6 +41,34 @@ GitHub also does not guarantee scheduled workflows fire exactly on time --
 they can be delayed, especially during high load, and are disabled
 automatically after 60 days of repository inactivity (any commit resets
 that clock).
+
+APPROACH 7 -- CM5 NATIVE MQTT CLIENT SUPPORT
+-----------------------------------------------
+The CM5 HMI has its own built-in MQTT Client/Publisher (Setup ribbon ->
+Function tab -> MQTT in C-more Programming Software) -- separate from
+StrideLinx's router-side MQTT relay. Unlike StrideLinx's Sparkplug-B-style
+JSON payloads, the CM5's Publisher sends a plain, hand-built text message
+(no JSON, up to 6 embedded tag values, 200 chars max) on whatever topics you
+configure, triggered by a discrete tag going false->true.
+
+This script now also recognizes any topic containing "/hmi/" (by
+convention: `raiv-tracker/<truck>/hmi/<group>`) as a CM5-native-MQTT
+message rather than a StrideLinx Sparkplug-B one, and parses it as a
+pipe-delimited list of raw tag values: `value1|value2|...|value6`. Which
+tag name each position corresponds to is *not* in the payload itself (there
+was no room left in the 200-char/6-variable budget for embedding tag names
+too) -- it's looked up positionally from scripts/hmi_mqtt_tag_map.json,
+keyed by the exact topic string. See that file and the project doc's
+"Approach 7" section for the full design, the reasoning behind this
+format, and the CM5-side (C-more Programming Software) configuration steps
+this still needs from a human, since Claude cannot open that Windows
+desktop application.
+
+Because the CM5 Publisher's message template doesn't include a timestamp
+(embedding "current time" would cost one of only 6 variable slots), rows
+parsed from /hmi/ topics use the time the GitHub Actions run received the
+message, same resolution trade-off this bounded-listen-window script
+already has for StrideLinx-sourced data.
 """
 
 import json
@@ -63,6 +91,7 @@ MQTT_PASSWORD = os.environ.get("MQTT_PASSWORD")
 TOPIC_FILTER = os.environ.get("TOPIC_FILTER", "raiv-tracker/#")
 LOG_DIR = Path(os.environ.get("LOG_DIR", "logs"))
 LISTEN_SECONDS = float(os.environ.get("LISTEN_SECONDS", "90"))
+HMI_TAG_MAP_PATH = Path(os.environ.get("HMI_TAG_MAP_PATH", "scripts/hmi_mqtt_tag_map.json"))
 
 HEADERS = ["Timestamp", "Truck", "Tag", "Value", "Datatype", "Topic"]
 
@@ -76,6 +105,23 @@ def truck_label(topic):
     raw_id = parts[1] if len(parts) > 1 else topic
     digits = "".join(ch for ch in raw_id if ch.isdigit())
     return f"Truck {digits}" if digits else raw_id
+
+
+def load_hmi_tag_map():
+    """Loads the topic -> ordered-tag-name-list mapping used to interpret
+    CM5-native-MQTT payloads (see the Approach 7 note in this file's
+    docstring). Missing/unreadable file just means no /hmi/ topics will be
+    recognized yet -- not a fatal error, since this feature is opt-in."""
+    if not HMI_TAG_MAP_PATH.exists():
+        return {}
+    try:
+        with open(HMI_TAG_MAP_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("topics", {})
+    except (json.JSONDecodeError, OSError) as exc:
+        log(f"Could not load HMI tag map from {HMI_TAG_MAP_PATH}: {exc!r} -- "
+            f"/hmi/ topics will be skipped this run.")
+        return {}
 
 
 class ExcelLogger:
@@ -141,6 +187,9 @@ def main():
 
     excel_logger = ExcelLogger(LOG_DIR)
     received_lock = threading.Lock()
+    hmi_tag_map = load_hmi_tag_map()
+    if hmi_tag_map:
+        log(f"Loaded HMI tag map with {len(hmi_tag_map)} topic(s) from {HMI_TAG_MAP_PATH}")
 
     def on_connect(client, userdata, connect_flags, reason_code, properties):
         if reason_code == 0:
@@ -150,7 +199,41 @@ def main():
         else:
             log(f"Connect failed: {reason_code}")
 
+    def handle_hmi_message(msg):
+        """CM5 native-MQTT-client payload: 'value1|value2|...' with no tag
+        names or timestamp in the message itself -- see load_hmi_tag_map()
+        and the Approach 7 docstring note above."""
+        tag_names = hmi_tag_map.get(msg.topic)
+        if not tag_names:
+            log(f"No tag-map entry for HMI topic '{msg.topic}' -- add one to "
+                f"{HMI_TAG_MAP_PATH} (skipping this message).")
+            return
+        try:
+            text = msg.payload.decode("utf-8", errors="replace")
+        except Exception:  # noqa: BLE001
+            return
+        values = text.split("|")
+        truck = truck_label(msg.topic)
+        now = datetime.now()
+        with received_lock:
+            for name, value in zip(tag_names, values):
+                value = value.strip()
+                if value == "":
+                    continue
+                excel_logger.add_row(
+                    timestamp=now,
+                    truck=truck,
+                    tag=name,
+                    value=value,
+                    datatype="",
+                    topic=msg.topic,
+                )
+
     def on_message(client, userdata, msg):
+        if "/hmi/" in msg.topic:
+            handle_hmi_message(msg)
+            return
+
         try:
             payload = json.loads(msg.payload.decode("utf-8"))
         except (json.JSONDecodeError, UnicodeDecodeError):
