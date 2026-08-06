@@ -1,0 +1,60 @@
+name: MQTT Excel Logger
+
+# Runs every 10 minutes, connects to HiveMQ Cloud for a short window, and
+# appends whatever Raiv-Tracker tag readings arrived to logs/raiv_tracker_<date>.xlsx,
+# committing the change back to this repo. See scripts/mqtt_excel_logger_action.py
+# for the coverage trade-offs of this schedule-based approach versus running
+# the always-on version of the logger.
+#
+# Requires a repository secret named HIVEMQ_MQTT_PASSWORD holding the
+# password for the "Raiv-Excel-Logger" HiveMQ Cloud credential (subscribe-only).
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mqtt-excel-logger
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Listen for MQTT data and append to today's log
+        env:
+          MQTT_HOST: 353a1aaf7a42437797d72a6699405ee1.s1.eu.hivemq.cloud
+          MQTT_PORT: 8883
+          MQTT_USERNAME: Raiv-Excel-Logger
+          MQTT_PASSWORD: ${{ secrets.HIVEMQ_MQTT_PASSWORD }}
+          TOPIC_FILTER: raiv-tracker/#
+          LISTEN_SECONDS: 90
+          LOG_DIR: logs
+        run: python scripts/mqtt_excel_logger_action.py
+
+      - name: Commit and push if new data was logged
+        run: |
+          git config user.name "raiv-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add logs/
+          if git diff --cached --quiet; then
+            echo "No new data this run -- nothing to commit."
+          else
+            git commit -m "Log MQTT data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
