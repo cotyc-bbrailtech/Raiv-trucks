@@ -143,7 +143,7 @@
   </header>
   <p class="sub">
     Live values published by the CM5 HMI's own MQTT client, 73 topics across eight Publisher objects.
-    This page subscribes only to <code>raiv-tracker/+/hmi/#</code> — the StrideLinx feed is on a
+    This page subscribes only to <code>raiv-tracker/truck-2/hmi/#</code> — the StrideLinx feed is on a
     <a href="stridelinx.html">separate page</a> and cannot appear here.
   </p>
 
@@ -195,9 +195,13 @@
   const MQTT_WSS_PORT = 8884;
   const MQTT_USERNAME = "Raiv-Dashboard-Public";
   const MQTT_PASSWORD = "V3WV1h7ZclzbBPfAP5sY";
-  // Isolation: matches ONLY the CM5's topics. The router's raiv-tracker/<truck>/plc
-  // topic cannot match it.
-  const TOPIC_FILTER  = "raiv-tracker/+/hmi/#";
+  // Isolation: matches ONLY the RAIV-2 panel's topics. Pinned to truck-2 rather than
+  // a '+' wildcard because the Lab bench runs a near-identical program: with a wildcard
+  // its raiv-tracker/lab/hmi/gN messages would land here and render as truck data,
+  // since every topic is keyed only on its gN suffix. The router's .../plc topic
+  // cannot match either.
+  const TOPIC_BASE    = "raiv-tracker/truck-2/hmi/";
+  const TOPIC_FILTER  = TOPIC_BASE + "#";
 
   // Topic -> tag name. Mirrors scripts/hmi_mqtt_tag_map.json in the repo, which
   // was generated from the four real MQTTPub exports. If the Publisher config
@@ -254,8 +258,15 @@
 
   function setStatus(kind, text) { statusEl.className = "status " + kind; statusTextEl.textContent = text; }
 
+  // Resolve a topic to its group ONLY if it sits under this panel's exact base.
+  // Matching on the trailing gN alone is not enough: the Lab bench runs a
+  // near-identical program, so raiv-tracker/lab/hmi/g1 would otherwise be
+  // accepted as g1 and overwrite the truck's value. The subscription filter
+  // already excludes it; this makes the page structurally unable to show
+  // another panel's data even if that filter is ever widened.
   function groupOf(topic) {
-    const m = topic.match(/\/hmi\/(g\d+)$/);
+    if (topic.lastIndexOf(TOPIC_BASE, 0) !== 0) return null;
+    const m = topic.slice(TOPIC_BASE.length).match(/^(g\d+)$/);
     return m ? m[1] : null;
   }
 
