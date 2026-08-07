@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RAIV Fleet — StrideLinx feed</title>
+<script src="https://unpkg.com/mqtt@5.10.1/dist/mqtt.min.js"></script>
+<style>
+  /* Palette roles from the project's reference palette. Light + dark are both
+     selected sets stepped for their own surface, not an automatic flip. Dark is
+     declared under the media query (OS setting) and the data-theme scope (the
+     in-page toggle), so the toggle wins either way. */
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --accent:         #2a78d6;   /* StrideLinx = categorical slot 1 (blue) */
+    --good:           #0ca30c;
+    --critical:       #d03b3b;
+    --warning:        #fab219;
+    --wash:           rgba(42,120,214,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page:           #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --accent:         #3987e5;
+      --wash:           rgba(57,135,229,0.14);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1:      #1a1a19;
+    --page:           #0d0d0d;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --gridline:       #2c2c2a;
+    --baseline:       #383835;
+    --border:         rgba(255,255,255,0.10);
+    --accent:         #3987e5;
+    --wash:           rgba(57,135,229,0.14);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 20px 56px;
+    background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px; line-height: 1.5;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; margin-bottom: 4px; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  .src-key {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12px; color: var(--text-secondary);
+    padding: 3px 9px 3px 7px; border: 1px solid var(--border); border-radius: 999px;
+  }
+  .src-key i { width: 9px; height: 9px; border-radius: 2px; background: var(--accent); display: block; }
+  .sub { color: var(--text-secondary); margin: 0 0 20px; font-size: 13px; }
+  .sub code { font-size: 12px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary);
+            border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px; background: var(--surface-1); }
+  .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); flex: none; }
+  .status.live .dot { background: var(--good); }
+  .status.paused .dot { background: var(--warning); }
+  .status.down .dot { background: var(--critical); }
+  button {
+    font: inherit; font-size: 13px; color: var(--text-primary); background: var(--surface-1);
+    border: 1px solid var(--baseline); border-radius: 8px; padding: 6px 14px; cursor: pointer;
+  }
+  button:hover { background: var(--wash); }
+  button.primary { border-color: var(--accent); }
+  .spacer { flex: 1 1 auto; }
+  .meta { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+  .note {
+    border: 1px solid var(--border); border-left: 3px solid var(--warning);
+    background: var(--surface-1); border-radius: 8px;
+    padding: 12px 14px; margin: 0 0 22px; font-size: 13px; color: var(--text-secondary);
+  }
+  .note b { color: var(--text-primary); font-weight: 600; }
+
+  .hero { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
+          padding: 18px 20px; margin-bottom: 12px; }
+  .hero .label { font-size: 13px; color: var(--text-secondary); }
+  .hero .value { font-size: 48px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; margin-top: 2px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 26px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .tile .label { font-size: 12px; color: var(--text-secondary); }
+  .tile .value { font-size: 26px; font-weight: 600; line-height: 1.2; margin-top: 2px; }
+
+  h2 { font-size: 14px; font-weight: 600; margin: 0 0 10px; }
+  h2 .count { color: var(--text-muted); font-weight: 400; }
+  .panel { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 9px 16px; border-bottom: 1px solid var(--gridline); }
+  th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+       color: var(--text-muted); background: var(--page); position: sticky; top: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--wash); }
+  td.tag { font-weight: 500; }
+  td.val { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  td.truck, td.age { color: var(--text-secondary); white-space: nowrap; }
+  td.age { font-variant-numeric: tabular-nums; }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600;
+           border-radius: 999px; padding: 2px 9px 2px 7px; border: 1px solid var(--border); }
+  .badge .g { font-size: 11px; line-height: 1; }
+  .badge.on  { color: var(--good); }
+  .badge.off { color: var(--text-secondary); }
+
+  .empty { padding: 40px 16px; text-align: center; color: var(--text-secondary); }
+  footer { margin-top: 26px; font-size: 12px; color: var(--text-muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>RAIV Fleet — StrideLinx feed</h1>
+    <span class="src-key"><i></i> StrideLinx router → Modbus TCP</span>
+  </header>
+  <p class="sub">
+    Live values published by the StrideLinx router polling the CLICK PLC. This page subscribes only to
+    <code>raiv-tracker/+/plc</code> — the CM5's own MQTT feed is on a
+    <a href="cm5.html">separate page</a> and cannot appear here.
+  </p>
+
+  <div class="bar">
+    <span class="status" id="status"><span class="dot"></span><span id="status-text">Connecting…</span></span>
+    <button class="primary" id="pause-btn">Pause feed</button>
+    <button id="theme-btn">Dark</button>
+    <span class="spacer"></span>
+    <span class="meta" id="meta"></span>
+  </div>
+
+  <p class="note">
+    <b>What pausing does:</b> it disconnects this page from the MQTT broker, so the values below stop
+    updating and this browser stops consuming broker traffic. <b>It does not stop the StrideLinx router
+    polling the PLC over Modbus.</b> This page sits downstream of the broker and is not in the Modbus
+    path at all — to actually take the router's polling off the machine network you have to disable the
+    data source (or its tags) in StrideLinx Fleet Manager. See the project doc for the exact steps.
+  </p>
+
+  <div class="hero">
+    <div class="label" id="hero-label">Daily total laid plates</div>
+    <div class="value" id="hero-value">—</div>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <h2>All StrideLinx tags <span class="count" id="tag-count"></span></h2>
+  <div class="panel">
+    <table>
+      <thead><tr><th>Tag</th><th>Truck</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty">Waiting for the first message on <code>raiv-tracker/+/plc</code>…</div>
+  </div>
+
+  <footer>
+    Read-only: this page uses a subscribe-only broker credential and cannot write to any PLC.
+    Values are whatever the router last published — no history is kept here; that lives in
+    <a href="https://github.com/cotyc-bbrailtech/Raiv-trucks/tree/main/logs">logs/</a>.
+  </footer>
+</div>
+
+<script>
+  // ---- Connection -------------------------------------------------------
+  // Subscribe-only credential ("Raiv-Dashboard-Public"). It cannot publish, so
+  // it cannot write to a PLC. This page is public, so anyone with the link can
+  // read these values -- an accepted trade-off for needing no server. Rotate in
+  // HiveMQ Cloud -> Access Management if that ever changes.
+  const MQTT_HOST     = "353a1aaf7a42437797d72a6699405ee1.s1.eu.hivemq.cloud";
+  const MQTT_WSS_PORT = 8884;
+  const MQTT_USERNAME = "Raiv-Dashboard-Public";
+  const MQTT_PASSWORD = "V3WV1h7ZclzbBPfAP5sY";
+  // Isolation: this filter matches ONLY the router's Sparkplug-B topic. The
+  // CM5's raiv-tracker/<truck>/hmi/<group> topics cannot match it.
+  const TOPIC_FILTER  = "raiv-tracker/+/plc";
+
+  const HERO_TAG = "Daily_TotalLaidPlates";
+  const KPI_TAGS = [
+    ["TotalPickedParts",       "Total picked parts"],
+    ["TotalPickedAcceptParts", "Picked — accepted"],
+    ["TotalPickedRejectParts", "Picked — rejected"],
+    ["Avg Parts per min_total","Avg parts / min"]
+  ];
+
+  // ---- State ------------------------------------------------------------
+  const tags = {};            // "Truck 2 TagName" -> {tag, truck, value, datatype, at}
+  let client = null, paused = false, msgCount = 0, lastMsgAt = null;
+
+  const statusEl = document.getElementById("status");
+  const statusTextEl = document.getElementById("status-text");
+  const pauseBtn = document.getElementById("pause-btn");
+  const themeBtn = document.getElementById("theme-btn");
+
+  function setStatus(kind, text) { statusEl.className = "status " + kind; statusTextEl.textContent = text; }
+
+  function truckLabel(topic) {
+    const raw = topic.split("/")[1] || topic;
+    const m = raw.match(/(\d+)/);
+    return m ? "Truck " + m[1] : raw;
+  }
+
+  function isBool(t) { return t.datatype === 11 || typeof t.value === "boolean"; }
+
+  // Thousands-separated, up to 3 decimals, trailing zeros trimmed -- so a
+  // percentage reads 96.9 rather than 96.900.
+  function num(v) {
+    return v.toLocaleString(undefined, { maximumFractionDigits: 3 });
+  }
+
+  function fmtValue(t) {
+    if (isBool(t)) {
+      const on = t.value === true || t.value === "true" || t.value === 1;
+      return '<span class="badge ' + (on ? "on" : "off") + '">' +
+             '<span class="g">' + (on ? "●" : "○") + "</span>" + (on ? "ON" : "OFF") + "</span>";
+    }
+    if (typeof t.value === "number") return num(t.value);
+    return String(t.value);
+  }
+
+  function fmtBig(v) {
+    if (v === undefined || v === null) return "—";
+    if (typeof v === "number") return num(v);
+    return String(v);
+  }
+
+  function findTag(name) {
+    for (const k in tags) if (tags[k].tag === name) return tags[k];
+    return null;
+  }
+
+  function ago(at) {
+    const s = Math.round((Date.now() - at) / 1000);
+    if (s < 2) return "just now";
+    if (s < 60) return s + "s ago";
+    const m = Math.floor(s / 60);
+    return m < 60 ? m + "m ago" : Math.floor(m / 60) + "h ago";
+  }
+
+  function render() {
+    const hero = findTag(HERO_TAG);
+    document.getElementById("hero-value").textContent = hero ? fmtBig(hero.value) : "—";
+
+    document.getElementById("kpis").innerHTML = KPI_TAGS.map(function (pair) {
+      const t = findTag(pair[0]);
+      return '<div class="tile"><div class="label">' + pair[1] + "</div>" +
+             '<div class="value">' + (t ? fmtBig(t.value) : "—") + "</div></div>";
+    }).join("");
+
+    const keys = Object.keys(tags).sort(function (a, b) {
+      return tags[a].tag.toLowerCase().localeCompare(tags[b].tag.toLowerCase());
+    });
+    document.getElementById("tag-count").textContent = keys.length ? "(" + keys.length + ")" : "";
+    document.getElementById("empty").style.display = keys.length ? "none" : "block";
+    document.getElementById("rows").innerHTML = keys.map(function (k) {
+      const t = tags[k];
+      return "<tr><td class='tag'>" + t.tag + "</td><td class='truck'>" + t.truck +
+             "</td><td class='val'>" + fmtValue(t) + "</td><td class='age'>" + ago(t.at) + "</td></tr>";
+    }).join("");
+
+    document.getElementById("meta").textContent =
+      msgCount ? msgCount.toLocaleString() + " msg · last " + ago(lastMsgAt) : "";
+  }
+
+  // ---- MQTT -------------------------------------------------------------
+  function connect() {
+    client = mqtt.connect("wss://" + MQTT_HOST + ":" + MQTT_WSS_PORT + "/mqtt", {
+      clientId: "raiv-dash-plc-" + Math.random().toString(16).slice(2, 10),
+      username: MQTT_USERNAME, password: MQTT_PASSWORD,
+      clean: true, reconnectPeriod: 4000, connectTimeout: 12000
+    });
+
+    client.on("connect", function () {
+      setStatus("live", "Live");
+      client.subscribe(TOPIC_FILTER, { qos: 0 }, function (err) {
+        if (err) setStatus("down", "Subscribe failed");
+      });
+    });
+
+    client.on("message", function (topic, payload) {
+      let data;
+      try { data = JSON.parse(payload.toString()); } catch (e) { return; }
+      const metrics = (data && data.metrics) ? data.metrics : (data ? [data] : []);
+      const truck = truckLabel(topic);
+      const now = Date.now();
+      let took = false;
+      metrics.forEach(function (m) {
+        if (!m || !m.name) return;
+        tags[truck + " " + m.name] = { tag: m.name, truck: truck, value: m.value, datatype: m.datatype, at: now };
+        took = true;
+      });
+      if (took) { msgCount++; lastMsgAt = now; render(); }
+    });
+
+    client.on("reconnect", function () { if (!paused) setStatus("", "Reconnecting…"); });
+    client.on("close",     function () { if (!paused) setStatus("", "Disconnected"); });
+    client.on("error",     function () { if (!paused) setStatus("down", "Connection error"); });
+  }
+
+  pauseBtn.addEventListener("click", function () {
+    if (!paused) {
+      paused = true;
+      pauseBtn.textContent = "Resume feed";
+      setStatus("paused", "Paused — router still polling the PLC");
+      if (client) { client.end(true); client = null; }
+    } else {
+      paused = false;
+      pauseBtn.textContent = "Pause feed";
+      setStatus("", "Connecting…");
+      connect();
+    }
+    render();
+  });
+
+  // Label the toggle for what it will DO, starting from whatever the OS asked
+  // for -- otherwise a dark-mode visitor sees a button offering "Dark".
+  function darkNow() {
+    const stamp = document.documentElement.getAttribute("data-theme");
+    if (stamp) return stamp === "dark";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  themeBtn.textContent = darkNow() ? "Light" : "Dark";
+  themeBtn.addEventListener("click", function () {
+    const goingDark = !darkNow();
+    document.documentElement.setAttribute("data-theme", goingDark ? "dark" : "light");
+    themeBtn.textContent = goingDark ? "Light" : "Dark";
+  });
+
+  setInterval(render, 1000);   // keeps the "updated" column honest
+  render();
+
+  // The MQTT client comes from a CDN. If that request is blocked (locked-down
+  // network, offline, blocker) say so plainly instead of sitting on
+  // "Connecting..." forever, which looks identical to a broker problem.
+  if (typeof mqtt === "undefined") {
+    setStatus("down", "Could not load the MQTT library");
+    pauseBtn.disabled = true;
+    document.getElementById("empty").innerHTML =
+      "The MQTT client script could not be fetched from unpkg.com, so this page cannot connect. " +
+      "That is a network/blocker issue on this device, not a problem with the broker or the PLC.";
+  } else {
+    connect();
+  }
+</script>
+</body>
+</html>

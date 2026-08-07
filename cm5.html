@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RAIV Fleet — CM5 HMI MQTT feed</title>
+<script src="https://unpkg.com/mqtt@5.10.1/dist/mqtt.min.js"></script>
+<style>
+  /* Palette roles from the project's reference palette. Light + dark are both
+     selected sets stepped for their own surface, not an automatic flip. */
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --accent:         #eb6834;   /* CM5 = categorical slot 2 (orange) */
+    --good:           #0ca30c;
+    --critical:       #d03b3b;
+    --warning:        #fab219;
+    --wash:           rgba(235,104,52,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page:           #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --accent:         #d95926;
+      --wash:           rgba(217,89,38,0.16);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1:      #1a1a19;
+    --page:           #0d0d0d;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --gridline:       #2c2c2a;
+    --baseline:       #383835;
+    --border:         rgba(255,255,255,0.10);
+    --accent:         #d95926;
+    --wash:           rgba(217,89,38,0.16);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 20px 56px;
+    background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px; line-height: 1.5;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; margin-bottom: 4px; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  .src-key {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12px; color: var(--text-secondary);
+    padding: 3px 9px 3px 7px; border: 1px solid var(--border); border-radius: 999px;
+  }
+  .src-key i { width: 9px; height: 9px; border-radius: 2px; background: var(--accent); display: block; }
+  .sub { color: var(--text-secondary); margin: 0 0 20px; font-size: 13px; }
+  .sub code { font-size: 12px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary);
+            border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px; background: var(--surface-1); }
+  .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); flex: none; }
+  .status.live .dot { background: var(--good); }
+  .status.paused .dot { background: var(--warning); }
+  .status.down .dot { background: var(--critical); }
+  button {
+    font: inherit; font-size: 13px; color: var(--text-primary); background: var(--surface-1);
+    border: 1px solid var(--baseline); border-radius: 8px; padding: 6px 14px; cursor: pointer;
+  }
+  button:hover { background: var(--wash); }
+  button.primary { border-color: var(--accent); }
+  .spacer { flex: 1 1 auto; }
+  .meta { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+  .note {
+    border: 1px solid var(--border); border-left: 3px solid var(--accent);
+    background: var(--surface-1); border-radius: 8px;
+    padding: 12px 14px; margin: 0 0 22px; font-size: 13px; color: var(--text-secondary);
+  }
+  .note b { color: var(--text-primary); font-weight: 600; }
+
+  .hero { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
+          padding: 18px 20px; margin-bottom: 12px; }
+  .hero .label { font-size: 13px; color: var(--text-secondary); }
+  .hero .value { font-size: 48px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; margin-top: 2px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 26px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .tile .label { font-size: 12px; color: var(--text-secondary); }
+  .tile .value { font-size: 26px; font-weight: 600; line-height: 1.2; margin-top: 2px; }
+
+  h2 { font-size: 14px; font-weight: 600; margin: 0 0 10px; }
+  h2 .count { color: var(--text-muted); font-weight: 400; }
+  .panel { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 9px 16px; border-bottom: 1px solid var(--gridline); }
+  th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+       color: var(--text-muted); background: var(--page); position: sticky; top: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--wash); }
+  td.tag { font-weight: 500; }
+  td.topic { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.val { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  td.age { color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr.silent td.tag, tr.silent td.topic { color: var(--text-muted); }
+  tr.silent td.val { color: var(--text-muted); }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600;
+           border-radius: 999px; padding: 2px 9px 2px 7px; border: 1px solid var(--border); }
+  .badge .g { font-size: 11px; line-height: 1; }
+  .badge.on  { color: var(--good); }
+  .badge.off { color: var(--text-secondary); }
+  .flag { font-size: 11px; color: var(--warning); font-weight: 600; }
+
+  .empty { padding: 40px 16px; text-align: center; color: var(--text-secondary); }
+  footer { margin-top: 26px; font-size: 12px; color: var(--text-muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>RAIV Fleet — CM5 HMI MQTT feed</h1>
+    <span class="src-key"><i></i> CM5-T10W native MQTT Publisher</span>
+  </header>
+  <p class="sub">
+    Live values published by the CM5 HMI's own MQTT client, 40 topics across four Publisher objects.
+    This page subscribes only to <code>raiv-tracker/+/hmi/#</code> — the StrideLinx feed is on a
+    <a href="stridelinx.html">separate page</a> and cannot appear here.
+  </p>
+
+  <div class="bar">
+    <span class="status" id="status"><span class="dot"></span><span id="status-text">Connecting…</span></span>
+    <button class="primary" id="pause-btn">Pause feed</button>
+    <button id="theme-btn">Dark</button>
+    <span class="spacer"></span>
+    <span class="meta" id="meta"></span>
+  </div>
+
+  <p class="note">
+    <b>Reading this feed:</b> a CM5 payload is one raw tag value with no name, type or timestamp in it —
+    the tag name comes from the topic via the same map the logger uses, and <b>"updated" is the time this
+    page received the value, not a panel timestamp</b>. Because there is no type information, the
+    boolean tags are declared in this file rather than detected; anything not on that list is shown
+    as the raw value. Topics that have not published since this page loaded are greyed out.
+  </p>
+
+  <div class="hero">
+    <div class="label">Total tie plates laid <span style="color:var(--text-muted)">· g1</span></div>
+    <div class="value" id="hero-value">—</div>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <h2>All 40 Publisher topics <span class="count" id="tag-count"></span></h2>
+  <div class="panel">
+    <table>
+      <thead><tr><th>Tag</th><th>Topic</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty" style="display:none">Waiting for the first message…</div>
+  </div>
+
+  <footer>
+    Read-only: this page uses a subscribe-only broker credential and cannot write to the HMI or any PLC.
+    No history is kept here; that lives in
+    <a href="https://github.com/cotyc-bbrailtech/Raiv-trucks/tree/main/logs">logs/</a>.
+  </footer>
+</div>
+
+<script>
+  // ---- Connection -------------------------------------------------------
+  // Subscribe-only credential ("Raiv-Dashboard-Public"). It cannot publish, so
+  // it cannot write to the HMI or a PLC. This page is public, so anyone with the
+  // link can read these values -- an accepted trade-off for needing no server.
+  const MQTT_HOST     = "353a1aaf7a42437797d72a6699405ee1.s1.eu.hivemq.cloud";
+  const MQTT_WSS_PORT = 8884;
+  const MQTT_USERNAME = "Raiv-Dashboard-Public";
+  const MQTT_PASSWORD = "V3WV1h7ZclzbBPfAP5sY";
+  // Isolation: matches ONLY the CM5's topics. The router's raiv-tracker/<truck>/plc
+  // topic cannot match it.
+  const TOPIC_FILTER  = "raiv-tracker/+/hmi/#";
+
+  // Topic -> tag name. Mirrors scripts/hmi_mqtt_tag_map.json in the repo, which
+  // was generated from the four real MQTTPub exports. If the Publisher config
+  // changes in C-more, update both.
+  const TAG_BY_GROUP = {
+    g1:"TotalTiePlatesLaid", g2:"CountLaidButton", g3:"CountLaidDetector", g4:"CountLaidEncoder",
+    g5:"CountLaid14in", g6:"CountLaid18in", g7:"CountLaidPandral", g8:"usr_TPStime Hours10th",
+    g9:"usrTPS_miles xxx", g10:"TPS Connected",
+    g11:"TPS Enabled", g12:"14in Job", g13:"18in Job", g14:"Pandral Job", g15:"CountAcceptedTotal",
+    g16:"CountRejectedTotal", g17:"Servos_Enabled", g18:"TotalPickPartsCount", g19:"AcceptsPartsCount",
+    g20:"RejectPartsCount",
+    g21:"tk_Cycle hrs", g22:"day_Servotime Hours10th", g23:"tk_Cycle", g24:"tk_Abort",
+    g25:"tk_ClearPos", g26:"tk_Warmup", g27:"FindingParts min", g28:"PickingParts min",
+    g29:"PlacingParts min", g30:"CountPickedReject14in",
+    g31:"temp_dsi", g32:"temp_J1motor", g33:"temp_J2motor", g34:"temp_J3motor", g35:"temp_J4motor",
+    g36:"temp_J5motor", g37:"temp_J6motor", g38:"CountPickedRejectOTM",
+    g39:"CountPickedRejectPandral", g40:"CountPickedReject18in"
+  };
+
+  // The CM5 payload carries no type, so booleans are declared. These are the
+  // tags confirmed as BIT addresses in the master Modbus CSV (X/Y/C memory),
+  // plus the two tk_* bits from the CS9 that follow the same pattern.
+  const BOOLEAN_TAGS = new Set([
+    "TPS Connected", "TPS Enabled", "14in Job", "18in Job", "Pandral Job",
+    "Servos_Enabled", "tk_Cycle", "tk_Abort", "tk_ClearPos", "tk_Warmup"
+  ]);
+
+  const KPI_TAGS = [
+    ["CountLaidDetector",   "Laid — detector"],
+    ["CountLaid14in",       "Laid — 14in"],
+    ["CountLaid18in",       "Laid — 18in"],
+    ["TotalPickPartsCount", "Total picked parts"]
+  ];
+
+  // ---- State ------------------------------------------------------------
+  const live = {};   // group -> {value, at, truck}
+  let client = null, paused = false, msgCount = 0, lastMsgAt = null;
+
+  const statusEl = document.getElementById("status");
+  const statusTextEl = document.getElementById("status-text");
+  const pauseBtn = document.getElementById("pause-btn");
+  const themeBtn = document.getElementById("theme-btn");
+
+  function setStatus(kind, text) { statusEl.className = "status " + kind; statusTextEl.textContent = text; }
+
+  function groupOf(topic) {
+    const m = topic.match(/\/hmi\/(g\d+)$/);
+    return m ? m[1] : null;
+  }
+
+  // Thousands-separated, up to 3 decimals, trailing zeros trimmed. Anything
+  // that isn't a clean number is shown verbatim rather than coerced.
+  function num(raw) {
+    const n = Number(raw);
+    if (raw === "" || Number.isNaN(n)) return null;
+    return n.toLocaleString(undefined, { maximumFractionDigits: 3 });
+  }
+
+  function fmtValue(tag, raw) {
+    if (BOOLEAN_TAGS.has(tag)) {
+      const on = raw === "1" || raw === "true" || raw === "True";
+      return '<span class="badge ' + (on ? "on" : "off") + '">' +
+             '<span class="g">' + (on ? "●" : "○") + "</span>" + (on ? "ON" : "OFF") + "</span>";
+    }
+    const s = num(raw);
+    return s === null ? String(raw) : s;
+  }
+
+  function fmtBig(raw) {
+    if (raw === undefined) return "—";
+    const s = num(raw);
+    return s === null ? String(raw) : s;
+  }
+
+  function valueOfTag(name) {
+    for (const g in TAG_BY_GROUP) {
+      if (TAG_BY_GROUP[g] === name && live[g]) return live[g].value;
+    }
+    return undefined;
+  }
+
+  function ago(at) {
+    const s = Math.round((Date.now() - at) / 1000);
+    if (s < 2) return "just now";
+    if (s < 60) return s + "s ago";
+    const m = Math.floor(s / 60);
+    return m < 60 ? m + "m ago" : Math.floor(m / 60) + "h ago";
+  }
+
+  function render() {
+    document.getElementById("hero-value").textContent = fmtBig(valueOfTag("TotalTiePlatesLaid"));
+
+    document.getElementById("kpis").innerHTML = KPI_TAGS.map(function (pair) {
+      return '<div class="tile"><div class="label">' + pair[1] + "</div>" +
+             '<div class="value">' + fmtBig(valueOfTag(pair[0])) + "</div></div>";
+    }).join("");
+
+    // Always list all 40 in Publisher order, so a silent topic is visible as a
+    // gap rather than simply missing -- that is how g20 was spotted.
+    const groups = Object.keys(TAG_BY_GROUP).sort(function (a, b) {
+      return parseInt(a.slice(1), 10) - parseInt(b.slice(1), 10);
+    });
+    let seen = 0;
+    document.getElementById("rows").innerHTML = groups.map(function (g) {
+      const tag = TAG_BY_GROUP[g];
+      const rec = live[g];
+      if (rec) seen++;
+      return "<tr class='" + (rec ? "" : "silent") + "'>" +
+             "<td class='tag'>" + tag + "</td>" +
+             "<td class='topic'>" + g + "</td>" +
+             "<td class='val'>" + (rec ? fmtValue(tag, rec.value) : "—") + "</td>" +
+             "<td class='age'>" + (rec ? ago(rec.at) : "<span class='flag'>no data</span>") + "</td></tr>";
+    }).join("");
+
+    document.getElementById("tag-count").textContent = "(" + seen + " of 40 publishing)";
+    document.getElementById("meta").textContent =
+      msgCount ? msgCount.toLocaleString() + " msg · last " + ago(lastMsgAt) : "";
+  }
+
+  // ---- MQTT -------------------------------------------------------------
+  function connect() {
+    client = mqtt.connect("wss://" + MQTT_HOST + ":" + MQTT_WSS_PORT + "/mqtt", {
+      clientId: "raiv-dash-hmi-" + Math.random().toString(16).slice(2, 10),
+      username: MQTT_USERNAME, password: MQTT_PASSWORD,
+      clean: true, reconnectPeriod: 4000, connectTimeout: 12000
+    });
+
+    client.on("connect", function () {
+      setStatus("live", "Live");
+      client.subscribe(TOPIC_FILTER, { qos: 0 }, function (err) {
+        if (err) setStatus("down", "Subscribe failed");
+      });
+    });
+
+    client.on("message", function (topic, payload) {
+      const g = groupOf(topic);
+      if (!g || !TAG_BY_GROUP[g]) return;   // unmapped topic: ignore rather than mislabel
+      const now = Date.now();
+      live[g] = { value: payload.toString().trim(), at: now };
+      msgCount++; lastMsgAt = now;
+      render();
+    });
+
+    client.on("reconnect", function () { if (!paused) setStatus("", "Reconnecting…"); });
+    client.on("close",     function () { if (!paused) setStatus("", "Disconnected"); });
+    client.on("error",     function () { if (!paused) setStatus("down", "Connection error"); });
+  }
+
+  pauseBtn.addEventListener("click", function () {
+    if (!paused) {
+      paused = true;
+      pauseBtn.textContent = "Resume feed";
+      setStatus("paused", "Paused — HMI still publishing");
+      if (client) { client.end(true); client = null; }
+    } else {
+      paused = false;
+      pauseBtn.textContent = "Pause feed";
+      setStatus("", "Connecting…");
+      connect();
+    }
+    render();
+  });
+
+  // Label the toggle for what it will DO, starting from whatever the OS asked
+  // for -- otherwise a dark-mode visitor sees a button offering "Dark".
+  function darkNow() {
+    const stamp = document.documentElement.getAttribute("data-theme");
+    if (stamp) return stamp === "dark";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  themeBtn.textContent = darkNow() ? "Light" : "Dark";
+  themeBtn.addEventListener("click", function () {
+    const goingDark = !darkNow();
+    document.documentElement.setAttribute("data-theme", goingDark ? "dark" : "light");
+    themeBtn.textContent = goingDark ? "Light" : "Dark";
+  });
+
+  setInterval(render, 1000);
+  render();
+
+  // The MQTT client comes from a CDN. If that request is blocked (locked-down
+  // network, offline, blocker) say so plainly instead of sitting on
+  // "Connecting..." forever, which looks identical to the HMI not publishing.
+  if (typeof mqtt === "undefined") {
+    setStatus("down", "Could not load the MQTT library");
+    pauseBtn.disabled = true;
+    const e = document.getElementById("empty");
+    e.style.display = "block";
+    e.innerHTML =
+      "The MQTT client script could not be fetched from unpkg.com, so this page cannot connect. " +
+      "That is a network/blocker issue on this device, not a problem with the broker or the HMI. " +
+      "The 40 topics below are the expected Publisher config, not live values.";
+  } else {
+    connect();
+  }
+</script>
+</body>
+</html>

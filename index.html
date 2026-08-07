@@ -1,311 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Raiv-Tracker Fleet Dashboard</title>
-<script src="https://unpkg.com/mqtt@5.10.1/dist/mqtt.min.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RAIV Fleet — dashboards</title>
 <style>
   :root {
-    --bg: #0f172a;
-    --panel: #1e293b;
-    --panel-border: #334155;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --accent: #38bdf8;
-    --good: #22c55e;
-    --bad: #ef4444;
-    --warn: #f59e0b;
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --plc:            #2a78d6;   /* categorical slot 1 */
+    --hmi:            #eb6834;   /* categorical slot 2 */
+    --plc-wash:       rgba(42,120,214,0.10);
+    --hmi-wash:       rgba(235,104,52,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page:           #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --plc:            #3987e5;
+      --hmi:            #d95926;
+      --plc-wash:       rgba(57,135,229,0.14);
+      --hmi-wash:       rgba(217,89,38,0.16);
+    }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
+    margin: 0; padding: 56px 20px;
+    background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px; line-height: 1.55;
   }
-  header {
-    padding: 20px 28px;
-    border-bottom: 1px solid var(--panel-border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 1.35rem;
-    font-weight: 600;
-  }
-  header p {
-    margin: 4px 0 0;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-  .status {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--panel-border);
-    background: var(--panel);
-  }
-  .status .dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--muted);
-  }
-  .status.connected .dot { background: var(--good); box-shadow: 0 0 6px var(--good); }
-  .status.connecting .dot { background: var(--warn); box-shadow: 0 0 6px var(--warn); animation: pulse 1s infinite; }
-  .status.error .dot { background: var(--bad); box-shadow: 0 0 6px var(--bad); }
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.015em; }
+  .lede { color: var(--text-secondary); margin: 0 0 32px; }
 
-  main {
-    padding: 24px 28px 60px;
-    max-width: 1400px;
-    margin: 0 auto;
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px; border-top-width: 3px; border-top-style: solid;
   }
-  .empty-state {
-    color: var(--muted);
-    text-align: center;
-    padding: 80px 20px;
-    font-size: 1rem;
-  }
-  .truck-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 20px;
-  }
-  .truck-card {
-    background: var(--panel);
-    border: 1px solid var(--panel-border);
-    border-radius: 12px;
-    padding: 18px 20px;
-  }
-  .truck-card-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    border-bottom: 1px solid var(--panel-border);
-    padding-bottom: 10px;
-  }
-  .truck-card-header h2 {
-    margin: 0;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  .truck-card-header span {
-    color: var(--muted);
-    font-size: 0.75rem;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.87rem;
-  }
-  table tr:not(:last-child) td {
-    border-bottom: 1px solid rgba(148,163,184,0.12);
-  }
-  table td {
-    padding: 6px 0;
-  }
-  table td.tag-name {
-    color: var(--muted);
-    white-space: nowrap;
-    padding-right: 12px;
-  }
-  table td.tag-value {
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-    font-weight: 600;
-  }
-  .badge {
-    display: inline-block;
-    padding: 2px 10px;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    font-weight: 700;
-  }
-  .badge.on { background: rgba(34,197,94,0.15); color: var(--good); }
-  .badge.off { background: rgba(148,163,184,0.15); color: var(--muted); }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.75rem;
-    padding: 20px;
-  }
+  a.card.plc { border-top-color: var(--plc); }
+  a.card.hmi { border-top-color: var(--hmi); }
+  a.card.plc:hover { background: var(--plc-wash); }
+  a.card.hmi:hover { background: var(--hmi-wash); }
+  .card h2 { font-size: 16px; font-weight: 600; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+  .card h2 i { width: 10px; height: 10px; border-radius: 2px; display: block; flex: none; }
+  .card.plc h2 i { background: var(--plc); }
+  .card.hmi h2 i { background: var(--hmi); }
+  .card p { margin: 0 0 12px; color: var(--text-secondary); font-size: 13px; }
+  .card .topic { font-size: 12px; color: var(--text-muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .card .go { font-size: 13px; font-weight: 600; margin-top: 12px; }
+
+  .why { margin-top: 32px; border: 1px solid var(--border); background: var(--surface-1);
+         border-radius: 12px; padding: 18px 20px; font-size: 13px; color: var(--text-secondary); }
+  .why h3 { font-size: 13px; font-weight: 600; color: var(--text-primary); margin: 0 0 8px; }
+  .why p { margin: 0 0 10px; }
+  .why p:last-child { margin-bottom: 0; }
+  .why b { color: var(--text-primary); font-weight: 600; }
+  footer { margin-top: 28px; font-size: 12px; color: var(--text-muted); }
+  footer a { color: inherit; }
 </style>
 </head>
 <body>
+<div class="wrap">
+  <h1>RAIV Fleet dashboards</h1>
+  <p class="lede">
+    Two independent live views of the same truck, one per data source. They are deliberately separate:
+    each page opens its own broker connection and subscribes to only its own topics, so neither can
+    show the other's numbers.
+  </p>
 
-<header>
-  <div>
-    <h1>Raiv-Tracker Fleet Dashboard</h1>
-    <p>Live equipment feedback from Raiv-Truck PLCs via StrideLinx &rarr; MQTT (HiveMQ Cloud)</p>
+  <div class="cards">
+    <a class="card plc" href="stridelinx.html">
+      <h2><i></i>StrideLinx feed</h2>
+      <p>The router polling the CLICK PLC over Modbus TCP. 45 tags, roughly one update per minute.
+         Has a pause control.</p>
+      <div class="topic">raiv-tracker/+/plc</div>
+      <div class="go">Open →</div>
+    </a>
+
+    <a class="card hmi" href="cm5.html">
+      <h2><i></i>CM5 HMI MQTT feed</h2>
+      <p>The HMI's own MQTT Publisher, 40 topics across four Publisher objects. Updates about
+         1.4&times; per second per tag.</p>
+      <div class="topic">raiv-tracker/+/hmi/#</div>
+      <div class="go">Open →</div>
+    </a>
   </div>
-  <div id="status" class="status connecting">
-    <span class="dot"></span>
-    <span id="status-text">Connecting&hellip;</span>
+
+  <div class="why">
+    <h3>Why two pages instead of one</h3>
+    <p>
+      The two sources overlap on only 11 tags — StrideLinx carries 34 the CM5 doesn't, the CM5 carries 28
+      StrideLinx doesn't. Keeping them apart means a number on screen has exactly one provenance, and the
+      11 shared tags can be compared side by side as a correctness check between two independent paths to
+      the same PLC.
+    </p>
+    <p>
+      <b>On pausing:</b> the pause control on the StrideLinx page stops <i>that page's</i> broker
+      subscription. It does not stop the router polling the PLC — the dashboards sit downstream of the
+      broker and are not in the Modbus path. Taking the router's polling off the machine network is done
+      in StrideLinx Fleet Manager.
+    </p>
   </div>
-</header>
 
-<main>
-  <div id="empty-state" class="empty-state">Waiting for the first message from any truck&hellip;</div>
-  <div id="truck-grid" class="truck-grid"></div>
-</main>
-
-<footer>
-  Read-only live view. Values reflect whatever each truck last published — no history is stored on this page.
-</footer>
-
-<script>
-  // ---- Connection config ------------------------------------------------
-  // This page connects directly from the browser to HiveMQ Cloud over
-  // MQTT-over-WebSockets using a dedicated, SUBSCRIBE-ONLY credential
-  // ("Raiv-Dashboard-Public"). It cannot publish/write to the PLCs.
-  // Because this page is public (GitHub Pages has no access wall on the
-  // free tier), anyone with the link can read these live values -- that
-  // trade-off was a deliberate choice to avoid running a paid always-on
-  // server. If that ever needs to change, revoke/rotate this credential
-  // in HiveMQ Cloud -> Access Management.
-  const MQTT_HOST = "353a1aaf7a42437797d72a6699405ee1.s1.eu.hivemq.cloud";
-  const MQTT_WSS_PORT = 8884;
-  const MQTT_USERNAME = "Raiv-Dashboard-Public";
-  const MQTT_PASSWORD = "V3WV1h7ZclzbBPfAP5sY";
-  const TOPIC_FILTER = "raiv-tracker/#"; // subscribes to every truck automatically
-
-  // ---- State --------------------------------------------------------------
-  const trucks = {}; // { "truck-2": { metrics: {name: value}, lastSeen: Date } }
-
-  const statusEl = document.getElementById("status");
-  const statusTextEl = document.getElementById("status-text");
-  const gridEl = document.getElementById("truck-grid");
-  const emptyStateEl = document.getElementById("empty-state");
-
-  function setStatus(kind, text) {
-    statusEl.className = "status " + kind;
-    statusTextEl.textContent = text;
-  }
-
-  function formatTruckLabel(topic) {
-    // topic looks like "raiv-tracker/truck-2/plc" -> "Truck 2"
-    const parts = topic.split("/");
-    const rawId = parts[1] || topic;
-    const match = rawId.match(/(\d+)/);
-    return match ? "Truck " + match[1] : rawId;
-  }
-
-  function formatValue(metric) {
-    // Sparkplug-B datatype 11 = Boolean
-    if (metric.datatype === 11 || typeof metric.value === "boolean") {
-      const on = metric.value === true || metric.value === "true" || metric.value === 1;
-      return '<span class="badge ' + (on ? "on" : "off") + '">' + (on ? "ON" : "OFF") + "</span>";
-    }
-    if (typeof metric.value === "number") {
-      return Number.isInteger(metric.value) ? metric.value.toString() : metric.value.toFixed(3);
-    }
-    return String(metric.value);
-  }
-
-  function render() {
-    const ids = Object.keys(trucks).sort();
-    if (ids.length === 0) {
-      emptyStateEl.style.display = "block";
-      gridEl.innerHTML = "";
-      return;
-    }
-    emptyStateEl.style.display = "none";
-
-    gridEl.innerHTML = ids.map(function (id) {
-      const truck = trucks[id];
-      const metricNames = Object.keys(truck.metrics).sort();
-      const rows = metricNames.map(function (name) {
-        const m = truck.metrics[name];
-        return "<tr><td class=\"tag-name\">" + name + "</td><td class=\"tag-value\">" + formatValue(m) + "</td></tr>";
-      }).join("");
-      const ageSec = Math.round((Date.now() - truck.lastSeen) / 1000);
-      return (
-        '<div class="truck-card">' +
-          '<div class="truck-card-header"><h2>' + id + "</h2>" +
-          "<span>updated " + ageSec + "s ago</span></div>" +
-          "<table><tbody>" + (rows || '<tr><td class="tag-name">no tags yet</td></tr>') + "</tbody></table>" +
-        "</div>"
-      );
-    }).join("");
-  }
-
-  // Re-render every second so the "updated Xs ago" labels stay fresh.
-  setInterval(render, 1000);
-
-  // ---- MQTT connection ------------------------------------------------
-  const clientId = "raiv-dashboard-" + Math.random().toString(16).slice(2, 10);
-  const url = "wss://" + MQTT_HOST + ":" + MQTT_WSS_PORT + "/mqtt";
-
-  const client = mqtt.connect(url, {
-    clientId: clientId,
-    username: MQTT_USERNAME,
-    password: MQTT_PASSWORD,
-    clean: true,
-    reconnectPeriod: 3000,
-    connectTimeout: 15000,
-  });
-
-  client.on("connect", function () {
-    setStatus("connected", "Connected");
-    client.subscribe(TOPIC_FILTER, { qos: 0 }, function (err) {
-      if (err) {
-        setStatus("error", "Subscribe failed: " + err.message);
-      }
-    });
-  });
-
-  client.on("reconnect", function () {
-    setStatus("connecting", "Reconnecting…");
-  });
-
-  client.on("close", function () {
-    setStatus("connecting", "Disconnected – retrying…");
-  });
-
-  client.on("error", function (err) {
-    setStatus("error", "Connection error");
-    console.error("MQTT error:", err);
-  });
-
-  client.on("message", function (topic, payloadBuffer) {
-    let payload;
-    try {
-      payload = JSON.parse(payloadBuffer.toString());
-    } catch (e) {
-      console.warn("Non-JSON message on", topic, payloadBuffer.toString());
-      return;
-    }
-
-    const truckId = formatTruckLabel(topic);
-    if (!trucks[truckId]) {
-      trucks[truckId] = { metrics: {}, lastSeen: Date.now() };
-    }
-    trucks[truckId].lastSeen = Date.now();
-
-    const metrics = Array.isArray(payload.metrics) ? payload.metrics : [payload];
-    metrics.forEach(function (m) {
-      if (m && m.name) {
-        trucks[truckId].metrics[m.name] = m;
-      }
-    });
-
-    render();
-  });
-</script>
-
+  <footer>
+    Read-only, subscribe-only broker credential — neither page can write to a PLC or the HMI.
+    History lives in <a href="https://github.com/cotyc-bbrailtech/Raiv-trucks/tree/main/logs">logs/</a>.
+  </footer>
+</div>
 </body>
 </html>
