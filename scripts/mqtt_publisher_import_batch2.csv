@@ -1,0 +1,34 @@
+Enable,BrokerTopic,PayloadType,PayloadStatic,PayloadTagName,UseTerminate,TerminateType,TerminateCode1,TerminateCode2,UseByteSwap,ByteSwapType,UseRetain
+1,raiv-tracker/truck-2/hmi/g41,1,,Daily_TotalLaidPlates,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g42,1,,TotalPickedParts,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g43,1,,TotalPickedAcceptParts,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g44,1,,TotalPickedRejectParts,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g45,1,,CountPicked14in,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g46,1,,CountPicked18in,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g47,1,,CountPickedPandral,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g48,1,,CountPickedOTM,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g49,1,,tkCycle_TotalSeconds,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g50,1,,tkCycle_MoveSeconds,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g51,1,,tkCycle_NoMoveSec,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g52,1,,Avg Parts per min_total,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g53,1,,Percent time moveing,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g54,1,,Percent time not moving,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g55,1,,percentCount_accept,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g56,1,,percentCount_reject,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g57,1,,TPS_JamsMASTER,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g58,1,,TPS_JamsUsr,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g59,1,,TPSjam_FLAG,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g60,1,,TPS BACKUP ALARM,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g61,1,,ABORT_Master,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g62,1,,RoCals,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g63,1,,RoCalRequest,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g64,1,,Robot_isMoving,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g65,1,,TPS Full,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g66,1,,Tie Detector,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g67,1,,TieDetectOffset_A,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g68,1,,TieDetectOffset_B,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g69,1,,Eject Tie Plate,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g70,1,,AirEagle Eject Plate,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g71,1,,TPS_Enable_ Button,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g72,1,,DoubleLay Job,0,0,0,0,0,0,0
+1,raiv-tracker/truck-2/hmi/g73,1,,_1st_SCAN,0,0,0,0,0,0,0

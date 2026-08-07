@@ -1,5 +1,5 @@
 {
-  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. UPDATED 2026-08-06 (second revision) to the REAL AS-BUILT configuration, generated directly from the four MQTTPub_1..4 exports taken out of 'RAIVT2 HMI 10in in cab V4 MQTT v9.01' after Coty built them in C-more -- this replaces an earlier 62-topic guess whose tag-to-topic assignment did NOT match what was actually built (the guess had g1=CountLaidDetector; as built, g1=TotalTiePlatesLaid and CountLaidDetector is g3). Layout: 40 topics, g1..g40, spread over four Publisher objects of exactly 10 topics each -- Publisher 1 = g1..g10, Publisher 2 = g11..g20, Publisher 3 = g21..g30, Publisher 4 = g31..g40. Every row is PayloadType=1 (raw tag value), so each list below has exactly one entry and the payload is that tag's value with nothing else in it. The parser in mqtt_excel_logger_action.py splits on '|' and zips positionally against these lists, so it handles either one value or several without code changes -- if a topic is ever rebuilt in C-more to pack multiple tag values into one message, just list its tag names here in the same left-to-right order. See the 'Approach 7' section of the project doc for the full design and the remaining setup steps.",
+  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. UPDATED 2026-08-07 (third revision) to add batch 2: topics g41-g73, the 33 tags that were previously available only from the StrideLinx router. They are being migrated to the CM5 so the StrideLinx Modbus data source can be removed from the machine network entirely -- see claude/stridelinx-modbus-polling.md for why. Note RejectPartsCount is NOT in batch 2: it is already configured at g20 and simply is not publishing, so the fix there is that row's Enable flag in C-more, not a second topic. Layout: 73 topics, g1..g73, in Publisher objects of exactly 10 topics each -- P1=g1..g10, P2=g11..g20, P3=g21..g30, P4=g31..g40, P5=g41..g50 (those five fill broker connection 1, which caps at 50 topics), then P6=g51..g60, P7=g61..g70, P8=g71..g73 on a SECOND broker connection. Batch 2 is ordered by production value, so importing only some Publisher objects still lands the most useful tags first. Every row is PayloadType=1 (raw tag value), so each list below has exactly one entry; the parser in mqtt_excel_logger_action.py splits on '|' and zips positionally, so it handles one value or several without code changes. This file and the TAG_BY_GROUP table inside cm5.html must be kept in sync.",
   "topics": {
     "raiv-tracker/truck-2/hmi/g1": [
       "TotalTiePlatesLaid"
@@ -120,6 +120,105 @@
     ],
     "raiv-tracker/truck-2/hmi/g40": [
       "CountPickedReject18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g41": [
+      "Daily_TotalLaidPlates"
+    ],
+    "raiv-tracker/truck-2/hmi/g42": [
+      "TotalPickedParts"
+    ],
+    "raiv-tracker/truck-2/hmi/g43": [
+      "TotalPickedAcceptParts"
+    ],
+    "raiv-tracker/truck-2/hmi/g44": [
+      "TotalPickedRejectParts"
+    ],
+    "raiv-tracker/truck-2/hmi/g45": [
+      "CountPicked14in"
+    ],
+    "raiv-tracker/truck-2/hmi/g46": [
+      "CountPicked18in"
+    ],
+    "raiv-tracker/truck-2/hmi/g47": [
+      "CountPickedPandral"
+    ],
+    "raiv-tracker/truck-2/hmi/g48": [
+      "CountPickedOTM"
+    ],
+    "raiv-tracker/truck-2/hmi/g49": [
+      "tkCycle_TotalSeconds"
+    ],
+    "raiv-tracker/truck-2/hmi/g50": [
+      "tkCycle_MoveSeconds"
+    ],
+    "raiv-tracker/truck-2/hmi/g51": [
+      "tkCycle_NoMoveSec"
+    ],
+    "raiv-tracker/truck-2/hmi/g52": [
+      "Avg Parts per min_total"
+    ],
+    "raiv-tracker/truck-2/hmi/g53": [
+      "Percent time moveing"
+    ],
+    "raiv-tracker/truck-2/hmi/g54": [
+      "Percent time not moving"
+    ],
+    "raiv-tracker/truck-2/hmi/g55": [
+      "percentCount_accept"
+    ],
+    "raiv-tracker/truck-2/hmi/g56": [
+      "percentCount_reject"
+    ],
+    "raiv-tracker/truck-2/hmi/g57": [
+      "TPS_JamsMASTER"
+    ],
+    "raiv-tracker/truck-2/hmi/g58": [
+      "TPS_JamsUsr"
+    ],
+    "raiv-tracker/truck-2/hmi/g59": [
+      "TPSjam_FLAG"
+    ],
+    "raiv-tracker/truck-2/hmi/g60": [
+      "TPS BACKUP ALARM"
+    ],
+    "raiv-tracker/truck-2/hmi/g61": [
+      "ABORT_Master"
+    ],
+    "raiv-tracker/truck-2/hmi/g62": [
+      "RoCals"
+    ],
+    "raiv-tracker/truck-2/hmi/g63": [
+      "RoCalRequest"
+    ],
+    "raiv-tracker/truck-2/hmi/g64": [
+      "Robot_isMoving"
+    ],
+    "raiv-tracker/truck-2/hmi/g65": [
+      "TPS Full"
+    ],
+    "raiv-tracker/truck-2/hmi/g66": [
+      "Tie Detector"
+    ],
+    "raiv-tracker/truck-2/hmi/g67": [
+      "TieDetectOffset_A"
+    ],
+    "raiv-tracker/truck-2/hmi/g68": [
+      "TieDetectOffset_B"
+    ],
+    "raiv-tracker/truck-2/hmi/g69": [
+      "Eject Tie Plate"
+    ],
+    "raiv-tracker/truck-2/hmi/g70": [
+      "AirEagle Eject Plate"
+    ],
+    "raiv-tracker/truck-2/hmi/g71": [
+      "TPS_Enable_ Button"
+    ],
+    "raiv-tracker/truck-2/hmi/g72": [
+      "DoubleLay Job"
+    ],
+    "raiv-tracker/truck-2/hmi/g73": [
+      "_1st_SCAN"
     ]
   }
 }
