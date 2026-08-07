@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>RAIV Fleet — dashboards</title>
 <style>
+  /* Accents are categorical slots 1-3 from the project's reference palette.
+     Validated together as an all-pairs set in both modes: worst CVD ΔE 9.2 light /
+     9.4 dark against an ≥8 target, worst normal-vision ΔE 24.0 / 20.9 against ≥15.
+     Aqua sits at 2.74:1 on the light surface, under the 3:1 bar, so the relief rule
+     applies: every accent here appears beside a visible text label and each linked
+     page is table-based, so identity never rides on colour alone. */
   :root {
     color-scheme: light;
     --surface-1:      #fcfcfb;
@@ -12,12 +18,13 @@
     --text-primary:   #0b0b0b;
     --text-secondary: #52514e;
     --text-muted:     #898781;
-    --baseline:       #c3c2b7;
     --border:         rgba(11,11,11,0.10);
-    --plc:            #2a78d6;   /* categorical slot 1 */
-    --hmi:            #eb6834;   /* categorical slot 2 */
-    --plc-wash:       rgba(42,120,214,0.10);
-    --hmi-wash:       rgba(235,104,52,0.10);
+    --truck:          #2a78d6;   /* slot 1 */
+    --plc:            #eb6834;   /* slot 2 */
+    --lab:            #1baf7a;   /* slot 3 */
+    --truck-wash:     rgba(42,120,214,0.10);
+    --plc-wash:       rgba(235,104,52,0.10);
+    --lab-wash:       rgba(27,175,122,0.10);
   }
   @media (prefers-color-scheme: dark) {
     :root:where(:not([data-theme="light"])) {
@@ -27,12 +34,13 @@
       --text-primary:   #ffffff;
       --text-secondary: #c3c2b7;
       --text-muted:     #898781;
-      --baseline:       #383835;
       --border:         rgba(255,255,255,0.10);
-      --plc:            #3987e5;
-      --hmi:            #d95926;
-      --plc-wash:       rgba(57,135,229,0.14);
-      --hmi-wash:       rgba(217,89,38,0.16);
+      --truck:          #3987e5;
+      --plc:            #d95926;
+      --lab:            #199e70;
+      --truck-wash:     rgba(57,135,229,0.14);
+      --plc-wash:       rgba(217,89,38,0.16);
+      --lab-wash:       rgba(25,158,112,0.16);
     }
   }
   * { box-sizing: border-box; }
@@ -42,26 +50,29 @@
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     font-size: 14px; line-height: 1.55;
   }
-  .wrap { max-width: 780px; margin: 0 auto; }
+  .wrap { max-width: 900px; margin: 0 auto; }
   h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.015em; }
   .lede { color: var(--text-secondary); margin: 0 0 32px; }
 
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
   a.card {
     display: block; text-decoration: none; color: inherit;
     background: var(--surface-1); border: 1px solid var(--border);
     border-radius: 12px; padding: 20px; border-top-width: 3px; border-top-style: solid;
   }
-  a.card.plc { border-top-color: var(--plc); }
-  a.card.hmi { border-top-color: var(--hmi); }
-  a.card.plc:hover { background: var(--plc-wash); }
-  a.card.hmi:hover { background: var(--hmi-wash); }
+  a.card.truck { border-top-color: var(--truck); }
+  a.card.lab   { border-top-color: var(--lab); }
+  a.card.plc   { border-top-color: var(--plc); }
+  a.card.truck:hover { background: var(--truck-wash); }
+  a.card.lab:hover   { background: var(--lab-wash); }
+  a.card.plc:hover   { background: var(--plc-wash); }
   .card h2 { font-size: 16px; font-weight: 600; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
   .card h2 i { width: 10px; height: 10px; border-radius: 2px; display: block; flex: none; }
-  .card.plc h2 i { background: var(--plc); }
-  .card.hmi h2 i { background: var(--hmi); }
+  .card.truck h2 i { background: var(--truck); }
+  .card.lab h2 i   { background: var(--lab); }
+  .card.plc h2 i   { background: var(--plc); }
   .card p { margin: 0 0 12px; color: var(--text-secondary); font-size: 13px; }
-  .card .topic { font-size: 12px; color: var(--text-muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .card .topic { font-size: 12px; color: var(--text-muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; }
   .card .go { font-size: 13px; font-weight: 600; margin-top: 12px; }
 
   .why { margin-top: 32px; border: 1px solid var(--border); background: var(--surface-1);
@@ -70,6 +81,7 @@
   .why p { margin: 0 0 10px; }
   .why p:last-child { margin-bottom: 0; }
   .why b { color: var(--text-primary); font-weight: 600; }
+  .why code { font-size: 12px; }
   footer { margin-top: 28px; font-size: 12px; color: var(--text-muted); }
   footer a { color: inherit; }
 </style>
@@ -78,47 +90,56 @@
 <div class="wrap">
   <h1>RAIV Fleet dashboards</h1>
   <p class="lede">
-    Two independent live views of the same truck, one per data source. They are deliberately separate:
-    each page opens its own broker connection and subscribes to only its own topics, so neither can
-    show the other's numbers.
+    One page per data source. Each opens its own broker connection and is pinned to its own topic
+    prefix, so no page can show another source's numbers — a number on screen has exactly one
+    provenance.
   </p>
 
   <div class="cards">
-    <a class="card plc" href="stridelinx.html">
-      <h2><i></i>StrideLinx feed</h2>
-      <p>The router polling the CLICK PLC over Modbus TCP. 45 tags, roughly one update per minute.
-         Has a pause control.</p>
-      <div class="topic">raiv-tracker/+/plc</div>
+    <a class="card truck" href="cm5.html">
+      <h2><i></i>RAIV-2 truck</h2>
+      <p>The truck's CM5 HMI publishing over its own MQTT client. 73 topics across eight Publisher
+         objects. This is production.</p>
+      <div class="topic">raiv-tracker/truck-2/hmi/#</div>
       <div class="go">Open →</div>
     </a>
 
-    <a class="card hmi" href="cm5.html">
-      <h2><i></i>CM5 HMI MQTT feed</h2>
-      <p>The HMI's own MQTT Publisher, 40 topics across four Publisher objects. Updates about
-         1.4&times; per second per tag.</p>
-      <div class="topic">raiv-tracker/+/hmi/#</div>
+    <a class="card lab" href="lab.html">
+      <h2><i></i>Lab bench</h2>
+      <p>The bench CM5, running a near-identical program on 40 topics. Counters read zero — it has no
+         stored production data.</p>
+      <div class="topic">raiv-tracker/lab/hmi/#</div>
+      <div class="go">Open →</div>
+    </a>
+
+    <a class="card plc" href="stridelinx.html">
+      <h2><i></i>StrideLinx feed</h2>
+      <p>The router polling a CLICK PLC over Modbus TCP, ~once a minute. Now attached to the bench, not
+         the truck. Has a pause control.</p>
+      <div class="topic">raiv-tracker/+/plc</div>
       <div class="go">Open →</div>
     </a>
   </div>
 
   <div class="why">
-    <h3>Why two pages instead of one</h3>
+    <h3>Why the sources are kept apart</h3>
     <p>
-      The two sources overlap on only 11 tags — StrideLinx carries 34 the CM5 doesn't, the CM5 carries 28
-      StrideLinx doesn't. Keeping them apart means a number on screen has exactly one provenance, and the
-      11 shared tags can be compared side by side as a correctness check between two independent paths to
-      the same PLC.
+      The truck and the bench run near-identical programs, so their tags share names <em>and</em> topic
+      suffixes — both use <code>g1</code>, <code>g18</code> and so on. On 2026-08-07 the bench was found
+      publishing into <code>raiv-tracker/truck-2/*</code> and being recorded as truck data. It now has its
+      own <code>raiv-tracker/lab/*</code> prefix, and each page validates the full topic rather than just
+      the <code>gN</code> suffix, so a stray message from the wrong machine is ignored instead of
+      overwriting a value.
     </p>
     <p>
-      <b>On pausing:</b> the pause control on the StrideLinx page stops <i>that page's</i> broker
-      subscription. It does not stop the router polling the PLC — the dashboards sit downstream of the
-      broker and are not in the Modbus path. Taking the router's polling off the machine network is done
-      in StrideLinx Fleet Manager.
+      <b>On pausing:</b> the pause control stops <i>that page's</i> broker subscription. It does not stop
+      the router polling the PLC — these pages sit downstream of the broker and are not in the Modbus
+      path. Polling is controlled in StrideLinx Fleet Manager.
     </p>
   </div>
 
   <footer>
-    Read-only, subscribe-only broker credential — neither page can write to a PLC or the HMI.
+    Read-only, subscribe-only broker credential — no page can write to a PLC or an HMI.
     History lives in <a href="https://github.com/cotyc-bbrailtech/Raiv-trucks/tree/main/logs">logs/</a>.
   </footer>
 </div>

@@ -3,13 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>RAIV Fleet — StrideLinx feed</title>
+<title>RAIV Fleet — Lab bench</title>
 <script src="https://unpkg.com/mqtt@5.10.1/dist/mqtt.min.js"></script>
 <style>
   /* Palette roles from the project's reference palette. Light + dark are both
-     selected sets stepped for their own surface, not an automatic flip. Dark is
-     declared under the media query (OS setting) and the data-theme scope (the
-     in-page toggle), so the toggle wins either way. */
+     selected sets stepped for their own surface, not an automatic flip. */
   :root {
     color-scheme: light;
     --surface-1:      #fcfcfb;
@@ -20,11 +18,11 @@
     --gridline:       #e1e0d9;
     --baseline:       #c3c2b7;
     --border:         rgba(11,11,11,0.10);
-    --accent:         #2a78d6;   /* StrideLinx = categorical slot 1 (blue) */
+    --accent:         #1baf7a;   /* Lab bench = categorical slot 3 (aqua) */
     --good:           #0ca30c;
     --critical:       #d03b3b;
     --warning:        #fab219;
-    --wash:           rgba(42,120,214,0.10);
+    --wash:           rgba(27,175,122,0.10);
   }
   @media (prefers-color-scheme: dark) {
     :root:where(:not([data-theme="light"])) {
@@ -37,8 +35,8 @@
       --gridline:       #2c2c2a;
       --baseline:       #383835;
       --border:         rgba(255,255,255,0.10);
-      --accent:         #3987e5;
-      --wash:           rgba(57,135,229,0.14);
+      --accent:         #199e70;
+      --wash:           rgba(25,158,112,0.16);
     }
   }
   :root[data-theme="dark"] {
@@ -51,8 +49,8 @@
     --gridline:       #2c2c2a;
     --baseline:       #383835;
     --border:         rgba(255,255,255,0.10);
-    --accent:         #3987e5;
-    --wash:           rgba(57,135,229,0.14);
+    --accent:         #199e70;
+    --wash:           rgba(25,158,112,0.16);
   }
 
   * { box-sizing: border-box; }
@@ -92,7 +90,7 @@
   .meta { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
 
   .note {
-    border: 1px solid var(--border); border-left: 3px solid var(--warning);
+    border: 1px solid var(--border); border-left: 3px solid var(--accent);
     background: var(--surface-1); border-radius: 8px;
     padding: 12px 14px; margin: 0 0 22px; font-size: 13px; color: var(--text-secondary);
   }
@@ -118,15 +116,18 @@
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--wash); }
   td.tag { font-weight: 500; }
+  td.topic { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
   td.val { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
-  td.truck, td.age { color: var(--text-secondary); white-space: nowrap; }
-  td.age { font-variant-numeric: tabular-nums; }
+  td.age { color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr.silent td.tag, tr.silent td.topic { color: var(--text-muted); }
+  tr.silent td.val { color: var(--text-muted); }
 
   .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600;
            border-radius: 999px; padding: 2px 9px 2px 7px; border: 1px solid var(--border); }
   .badge .g { font-size: 11px; line-height: 1; }
   .badge.on  { color: var(--good); }
   .badge.off { color: var(--text-secondary); }
+  .flag { font-size: 11px; color: var(--warning); font-weight: 600; }
 
   .empty { padding: 40px 16px; text-align: center; color: var(--text-secondary); }
   footer { margin-top: 26px; font-size: 12px; color: var(--text-muted); }
@@ -137,15 +138,14 @@
 <div class="wrap">
 
   <header>
-    <h1>RAIV Fleet — StrideLinx feed</h1>
-    <span class="src-key"><i></i> StrideLinx router → Modbus TCP (now on the bench)</span>
+    <h1>RAIV Fleet — Lab bench</h1>
+    <span class="src-key"><i></i> Lab CM5 — bench, not production</span>
   </header>
   <p class="sub">
-    Live values from whichever unit currently holds the StrideLinx Modbus data source, polling its
-    CLICK PLC about once a minute. <strong>Since the router swap on 2026-08-07 that is the Lab bench,
-    not the truck</strong> — the Unit column says which. This page subscribes only to
-    <code>raiv-tracker/+/plc</code>; the CM5 MQTT feeds are on their own pages
-    (<a href="cm5.html">truck</a>, <a href="lab.html">bench</a>) and cannot appear here.
+    Live values from the <strong>Lab bench</strong> CM5 — a test rig, not the truck. It runs a
+    near-identical program, so its tags share the truck's names. This page subscribes only to
+    <code>raiv-tracker/lab/hmi/#</code>; the RAIV-2 truck is on a
+    <a href="cm5.html">separate page</a> and cannot appear here.
   </p>
 
   <div class="bar">
@@ -157,32 +157,34 @@
   </div>
 
   <p class="note">
-    <b>What pausing does:</b> it disconnects this page from the MQTT broker, so the values below stop
-    updating and this browser stops consuming broker traffic. <b>It does not stop the StrideLinx router
-    polling the PLC over Modbus.</b> This page sits downstream of the broker and is not in the Modbus
-    path at all — to actually take the router's polling off the machine network you have to disable the
-    data source (or its tags) in StrideLinx Fleet Manager. See the project doc for the exact steps.
+    <b>Zeros are expected here.</b> The bench PLC has no stored production data, so counters
+    read 0 — that is the rig being idle, not a fault. Only state bits like job selection
+    normally show anything. As with the truck, a CM5 payload carries no name, type or
+    timestamp: the tag name comes from the topic, <b>"updated" is when this page received the
+    value</b>, and boolean tags are declared in this file rather than detected.
+    <b>This bench moved off the truck's topic namespace on 2026-08-07</b> — before that it was
+    publishing into <code>raiv-tracker/truck-2/*</code> and being recorded as truck data.
   </p>
 
   <div class="hero">
-    <div class="label" id="hero-label">Daily total laid plates</div>
+    <div class="label">Total tie plates laid <span style="color:var(--text-muted)">· g1 · bench</span></div>
     <div class="value" id="hero-value">—</div>
   </div>
 
   <div class="kpis" id="kpis"></div>
 
-  <h2>All StrideLinx tags <span class="count" id="tag-count"></span></h2>
+  <h2>All 40 Publisher topics <span class="count" id="tag-count"></span></h2>
   <div class="panel">
     <table>
-      <thead><tr><th>Tag</th><th>Unit</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
+      <thead><tr><th>Tag</th><th>Topic</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
-    <div class="empty" id="empty">Waiting for the first message on <code>raiv-tracker/+/plc</code>…</div>
+    <div class="empty" id="empty" style="display:none">Waiting for the first message…</div>
   </div>
 
   <footer>
-    Read-only: this page uses a subscribe-only broker credential and cannot write to any PLC.
-    Values are whatever the router last published — no history is kept here; that lives in
+    Read-only: this page uses a subscribe-only broker credential and cannot write to the HMI or any PLC.
+    No history is kept here; that lives in
     <a href="https://github.com/cotyc-bbrailtech/Raiv-trucks/tree/main/logs">logs/</a>.
   </footer>
 </div>
@@ -190,27 +192,57 @@
 <script>
   // ---- Connection -------------------------------------------------------
   // Subscribe-only credential ("Raiv-Dashboard-Public"). It cannot publish, so
-  // it cannot write to a PLC. This page is public, so anyone with the link can
-  // read these values -- an accepted trade-off for needing no server. Rotate in
-  // HiveMQ Cloud -> Access Management if that ever changes.
+  // it cannot write to the HMI or a PLC. This page is public, so anyone with the
+  // link can read these values -- an accepted trade-off for needing no server.
   const MQTT_HOST     = "353a1aaf7a42437797d72a6699405ee1.s1.eu.hivemq.cloud";
   const MQTT_WSS_PORT = 8884;
   const MQTT_USERNAME = "Raiv-Dashboard-Public";
   const MQTT_PASSWORD = "V3WV1h7ZclzbBPfAP5sY";
-  // Isolation: this filter matches ONLY the router's Sparkplug-B topic. The
-  // CM5's raiv-tracker/<truck>/hmi/<group> topics cannot match it.
-  const TOPIC_FILTER  = "raiv-tracker/+/plc";
+  // Isolation: matches ONLY the Lab bench's topics. Pinned to the lab prefix rather than
+  // a '+' wildcard because the Lab bench runs a near-identical program: with a wildcard
+  // the truck's raiv-tracker/truck-2/hmi/gN messages would land here and render as bench data,
+  // since every topic is keyed only on its gN suffix. The router's .../plc topic
+  // cannot match either.
+  const TOPIC_BASE    = "raiv-tracker/lab/hmi/";
+  const TOPIC_FILTER  = TOPIC_BASE + "#";
 
-  const HERO_TAG = "Daily_TotalLaidPlates";
+  // Topic -> tag name. Mirrors scripts/hmi_mqtt_tag_map.json in the repo, which
+  // was generated from the four real MQTTPub exports. If the Publisher config
+  // changes in C-more, update both.
+  const TAG_BY_GROUP = {
+    g1:"TotalTiePlatesLaid", g2:"CountLaidButton", g3:"CountLaidDetector", g4:"CountLaidEncoder",
+    g5:"CountLaid14in", g6:"CountLaid18in", g7:"CountLaidPandral", g8:"usr_TPStime Hours10th",
+    g9:"usrTPS_miles xxx", g10:"TPS Connected", g11:"TPS Enabled", g12:"14in Job",
+    g13:"18in Job", g14:"Pandral Job", g15:"CountAcceptedTotal", g16:"CountRejectedTotal",
+    g17:"Servos_Enabled", g18:"TotalPickPartsCount", g19:"AcceptsPartsCount", g20:"RejectPartsCount",
+    g21:"tk_Cycle hrs", g22:"day_Servotime Hours10th", g23:"tk_Cycle", g24:"tk_Abort",
+    g25:"tk_ClearPos", g26:"tk_Warmup", g27:"FindingParts min", g28:"PickingParts min",
+    g29:"PlacingParts min", g30:"CountPickedReject14in", g31:"temp_dsi", g32:"temp_J1motor",
+    g33:"temp_J2motor", g34:"temp_J3motor", g35:"temp_J4motor", g36:"temp_J5motor",
+    g37:"temp_J6motor", g38:"CountPickedRejectOTM", g39:"CountPickedRejectPandral", g40:"CountPickedReject18in"
+  };
+
+  // The CM5 payload carries no type, so booleans are declared. These are the
+  // tags confirmed as BIT addresses in the master Modbus CSV (X/Y/C memory),
+  // plus the two tk_* bits from the CS9 that follow the same pattern.
+  const BOOLEAN_TAGS = new Set([
+    "TPS Connected", "TPS Enabled", "14in Job", "18in Job",
+    "Pandral Job", "Servos_Enabled", "tk_Cycle", "tk_Abort",
+    "tk_ClearPos", "tk_Warmup", "AirEagle Eject Plate", "DoubleLay Job",
+    "Eject Tie Plate", "RoCalRequest", "Robot_isMoving", "TPS BACKUP ALARM",
+    "TPS Full", "TPS_Enable_ Button", "TPSjam_FLAG", "Tie Detector",
+    "TieDetectOffset_A", "TieDetectOffset_B", "_1st_SCAN"
+  ]);
+
   const KPI_TAGS = [
-    ["TotalPickedParts",       "Total picked parts"],
-    ["TotalPickedAcceptParts", "Picked — accepted"],
-    ["TotalPickedRejectParts", "Picked — rejected"],
-    ["Avg Parts per min_total","Avg parts / min"]
+    ["CountLaidDetector",   "Laid — detector"],
+    ["CountLaid14in",       "Laid — 14in"],
+    ["CountLaid18in",       "Laid — 18in"],
+    ["TotalPickPartsCount", "Total picked parts"]
   ];
 
   // ---- State ------------------------------------------------------------
-  const tags = {};            // "Truck 2 TagName" -> {tag, truck, value, datatype, at}
+  const live = {};   // group -> {value, at, truck}
   let client = null, paused = false, msgCount = 0, lastMsgAt = null;
 
   const statusEl = document.getElementById("status");
@@ -220,42 +252,47 @@
 
   function setStatus(kind, text) { statusEl.className = "status " + kind; statusTextEl.textContent = text; }
 
-  // Second topic segment -> the unit label. Numbered units read as "Truck 2";
-  // named ones (the bench publishes on raiv-tracker/lab/plc) keep their name,
-  // title-cased. Matches truck_label() in the logger so the log and this page agree.
-  function truckLabel(topic) {
-    const raw = topic.split("/")[1] || topic;
-    const m = raw.match(/(\d+)/);
-    return m ? "Truck " + m[1] : raw.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+  // Resolve a topic to its group ONLY if it sits under this panel's exact base.
+  // Matching on the trailing gN alone is not enough: the Lab bench runs a
+  // near-identical program, so raiv-tracker/lab/hmi/g1 would otherwise be
+  // accepted as g1 and overwrite the truck's value. The subscription filter
+  // already excludes it; this makes the page structurally unable to show
+  // another panel's data even if that filter is ever widened.
+  function groupOf(topic) {
+    if (topic.lastIndexOf(TOPIC_BASE, 0) !== 0) return null;
+    const m = topic.slice(TOPIC_BASE.length).match(/^(g\d+)$/);
+    return m ? m[1] : null;
   }
 
-  function isBool(t) { return t.datatype === 11 || typeof t.value === "boolean"; }
-
-  // Thousands-separated, up to 3 decimals, trailing zeros trimmed -- so a
-  // percentage reads 96.9 rather than 96.900.
-  function num(v) {
-    return v.toLocaleString(undefined, { maximumFractionDigits: 3 });
+  // Thousands-separated, up to 3 decimals, trailing zeros trimmed. Anything
+  // that isn't a clean number is shown verbatim rather than coerced.
+  function num(raw) {
+    const n = Number(raw);
+    if (raw === "" || Number.isNaN(n)) return null;
+    return n.toLocaleString(undefined, { maximumFractionDigits: 3 });
   }
 
-  function fmtValue(t) {
-    if (isBool(t)) {
-      const on = t.value === true || t.value === "true" || t.value === 1;
+  function fmtValue(tag, raw) {
+    if (BOOLEAN_TAGS.has(tag)) {
+      const on = raw === "1" || raw === "true" || raw === "True";
       return '<span class="badge ' + (on ? "on" : "off") + '">' +
              '<span class="g">' + (on ? "●" : "○") + "</span>" + (on ? "ON" : "OFF") + "</span>";
     }
-    if (typeof t.value === "number") return num(t.value);
-    return String(t.value);
+    const s = num(raw);
+    return s === null ? String(raw) : s;
   }
 
-  function fmtBig(v) {
-    if (v === undefined || v === null) return "—";
-    if (typeof v === "number") return num(v);
-    return String(v);
+  function fmtBig(raw) {
+    if (raw === undefined) return "—";
+    const s = num(raw);
+    return s === null ? String(raw) : s;
   }
 
-  function findTag(name) {
-    for (const k in tags) if (tags[k].tag === name) return tags[k];
-    return null;
+  function valueOfTag(name) {
+    for (const g in TAG_BY_GROUP) {
+      if (TAG_BY_GROUP[g] === name && live[g]) return live[g].value;
+    }
+    return undefined;
   }
 
   function ago(at) {
@@ -267,26 +304,31 @@
   }
 
   function render() {
-    const hero = findTag(HERO_TAG);
-    document.getElementById("hero-value").textContent = hero ? fmtBig(hero.value) : "—";
+    document.getElementById("hero-value").textContent = fmtBig(valueOfTag("TotalTiePlatesLaid"));
 
     document.getElementById("kpis").innerHTML = KPI_TAGS.map(function (pair) {
-      const t = findTag(pair[0]);
       return '<div class="tile"><div class="label">' + pair[1] + "</div>" +
-             '<div class="value">' + (t ? fmtBig(t.value) : "—") + "</div></div>";
+             '<div class="value">' + fmtBig(valueOfTag(pair[0])) + "</div></div>";
     }).join("");
 
-    const keys = Object.keys(tags).sort(function (a, b) {
-      return tags[a].tag.toLowerCase().localeCompare(tags[b].tag.toLowerCase());
+    // Always list all 40 in Publisher order, so a silent topic is visible as a
+    // gap rather than simply missing -- that is how g20 was spotted.
+    const groups = Object.keys(TAG_BY_GROUP).sort(function (a, b) {
+      return parseInt(a.slice(1), 10) - parseInt(b.slice(1), 10);
     });
-    document.getElementById("tag-count").textContent = keys.length ? "(" + keys.length + ")" : "";
-    document.getElementById("empty").style.display = keys.length ? "none" : "block";
-    document.getElementById("rows").innerHTML = keys.map(function (k) {
-      const t = tags[k];
-      return "<tr><td class='tag'>" + t.tag + "</td><td class='truck'>" + t.truck +
-             "</td><td class='val'>" + fmtValue(t) + "</td><td class='age'>" + ago(t.at) + "</td></tr>";
+    let seen = 0;
+    document.getElementById("rows").innerHTML = groups.map(function (g) {
+      const tag = TAG_BY_GROUP[g];
+      const rec = live[g];
+      if (rec) seen++;
+      return "<tr class='" + (rec ? "" : "silent") + "'>" +
+             "<td class='tag'>" + tag + "</td>" +
+             "<td class='topic'>" + g + "</td>" +
+             "<td class='val'>" + (rec ? fmtValue(tag, rec.value) : "—") + "</td>" +
+             "<td class='age'>" + (rec ? ago(rec.at) : "<span class='flag'>no data</span>") + "</td></tr>";
     }).join("");
 
+    document.getElementById("tag-count").textContent = "(" + seen + " of 40 publishing)";
     document.getElementById("meta").textContent =
       msgCount ? msgCount.toLocaleString() + " msg · last " + ago(lastMsgAt) : "";
   }
@@ -294,7 +336,7 @@
   // ---- MQTT -------------------------------------------------------------
   function connect() {
     client = mqtt.connect("wss://" + MQTT_HOST + ":" + MQTT_WSS_PORT + "/mqtt", {
-      clientId: "raiv-dash-plc-" + Math.random().toString(16).slice(2, 10),
+      clientId: "raiv-dash-hmi-" + Math.random().toString(16).slice(2, 10),
       username: MQTT_USERNAME, password: MQTT_PASSWORD,
       clean: true, reconnectPeriod: 4000, connectTimeout: 12000
     });
@@ -307,18 +349,12 @@
     });
 
     client.on("message", function (topic, payload) {
-      let data;
-      try { data = JSON.parse(payload.toString()); } catch (e) { return; }
-      const metrics = (data && data.metrics) ? data.metrics : (data ? [data] : []);
-      const truck = truckLabel(topic);
+      const g = groupOf(topic);
+      if (!g || !TAG_BY_GROUP[g]) return;   // unmapped topic: ignore rather than mislabel
       const now = Date.now();
-      let took = false;
-      metrics.forEach(function (m) {
-        if (!m || !m.name) return;
-        tags[truck + " " + m.name] = { tag: m.name, truck: truck, value: m.value, datatype: m.datatype, at: now };
-        took = true;
-      });
-      if (took) { msgCount++; lastMsgAt = now; render(); }
+      live[g] = { value: payload.toString().trim(), at: now };
+      msgCount++; lastMsgAt = now;
+      render();
     });
 
     client.on("reconnect", function () { if (!paused) setStatus("", "Reconnecting…"); });
@@ -330,7 +366,7 @@
     if (!paused) {
       paused = true;
       pauseBtn.textContent = "Resume feed";
-      setStatus("paused", "Paused — router still polling the PLC");
+      setStatus("paused", "Paused — HMI still publishing");
       if (client) { client.end(true); client = null; }
     } else {
       paused = false;
@@ -355,18 +391,21 @@
     themeBtn.textContent = goingDark ? "Light" : "Dark";
   });
 
-  setInterval(render, 1000);   // keeps the "updated" column honest
+  setInterval(render, 1000);
   render();
 
   // The MQTT client comes from a CDN. If that request is blocked (locked-down
   // network, offline, blocker) say so plainly instead of sitting on
-  // "Connecting..." forever, which looks identical to a broker problem.
+  // "Connecting..." forever, which looks identical to the HMI not publishing.
   if (typeof mqtt === "undefined") {
     setStatus("down", "Could not load the MQTT library");
     pauseBtn.disabled = true;
-    document.getElementById("empty").innerHTML =
+    const e = document.getElementById("empty");
+    e.style.display = "block";
+    e.innerHTML =
       "The MQTT client script could not be fetched from unpkg.com, so this page cannot connect. " +
-      "That is a network/blocker issue on this device, not a problem with the broker or the PLC.";
+      "That is a network/blocker issue on this device, not a problem with the broker or the HMI. " +
+      "The 40 topics below are the expected Publisher config, not live values.";
   } else {
     connect();
   }
