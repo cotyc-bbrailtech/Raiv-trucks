@@ -120,10 +120,13 @@ def log(msg):
 
 
 def truck_label(topic):
+    """Second topic segment -> the label in the Truck column. Numbered units read
+    as 'Truck 2'; named ones (the Lab bench publishes on raiv-tracker/lab/...)
+    keep their name, title-cased so the column stays readable."""
     parts = topic.split("/")
     raw_id = parts[1] if len(parts) > 1 else topic
     digits = "".join(ch for ch in raw_id if ch.isdigit())
-    return f"Truck {digits}" if digits else raw_id
+    return f"Truck {digits}" if digits else raw_id.replace("-", " ").title()
 
 
 def load_hmi_tag_map():

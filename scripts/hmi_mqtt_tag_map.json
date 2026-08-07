@@ -1,5 +1,5 @@
 {
-  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. UPDATED 2026-08-07 (third revision) to add batch 2: topics g41-g73, the 33 tags that were previously available only from the StrideLinx router. They are being migrated to the CM5 so the StrideLinx Modbus data source can be removed from the machine network entirely -- see claude/stridelinx-modbus-polling.md for why. Note RejectPartsCount is NOT in batch 2: it is already configured at g20 and simply is not publishing, so the fix there is that row's Enable flag in C-more, not a second topic. Layout: 73 topics, g1..g73, in Publisher objects of exactly 10 topics each -- P1=g1..g10, P2=g11..g20, P3=g21..g30, P4=g31..g40, P5=g41..g50 (those five fill broker connection 1, which caps at 50 topics), then P6=g51..g60, P7=g61..g70, P8=g71..g73 on a SECOND broker connection. Batch 2 is ordered by production value, so importing only some Publisher objects still lands the most useful tags first. Every row is PayloadType=1 (raw tag value), so each list below has exactly one entry; the parser in mqtt_excel_logger_action.py splits on '|' and zips positionally, so it handles one value or several without code changes. This file and the TAG_BY_GROUP table inside cm5.html must be kept in sync.",
+  "_readme": "Maps each CM5 native-MQTT-Publisher topic to the ordered list of tag names carried in that topic's payload. Keyed on the FULL topic string, deliberately -- two panels are in play and both use gN suffixes, so matching on the suffix alone would let one overwrite the other. UPDATED 2026-08-07 (fourth revision) to add the Lab bench on its own namespace. TRUCK (RAIV-2), raiv-tracker/truck-2/hmi/g1..g73: 73 topics in Publisher objects of exactly 10 -- P1=g1..g10, P2=g11..g20, P3=g21..g30, P4=g31..g40, P5=g41..g50 (those five fill broker connection 1, which caps at 50 topics), then P6=g51..g60, P7=g61..g70, P8=g71..g73 on a SECOND broker connection. g41..g73 are the 33 tags migrated off StrideLinx so its Modbus polling could leave the machine network; note RejectPartsCount is not among them because it is already g20. LAB BENCH, raiv-tracker/lab/hmi/g1..g40: the bench runs a near-identical program, so it carries the same 40 tags as the truck's Publishers 1-4 but publishes on its own prefix. It was moved off the truck's namespace on 2026-08-07 after it was found publishing into raiv-tracker/truck-2/* and being logged as truck data; anything logged under truck-2 between roughly 17:36 and 20:0x UTC that day is bench data, not the truck. Bench values are mostly zero -- it has no stored production data. Every row is PayloadType=1 (raw tag value), so each list below has exactly one entry; the parser splits on '|' and zips positionally, so it handles one value or several without code changes. This file and the TAG_BY_GROUP table inside cm5.html must be kept in sync for the truck topics.",
   "topics": {
     "raiv-tracker/truck-2/hmi/g1": [
       "TotalTiePlatesLaid"
@@ -219,6 +219,126 @@
     ],
     "raiv-tracker/truck-2/hmi/g73": [
       "_1st_SCAN"
+    ],
+    "raiv-tracker/lab/hmi/g1": [
+      "TotalTiePlatesLaid"
+    ],
+    "raiv-tracker/lab/hmi/g2": [
+      "CountLaidButton"
+    ],
+    "raiv-tracker/lab/hmi/g3": [
+      "CountLaidDetector"
+    ],
+    "raiv-tracker/lab/hmi/g4": [
+      "CountLaidEncoder"
+    ],
+    "raiv-tracker/lab/hmi/g5": [
+      "CountLaid14in"
+    ],
+    "raiv-tracker/lab/hmi/g6": [
+      "CountLaid18in"
+    ],
+    "raiv-tracker/lab/hmi/g7": [
+      "CountLaidPandral"
+    ],
+    "raiv-tracker/lab/hmi/g8": [
+      "usr_TPStime Hours10th"
+    ],
+    "raiv-tracker/lab/hmi/g9": [
+      "usrTPS_miles xxx"
+    ],
+    "raiv-tracker/lab/hmi/g10": [
+      "TPS Connected"
+    ],
+    "raiv-tracker/lab/hmi/g11": [
+      "TPS Enabled"
+    ],
+    "raiv-tracker/lab/hmi/g12": [
+      "14in Job"
+    ],
+    "raiv-tracker/lab/hmi/g13": [
+      "18in Job"
+    ],
+    "raiv-tracker/lab/hmi/g14": [
+      "Pandral Job"
+    ],
+    "raiv-tracker/lab/hmi/g15": [
+      "CountAcceptedTotal"
+    ],
+    "raiv-tracker/lab/hmi/g16": [
+      "CountRejectedTotal"
+    ],
+    "raiv-tracker/lab/hmi/g17": [
+      "Servos_Enabled"
+    ],
+    "raiv-tracker/lab/hmi/g18": [
+      "TotalPickPartsCount"
+    ],
+    "raiv-tracker/lab/hmi/g19": [
+      "AcceptsPartsCount"
+    ],
+    "raiv-tracker/lab/hmi/g20": [
+      "RejectPartsCount"
+    ],
+    "raiv-tracker/lab/hmi/g21": [
+      "tk_Cycle hrs"
+    ],
+    "raiv-tracker/lab/hmi/g22": [
+      "day_Servotime Hours10th"
+    ],
+    "raiv-tracker/lab/hmi/g23": [
+      "tk_Cycle"
+    ],
+    "raiv-tracker/lab/hmi/g24": [
+      "tk_Abort"
+    ],
+    "raiv-tracker/lab/hmi/g25": [
+      "tk_ClearPos"
+    ],
+    "raiv-tracker/lab/hmi/g26": [
+      "tk_Warmup"
+    ],
+    "raiv-tracker/lab/hmi/g27": [
+      "FindingParts min"
+    ],
+    "raiv-tracker/lab/hmi/g28": [
+      "PickingParts min"
+    ],
+    "raiv-tracker/lab/hmi/g29": [
+      "PlacingParts min"
+    ],
+    "raiv-tracker/lab/hmi/g30": [
+      "CountPickedReject14in"
+    ],
+    "raiv-tracker/lab/hmi/g31": [
+      "temp_dsi"
+    ],
+    "raiv-tracker/lab/hmi/g32": [
+      "temp_J1motor"
+    ],
+    "raiv-tracker/lab/hmi/g33": [
+      "temp_J2motor"
+    ],
+    "raiv-tracker/lab/hmi/g34": [
+      "temp_J3motor"
+    ],
+    "raiv-tracker/lab/hmi/g35": [
+      "temp_J4motor"
+    ],
+    "raiv-tracker/lab/hmi/g36": [
+      "temp_J5motor"
+    ],
+    "raiv-tracker/lab/hmi/g37": [
+      "temp_J6motor"
+    ],
+    "raiv-tracker/lab/hmi/g38": [
+      "CountPickedRejectOTM"
+    ],
+    "raiv-tracker/lab/hmi/g39": [
+      "CountPickedRejectPandral"
+    ],
+    "raiv-tracker/lab/hmi/g40": [
+      "CountPickedReject18in"
     ]
   }
 }
