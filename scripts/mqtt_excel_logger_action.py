@@ -46,29 +46,48 @@ APPROACH 7 -- CM5 NATIVE MQTT CLIENT SUPPORT
 -----------------------------------------------
 The CM5 HMI has its own built-in MQTT Client/Publisher (Setup ribbon ->
 Function tab -> MQTT in C-more Programming Software) -- separate from
-StrideLinx's router-side MQTT relay. Unlike StrideLinx's Sparkplug-B-style
-JSON payloads, the CM5's Publisher sends a plain, hand-built text message
-(no JSON, up to 6 embedded tag values, 200 chars max) on whatever topics you
-configure, triggered by a discrete tag going false->true.
+StrideLinx's router-side MQTT relay. As actually built on RAIV_2, each
+Publisher row uses PayloadType=1 ("raw tag value"), so a message is just
+one tag's value as plain text with nothing else in it -- no JSON, no
+timestamp, no tag name. Topics follow `raiv-tracker/<truck>/hmi/<group>`,
+currently g1..g40 across four Publisher objects of 10 topics each.
 
-This script now also recognizes any topic containing "/hmi/" (by
-convention: `raiv-tracker/<truck>/hmi/<group>`) as a CM5-native-MQTT
-message rather than a StrideLinx Sparkplug-B one, and parses it as a
-pipe-delimited list of raw tag values: `value1|value2|...|value6`. Which
-tag name each position corresponds to is *not* in the payload itself (there
-was no room left in the 200-char/6-variable budget for embedding tag names
-too) -- it's looked up positionally from scripts/hmi_mqtt_tag_map.json,
-keyed by the exact topic string. See that file and the project doc's
-"Approach 7" section for the full design, the reasoning behind this
-format, and the CM5-side (C-more Programming Software) configuration steps
-this still needs from a human, since Claude cannot open that Windows
-desktop application.
+Any topic containing "/hmi/" is therefore routed to the CM5 handler rather
+than the StrideLinx Sparkplug-B one. Because the payload carries no tag
+name, the name is looked up from scripts/hmi_mqtt_tag_map.json, keyed by
+the exact topic string. The handler splits the payload on "|" and zips it
+positionally against that topic's name list, which means it works
+unchanged whether a topic carries one value (today) or several (if a
+message is ever rebuilt to pack multiple tags into one payload).
 
-Because the CM5 Publisher's message template doesn't include a timestamp
-(embedding "current time" would cost one of only 6 variable slots), rows
-parsed from /hmi/ topics use the time the GitHub Actions run received the
-message, same resolution trade-off this bounded-listen-window script
-already has for StrideLinx-sourced data.
+Rows parsed from /hmi/ topics are stamped with the time this run received
+the message, since the payload has no time in it.
+
+CHANGE-ONLY LOGGING (/hmi/ topics only)
+-----------------------------------------
+Measured on the first live run: the CM5 publishes every tag roughly 1.4
+times per second, so a single 90-second window captured 4,440 messages
+that carried only 39 distinct values -- the same numbers over and over.
+Writing all of those would add ~640k near-identical rows per day and
+crowd Excel's ~1,048,576-row sheet limit within days.
+
+So the /hmi/ handler now keeps a per-run in-memory record of the last
+value written for each (topic, tag) and skips a message whose value is
+unchanged. The FIRST message for a given tag in a run is always written,
+so every run still produces one baseline reading per tag (~40 rows) plus a
+row for any value that actually moves mid-run. Net effect: the log becomes
+a ~10-minute-resolution time series with intra-run transitions preserved,
+instead of thousands of duplicate rows.
+
+Two deliberate limits. The record is per-process, not persisted between
+runs, so a tag that never changes still yields one row per run -- that is
+wanted, as it doubles as a heartbeat proving the tag is still publishing.
+And this applies ONLY to /hmi/ topics: StrideLinx publishes about once a
+minute with real per-metric timestamps and shows no duplication, so that
+path is left exactly as it was.
+
+Note this trims rows, not broker traffic -- the CM5 still publishes at the
+same rate. Slowing the publish trigger in C-more is the lever for traffic.
 """
 
 import json
@@ -191,6 +210,12 @@ def main():
     if hmi_tag_map:
         log(f"Loaded HMI tag map with {len(hmi_tag_map)} topic(s) from {HMI_TAG_MAP_PATH}")
 
+    # Last value written this run, keyed by (topic, tag) -- see the
+    # "CHANGE-ONLY LOGGING" note in this file's docstring. Only /hmi/ rows
+    # consult this; the StrideLinx path is unaffected.
+    hmi_last_value = {}
+    hmi_skipped = 0
+
     def on_connect(client, userdata, connect_flags, reason_code, properties):
         if reason_code == 0:
             log(f"Connected to {MQTT_HOST}:{MQTT_PORT}")
@@ -200,9 +225,15 @@ def main():
             log(f"Connect failed: {reason_code}")
 
     def handle_hmi_message(msg):
-        """CM5 native-MQTT-client payload: 'value1|value2|...' with no tag
-        names or timestamp in the message itself -- see load_hmi_tag_map()
-        and the Approach 7 docstring note above."""
+        """CM5 native-MQTT-client payload: one raw tag value (or 'v1|v2|...'
+        if a topic is ever built to carry several) with no tag names or
+        timestamp in the message itself -- see load_hmi_tag_map() and the
+        Approach 7 docstring note above.
+
+        Writes a row only when the value differs from the last one written
+        for that (topic, tag) this run; see "CHANGE-ONLY LOGGING" above for
+        why, and note the first message per tag always gets written."""
+        nonlocal hmi_skipped
         tag_names = hmi_tag_map.get(msg.topic)
         if not tag_names:
             log(f"No tag-map entry for HMI topic '{msg.topic}' -- add one to "
@@ -220,6 +251,11 @@ def main():
                 value = value.strip()
                 if value == "":
                     continue
+                key = (msg.topic, name)
+                if hmi_last_value.get(key) == value:
+                    hmi_skipped += 1
+                    continue
+                hmi_last_value[key] = value
                 excel_logger.add_row(
                     timestamp=now,
                     truck=truck,
@@ -292,6 +328,9 @@ def main():
     client.disconnect()
 
     excel_logger.save()
+    if hmi_skipped:
+        log(f"Skipped {hmi_skipped} unchanged /hmi/ message(s) "
+            f"({len(hmi_last_value)} distinct tag(s) seen) -- change-only logging.")
     log(f"Done. Logged {excel_logger.rows_added} rows this run "
         f"({'no file changes' if excel_logger.rows_added == 0 else excel_logger.path.name}).")
 
