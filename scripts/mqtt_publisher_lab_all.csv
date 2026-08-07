@@ -1,0 +1,41 @@
+Enable,BrokerTopic,PayloadType,PayloadStatic,PayloadTagName,UseTerminate,TerminateType,TerminateCode1,TerminateCode2,UseByteSwap,ByteSwapType,UseRetain
+1,raiv-tracker/lab/hmi/g1,1,,TotalTiePlatesLaid,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g2,1,,CountLaidButton,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g3,1,,CountLaidDetector,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g4,1,,CountLaidEncoder,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g5,1,,CountLaid14in,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g6,1,,CountLaid18in,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g7,1,,CountLaidPandral,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g8,1,,usr_TPStime Hours10th,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g9,1,,usrTPS_miles xxx,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g10,1,,TPS Connected,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g11,1,,TPS Enabled,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g12,1,,14in Job,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g13,1,,18in Job,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g14,1,,Pandral Job,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g15,1,,CountAcceptedTotal,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g16,1,,CountRejectedTotal,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g17,1,,Servos_Enabled,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g18,1,,TotalPickPartsCount,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g19,1,,AcceptsPartsCount,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g20,1,,RejectPartsCount,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g21,1,,tk_Cycle hrs,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g22,1,,day_Servotime Hours10th,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g23,1,,tk_Cycle,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g24,1,,tk_Abort,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g25,1,,tk_ClearPos,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g26,1,,tk_Warmup,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g27,1,,FindingParts min,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g28,1,,PickingParts min,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g29,1,,PlacingParts min,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g30,1,,CountPickedReject14in,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g31,1,,temp_dsi,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g32,1,,temp_J1motor,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g33,1,,temp_J2motor,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g34,1,,temp_J3motor,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g35,1,,temp_J4motor,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g36,1,,temp_J5motor,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g37,1,,temp_J6motor,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g38,1,,CountPickedRejectOTM,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g39,1,,CountPickedRejectPandral,0,0,0,0,0,0,0
+1,raiv-tracker/lab/hmi/g40,1,,CountPickedReject18in,0,0,0,0,0,0,0
