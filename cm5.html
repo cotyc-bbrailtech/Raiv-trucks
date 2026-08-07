@@ -142,7 +142,7 @@
     <span class="src-key"><i></i> CM5-T10W native MQTT Publisher</span>
   </header>
   <p class="sub">
-    Live values published by the CM5 HMI's own MQTT client, 40 topics across four Publisher objects.
+    Live values published by the CM5 HMI's own MQTT client, 73 topics across eight Publisher objects.
     This page subscribes only to <code>raiv-tracker/+/hmi/#</code> — the StrideLinx feed is on a
     <a href="stridelinx.html">separate page</a> and cannot appear here.
   </p>
@@ -170,7 +170,7 @@
 
   <div class="kpis" id="kpis"></div>
 
-  <h2>All 40 Publisher topics <span class="count" id="tag-count"></span></h2>
+  <h2>All 73 Publisher topics <span class="count" id="tag-count"></span></h2>
   <div class="panel">
     <table>
       <thead><tr><th>Tag</th><th>Topic</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
@@ -205,24 +205,35 @@
   const TAG_BY_GROUP = {
     g1:"TotalTiePlatesLaid", g2:"CountLaidButton", g3:"CountLaidDetector", g4:"CountLaidEncoder",
     g5:"CountLaid14in", g6:"CountLaid18in", g7:"CountLaidPandral", g8:"usr_TPStime Hours10th",
-    g9:"usrTPS_miles xxx", g10:"TPS Connected",
-    g11:"TPS Enabled", g12:"14in Job", g13:"18in Job", g14:"Pandral Job", g15:"CountAcceptedTotal",
-    g16:"CountRejectedTotal", g17:"Servos_Enabled", g18:"TotalPickPartsCount", g19:"AcceptsPartsCount",
-    g20:"RejectPartsCount",
+    g9:"usrTPS_miles xxx", g10:"TPS Connected", g11:"TPS Enabled", g12:"14in Job",
+    g13:"18in Job", g14:"Pandral Job", g15:"CountAcceptedTotal", g16:"CountRejectedTotal",
+    g17:"Servos_Enabled", g18:"TotalPickPartsCount", g19:"AcceptsPartsCount", g20:"RejectPartsCount",
     g21:"tk_Cycle hrs", g22:"day_Servotime Hours10th", g23:"tk_Cycle", g24:"tk_Abort",
     g25:"tk_ClearPos", g26:"tk_Warmup", g27:"FindingParts min", g28:"PickingParts min",
-    g29:"PlacingParts min", g30:"CountPickedReject14in",
-    g31:"temp_dsi", g32:"temp_J1motor", g33:"temp_J2motor", g34:"temp_J3motor", g35:"temp_J4motor",
-    g36:"temp_J5motor", g37:"temp_J6motor", g38:"CountPickedRejectOTM",
-    g39:"CountPickedRejectPandral", g40:"CountPickedReject18in"
+    g29:"PlacingParts min", g30:"CountPickedReject14in", g31:"temp_dsi", g32:"temp_J1motor",
+    g33:"temp_J2motor", g34:"temp_J3motor", g35:"temp_J4motor", g36:"temp_J5motor",
+    g37:"temp_J6motor", g38:"CountPickedRejectOTM", g39:"CountPickedRejectPandral", g40:"CountPickedReject18in",
+    g41:"Daily_TotalLaidPlates", g42:"TotalPickedParts", g43:"TotalPickedAcceptParts", g44:"TotalPickedRejectParts",
+    g45:"CountPicked14in", g46:"CountPicked18in", g47:"CountPickedPandral", g48:"CountPickedOTM",
+    g49:"tkCycle_TotalSeconds", g50:"tkCycle_MoveSeconds", g51:"tkCycle_NoMoveSec", g52:"Avg Parts per min_total",
+    g53:"Percent time moveing", g54:"Percent time not moving", g55:"percentCount_accept", g56:"percentCount_reject",
+    g57:"TPS_JamsMASTER", g58:"TPS_JamsUsr", g59:"TPSjam_FLAG", g60:"TPS BACKUP ALARM",
+    g61:"ABORT_Master", g62:"RoCals", g63:"RoCalRequest", g64:"Robot_isMoving",
+    g65:"TPS Full", g66:"Tie Detector", g67:"TieDetectOffset_A", g68:"TieDetectOffset_B",
+    g69:"Eject Tie Plate", g70:"AirEagle Eject Plate", g71:"TPS_Enable_ Button", g72:"DoubleLay Job",
+    g73:"_1st_SCAN"
   };
 
   // The CM5 payload carries no type, so booleans are declared. These are the
   // tags confirmed as BIT addresses in the master Modbus CSV (X/Y/C memory),
   // plus the two tk_* bits from the CS9 that follow the same pattern.
   const BOOLEAN_TAGS = new Set([
-    "TPS Connected", "TPS Enabled", "14in Job", "18in Job", "Pandral Job",
-    "Servos_Enabled", "tk_Cycle", "tk_Abort", "tk_ClearPos", "tk_Warmup"
+    "TPS Connected", "TPS Enabled", "14in Job", "18in Job",
+    "Pandral Job", "Servos_Enabled", "tk_Cycle", "tk_Abort",
+    "tk_ClearPos", "tk_Warmup", "AirEagle Eject Plate", "DoubleLay Job",
+    "Eject Tie Plate", "RoCalRequest", "Robot_isMoving", "TPS BACKUP ALARM",
+    "TPS Full", "TPS_Enable_ Button", "TPSjam_FLAG", "Tie Detector",
+    "TieDetectOffset_A", "TieDetectOffset_B", "_1st_SCAN"
   ]);
 
   const KPI_TAGS = [
@@ -295,7 +306,7 @@
              '<div class="value">' + fmtBig(valueOfTag(pair[0])) + "</div></div>";
     }).join("");
 
-    // Always list all 40 in Publisher order, so a silent topic is visible as a
+    // Always list all 73 in Publisher order, so a silent topic is visible as a
     // gap rather than simply missing -- that is how g20 was spotted.
     const groups = Object.keys(TAG_BY_GROUP).sort(function (a, b) {
       return parseInt(a.slice(1), 10) - parseInt(b.slice(1), 10);
@@ -312,7 +323,7 @@
              "<td class='age'>" + (rec ? ago(rec.at) : "<span class='flag'>no data</span>") + "</td></tr>";
     }).join("");
 
-    document.getElementById("tag-count").textContent = "(" + seen + " of 40 publishing)";
+    document.getElementById("tag-count").textContent = "(" + seen + " of 73 publishing)";
     document.getElementById("meta").textContent =
       msgCount ? msgCount.toLocaleString() + " msg · last " + ago(lastMsgAt) : "";
   }
@@ -389,7 +400,7 @@
     e.innerHTML =
       "The MQTT client script could not be fetched from unpkg.com, so this page cannot connect. " +
       "That is a network/blocker issue on this device, not a problem with the broker or the HMI. " +
-      "The 40 topics below are the expected Publisher config, not live values.";
+      "The 73 topics below are the expected Publisher config, not live values.";
   } else {
     connect();
   }
