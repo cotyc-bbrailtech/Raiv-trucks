@@ -130,6 +130,33 @@
   .flag { font-size: 11px; color: var(--warning); font-weight: 600; }
 
   .empty { padding: 40px 16px; text-align: center; color: var(--text-secondary); }
+
+  select, input[type="date"] {
+    font: inherit; font-size: 13px; color: var(--text-primary); background: var(--surface-1);
+    border: 1px solid var(--baseline); border-radius: 8px; padding: 5px 10px; cursor: pointer;
+  }
+  input[type="date"] { cursor: text; }
+  .hist-hint { font-size: 12px; color: var(--text-muted); margin: 0 0 12px; }
+  .hist-hint code { font-size: 11px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
+  #hist-wrap { transition: opacity 0.15s; }
+  #hist-wrap.loading { opacity: 0.5; }
+  .hist-chart-wrap { padding: 16px; overflow-x: auto; }
+  .hist-chart-wrap svg { width: 100%; height: 220px; display: block; }
+  .hist-legend { display: flex; gap: 10px; margin-bottom: 10px; }
+  #hist-chart .hist-grid { stroke: var(--gridline); stroke-width: 1; }
+  #hist-chart .hist-tick { fill: var(--text-muted); font-size: 10px; font-family: system-ui, sans-serif; }
+  #hist-chart .hist-line { stroke: var(--accent); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  #hist-chart .hist-end { fill: var(--accent); stroke: var(--surface-1); stroke-width: 2; }
+  #hist-chart .hist-hit { fill: transparent; cursor: crosshair; }
+  #hist-chart .hist-cross-line { stroke: var(--baseline); stroke-width: 1; }
+  #hist-chart .hist-cross-dot { fill: var(--accent); stroke: var(--surface-1); stroke-width: 2; }
+  #hist-chart .hist-tip rect { fill: var(--surface-1); stroke: var(--border); }
+  #hist-chart .hist-tip-val { fill: var(--text-primary); font-size: 12px; font-weight: 600; font-family: system-ui, sans-serif; }
+  #hist-chart .hist-tip-ts { fill: var(--text-muted); font-size: 10px; font-family: system-ui, sans-serif; }
+  #hist-chart .hist-state { cursor: pointer; }
+  #hist-chart .hist-state.on { fill: var(--good); }
+  #hist-chart .hist-state.off { fill: var(--baseline); }
+
   footer { margin-top: 26px; font-size: 12px; color: var(--text-muted); }
   footer a { color: inherit; }
 </style>
@@ -151,6 +178,7 @@
     <span class="status" id="status"><span class="dot"></span><span id="status-text">Connecting…</span></span>
     <button class="primary" id="pause-btn">Pause feed</button>
     <button id="theme-btn">Dark</button>
+    <button id="history-btn">Show history</button>
     <span class="spacer"></span>
     <span class="meta" id="meta"></span>
   </div>
@@ -179,9 +207,45 @@
     <div class="empty" id="empty" style="display:none">Waiting for the first message…</div>
   </div>
 
+  <section id="history" hidden>
+    <h2 style="margin-top:26px">Logged history</h2>
+    <div class="bar">
+      <select id="hist-tag" aria-label="Tag"></select>
+      <button data-range="today">Today</button>
+      <button data-range="3d">Last 3 days</button>
+      <button data-range="7d">Last 7 days</button>
+      <button data-range="all">All</button>
+      <input type="date" id="hist-from" aria-label="From date">
+      <input type="date" id="hist-to" aria-label="To date">
+      <span class="spacer"></span>
+      <span class="meta" id="hist-meta"></span>
+    </div>
+    <p class="hist-hint">
+      Dates are UTC calendar days, matching how <code>logs/</code> is split into one file per day.
+    </p>
+
+    <div id="hist-wrap">
+      <div class="hist-legend" id="hist-legend" style="display:none">
+        <span class="badge on"><span class="g">&#9679;</span>ON</span>
+        <span class="badge off"><span class="g">&#9675;</span>OFF</span>
+      </div>
+      <div class="panel hist-chart-wrap" id="hist-chart-panel">
+        <svg id="hist-chart" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+        <div class="empty" id="hist-chart-empty" style="display:none"></div>
+      </div>
+      <div class="panel" style="margin-top:12px">
+        <table>
+          <thead><tr><th>Timestamp (UTC)</th><th style="text-align:right">Value</th></tr></thead>
+          <tbody id="hist-rows"></tbody>
+        </table>
+        <div class="empty" id="hist-empty" style="display:none">No logged readings in this range.</div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     Read-only: this page uses a subscribe-only broker credential and cannot write to the HMI or any PLC.
-    No history is kept here; that lives in
+    History from those logs can be viewed above via "Show history", or browsed directly in
     <a href="https://github.com/cotyc-bbrailtech/Raiv-trucks/tree/main/logs">logs/</a>.
   </footer>
 </div>
@@ -396,6 +460,372 @@
     document.documentElement.setAttribute("data-theme", goingDark ? "dark" : "light");
     themeBtn.textContent = goingDark ? "Light" : "Dark";
   });
+
+  // ---- History (readings from logs/*.xlsx, fetched only if opened) -----
+  const EARLIEST_LOG_DATE = "2026-08-07";
+  const TRUCK_LABEL = "Truck 2";
+  // The lab bench briefly published into raiv-tracker/truck-2/* and was
+  // logged as Truck 2 between roughly 17:36 and 20:0x UTC on 2026-08-07,
+  // before it was moved to its own topic prefix (see the README note in
+  // scripts/hmi_mqtt_tag_map.json). Excluded by timestamp rather than by
+  // dropping the whole day, since that day still holds real truck data
+  // outside this window -- and, so far, it's the ONLY day that does.
+  const CONTAMINATED_WINDOW = { start: Date.parse("2026-08-07T17:30:00Z"), end: Date.parse("2026-08-07T20:15:00Z") };
+  const SHEETJS_SRC = "https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js";
+  const CHART_W = 640, CHART_H = 220, PAD = { l: 56, r: 16, t: 16, b: 30 };
+
+  const historyCache = {};   // dateStr -> Array<{ts, tag, value}> | null (confirmed missing)
+  let sheetJsPromise = null, historyOpen = false;
+
+  function utcTodayStr() { return new Date().toISOString().slice(0, 10); }
+
+  // The logger stamps Timestamp with datetime.now().isoformat() on a UTC
+  // GitHub Actions runner -- a string with no timezone suffix. new Date()
+  // on that parses it as LOCAL time in the browser, not UTC. Force UTC.
+  function parseLogTimestamp(raw) {
+    const t = Date.parse(raw.charAt(raw.length - 1) === "Z" ? raw : raw + "Z");
+    return Number.isNaN(t) ? null : t;
+  }
+
+  function dateRangeDays(fromStr, toStr) {
+    const days = [];
+    let d = new Date(fromStr + "T00:00:00Z");
+    const end = new Date(toStr + "T00:00:00Z");
+    while (d <= end) { days.push(d.toISOString().slice(0, 10)); d = new Date(d.getTime() + 86400000); }
+    return days;
+  }
+
+  function ensureSheetJsLoaded() {
+    if (sheetJsPromise) return sheetJsPromise;
+    sheetJsPromise = new Promise(function (resolve, reject) {
+      if (typeof XLSX !== "undefined") { resolve(); return; }
+      const s = document.createElement("script");
+      s.src = SHEETJS_SRC;
+      s.onload = function () { resolve(); };
+      s.onerror = function () { reject(new Error("sheetjs-load-failed")); };
+      document.head.appendChild(s);
+    });
+    return sheetJsPromise;
+  }
+
+  async function loadDay(dateStr) {
+    if (dateStr !== utcTodayStr() && historyCache[dateStr] !== undefined) return historyCache[dateStr] || [];
+    let rows = null;
+    try {
+      const res = await fetch("logs/raiv_tracker_" + dateStr + ".xlsx");
+      if (res.ok) {
+        const buf = await res.arrayBuffer();
+        const wb = XLSX.read(buf, { type: "array" });
+        const sheet = wb.Sheets["Log"] || wb.Sheets[wb.SheetNames[0]];
+        rows = XLSX.utils.sheet_to_json(sheet)
+          .filter(function (r) {
+            return r.Truck === TRUCK_LABEL && typeof r.Topic === "string" &&
+                   r.Topic.lastIndexOf(TOPIC_BASE, 0) === 0;
+          })
+          .map(function (r) { return { ts: parseLogTimestamp(String(r.Timestamp)), tag: r.Tag, value: String(r.Value) }; })
+          .filter(function (r) { return r.ts !== null && !(r.ts >= CONTAMINATED_WINDOW.start && r.ts <= CONTAMINATED_WINDOW.end); });
+      }
+    } catch (e) { rows = null; }
+    historyCache[dateStr] = rows;
+    return rows || [];
+  }
+
+  async function loadRange(fromStr, toStr) {
+    const days = dateRangeDays(fromStr, toStr);
+    const perDay = await Promise.all(days.map(loadDay));
+    const loaded = days.reduce(function (n, ds) { return n + (historyCache[ds] ? 1 : 0); }, 0);
+    document.getElementById("hist-meta").textContent =
+      loaded + " of " + days.length + " day file" + (days.length === 1 ? "" : "s") + " loaded";
+    return perDay.reduce(function (all, rows) { return all.concat(rows); }, []);
+  }
+
+  function scaleX(ts, tMin, tMax) {
+    return tMax === tMin ? PAD.l : PAD.l + (ts - tMin) / (tMax - tMin) * (CHART_W - PAD.l - PAD.r);
+  }
+  function scaleY(v, vMin, vMax) {
+    return vMax === vMin ? (CHART_H + PAD.t - PAD.b) / 2
+      : CHART_H - PAD.b - (v - vMin) / (vMax - vMin) * (CHART_H - PAD.t - PAD.b);
+  }
+
+  function niceTicks(min, max, count) {
+    if (min === max) return [min];
+    const step0 = (max - min) / count;
+    const mag = Math.pow(10, Math.floor(Math.log10(step0)));
+    const norm = step0 / mag;
+    const step = (norm < 1.5 ? 1 : norm < 3 ? 2 : norm < 7 ? 5 : 10) * mag;
+    const ticks = [];
+    for (let t = Math.ceil(min / step) * step; t <= max + 1e-9; t += step) ticks.push(Math.round(t * 1e6) / 1e6);
+    return ticks.length ? ticks : [min, max];
+  }
+
+  function fmtTick(n) { return n.toLocaleString(undefined, { maximumFractionDigits: 2 }); }
+  function fmtUtc(ts) { return new Date(ts).toISOString().slice(0, 16).replace("T", " ") + "z"; }
+
+  function xAxisTicks(tMin, tMax) {
+    const anchors = ["start", "middle", "end"];
+    return [tMin, tMin + (tMax - tMin) / 2, tMax].map(function (ts, i) {
+      const x = scaleX(ts, tMin, tMax);
+      return '<text class="hist-tick" x="' + x.toFixed(1) + '" y="' + (CHART_H - PAD.b + 16) +
+             '" text-anchor="' + anchors[i] + '">' + fmtUtc(ts) + "</text>";
+    }).join("");
+  }
+
+  // Clamp the tooltip group so it never runs off either edge of the chart.
+  function positionTip(tip, x, y) {
+    const rect = tip.querySelector("rect");
+    const valEl = tip.querySelector(".hist-tip-val");
+    const tsEl = tip.querySelector(".hist-tip-ts");
+    const w = Math.max(valEl.getComputedTextLength ? valEl.getComputedTextLength() : 60,
+                        tsEl.getComputedTextLength ? tsEl.getComputedTextLength() : 60) + 16;
+    let tx = x + 10;
+    if (tx + w > CHART_W - 4) tx = x - w - 10;
+    let ty = y - 34;
+    if (ty < 0) ty = y + 12;
+    rect.setAttribute("x", tx); rect.setAttribute("y", ty); rect.setAttribute("width", w); rect.setAttribute("height", 34);
+    valEl.setAttribute("x", tx + 8); valEl.setAttribute("y", ty + 15);
+    tsEl.setAttribute("x", tx + 8); tsEl.setAttribute("y", ty + 15);
+  }
+
+  function pointerToChartX(svg, evt) {
+    const rect = svg.getBoundingClientRect();
+    return (evt.clientX - rect.left) / rect.width * CHART_W;
+  }
+
+  function wireCrosshair(svg, points) {
+    const hit = svg.querySelector(".hist-hit");
+    const cross = svg.querySelector(".hist-cross");
+    const line = svg.querySelector(".hist-cross-line");
+    const dot = svg.querySelector(".hist-cross-dot");
+    const tip = svg.querySelector(".hist-tip");
+    const valEl = tip.querySelector(".hist-tip-val");
+    const tsEl = tip.querySelector(".hist-tip-ts");
+
+    function nearest(x) {
+      let lo = 0, hi = points.length - 1;
+      while (lo < hi) { const mid = (lo + hi) >> 1; if (points[mid].x < x) lo = mid + 1; else hi = mid; }
+      if (lo > 0 && Math.abs(points[lo - 1].x - x) < Math.abs(points[lo].x - x)) lo -= 1;
+      return points[lo];
+    }
+
+    hit.addEventListener("pointermove", function (evt) {
+      const p = nearest(pointerToChartX(svg, evt));
+      line.setAttribute("x1", p.x); line.setAttribute("x2", p.x);
+      dot.setAttribute("cx", p.x); dot.setAttribute("cy", p.y);
+      valEl.textContent = fmtTick(p.n);
+      tsEl.textContent = fmtUtc(p.ts);
+      positionTip(tip, p.x, p.y);
+      cross.style.display = "";
+    });
+    hit.addEventListener("pointerleave", function () { cross.style.display = "none"; });
+  }
+
+  function renderNumericChart(svg, rows) {
+    const points = rows.map(function (r) { return { ts: r.ts, n: Number(r.value) }; })
+                        .filter(function (p) { return !Number.isNaN(p.n); });
+    const empty = document.getElementById("hist-chart-empty");
+    if (points.length < 2) {
+      svg.innerHTML = "";
+      empty.style.display = "block";
+      empty.textContent = points.length === 0 ? "No logged readings in this range."
+        : "Only one reading in this range — not enough to chart.";
+      return;
+    }
+    empty.style.display = "none";
+
+    const tMin = points[0].ts, tMax = points[points.length - 1].ts;
+    const vals = points.map(function (p) { return p.n; });
+    let vMin = Math.min.apply(null, vals), vMax = Math.max.apply(null, vals);
+    if (vMin === vMax) { vMin -= 1; vMax += 1; } else { const pad = (vMax - vMin) * 0.07; vMin -= pad; vMax += pad; }
+
+    const screenPoints = points.map(function (p) {
+      return { ts: p.ts, n: p.n, x: scaleX(p.ts, tMin, tMax), y: scaleY(p.n, vMin, vMax) };
+    });
+
+    // A new subpath (M) instead of a continuous line (L) whenever the gap to
+    // the previous point is unusually large, so a real outage in the ~10min
+    // logging cadence reads as a break rather than an interpolated lie.
+    const gaps = [];
+    for (let i = 1; i < points.length; i++) gaps.push(points[i].ts - points[i - 1].ts);
+    gaps.sort(function (a, b) { return a - b; });
+    const median = gaps.length ? gaps[Math.floor(gaps.length / 2)] : 0;
+    const gapThreshold = Math.max(20 * 60 * 1000, median * 4);
+
+    let d = "";
+    screenPoints.forEach(function (p, i) {
+      if (i === 0 || (points[i].ts - points[i - 1].ts) > gapThreshold) d += "M" + p.x.toFixed(1) + "," + p.y.toFixed(1);
+      else d += "L" + p.x.toFixed(1) + "," + p.y.toFixed(1);
+    });
+
+    const gridlines = niceTicks(vMin, vMax, 4).map(function (v) {
+      const y = scaleY(v, vMin, vMax);
+      return '<line class="hist-grid" x1="' + PAD.l + '" x2="' + (CHART_W - PAD.r) + '" y1="' + y.toFixed(1) +
+             '" y2="' + y.toFixed(1) + '"/><text class="hist-tick" x="' + (PAD.l - 8) + '" y="' + y.toFixed(1) +
+             '" text-anchor="end" dominant-baseline="middle">' + fmtTick(v) + "</text>";
+    }).join("");
+
+    const last = screenPoints[screenPoints.length - 1];
+
+    svg.innerHTML = gridlines + xAxisTicks(tMin, tMax) +
+      '<path class="hist-line" d="' + d + '"/>' +
+      '<circle class="hist-end" cx="' + last.x.toFixed(1) + '" cy="' + last.y.toFixed(1) + '" r="4.5"/>' +
+      '<text class="hist-tick" x="' + (last.x - 8).toFixed(1) + '" y="' + (last.y - 10).toFixed(1) +
+        '" text-anchor="end" font-weight="600">' + fmtTick(last.n) + "</text>" +
+      '<rect class="hist-hit" x="' + PAD.l + '" y="0" width="' + (CHART_W - PAD.l - PAD.r) + '" height="' + CHART_H + '"/>' +
+      '<g class="hist-cross" style="display:none">' +
+        '<line class="hist-cross-line" y1="' + PAD.t + '" y2="' + (CHART_H - PAD.b) + '"/>' +
+        '<circle class="hist-cross-dot" r="4"/>' +
+        '<g class="hist-tip"><rect rx="4" ry="4"/><text class="hist-tip-val"></text><text class="hist-tip-ts" dy="14"></text></g>' +
+      "</g>";
+
+    wireCrosshair(svg, screenPoints);
+  }
+
+  function wireStateHover(svg) {
+    const tip = svg.querySelector(".hist-tip");
+    const valEl = tip.querySelector(".hist-tip-val");
+    const tsEl = tip.querySelector(".hist-tip-ts");
+    svg.querySelectorAll(".hist-state").forEach(function (rect) {
+      rect.addEventListener("pointermove", function (evt) {
+        const x = pointerToChartX(svg, evt);
+        valEl.textContent = rect.getAttribute("data-on") === "true" ? "ON" : "OFF";
+        tsEl.textContent = fmtUtc(Number(rect.getAttribute("data-start"))) + " to " +
+                            fmtUtc(Number(rect.getAttribute("data-end")));
+        positionTip(tip, x, Number(rect.getAttribute("y")));
+        tip.style.display = "";
+      });
+      rect.addEventListener("pointerleave", function () { tip.style.display = "none"; });
+    });
+  }
+
+  function renderBooleanChart(svg, rows) {
+    const empty = document.getElementById("hist-chart-empty");
+    if (rows.length < 1) {
+      svg.innerHTML = "";
+      empty.style.display = "block";
+      empty.textContent = "No logged readings in this range.";
+      return;
+    }
+    empty.style.display = "none";
+
+    const runs = [];
+    rows.forEach(function (r) {
+      const on = r.value === "1" || r.value === "true" || r.value === "True";
+      const last = runs[runs.length - 1];
+      if (last && last.on === on) last.end = r.ts;
+      else runs.push({ on: on, start: r.ts, end: r.ts });
+    });
+    for (let i = 0; i < runs.length - 1; i++) runs[i].end = runs[i + 1].start;
+
+    const tMin = rows[0].ts, tMax = rows[rows.length - 1].ts;
+    const barY = (CHART_H - PAD.t - PAD.b) / 2 + PAD.t - 16, barH = 32;
+
+    const rects = runs.map(function (run) {
+      const x = scaleX(run.start, tMin, tMax);
+      const w = Math.max(1, scaleX(run.end, tMin, tMax) - x);
+      return '<rect class="hist-state ' + (run.on ? "on" : "off") + '" x="' + x.toFixed(1) + '" y="' + barY +
+             '" width="' + w.toFixed(1) + '" height="' + barH + '" data-start="' + run.start +
+             '" data-end="' + run.end + '" data-on="' + run.on + '"></rect>';
+    }).join("");
+
+    svg.innerHTML =
+      '<line class="hist-grid" x1="' + PAD.l + '" x2="' + (CHART_W - PAD.r) + '" y1="' + (barY + barH) +
+        '" y2="' + (barY + barH) + '"/>' +
+      rects + xAxisTicks(tMin, tMax) +
+      '<g class="hist-tip" style="display:none"><rect rx="4" ry="4"/><text class="hist-tip-val"></text><text class="hist-tip-ts" dy="14"></text></g>';
+
+    wireStateHover(svg);
+  }
+
+  function renderHistoryChart(rows, tag) {
+    const svg = document.getElementById("hist-chart");
+    document.getElementById("hist-legend").style.display = BOOLEAN_TAGS.has(tag) ? "flex" : "none";
+    if (BOOLEAN_TAGS.has(tag)) renderBooleanChart(svg, rows);
+    else renderNumericChart(svg, rows);
+  }
+
+  function renderHistoryTable(rows, tag) {
+    const tbody = document.getElementById("hist-rows");
+    const empty = document.getElementById("hist-empty");
+    if (!rows.length) { tbody.innerHTML = ""; empty.style.display = "block"; return; }
+    empty.style.display = "none";
+    tbody.innerHTML = rows.slice().sort(function (a, b) { return b.ts - a.ts; }).map(function (r) {
+      return "<tr><td>" + fmtUtc(r.ts) + "</td><td class='val'>" + fmtValue(tag, r.value) + "</td></tr>";
+    }).join("");
+  }
+
+  async function renderHistory() {
+    const tagSel = document.getElementById("hist-tag");
+    const fromEl = document.getElementById("hist-from");
+    const toEl = document.getElementById("hist-to");
+    const tag = tagSel.value;
+    let from = fromEl.value, to = toEl.value;
+    if (!tag || !from || !to) return;
+    if (from > to) { to = from; toEl.value = to; }
+
+    const wrap = document.getElementById("hist-wrap");
+    wrap.classList.add("loading");
+    const rows = (await loadRange(from, to))
+      .filter(function (r) { return r.tag === tag; })
+      .sort(function (a, b) { return a.ts - b.ts; });
+    renderHistoryChart(rows, tag);
+    renderHistoryTable(rows, tag);
+    wrap.classList.remove("loading");
+  }
+
+  (function initHistoryUi() {
+    const btn = document.getElementById("history-btn");
+    const section = document.getElementById("history");
+    const tagSel = document.getElementById("hist-tag");
+    const fromEl = document.getElementById("hist-from");
+    const toEl = document.getElementById("hist-to");
+    const today = utcTodayStr();
+
+    Array.from(new Set(Object.values(TAG_BY_GROUP))).sort(function (a, b) { return a.localeCompare(b); })
+      .forEach(function (t) {
+        const opt = document.createElement("option");
+        opt.value = t; opt.textContent = t;
+        tagSel.appendChild(opt);
+      });
+    tagSel.value = "TotalTiePlatesLaid";
+
+    fromEl.min = EARLIEST_LOG_DATE; fromEl.max = today;
+    toEl.min = EARLIEST_LOG_DATE; toEl.max = today;
+
+    function daysAgo(n) {
+      const s = new Date(Date.now() - n * 86400000).toISOString().slice(0, 10);
+      return s < EARLIEST_LOG_DATE ? EARLIEST_LOG_DATE : s;
+    }
+    function setRange(fromStr, toStr) { fromEl.value = fromStr; toEl.value = toStr; renderHistory(); }
+
+    document.querySelectorAll("#history button[data-range]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        const r = b.getAttribute("data-range");
+        if (r === "today") setRange(today, today);
+        else if (r === "3d") setRange(daysAgo(2), today);
+        else if (r === "7d") setRange(daysAgo(6), today);
+        else setRange(EARLIEST_LOG_DATE, today);
+      });
+    });
+    fromEl.addEventListener("change", renderHistory);
+    toEl.addEventListener("change", renderHistory);
+    tagSel.addEventListener("change", renderHistory);
+
+    btn.addEventListener("click", function () {
+      historyOpen = !historyOpen;
+      section.hidden = !historyOpen;
+      btn.textContent = historyOpen ? "Hide history" : "Show history";
+      if (historyOpen && !btn.dataset.loaded) {
+        btn.dataset.loaded = "1";
+        ensureSheetJsLoaded().then(function () {
+          setRange(daysAgo(2), today);
+        }).catch(function () {
+          const e = document.getElementById("hist-chart-empty");
+          e.style.display = "block";
+          e.textContent = "Could not load the xlsx reader from cdn.sheetjs.com, so history can't be shown here.";
+        });
+      }
+    });
+  })();
 
   setInterval(render, 1000);
   render();
