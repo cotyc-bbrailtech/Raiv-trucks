@@ -70,6 +70,18 @@
     padding: 3px 9px 3px 7px; border: 1px solid var(--border); border-radius: 999px;
   }
   .src-key i { width: 9px; height: 9px; border-radius: 2px; background: var(--accent); display: block; }
+
+  .site-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 16px; }
+  .nav-btn {
+    display: inline-flex; align-items: center; font-size: 13px; font-weight: 500;
+    text-decoration: none; color: var(--text-secondary); background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px;
+  }
+  .nav-btn:hover { background: var(--wash); color: var(--text-primary); }
+  .nav-btn.is-current {
+    color: var(--text-primary); font-weight: 600; background: var(--wash);
+    border-color: var(--accent); cursor: default; pointer-events: none;
+  }
   .sub { color: var(--text-secondary); margin: 0 0 20px; font-size: 13px; }
   .sub code { font-size: 12px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
 
@@ -168,10 +180,16 @@
     <h1>RAIV Fleet — CM5 HMI MQTT feed</h1>
     <span class="src-key"><i></i> CM5-T10W native MQTT Publisher</span>
   </header>
+  <nav class="site-nav" aria-label="RAIV Fleet dashboards">
+    <a class="nav-btn" href="index.html">Overview</a>
+    <a class="nav-btn is-current" href="cm5.html" aria-current="page">RAIV-2 Truck</a>
+    <a class="nav-btn" href="lab.html">Lab Bench</a>
+    <a class="nav-btn" href="stridelinx.html">StrideLinx</a>
+  </nav>
   <p class="sub">
     Live values published by the CM5 HMI's own MQTT client, 73 topics across eight Publisher objects.
-    This page subscribes only to <code>raiv-tracker/truck-2/hmi/#</code> — the StrideLinx feed is on a
-    <a href="stridelinx.html">separate page</a> and cannot appear here.
+    This page subscribes only to <code>raiv-tracker/truck-2/hmi/#</code>, so the StrideLinx feed
+    cannot appear here — use the menu above to switch pages.
   </p>
 
   <div class="bar">

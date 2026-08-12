@@ -84,10 +84,28 @@
   .why code { font-size: 12px; }
   footer { margin-top: 28px; font-size: 12px; color: var(--text-muted); }
   footer a { color: inherit; }
+
+  .site-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 22px; }
+  .nav-btn {
+    display: inline-flex; align-items: center; font-size: 13px; font-weight: 500;
+    text-decoration: none; color: var(--text-secondary); background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px;
+  }
+  .nav-btn:hover { background: var(--border); color: var(--text-primary); }
+  .nav-btn.is-current {
+    color: var(--text-primary); font-weight: 600; background: var(--border);
+    border-color: var(--text-primary); cursor: default; pointer-events: none;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="site-nav" aria-label="RAIV Fleet dashboards">
+    <a class="nav-btn is-current" href="index.html" aria-current="page">Overview</a>
+    <a class="nav-btn" href="cm5.html">RAIV-2 Truck</a>
+    <a class="nav-btn" href="lab.html">Lab Bench</a>
+    <a class="nav-btn" href="stridelinx.html">StrideLinx</a>
+  </nav>
   <h1>RAIV Fleet dashboards</h1>
   <p class="lede">
     One page per data source. Each opens its own broker connection and is pinned to its own topic
@@ -114,8 +132,8 @@
 
     <a class="card plc" href="stridelinx.html">
       <h2><i></i>StrideLinx feed</h2>
-      <p>The router polling a CLICK PLC over Modbus TCP, ~once a minute. Now attached to the bench, not
-         the truck. Has a pause control.</p>
+      <p>The router polling a CLICK PLC over Modbus TCP. Now attached to the bench, not the truck.
+         73 of its 93 tags log on-change; the rest still log once a minute. Has a pause control.</p>
       <div class="topic">raiv-tracker/+/plc</div>
       <div class="go">Open →</div>
     </a>

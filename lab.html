@@ -70,6 +70,18 @@
     padding: 3px 9px 3px 7px; border: 1px solid var(--border); border-radius: 999px;
   }
   .src-key i { width: 9px; height: 9px; border-radius: 2px; background: var(--accent); display: block; }
+
+  .site-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 16px; }
+  .nav-btn {
+    display: inline-flex; align-items: center; font-size: 13px; font-weight: 500;
+    text-decoration: none; color: var(--text-secondary); background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px;
+  }
+  .nav-btn:hover { background: var(--wash); color: var(--text-primary); }
+  .nav-btn.is-current {
+    color: var(--text-primary); font-weight: 600; background: var(--wash);
+    border-color: var(--accent); cursor: default; pointer-events: none;
+  }
   .sub { color: var(--text-secondary); margin: 0 0 20px; font-size: 13px; }
   .sub code { font-size: 12px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
 
@@ -168,11 +180,16 @@
     <h1>RAIV Fleet — Lab bench</h1>
     <span class="src-key"><i></i> Lab CM5 — bench, not production</span>
   </header>
+  <nav class="site-nav" aria-label="RAIV Fleet dashboards">
+    <a class="nav-btn" href="index.html">Overview</a>
+    <a class="nav-btn" href="cm5.html">RAIV-2 Truck</a>
+    <a class="nav-btn is-current" href="lab.html" aria-current="page">Lab Bench</a>
+    <a class="nav-btn" href="stridelinx.html">StrideLinx</a>
+  </nav>
   <p class="sub">
     Live values from the <strong>Lab bench</strong> CM5 — a test rig, not the truck. It runs a
     near-identical program, so its tags share the truck's names. This page subscribes only to
-    <code>raiv-tracker/lab/hmi/#</code>; the RAIV-2 truck is on a
-    <a href="cm5.html">separate page</a> and cannot appear here.
+    <code>raiv-tracker/lab/hmi/#</code> — use the menu above to switch pages.
   </p>
 
   <div class="bar">

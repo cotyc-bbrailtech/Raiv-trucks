@@ -79,6 +79,18 @@
     padding: 3px 9px 3px 7px; border: 1px solid var(--border); border-radius: 999px;
   }
   .src-key i { width: 9px; height: 9px; border-radius: 2px; background: var(--accent); display: block; }
+
+  .site-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 16px; }
+  .nav-btn {
+    display: inline-flex; align-items: center; font-size: 13px; font-weight: 500;
+    text-decoration: none; color: var(--text-secondary); background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px;
+  }
+  .nav-btn:hover { background: var(--wash); color: var(--text-primary); }
+  .nav-btn.is-current {
+    color: var(--text-primary); font-weight: 600; background: var(--wash);
+    border-color: var(--accent); cursor: default; pointer-events: none;
+  }
   .sub { color: var(--text-secondary); margin: 0 0 20px; font-size: 13px; }
   .sub code { font-size: 12px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
 
@@ -143,6 +155,10 @@
   .log-pill.slow { color: var(--text-muted); }
   .log-pill.slow i { background: var(--baseline); }
 
+  tr.silent td.tag, tr.silent td.unit { color: var(--text-muted); }
+  tr.silent td.val { color: var(--text-muted); }
+  .flag { font-size: 11px; color: var(--warning); font-weight: 600; }
+
   .empty { padding: 40px 16px; text-align: center; color: var(--text-secondary); }
   footer { margin-top: 26px; font-size: 12px; color: var(--text-muted); }
   footer a { color: inherit; }
@@ -181,11 +197,15 @@
     <span class="lab-badge"><i></i>Lab Primary</span>
     <span class="src-key"><i></i> StrideLinx router → Modbus TCP</span>
   </header>
+  <nav class="site-nav" aria-label="RAIV Fleet dashboards">
+    <a class="nav-btn" href="index.html">Overview</a>
+    <a class="nav-btn" href="cm5.html">RAIV-2 Truck</a>
+    <a class="nav-btn" href="lab.html">Lab Bench</a>
+    <a class="nav-btn is-current" href="stridelinx.html" aria-current="page">StrideLinx</a>
+  </nav>
   <p class="sub">
     Live values from the Lab bench CLICK PLC, polled by the StrideLinx router via Modbus TCP and published
-    to <code>raiv-tracker/lab/plc</code>. The CM5's own MQTT feed is on a
-    <a href="cm5.html">separate page</a> and the lab equipment feeds on another
-    <a href="lab.html">dedicated page</a>.
+    to <code>raiv-tracker/lab/plc</code> — use the menu above for the CM5's own MQTT feeds.
     73 of the 93 tags below are configured to log <b>on change</b> (up to 20,000 values/hr, so they
     can update several times a second) — the rest still log on a 1-minute interval. The
     <span class="log-pill rapid"><i></i>Rapid</span> / <span class="log-pill slow"><i></i>1 min</span>
@@ -216,13 +236,13 @@
 
   <div class="kpis" id="kpis"></div>
 
-  <h2>Lab CLICK PLC tags <span class="count" id="tag-count"></span></h2>
+  <h2>All 93 StrideLinx tags <span class="count" id="tag-count"></span></h2>
   <div class="panel">
     <table>
       <thead><tr><th>Tag</th><th>Logging</th><th>Unit</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
-    <div class="empty" id="empty">Waiting for Modbus data from the Lab bench…</div>
+    <div class="empty" id="empty" style="display:none">Waiting for Modbus data from the Lab bench…</div>
   </div>
 
   <footer>
@@ -290,6 +310,26 @@
     "TPS Full", "TPS_Enable_ Button", "TPS_JamsUsr", "usr_Servotime Hours10th",
     "usr_Servotime500ms Count", "usr_TPStime Hours10th", "usr_TPStime500ms Count"
   ]);
+
+  // The other 20 tags on this data source, still logging Interval / Every minute
+  // as of 2026-08-12 (re-verified live against Fleet Manager, sorted with
+  // RAPID_TAGS into ALL_TAGS below so the full known 93-tag set is static and
+  // does not depend on what has actually published since page load).
+  const SLOW_TAGS = [
+    "_1st_SCAN", "ABORT_Master", "AcceptsPartsCount", "Avg Parts per min_total",
+    "CountPicked14in", "Daily_TotalLaidPlates", "Percent time moveing",
+    "Percent time not moving", "percentCount_accept", "percentCount_reject",
+    "RejectPartsCount", "RoCalRequest", "TieDetectOffset_A", "TieDetectOffset_B",
+    "tkCycle_MoveSeconds", "tkCycle_NoMoveSec", "tkCycle_TotalSeconds",
+    "TotalPickPartsCount", "TPS_JamsMASTER", "TPSjam_FLAG"
+  ];
+
+  // All 93 known tags on this data source (73 rapid + 20 slow), sorted the same
+  // way the table has always sorted. This is the static baseline the table is
+  // always drawn from -- a tag that hasn't published yet still gets a row.
+  const ALL_TAGS = Array.from(RAPID_TAGS).concat(SLOW_TAGS).sort(function (a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  });
 
   function loggingCell(tagName) {
     return RAPID_TAGS.has(tagName)
@@ -422,19 +462,25 @@
              '<div class="value">' + (t ? fmtBig(t.value) : "—") + "</div></div>";
     }).join("");
 
-    const keys = Object.keys(tags).sort(function (a, b) {
-      return tags[a].tag.toLowerCase().localeCompare(tags[b].tag.toLowerCase());
-    });
-    const rapidSeen = keys.reduce(function (n, k) { return n + (RAPID_TAGS.has(tags[k].tag) ? 1 : 0); }, 0);
-    document.getElementById("tag-count").textContent =
-      keys.length ? "(" + keys.length + " · " + rapidSeen + " rapid)" : "";
-    document.getElementById("empty").style.display = keys.length ? "none" : "block";
-    document.getElementById("rows").innerHTML = keys.map(function (k) {
-      const t = tags[k];
-      return "<tr><td class='tag'>" + t.tag + "</td><td class='logging'>" + loggingCell(t.tag) +
-             "</td><td class='unit'>" + t.unit +
-             "</td><td class='val'>" + fmtValue(t) + "</td><td class='age'>" + ago(t.at) + "</td></tr>";
+    // Always list all 93 known tags, so a tag that hasn't published since page
+    // load is visible as a grey "no data" gap rather than simply absent -- the
+    // same convention cm5.html/lab.html use for their own Publisher tables.
+    // This is what makes the "of 93 publishing / 73 rapid" counts below a fixed,
+    // reliable baseline instead of shrinking to whatever happens to have arrived.
+    let seen = 0;
+    document.getElementById("rows").innerHTML = ALL_TAGS.map(function (name) {
+      const t = findTag(name);
+      if (t) seen++;
+      return "<tr class='" + (t ? "" : "silent") + "'>" +
+             "<td class='tag'>" + name + "</td>" +
+             "<td class='logging'>" + loggingCell(name) + "</td>" +
+             "<td class='unit'>" + (t ? t.unit : "—") + "</td>" +
+             "<td class='val'>" + (t ? fmtValue(t) : "<span class='flag'>no data</span>") + "</td>" +
+             "<td class='age'>" + (t ? ago(t.at) : "—") + "</td></tr>";
     }).join("");
+
+    document.getElementById("tag-count").textContent =
+      "(" + seen + " of 93 publishing · 73 rapid)";
 
     document.getElementById("meta").textContent =
       msgCount ? msgCount.toLocaleString() + " msg · last " + ago(lastMsgAt) : "";
