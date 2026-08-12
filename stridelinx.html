@@ -135,6 +135,14 @@
   .badge.on  { color: var(--good); }
   .badge.off { color: var(--text-secondary); }
 
+  td.logging { white-space: nowrap; }
+  .log-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; }
+  .log-pill i { width: 6px; height: 6px; border-radius: 50%; flex: none; }
+  .log-pill.rapid { color: var(--accent); }
+  .log-pill.rapid i { background: var(--accent); }
+  .log-pill.slow { color: var(--text-muted); }
+  .log-pill.slow i { background: var(--baseline); }
+
   .empty { padding: 40px 16px; text-align: center; color: var(--text-secondary); }
   footer { margin-top: 26px; font-size: 12px; color: var(--text-muted); }
   footer a { color: inherit; }
@@ -178,6 +186,10 @@
     to <code>raiv-tracker/lab/plc</code>. The CM5's own MQTT feed is on a
     <a href="cm5.html">separate page</a> and the lab equipment feeds on another
     <a href="lab.html">dedicated page</a>.
+    73 of the 93 tags below are configured to log <b>on change</b> (up to 20,000 values/hr, so they
+    can update several times a second) — the rest still log on a 1-minute interval. The
+    <span class="log-pill rapid"><i></i>Rapid</span> / <span class="log-pill slow"><i></i>1 min</span>
+    column shows which is which for each tag.
   </p>
 
   <div class="bar">
@@ -207,7 +219,7 @@
   <h2>Lab CLICK PLC tags <span class="count" id="tag-count"></span></h2>
   <div class="panel">
     <table>
-      <thead><tr><th>Tag</th><th>Unit</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
+      <thead><tr><th>Tag</th><th>Logging</th><th>Unit</th><th style="text-align:right">Value</th><th>Updated</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
     <div class="empty" id="empty">Waiting for Modbus data from the Lab bench…</div>
@@ -251,6 +263,39 @@
     ["Avg Parts per min_total","Avg parts / min"]
   ];
   const MAX_HISTORY = 100;
+
+  // The 73 tags StrideLinx Fleet Manager logs "on change" (up to 20,000 values/hr,
+  // each hour of unchanged value re-sent as a heartbeat) as of 2026-08-12. Everything
+  // else still logs on a 1-minute interval. This list mirrors the Tags page at
+  // stridelinx.com/fleet-manager -> RAIV_2 PLC -> Tags; if tags are re-configured
+  // there, update this set to match (see claude/stridelinx-modbus-polling.md).
+  const RAPID_TAGS = new Set([
+    "10thsInches_Tie Next", "14in Job", "18in Job", "AcceptStationOverflow",
+    "AirEagle Eject Plate", "ARMdisable1", "ARMdisable2", "ARMdisableAIREAGLE4",
+    "ARMdisabledoor", "at_capture", "CountLaidButton", "CountLaidDetector",
+    "CountLaidEncoder", "CountLaidPandral", "CountPicked18in", "CountPickedAccept18in",
+    "CountPickedAcceptOTM", "CountPickedAcceptPandral", "CountPickedOTM",
+    "CountPickedPandral", "CountPickedReject14in", "CountPickedReject18in",
+    "CountPickedRejectOTM", "CountPickedRejectPandral", "CT_PARTSacceptMISSPICK",
+    "CT_PARTSacceptPICKall", "CT_PARTStpsCURRENT", "CT_PARTtpsENTERD", "desired_14in",
+    "desired_18in", "desired_Pandral", "DoubleLay Job", "DropPlate_TieDetector",
+    "Eject Tie Plate", "FindingPart", "Magnet_ON", "MotionPickApproach",
+    "MotionPickLinearApproach", "MotionPickLinearRetreat", "MotionPickRetreat",
+    "MotionToAccept", "MotionToCapturePOS", "MotionToReject", "MotionToStartTrajectory",
+    "Pandral Job", "PartAccepted", "PartRejected", "Picked_14in", "Picked_18in",
+    "Picked_OTM", "Picked_Pandral", "Robot_isMoving", "RoCals", "Running_RoCal",
+    "Servos_Enabled", "Tie Detector", "tk_Abort", "tk_Cycle", "tk_Cycle hrs",
+    "TotalPickedAcceptParts", "TotalPickedParts", "TotalPickedRejectParts",
+    "TotalTiePlatesLaid", "TPS BACKUP ALARM", "TPS Connected", "TPS Enabled",
+    "TPS Full", "TPS_Enable_ Button", "TPS_JamsUsr", "usr_Servotime Hours10th",
+    "usr_Servotime500ms Count", "usr_TPStime Hours10th", "usr_TPStime500ms Count"
+  ]);
+
+  function loggingCell(tagName) {
+    return RAPID_TAGS.has(tagName)
+      ? '<span class="log-pill rapid"><i></i>Rapid</span>'
+      : '<span class="log-pill slow"><i></i>1 min</span>';
+  }
 
   // ---- State ------------------------------------------------------------
   const tags = {};            // "Lab TagName" -> {tag, unit, value, datatype, at}
@@ -380,11 +425,14 @@
     const keys = Object.keys(tags).sort(function (a, b) {
       return tags[a].tag.toLowerCase().localeCompare(tags[b].tag.toLowerCase());
     });
-    document.getElementById("tag-count").textContent = keys.length ? "(" + keys.length + ")" : "";
+    const rapidSeen = keys.reduce(function (n, k) { return n + (RAPID_TAGS.has(tags[k].tag) ? 1 : 0); }, 0);
+    document.getElementById("tag-count").textContent =
+      keys.length ? "(" + keys.length + " · " + rapidSeen + " rapid)" : "";
     document.getElementById("empty").style.display = keys.length ? "none" : "block";
     document.getElementById("rows").innerHTML = keys.map(function (k) {
       const t = tags[k];
-      return "<tr><td class='tag'>" + t.tag + "</td><td class='unit'>" + t.unit +
+      return "<tr><td class='tag'>" + t.tag + "</td><td class='logging'>" + loggingCell(t.tag) +
+             "</td><td class='unit'>" + t.unit +
              "</td><td class='val'>" + fmtValue(t) + "</td><td class='age'>" + ago(t.at) + "</td></tr>";
     }).join("");
 
