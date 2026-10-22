@@ -1,0 +1,21 @@
+Phase budget - where the cycle time goes
+"Steady state = cycles 14-16 of the 17h48m run, the three consecutive 4.66 s cycles. Whole run includes the 15.31 s first cycle and the slower warm-up. The right-hand block is the controller's own rolling 25-cycle window as saved into the .dtx of backup 17h43m - the last 25 picks of a different, slower 145-pick run with plates staged by hand. Over its full 144 samples that run averaged 6.63 s, so the 25-window's 8.15 s is its slow tail, not its rate."
+
+
+,"This run (17h48m, 17 cycles)",,,,,"Controller 25-cycle window (17h43m, 145 picks)"
+Phase,Steady-state mean s,% of steady cycle,Whole-run mean s,Best s,Worst s,Snapshot mean s,Snapshot best s,Snapshot worst s,What it is
+Approach,0.59,12.7%,1.09,0.39,351.68,1.60,1.38,1.80,movej to the pick pose the detector returned.
+Lin approach,0.49,10.6%,0.66,0.06,82.98,0.82,0.74,1.00,movel down onto the plate.
+Gripper dwell,0.85,18.2%,0.42,0.00,0.85,0.85,0.85,0.85,"nEMH_gripperDelay (0.5) + tkCycle's hard-coded delay(0.35). Pure dwell, no motion."
+Retreat,0.00,0.0%,1.56,0.00,58.63,0.00,0.00,0.01,"MEASURES THE MOTION QUEUE, NOT THE MOTION - movej only queues and returns. The real retreat is inside place+return."
+Place+return,2.13,45.6%,1.26,0.57,97.30,3.53,3.49,3.57,"Opaque composite: retreat completing, drop approach, waitEndMove, dDIDropClear interlock, 50 mm descent, 0.5 s magnet-OFF dwell, retract, an AperaPartsFound() vision round-trip, and the move to jTrajectoryStart."
+Vision wait,0.58,12.5%,0.45,0.00,8.49,0.83,0.39,3.29,apera_wait_for_trajectory - the APERA trajectory query.
+Phase sum,4.64,99.6%,5.44,,,7.63
+Measured cycle,4.66,,6.30,2.59,648.32,8.15,7.14,10.54,"All snapshot figures are the 25-cycle window, ct_25*. For the wider spans in the same .dtx: the 10-slot ring reads 7.84 s, the 100-window 6.51 s, and the 1000-window 6.63 s over 144 picks with a best of 4.09 s and a worst of 33.41 s. Those are different spans - do not read them as one number."
+Unaccounted,0.02,0.4%,0.86,,,0.52,,,Instrumentation covers 99.6% of the steady-state cycle. There is no hidden dwell - every second is in a named phase.
+
+"Magnet dwell, called out"
+"tGripperEMH(""ON"") - waitEndMove + delay(nEMH_gripperDelay)",0.50,,,,,,,,Source: tGripperEMH.pgx
+tkCycle's extra delay(0.35) after the gripper arms,0.35,,,,,,,,"Source: tkCycle.pgx, hard-coded"
+"tGripperEMH(""OFF"") - waitEndMove + delay(nEMH_gripperDelay), inside place+return",0.50,,,,,,,,Source: tGripperEMH.pgx
+Total fixed magnet dwell,1.35,29.0%,,,,,,,"The largest ELEMENTARY cost in the cycle - place+return is bigger at 2.13 s, but it is a composite of eight things. This 1.35 s involves no motion, no path and no acceleration, so reducing it cannot throw a plate. Gated on a bench measurement of the coil's make/break time."

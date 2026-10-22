@@ -1,0 +1,143 @@
+{
+  "id": "1RT53",
+  "truck_unit": "T-53",
+  "name": "Raiv-T1",
+  "aliases": [
+    "Raiv-1",
+    "T53",
+    "TR53"
+  ],
+  "arm": {
+    "model": "Stäubli TX2-140 (safetyStruct robot 'tx2_140-S2')",
+    "serial": null,
+    "source": "1RT53_Staubli_Backups/F_24_0064095_C_004/Y-2026_M-10_D-21_12h50m/usr/configs/safetyStruct.json"
+  },
+  "controller": {
+    "model": "Stäubli CS9",
+    "id": "F_24_0064095_C_004",
+    "serial": null,
+    "safety_struct_version": "202.102",
+    "source": "safetyStruct.json; folder names"
+  },
+  "val3_version": "s8.20.2Cs9_BS4270",
+  "apera": {
+    "serial": null,
+    "version": "4.147.0",
+    "camera_serials": [
+      "4108760121",
+      "4108577719"
+    ],
+    "pipelines": [
+      "14in_plate det",
+      "Pick_IdsBelt",
+      "Pick_IdsBelt_deformable",
+      "Pick_IdsBelt_depth",
+      "Pick_IdsBelt_new"
+    ],
+    "active_pipeline": "Pick_IdsBelt_new",
+    "source": "1RT53_Apera/08252026_Raiv-T1_binpick_pipelines.json"
+  },
+  "plc": {
+    "program": "T-53 TPS Robotics V2.1",
+    "version": "Ver3.40",
+    "file_date": "2026-05-25",
+    "source": "1RT53_PLC_HMI/05252026_Raiv-T1_plc_T-53 TPS Robotics V2.1(Ver3.40).ckp (filename)"
+  },
+  "hmi": {
+    "program": "HMI-10 T-53 TPS Robotics",
+    "version": "v2.2",
+    "file_date": "2026-08-25",
+    "source": "1RT53_PLC_HMI/08252026_Raiv-T1_HMI-10_T-53 TPS Robotics v2.2_(ReadFromPanel).eapv (filename)"
+  },
+  "gripper": {
+    "current_in_session_record": "magnetic gripper (EMH, Schunk EMH084 tool tSchunkEMH084)",
+    "ar70_package": "Magswitch AR70 on valve2, tool tAR70 z=241 (v2.0.0, 2026-10-14; TCP to be verified)"
+  },
+  "application": {
+    "latest_built": "binpick_TiePlates_v2_4_0 (2026-10-20, not compiled/tested)",
+    "latest_run": "binpick_TiePlates_v2_3_0 (2026-10-20, 321 picks)",
+    "source": "RobotTrucks_1RT53/notes/1RT53_binpick_full_session_record_2026-10-19_20.md"
+  },
+  "metrics": {
+    "source": "RobotTrucks_1RT53/notes/1RT53_binpick_full_session_record_2026-10-19_20.md (v2.3.0 run 2026-10-20)",
+    "cycles": 321,
+    "mean_cycle_s": null,
+    "median_cycle_s": 4.63,
+    "p90_cycle_s": null,
+    "clean_pick_s": 3.93,
+    "real_output_per_min": 8.4,
+    "date_range": "2026-10-20 (38 min)",
+    "goal": "17 plates/min = 3.53 s/plate",
+    "other": [
+      {
+        "source": "RobotTrucks_1RT53/notes/1RT53_binpick_full_session_record_2026-10-19_20.md",
+        "run": "v2.0.0 2026-10-19",
+        "picks": 330,
+        "median_cycle_s": 4.39,
+        "real_output_per_min": 8.0
+      },
+      {
+        "source": "Metrics_1RT53_F_24_0064095_C_004/1RT53_2026-10-12_backup_review.md",
+        "run": "belt-fed picks 2026-10-07..08",
+        "picks": 210,
+        "median_cycle_s": 4.5
+      },
+      {
+        "source": "1RT53_Notes/Raiv-T1_2026-09-22_beltsensor_run2.md",
+        "run": "2026-09-22 13:33-13:48",
+        "picks": 96,
+        "median_cycle_s": 4.63,
+        "mean_cycle_s": 8.33
+      },
+      {
+        "source": "1RT53_Apera/apera_kpi/robot_cycles_from_backup_2026-10-21_12h50m.csv (computed here)",
+        "run": "all logged robot cycles",
+        "cycles": 1014,
+        "date_range": "2026-10-07..2026-10-20",
+        "mean_cycle_s": 6.11,
+        "median_cycle_s": 4.52,
+        "p90_cycle_s": 8.86
+      },
+      {
+        "source": "RobotTrucks_1RT53/notes/per_pick_log_v2x_runs_14-20Oct.csv (computed here)",
+        "run": "v2.x runs",
+        "cycles": 810,
+        "date_range": "2026-10-14..2026-10-20",
+        "mean_cycle_s": 6.58,
+        "median_cycle_s": 4.87,
+        "p90_cycle_s": 8.86
+      }
+    ],
+    "logged_picks_total_metrics_folder": 3287,
+    "run_sessions_logged": 358
+  },
+  "latest_backup": {
+    "name": "Y-2026_M-10_D-21_12h50m",
+    "date": "2026-10-21",
+    "source": "1RT53_Staubli_Backups/F_24_0064095_C_004/Y-2026_M-10_D-21_12h50m/backup_OK_F_24_0064095_C_004.log"
+  },
+  "latest_code_update": {
+    "name": "binpick_TiePlates_v2_4_0 (Robot Trucks/1RT53/code); last 1RT53_Code_Updates package: AR70_Install_2026-10-13 (v2.0.0)",
+    "date": "2026-10-20",
+    "source": "RobotTrucks_1RT53/code/binpick_TiePlates_v2_4_0/README_v2_4_0.md; 1RT53_Code_Updates/VERSION_LOG.md"
+  },
+  "open_issues": [
+    "IDS belt camera 4108577719 incomplete-buffer grab timeouts -> every pick 'Image capture error'; VAL3 retries ~9 s forever with no fault (2026-10-14 note)",
+    "v2.4.0 built but not compiled/tested; tune nCapMinDist_mm",
+    "Belt sensor sticking (no new edges for up to 31 picks)",
+    "Feeder starved (often 1 plate visible)",
+    "Loaded belt stop time unmeasured; nBeltSettle_s 1.0 s; EtherCAT inputs full",
+    "APERA ~1.3 s trajectory response on critical path; Stäubli pickable-count driver call requested, no date; BeltFill search region not wired",
+    "Safety stops (~10 min lost, 6 'arm power refused' on 2026-10-20)",
+    "Gripper part-present / magnet-status inputs (%I6/%I4) always 0",
+    "User-page path reported lowercase -> HMI 'page not found' / ERR 70",
+    "PartPicked slow-descriptor rule (transform > 100 mm -> 25-50% speed) to review",
+    "nBeltRunMax_s runaway cap was 0 (disabled) as of 2026-10-12",
+    "AR70 TCP z=241 copied from 2RT57 must be measured; AR70 Apera pipeline needed",
+    "Accept-station-full not detected (SegDropClear 0.00 s on all 2,296 picks); idle time not attributed"
+  ],
+  "files_total": 295,
+  "files_pulled": 79,
+  "files_partial": 5,
+  "folder_summary_rows": 101
+}

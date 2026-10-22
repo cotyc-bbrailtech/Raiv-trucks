@@ -1,0 +1,50 @@
+"Header Key - 1RT53 cycle metrics, unit F_24_0064095_C_004"
+"What every column means, where it comes from, and what to be careful of."
+
+TARGETS  (edit B5 - everything derived from it recalculates)
+Target seconds per plate,4.090,"NO CUSTOMER TARGET HAS BEEN SUPPLIED FOR 1RT53. Pre-filled with the cell's own demonstrated best - 4.09 s, the 1000-cycle-window best in the 17h43m .dtx. Replace it with the real budget when you have one. (For comparison, the 0RLab cell's target is 2.965 s/plate.)"
+Target plates per hour,880,3600 / B5. The Summary sheet's '% of target rate' divides the measured rate by this.
+Target plates per minute,14.7,"60 / B5. The pendant's Cycle Timing page shows PPM, so this is the number to compare against it."
+
+How to read this data
+One row = one completed pick,,LogCycleCSV.pgx emits four RAIV/CSV lines per cycle. They are stitched back together on <seq>; a row is only kept if all four survived. All 17 did.
+Blank vs n/a,,"Blank = the build that produced that backup did not have the global at all, or the .dtx carries only the shipped default rather than a measurement. n/a = the figure is undefined for that row, e.g. a per-cycle delta on the first row."
+Counters are cumulative,,"Every Cap*, nBranchBPasses and nFovHit* value is a running total since the application started. Difference consecutive rows for a per-cycle rate - the 'New ...' columns already do."
+Do not average vision wait blind,,"When the trajectory query is skipped, that phase is not measured and the field carries the PREVIOUS cycle's number. 'Vision valid' = 1 marks a real measurement; drop the 0 rows rather than averaging them in."
+Do not read the retreat timer as a cost,,"It measures the motion queue, not the motion. See Phase Budget."
+The two data sources measure different runs,,"Cycle Data is the 17-cycle 17h48m run with plates properly fed - steady state 4.66 s. The .dtx snapshot on Backup History and the right-hand block of Phase Budget is a separate 145-pick run with plates STAGED BY HAND, which averaged 6.63 s over its 144 logged samples and 8.15 s over its last 25, and is not a production rate. Do not mix them - and note that the target cell below is currently pre-filled from that run, so the Summary's gap-to-target is a placeholder."
+The phase sum is the self-check,,The six phase timers plus 'Unaccounted' equal the measured cycle by construction. Unaccounted staying near zero is what says the instrumentation is honest; a jump there is time no timer covers.
+Globals reach a backup only if SP2 saved the data,,"A backup captures the project's on-disk state. Saving the application data from SP2 first writes every live global into the .dtx - that happened once, before 17h43m. It also STRIPS every .dtx comment, so documentation belongs in the .pgx files."
+
+Sheet,Column,Source name,Units,What it measures,Where it comes from,Watch out
+Cycle Data,Backup,source_backup,-,Which backup this pick was recovered from.,Backup folder name.,"The CS9 log is cumulative, so a newer backup also contains older picks."
+Cycle Data,Seq,nCsvSeq,count,"Cycle counter, incremented once per logged cycle.",LogCycleCSV.pgx.,Resets to 0 on an application reload. A gap means a log line was dropped.
+Cycle Data,Time,date,clock,When the first of the four log lines was written.,Log entry timestamp.
+Cycle Data,Cycle s,"_sCycleTime[""LastSec""]",seconds,Plate-to-plate cycle time.,"The same number the pendant's Cycle Timing page shows - read from the string UpdateCycleWindow already wrote, so no duplicated arithmetic.","Includes everything: motion, dwell, interlocks, vision."
+Cycle Data,Plates/min,(derived),plates/min,Rate implied by that one cycle.,Formula: 60 / Cycle s.,"Instantaneous, not a run average."
+Cycle Data,Cum picks,nPickLiftSeq,count,Picks since the application started.,tkCheckZone lift watcher.,Cumulative.
+Cycle Data,Approach,SegApproachLastSec,seconds,movej to the pick pose the detector returned.,UpdateCycleWindow phase timer.
+Cycle Data,Lin approach,SegLinearApproachLastSec,seconds,movel down onto the plate.,UpdateCycleWindow phase timer.
+Cycle Data,Gripper dwell,SegGripperActuateLastSec,seconds,Magnet ON pulse plus the settle after it.,nEMH_gripperDelay (0.5) + tkCycle's hard-coded delay(0.35).,"0.85 s on every cycle to the centisecond - fixed dwell, no motion. Both halves are tunable; the coil's real make time is a bench measurement."
+Cycle Data,Retreat,SegRetreatLastSec,seconds,Intended to measure the retreat off the belt.,UpdateCycleWindow phase timer around apera_follow_trajectory.,"READS 0.00 AND IS MISLEADING. movej only queues motion and returns, and there is no waitEndMove() after, so this measures queue time. The real retreat is inside place+return."
+Cycle Data,Place+return,SegPlaceReturnLastSec,seconds,Everything from the retreat completing to arriving back at jTrajectoryStart.,UpdateCycleWindow phase timer.,"46% of the cycle and OPAQUE: retreat, drop approach, waitEndMove, dDIDropClear interlock, 50 mm descent, 0.5 s magnet-OFF dwell, retract, an AperaPartsFound() vision round-trip, and the return move. Splitting it is edit 2."
+Cycle Data,Vision wait,SegVisionWaitLastSec,seconds,The APERA trajectory query.,UpdateCycleWindow phase timer around apera_wait_for_trajectory.,Only valid where 'Vision valid' = 1. It does NOT include the second vision round-trip inside place+return.
+Cycle Data,Phase sum,(derived),seconds,The six phase timers added up.,Formula: SUM of the six.,Self-check against Cycle s.
+Cycle Data,Unaccounted s / %,(derived),seconds / %,Cycle time no phase timer covers.,Formula: Cycle s - Phase sum.,"0.00-0.03 s on 16 of 17 cycles. Cycle 2's 3.03 s is a branch-B feed pass, which no timer sees."
+Cycle Data,Scan plates,nScanPlates,count,Plates the parallel belt scan found.,"tkBeltScan, its own private counter.","Deliberately separate from 'Plates found'. tkBeltScan used to write the shared counter and always wrote 1, which made bLastPart true on every following pick."
+Cycle Data,Plates found,nCountPlatesFound,count,Plates the main detect loop found.,tkCycle.
+Cycle Data,Vision valid,nVisionWaitValid,0/1,Whether 'Vision wait' is this cycle's real measurement.,Set in tkCycle around the vision query.,"0 means the field carries the previous cycle's value. Drop those rows, do not average them."
+Cycle Data,Cap early / at place / at trig pos / deferred,"nCapEarly, nCapAtPlace, nCapAtTrigPos, nCapDeferred",count,Where in the cycle the APERA trajectory capture was triggered.,"Three-way gate in tkBeltScan, Part_Accept and tkCycle.","Cumulative. 'Deferred' means the socket was not free and no capture was made - it is the counter to watch, and it was climbing about 1 per cycle before the handshake was moved to run first on every path."
+Cycle Data,New early / at place / deferred / branch-B,(derived),count,Per-cycle rate.,Formula: this row minus the row above.,n/a on the first row.
+Cycle Data,Branch-B passes,nBranchBPasses,count,Times the cycle took the branch-B feed path.,tkCycle.,About 3 s per pass and invisible to the phase timers - it shows up only as unaccounted time. 10 of 145 picks.
+Cycle Data,FoV start / end hits,"nFovHitStart, nFovHitEnd",count,Times the robot was inside a camera field-of-view cube at the check.,"pStartCnvyrFoV (the CONVEYOR camera, 835x835x1000) and pEndCnvyrFoV (the drop station, 600x800x1030).",Start is the one that matters - it is the only camera that can occlude the pick pipeline. It has never been hit: 0 of 145.
+Cycle Data,TCP lift mm,nTCP_beltLift_mm,mm,How far the plate lifted before the belt was kicked.,tkCheckZone lift watcher.
+Phase Budget,Snapshot columns,"_sCycleTime[""Seg*""]",seconds,The controller's own rolling 25-cycle window.,"The .dtx of backup 17h43m, saved from SP2.","A DIFFERENT RUN - the last 25 of 145 picks with plates staged by hand, mean 8.15 s against that run's own 144-sample average of 6.63 s. Slower than production either way. Do not compare it to the Cycle Data columns as if it were the same run."
+Backup History,10-sample avg s,"_sCycleTime[""AverageSec""]",seconds,Mean of the 10-slot _nCycleTime ring - the last ten cycles only.,"The .dtx, where SP2 saved it.","NOT A RUN AVERAGE, and the name on the pendant does not say so. The 145-pick run's own average is the 1000-window figure, 6.63 s. The shipped default is 6.22 s."
+Backup History,Live data in .dtx?,(derived),yes/no,Whether that backup's .dtx carries live global values.,nPickLiftSeq > 0.,"'no' means the cycle-time and counter columns would show shipped defaults, so they are left blank."
+Backup History,Value elements,(derived),count,Number of <Value> elements in the .dtx.,Counted in the file.,Climbs 204 -> 280 as globals were added across the builds; 775 after an SP2 data save. The jump to 775 - not the value 280 - is the tell that live globals are present.
+Backup History,.dtx comments,(derived),count,Number of XML comments surviving in the .dtx.,Counted in the file.,An SP2 data save strips them all. .pgx comments survive intact.
+Runs,Minutes,(derived),minutes,Length of one application run.,Log timestamp difference between 'Application started' and 'Application stopped'.,"Wall-clock, so it includes idle and operator time."
+Errors,Count,(derived),count,Times that log text appeared across the whole retained history.,Classified in parse_backups.py.,"Spans 2025-03 to 2026-09, not one run. Two classes can count the same underlying event."
+
+"Provenance: parse_backups.py in this folder turns each backup into the CSVs this workbook is built from. A controller backup contains a nested logArchive.zip; the VAL3 application log - what logMsg() writes - is mnt/log/user.log inside it. The OS syslog at var/log/user.log is a different, unrelated file and is not used."

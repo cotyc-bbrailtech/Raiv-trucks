@@ -1,0 +1,13 @@
+Error and warning classes across the whole log history
+Error class,Log text matched,Count,Share,First seen,Last seen,Example line
+apera_pipeline_missing,is either not queued to run,608,26.3%,2025-03-31T15:21:46,2026-10-08T09:21:09,"er,Pipeline 'Pick_IdsBelt_new' is either not queued to run or does not exist,-1"
+apera_bad_pipeline_id,The provided pipeline id,602,26.0%,2025-03-31T15:28:48,2026-10-08T09:21:09,"er,The provided pipeline id ""14in_plate det"" does not exist,-1"
+val3_err70_bad_param,ERR 70 Invalid value,263,11.4%,2025-03-25T19:59:30,2026-10-12T13:35:25,ERR 70 Invalid value for an instruction parameter. Consult the VAL 3 reference manual.. HMI.
+userpage_not_found,Userpage: Page not found,263,11.4%,2025-03-25T19:59:30,2026-10-12T13:35:25,Userpage: Page not found. Fullpath is '%s'.
+apera_image_capture,Image capture error,244,10.6%,2026-01-15T12:01:48,2026-10-08T09:36:22,"er,Image capture error,-1"
+apera_no_trajectory,Cannot follow trajectory,195,8.4%,2025-03-31T15:21:46,2026-10-08T09:36:22,Apera Error: Cannot follow trajectory. No valid trajectories were returned
+motion_cancelled,pending motion was cancelled,86,3.7%,2025-04-02T16:57:23,2026-10-08T10:06:18,"Application has ended, the pending motion was cancelled."
+val3_err60_timeout,ERR 60 Instruction timeout,50,2.2%,2025-03-21T18:06:20,2026-10-08T13:06:14,ERR 60 Instruction timeout. cycle.
+Total,,"2,311"
+
+"Counts span 2025-03-21 to 2026-09-02 - the whole retained log, not one run. The two APERA pipeline classes (1,196 between them) stop in March 2026 and are a pipeline-name mismatch, not a cell fault. userpage_not_found and val3_err70_bad_param appear in lockstep at 256 each: the same event counted twice, a user page referencing a control that is not there."

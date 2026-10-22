@@ -1,0 +1,43 @@
+"1RT53 cycle metrics - Stäubli TX2-140 / CS9, controller F_24_0064095_C_004"
+"Application binpick_TiePlates, APERA Vue vision, Schunk EMH084 electromagnetic gripper on steel tie plates. Compiled 2026-10-12 from 40 controller backups (2026-08-25 to 2026-10-12). The findings below describe the 2026-09-02 17h48m run (steady-state rows are fixed to it); later backups are appended on Cycle Data, Runs and Errors. Per-cycle data comes from the RAIV/CSV lines in each backup's logArchive.zip; the point-in-time counter snapshot comes from the one .dtx that was saved from SP2 before its backup was pulled."
+
+
+
+
+Headline
+Metric,Value,Where it comes from
+"Steady-state cycle, s",4.66,Cycles 14-16 of the 17h48m run - three consecutive identical cycles.
+"Steady-state rate, plates/min",12.9,60 / steady-state cycle.
+"Steady-state rate, plates/hour",773,3600 / steady-state cycle.
+Target s/plate (editable),4.090,"Edit on the Header Key sheet. NO CUSTOMER TARGET HAS BEEN SUPPLIED FOR 1RT53 - it is pre-filled with the cell's own demonstrated best, which came from a different run, so the two rows below it are a placeholder comparison until a real budget is entered."
+"Gap to target, s/plate",0.570,Steady-state cycle minus target. Placeholder while the target is the 17h43m best rather than a supplied budget.
+% of target rate,87.8%,Steady-state plates/hour divided by the target plates/hour on Header Key. Same placeholder caveat.
+"Best cycle ever measured, s",4.09,"1000-cycle window in the 17h43m .dtx, over 144 picks."
+"Fixed magnet dwell, s",1.35,"0.5 s grip + 0.35 s settle + 0.5 s release. Pure dwell - no motion, no path, no acceleration."
+Magnet dwell as share of cycle,29.0%,Fixed dwell divided by the steady-state cycle.
+Instrumentation coverage,99.6%,Phase sum divided by measured cycle - how much of the cycle a named timer covers.
+Cycles logged so far,3285,Complete RAIV/CSV rows on the Cycle Data sheet.
+Picks in the counter snapshot,145,nPickLiftSeq in the 17h43m .dtx.
+Early trajectory captures,5,"nCapEarly, 5 of 145 picks. The early trigger fires only on a last-part belt kick, so it reaches about 3% of picks."
+Branch-B feed passes,10,"nBranchBPasses, 10 of 145 picks (7%). Costs about 3 s and is invisible to the phase timers - it is the only meaningful unaccounted time in the run (cycle 2)."
+
+
+What the data says
+Finding,,Detail
+Cycle time settles at 4.66 s,,"12.9 plates/min. It falls 15.31 -> 10.28 -> 7.3 -> 5.0 and then holds for three consecutive cycles to the centisecond. The run's last cycle came back at 7.07 s - a vision outlier, 2.98 s of vision wait against a 0.58 s norm - so 4.66 s is the demonstrated floor of this run, not a rate it held to the end."
+Almost half the cycle is one opaque number,,"place+return is 2.13 s of 4.66 s (46%) and contains eight distinct things, including a second AperaPartsFound() vision round-trip that is NOT in the vision-wait timer. Splitting it is the highest-information edit available and it changes no behaviour."
+Magnet dwell is 1.35 s - 29% of the cycle,,"0.85 s of it appears on every single cycle to the centisecond, zero variance across 17 cycles, which confirms it is fixed dwell with no motion in it. Reducing it cannot throw a plate. How short the coil can go is a bench measurement, not something the source can settle."
+"The retreat timer is misleading, not free",,"SegRetreat reads 0.00 because movej only queues motion and returns; there is no waitEndMove() after apera_follow_trajectory, so the timer measures queue time. Anyone reading the Cycle Timing page today would conclude the retreat costs nothing."
+The early trigger reaches about 3% of picks,,"It fires only on a last-part belt kick: 0 of 17 in this run, 5 of 145 in the snapshot. It worked 5 of 5 with no APERA error. Extending it to every pick would hide the 0.59 s vision wait behind the place motion on all picks - the vision wait is 12.5% of the steady-state cycle and 13.9% of the whole-run mean, so that is the size of the prize. Higher risk, so it belongs on its own."
+Only the drop-station camera cube is ever occupied,,"nFovHitStart 0, nFovHitEnd 15 of 145. The conveyor camera - the only one that can occlude the pick pipeline - was never blocked, which is what made gating the early trigger on _bStartFoV alone safe."
+The instrumentation is trustworthy,,"Phase timers account for 99.6% of the cycle, with 0.01-0.03 s unaccounted on 16 of 17 cycles (0.00 on one of them). There is no hidden dwell. The one exception is cycle 2, at 3.03 s unaccounted - and that is the single cycle where nBranchBPasses incremented."
+
+"Next edits, ranked"
+"1. Make both magnet dwells tunable, then sweep",,"29% of the cycle, no path or acceleration change. Split nEMH_gripperDelay into ON/OFF - it is one number used for both pulses - and make tkCycle's hard-coded delay(0.35) a public nGripSettle. GATED on a bench test of the coil's make and break time."
+2. Split place+return into sub-phases,,"Pure instrumentation, zero risk. 46% of the cycle is currently one number."
+3. Retire or fix SegRetreat,,A timer reading zero on a phase that clearly takes time is worse than no timer.
+4. Consider the early trigger on every pick,,"Worth about 12-14%. Higher risk - it is the moving-robot capture - so do it after 1-3 and alone, so it can be judged alone."
+Not doing: mNomSpeed accel/decel,,"Not where the time is. The motion phases total about 1.1 s against 1.35 s of pure dwell. Dwell first, and only then with the magnet hold margin measured."
+Watch: log volume,,"Four lines per pick at 4.7 s is roughly 4 MB/day into user.log. Check the CS9's rotation size before a long run so the CSV does not evict the diagnostics it sits alongside. If it does, emit lines C and D every Nth cycle - the counters are cumulative, so they lose nothing by being sampled."
+
+"Sheets: Cycle Data (per pick) - Phase Budget (where the time goes) - Backup History (state in each backup) - Code Changes (build timeline and schema drift) - Runs - Errors - Header Key (what every column means, and the editable targets)."

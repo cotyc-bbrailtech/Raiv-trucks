@@ -1,0 +1,14 @@
+Column meanings
+
+cycle_s,"Whole pick, logged at the end of each cycle."
+seg_*_s,Per-segment medians. On a clean pick they sum to within ~0.15 s of cycle_s.
+plates_found,APERA's reported count. It counted the plate held on the magnet until the FoV boundary was corrected — see the 11 Sep analysis.
+branch_b_passes,"Cumulative. The 'no pickable parts' path, arm parked. Every one of the 36 on 22 Sep 12h46 was caused by a FoV decline."
+fov_declines,Cumulative. Captures where the arm never left the APERA view inside nFovClearTimeout_s. MUST be 0.
+cap_fov_clear,Cumulative. Captures taken with the arm provably out of shot.
+belt_master_state,0 gated · 1 feeding · 2 ready to capture · 3 nudging · 4 alarm · 5 holding for a pick · 6 stopped/settling · 7 lift hold
+belt_start_holds,Times the 3-inch lift gate delayed a belt start. Counts ~2 per pick because the episode flag re-arms.
+tcp_lift_mm,TCP world z minus the z THIS plate was gripped at. The lift gate compares it to nBeltClearHeight_mm.
+no_pick_on_beam,LIVE counter — reads 0 on nearly every row and that is an artefact of logging order. Use no_pick_at_pick (added rev E).
+sensor_stops / sensor_agree / sensor_disagree / camera_stops,"DEAD after 22 Sep — they belonged to tkBeltScan, which is retired. They read 0 and that is not a sensor fault."
+session,"Derived here, not logged: a counter reset (application reload). Cumulative counters are only valid within one session."

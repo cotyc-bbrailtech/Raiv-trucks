@@ -1,0 +1,26 @@
+Sensor-only conveyor control — 22 Sep
+CSV line L. tkBeltSensor is the only program that may command the conveyor ON (was 28 write sites across 7 programs).
+
+Metric,"12h46 run (rev D, gate broken)",14h04 run (after fix),What good looks like
+Picks,154,96
+Median cycle (s),4.82,4.63,lower
+Mean cycle (s),8.41,8.33,"mean >> median = interruptions, not code"
+FoV declines,115,0,0 — non-zero means the capture pose is inside the cube
+Captures with arm clear,0,8,> 0
+Branch B passes,40,2,near 0
+Belt advances (beam breaks),60,38,1:1 with belt starts
+Belt master starts,60,36,1:1 with beam breaks
+Lift-gate holds,351,219,~2 per pick (episode flag re-arms)
+Nudges,3,0,0 in normal running
+Runaway stops,0,0,0
+Belt master dead,0,0,0
+Sensor chatter,0,0,0
+"Captures declined, belt busy",21,20,non-zero = picks that waited rather than shooting a moving belt
+
+Settings that produced the right-hand column
+nStartFoVX_mm,835
+nFovClearTimeout_s,0.5
+nBeltRunMax_s,0 (disabled for commissioning)
+nBeltClearHeight_mm,76.2  (3 in lift gate)
+nBeltSettle_s,0.35
+"Blue = operator-set from the SP2 data editor, saved 22 Sep 14h04."
