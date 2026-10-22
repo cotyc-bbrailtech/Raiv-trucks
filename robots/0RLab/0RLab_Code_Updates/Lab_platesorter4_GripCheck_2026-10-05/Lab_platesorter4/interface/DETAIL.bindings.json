@@ -1,0 +1,156 @@
+{
+  "version": "1.0",
+  "bindings": [
+    {
+      "id": "v_State_DETAIL",
+      "attribute": "value",
+      "data": "_sM[\"State\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Plates",
+      "attribute": "value",
+      "data": "_sM[\"Plates\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Acc",
+      "attribute": "value",
+      "data": "_sM[\"Acc\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Rej",
+      "attribute": "value",
+      "data": "_sM[\"Rej\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_AccPct",
+      "attribute": "value",
+      "data": "_sM[\"AccPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_P14",
+      "attribute": "value",
+      "data": "_sM[\"P14\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_P18",
+      "attribute": "value",
+      "data": "_sM[\"P18\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_PPan",
+      "attribute": "value",
+      "data": "_sM[\"PPan\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_PSpk",
+      "attribute": "value",
+      "data": "_sM[\"PSpk\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_PAnc",
+      "attribute": "value",
+      "data": "_sM[\"PAnc\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_CamMean",
+      "attribute": "value",
+      "data": "_sM[\"CamMean\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_CamRuns",
+      "attribute": "value",
+      "data": "_sM[\"CamRuns\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_FindLoop",
+      "attribute": "value",
+      "data": "_sM[\"FindLoop\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_PartsFnd",
+      "attribute": "value",
+      "data": "_sM[\"PartsFnd\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_TcpPeak",
+      "attribute": "value",
+      "data": "_sM[\"TcpPeak\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_TcpNow",
+      "attribute": "value",
+      "data": "_sM[\"TcpNow\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_MoveID",
+      "attribute": "value",
+      "data": "_sM[\"MoveID\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "btnP3",
+      "event": "click",
+      "data": "ShowPhases",
+      "priority": 10
+    },
+    {
+      "id": "btnB3",
+      "event": "click",
+      "data": "ShowBasic",
+      "priority": 10
+    }
+  ],
+  "events": []
+}

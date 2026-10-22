@@ -1,0 +1,26 @@
+Column glossary		
+Sheet	Column	Meaning
+Cycle Data	source_backup	Which backup this cycle's log lines came from.
+Cycle Data	run	0-based counter that increments if the cycle sequence number (seq) ever goes backwards within a backup - i.e. the controller was restarted/reset. Everything so far is run 0.
+Cycle Data	seq	nCsvSeq at the time of this cycle - increments once per completed pick+place, never resets on its own.
+Cycle Data	lines_seen	Which RAIV/CSV tags were seen for this seq (A and/or B). 'complete' requires both.
+Cycle Data	cycle_s	Whole pick+place cycle time, tkCycle.pgx clock() at top and bottom of the bTrajectoryFound branch.
+Cycle Data	seg_approach_s	PartPick.pgx APPROACH move. Also absorbs the previous cycle's still-queued retreat/return motion - see Phase Budget.
+Cycle Data	seg_linear_approach_s	PartPick.pgx air-blast + LINEAR_APPROACH move.
+Cycle Data	seg_tool_on_s	PartPick.pgx: blocking call tTool("ON") - gripper magnetize dwell.
+Cycle Data	seg_return_s	PartPlace.pgx: motion to the place/reject/feed-conveyor position.
+Cycle Data	seg_tool_off_s	PartPlace.pgx: blocking call tTool("OFF") - gripper de-magnetize dwell.
+Cycle Data	seg_vision_wait_s	tkCycle.pgx: taskCreate PartFinder to wait(taskStatus==1) - task dispatch, not the vision result.
+Cycle Data	seg_finder_wait_s	tkCycle.pgx: wait(bRunning[PartFinder]==false) after PartPlace returns - real vision-completion wait.
+Cycle Data	parts_found	nPartsFound at the moment LogCycleCSV ran for this cycle - informational, not a timing field.
+Cycle Data	classes_found	nClassesFound at the moment LogCycleCSV ran - informational.
+Cycle Data	seg_sum_s	Sum of the 7 seg_*_s columns.
+Cycle Data	unaccounted_s	cycle_s minus seg_sum_s. Near zero on this cell (see Summary) - most of the cycle is captured.
+Cycle Data	complete	'yes' if both RAIV/CSV,A and RAIV/CSV,B lines were seen for this seq; 'no' means a line was likely dropped.
+Backup History	new_windows_populated	True if any Seg*/cycle ring-buffer key in _sCycleTime had a non-blank value - i.e. this .dtx was saved from SP2 after the instrumentation had run a while.
+Backup History	_nCycleTime_nonzero / _nCycleTime_samples	How many of the 10-slot cycle-time ring buffer's slots are non-zero, and the raw slot values - only meaningful if the .dtx was saved from SP2.
+Backup History	_nWorkingMode / _nWorkingStatus	PlateSorter/binpick_TiePlates working-mode and status globals at backup time - general cell state, not cycle-timing specific.
+Backup History	sPipeline	Which Apera vision pipeline was active.
+Backup History	nPartsFound / nPartsDet / nClassesFound / nMoveID	Snapshot values of these globals at backup time.
+Runs	duration_min	Minutes between the application's start and stop log lines. Blank 'ended' means no stop was logged before the backup was pulled (app still running).
+Errors	share	This class's count divided by total error/warning lines matched across every class.

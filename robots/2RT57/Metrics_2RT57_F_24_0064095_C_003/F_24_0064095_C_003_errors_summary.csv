@@ -1,0 +1,13 @@
+error_class,match,count,count_since_2020,first_seen,last_seen,first_seen_since_2020,last_seen_since_2020,example
+io_no_answer,No answer from input-output,344,56,2019-02-14T10:13:11,2026-09-03T09:45:12,2026-08-17T08:42:29,2026-09-03T09:45:12,VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.
+motion_cancelled,pending motion was cancelled,72,15,2019-02-14T10:16:56,2026-09-24T07:25:30,2026-08-17T10:21:55,2026-09-24T07:25:30,"Application has ended, the pending motion was cancelled."
+motion_stack_conflict,currently pushing movements on the motion stack,14,14,2026-08-31T20:07:02,2026-09-22T06:24:37,2026-08-31T20:07:02,2026-09-22T06:24:37,VAL 3 runtime error. Another task is currently pushing movements on the motion stack.. Cycle.
+calib_instability,Instability detected while performing calibration call,14,12,2019-02-14T11:35:01,2026-09-11T03:07:53,2026-08-24T06:49:26,2026-09-11T03:07:53,"er,Instability detected while performing calibration call,-1"
+calib_handeye_error,Hand-eye calibration end internal error,8,8,2026-09-03T03:45:03,2026-09-11T03:11:14,2026-09-03T03:45:03,2026-09-11T03:11:14,"er,Hand-eye calibration end internal error,-1"
+apera_bad_pipeline_id,The provided pipeline id,1763,6,2019-02-14T10:47:55,2026-08-21T11:15:42,2026-08-21T11:15:31,2026-08-21T11:15:42,"er,The provided pipeline id ""RAIV_pick_belt_1"" does not exist,-1"
+val3_err60_timeout,ERR 60 Instruction timeout,30,5,2019-02-14T10:12:55,2026-09-03T10:59:21,2026-08-21T09:00:54,2026-09-03T10:59:21,ERR 60 Instruction timeout. PlateSorter~.
+workspace_out_of_range,cartesian position is out of the workspace,22,4,2019-02-14T10:27:36,2026-09-22T06:24:13,2026-09-01T20:35:11,2026-09-22T06:24:13,VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle.
+apera_image_capture,Image capture error,1,1,2026-08-25T06:35:03,2026-08-25T06:35:03,2026-08-25T06:35:03,2026-08-25T06:35:03,"er,Image capture error,-1"
+userpage_not_found,Userpage: Page not found,1,0,2019-02-14T10:13:32,2019-02-14T10:13:32,,,Userpage: Page not found. Fullpath is '%s'.
+apera_pipeline_missing,is either not queued to run,1755,0,2019-02-14T10:47:55,2019-02-14T11:23:51,,,"er,Pipeline 'RAIV_pick_belt_1' is either not queued to run or does not exist,-1"
+apera_no_trajectory,Cannot follow trajectory,1,0,2019-02-14T11:31:08,2019-02-14T11:31:08,,,Apera Error: Cannot follow trajectory. No valid trajectories were returned

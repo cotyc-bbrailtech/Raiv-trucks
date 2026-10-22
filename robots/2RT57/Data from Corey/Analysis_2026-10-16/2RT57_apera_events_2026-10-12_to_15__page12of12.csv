@@ -1,0 +1,2239 @@
+date,apera_log_time,type,value
+2026-10-15,13:56:44.137,ack_ok_0_0,1
+2026-10-15,13:56:44.137,robot_blocked_s,0.248643
+2026-10-15,13:56:44.137,wait_stage,"""detector"""
+2026-10-15,13:56:44.527,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 2]"
+2026-10-15,13:56:44.527,robot_blocked_s,0.389179
+2026-10-15,13:56:44.531,wait_stage,"""motion_planner"""
+2026-10-15,13:56:45.760,"trajectory_segment_request(id,seg)","[470, 5]"
+2026-10-15,13:56:45.762,"trajectory_segment_request(id,seg)","[470, 7]"
+2026-10-15,13:56:45.762,"trajectory_segment_request(id,seg)","[470, 8]"
+2026-10-15,13:56:45.763,"trajectory_segment_request(id,seg)","[470, 12]"
+2026-10-15,13:56:47.851,pick_request,"[567.483, -886.346, 265.897]"
+2026-10-15,13:56:47.852,ack_ok_0_0,1
+2026-10-15,13:56:47.852,robot_blocked_s,0.001055
+2026-10-15,13:56:47.854,wait_stage,"""capture"""
+2026-10-15,13:56:48.097,ack_ok_0_0,1
+2026-10-15,13:56:48.097,robot_blocked_s,0.24257
+2026-10-15,13:56:48.098,wait_stage,"""detector"""
+2026-10-15,13:56:48.485,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,13:56:48.485,robot_blocked_s,0.387538
+2026-10-15,13:56:48.489,wait_stage,"""motion_planner"""
+2026-10-15,13:56:49.742,"trajectory_segment_request(id,seg)","[471, 5]"
+2026-10-15,13:56:49.743,"trajectory_segment_request(id,seg)","[471, 7]"
+2026-10-15,13:56:49.744,"trajectory_segment_request(id,seg)","[471, 8]"
+2026-10-15,13:56:49.744,"trajectory_segment_request(id,seg)","[471, 12]"
+2026-10-15,13:56:52.166,pick_request,"[575.773, -884.473, 263.809]"
+2026-10-15,13:56:52.167,ack_ok_0_0,1
+2026-10-15,13:56:52.167,wait_stage,"""capture"""
+2026-10-15,13:56:52.413,robot_blocked_s,0.245645
+2026-10-15,13:56:52.414,wait_stage,"""detector"""
+2026-10-15,13:56:52.788,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 0]"
+2026-10-15,13:56:52.788,robot_blocked_s,0.373786
+2026-10-15,13:56:52.792,wait_stage,"""motion_planner"""
+2026-10-15,13:56:54.032,"trajectory_segment_request(id,seg)","[472, 4]"
+2026-10-15,13:56:54.034,"trajectory_segment_request(id,seg)","[472, 6]"
+2026-10-15,13:56:54.034,"trajectory_segment_request(id,seg)","[472, 7]"
+2026-10-15,13:56:54.036,"trajectory_segment_request(id,seg)","[472, 11]"
+2026-10-15,13:56:57.866,pick_request,"[406.346, -796.502, 237.071]"
+2026-10-15,13:56:57.867,ack_ok_0_0,1
+2026-10-15,13:56:57.867,robot_blocked_s,0.001325
+2026-10-15,13:56:57.868,wait_stage,"""capture"""
+2026-10-15,13:56:58.114,ack_ok_0_0,1
+2026-10-15,13:56:58.114,robot_blocked_s,0.245655
+2026-10-15,13:56:58.115,wait_stage,"""detector"""
+2026-10-15,13:56:58.506,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 2]"
+2026-10-15,13:56:58.506,robot_blocked_s,0.391597
+2026-10-15,13:56:58.510,wait_stage,"""motion_planner"""
+2026-10-15,13:56:59.589,"trajectory_segment_request(id,seg)","[473, 3]"
+2026-10-15,13:56:59.590,"trajectory_segment_request(id,seg)","[473, 5]"
+2026-10-15,13:56:59.591,"trajectory_segment_request(id,seg)","[473, 6]"
+2026-10-15,13:56:59.591,"trajectory_segment_request(id,seg)","[473, 10]"
+2026-10-15,13:57:01.950,pick_request,"[575.334, -884.574, 263.92]"
+2026-10-15,13:57:01.951,ack_ok_0_0,1
+2026-10-15,13:57:01.951,robot_blocked_s,0.000929
+2026-10-15,13:57:01.952,wait_stage,"""capture"""
+2026-10-15,13:57:02.197,ack_ok_0_0,1
+2026-10-15,13:57:02.197,robot_blocked_s,0.244769
+2026-10-15,13:57:02.198,wait_stage,"""detector"""
+2026-10-15,13:57:02.567,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 2]"
+2026-10-15,13:57:02.567,robot_blocked_s,0.369072
+2026-10-15,13:57:02.571,wait_stage,"""motion_planner"""
+2026-10-15,13:57:03.664,"trajectory_segment_request(id,seg)","[474, 4]"
+2026-10-15,13:57:03.665,"trajectory_segment_request(id,seg)","[474, 6]"
+2026-10-15,13:57:03.666,"trajectory_segment_request(id,seg)","[474, 7]"
+2026-10-15,13:57:03.667,"trajectory_segment_request(id,seg)","[474, 11]"
+2026-10-15,13:57:05.840,pick_request,"[576.156, -884.385, 263.712]"
+2026-10-15,13:57:05.841,ack_ok_0_0,1
+2026-10-15,13:57:05.841,robot_blocked_s,0.000665
+2026-10-15,13:57:05.842,wait_stage,"""capture"""
+2026-10-15,13:57:06.087,ack_ok_0_0,1
+2026-10-15,13:57:06.087,robot_blocked_s,0.245214
+2026-10-15,13:57:06.088,wait_stage,"""detector"""
+2026-10-15,13:57:06.483,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,13:57:06.483,robot_blocked_s,0.395204
+2026-10-15,13:57:06.487,wait_stage,"""motion_planner"""
+2026-10-15,13:57:07.719,"trajectory_segment_request(id,seg)","[475, 3]"
+2026-10-15,13:57:07.719,"trajectory_segment_request(id,seg)","[475, 5]"
+2026-10-15,13:57:07.720,"trajectory_segment_request(id,seg)","[475, 6]"
+2026-10-15,13:57:07.721,"trajectory_segment_request(id,seg)","[475, 10]"
+2026-10-15,13:57:11.791,pick_request,"[407.609, -796.029, 236.791]"
+2026-10-15,13:57:11.792,ack_ok_0_0,1
+2026-10-15,13:57:11.792,robot_blocked_s,0.000913
+2026-10-15,13:57:11.793,wait_stage,"""capture"""
+2026-10-15,13:57:12.047,ack_ok_0_0,1
+2026-10-15,13:57:12.047,robot_blocked_s,0.254238
+2026-10-15,13:57:12.048,wait_stage,"""detector"""
+2026-10-15,13:57:12.456,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 2, 0, 1]"
+2026-10-15,13:57:12.456,robot_blocked_s,0.407528
+2026-10-15,13:57:12.460,wait_stage,"""motion_planner"""
+2026-10-15,13:57:13.639,"trajectory_segment_request(id,seg)","[476, 11]"
+2026-10-15,13:57:16.256,pick_request,"[562.183, -887.501, 267.223]"
+2026-10-15,13:57:16.257,ack_ok_0_0,1
+2026-10-15,13:57:16.257,robot_blocked_s,0.000894
+2026-10-15,13:57:16.258,wait_stage,"""capture"""
+2026-10-15,13:57:16.502,robot_blocked_s,0.244361
+2026-10-15,13:57:16.503,wait_stage,"""detector"""
+2026-10-15,13:57:16.898,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 0]"
+2026-10-15,13:57:16.898,robot_blocked_s,0.384807
+2026-10-15,13:57:16.902,wait_stage,"""motion_planner"""
+2026-10-15,13:57:18.195,"trajectory_segment_request(id,seg)","[477, 5]"
+2026-10-15,13:57:18.197,"trajectory_segment_request(id,seg)","[477, 7]"
+2026-10-15,13:57:18.197,"trajectory_segment_request(id,seg)","[477, 8]"
+2026-10-15,13:57:18.199,"trajectory_segment_request(id,seg)","[477, 12]"
+2026-10-15,13:57:20.465,pick_request,"[576.628, -884.275, 263.593]"
+2026-10-15,13:57:20.466,ack_ok_0_0,1
+2026-10-15,13:57:20.466,robot_blocked_s,0.00115
+2026-10-15,13:57:20.467,wait_stage,"""capture"""
+2026-10-15,13:57:20.711,robot_blocked_s,0.244811
+2026-10-15,13:57:20.712,wait_stage,"""detector"""
+2026-10-15,13:57:21.097,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 1]"
+2026-10-15,13:57:21.097,robot_blocked_s,0.384729
+2026-10-15,13:57:21.101,wait_stage,"""motion_planner"""
+2026-10-15,13:57:22.312,"trajectory_segment_request(id,seg)","[478, 5]"
+2026-10-15,13:57:22.313,"trajectory_segment_request(id,seg)","[478, 7]"
+2026-10-15,13:57:22.313,"trajectory_segment_request(id,seg)","[478, 8]"
+2026-10-15,13:57:22.315,"trajectory_segment_request(id,seg)","[478, 12]"
+2026-10-15,13:57:24.605,pick_request,"[571.738, -885.395, 264.828]"
+2026-10-15,13:57:24.606,ack_ok_0_0,1
+2026-10-15,13:57:24.606,robot_blocked_s,0.000983
+2026-10-15,13:57:24.607,wait_stage,"""capture"""
+2026-10-15,13:57:24.852,robot_blocked_s,0.244853
+2026-10-15,13:57:24.853,wait_stage,"""detector"""
+2026-10-15,13:57:25.260,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 3]"
+2026-10-15,13:57:25.260,robot_blocked_s,0.406991
+2026-10-15,13:57:25.263,wait_stage,"""motion_planner"""
+2026-10-15,13:57:26.416,"trajectory_segment_request(id,seg)","[479, 3]"
+2026-10-15,13:57:26.418,"trajectory_segment_request(id,seg)","[479, 5]"
+2026-10-15,13:57:26.419,"trajectory_segment_request(id,seg)","[479, 7]"
+2026-10-15,13:57:26.420,"trajectory_segment_request(id,seg)","[479, 11]"
+2026-10-15,13:57:42.396,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,13:57:42.397,ack_ok_0_0,1
+2026-10-15,13:57:42.397,robot_blocked_s,0.001027
+2026-10-15,13:57:42.398,wait_stage,"""capture"""
+2026-10-15,13:57:42.644,robot_blocked_s,0.245669
+2026-10-15,13:57:42.645,wait_stage,"""detector"""
+2026-10-15,13:57:43.058,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 0]"
+2026-10-15,13:57:43.058,robot_blocked_s,0.412638
+2026-10-15,13:57:43.061,wait_stage,"""motion_planner"""
+2026-10-15,13:57:44.492,"trajectory_segment_request(id,seg)","[480, 4]"
+2026-10-15,13:57:44.493,"trajectory_segment_request(id,seg)","[480, 6]"
+2026-10-15,13:57:44.494,"trajectory_segment_request(id,seg)","[480, 7]"
+2026-10-15,13:57:44.494,"trajectory_segment_request(id,seg)","[480, 11]"
+2026-10-15,13:57:46.813,pick_request,"[577.149, -884.153, 263.458]"
+2026-10-15,13:57:46.814,ack_ok_0_0,1
+2026-10-15,13:57:46.814,robot_blocked_s,0.000976
+2026-10-15,13:57:46.815,wait_stage,"""capture"""
+2026-10-15,13:57:47.062,ack_ok_0_0,1
+2026-10-15,13:57:47.062,robot_blocked_s,0.24759
+2026-10-15,13:57:47.063,wait_stage,"""detector"""
+2026-10-15,13:57:47.459,robot_blocked_s,0.396229
+2026-10-15,13:57:47.460,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 1]"
+2026-10-15,13:57:47.463,wait_stage,"""motion_planner"""
+2026-10-15,13:57:48.652,"trajectory_segment_request(id,seg)","[481, 7]"
+2026-10-15,13:57:48.654,"trajectory_segment_request(id,seg)","[481, 11]"
+2026-10-15,13:57:54.509,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,13:57:54.510,ack_ok_0_0,1
+2026-10-15,13:57:54.510,robot_blocked_s,0.001084
+2026-10-15,13:57:54.511,wait_stage,"""capture"""
+2026-10-15,13:57:54.759,ack_ok_0_0,1
+2026-10-15,13:57:54.759,robot_blocked_s,0.248142
+2026-10-15,13:57:54.760,wait_stage,"""detector"""
+2026-10-15,13:57:55.153,robot_blocked_s,0.393542
+2026-10-15,13:57:55.154,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 0]"
+2026-10-15,13:57:56.498,"trajectory_segment_request(id,seg)","[482, 4]"
+2026-10-15,13:57:56.499,"trajectory_segment_request(id,seg)","[482, 6]"
+2026-10-15,13:57:56.500,"trajectory_segment_request(id,seg)","[482, 7]"
+2026-10-15,13:57:56.501,"trajectory_segment_request(id,seg)","[482, 11]"
+2026-10-15,13:58:05.254,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,13:58:05.255,ack_ok_0_0,1
+2026-10-15,13:58:05.255,robot_blocked_s,0.00099
+2026-10-15,13:58:05.256,wait_stage,"""capture"""
+2026-10-15,13:58:05.500,robot_blocked_s,0.243417
+2026-10-15,13:58:05.500,wait_stage,"""detector"""
+2026-10-15,13:58:05.890,"detections(14in,18in,anchor,pandrol,spike)","[7, 1, 0, 0, 2]"
+2026-10-15,13:58:05.890,robot_blocked_s,0.389681
+2026-10-15,13:58:05.894,wait_stage,"""motion_planner"""
+2026-10-15,13:58:07.157,"trajectory_segment_request(id,seg)","[483, 3]"
+2026-10-15,13:58:07.158,"trajectory_segment_request(id,seg)","[483, 5]"
+2026-10-15,13:58:07.159,"trajectory_segment_request(id,seg)","[483, 6]"
+2026-10-15,13:58:07.160,"trajectory_segment_request(id,seg)","[483, 10]"
+2026-10-15,13:58:09.313,pick_request,"[570.782, -885.61, 265.067]"
+2026-10-15,13:58:09.314,ack_ok_0_0,1
+2026-10-15,13:58:09.314,robot_blocked_s,0.001013
+2026-10-15,13:58:09.315,wait_stage,"""capture"""
+2026-10-15,13:58:09.558,robot_blocked_s,0.243392
+2026-10-15,13:58:09.559,wait_stage,"""detector"""
+2026-10-15,13:58:09.936,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 1, 0, 1]"
+2026-10-15,13:58:09.936,robot_blocked_s,0.37714
+2026-10-15,13:58:09.940,wait_stage,"""motion_planner"""
+2026-10-15,13:58:11.167,"trajectory_segment_request(id,seg)","[484, 5]"
+2026-10-15,13:58:11.168,"trajectory_segment_request(id,seg)","[484, 7]"
+2026-10-15,13:58:11.169,"trajectory_segment_request(id,seg)","[484, 8]"
+2026-10-15,13:58:11.170,"trajectory_segment_request(id,seg)","[484, 12]"
+2026-10-15,13:58:13.349,pick_request,"[563.062, -887.312, 267.004]"
+2026-10-15,13:58:13.350,ack_ok_0_0,1
+2026-10-15,13:58:13.350,robot_blocked_s,0.000988
+2026-10-15,13:58:13.351,wait_stage,"""capture"""
+2026-10-15,13:58:13.595,robot_blocked_s,0.244381
+2026-10-15,13:58:13.596,wait_stage,"""detector"""
+2026-10-15,13:58:13.977,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 2]"
+2026-10-15,13:58:13.977,robot_blocked_s,0.380378
+2026-10-15,13:58:13.980,wait_stage,"""motion_planner"""
+2026-10-15,13:58:15.233,"trajectory_segment_request(id,seg)","[485, 5]"
+2026-10-15,13:58:15.234,"trajectory_segment_request(id,seg)","[485, 7]"
+2026-10-15,13:58:15.235,"trajectory_segment_request(id,seg)","[485, 8]"
+2026-10-15,13:58:15.236,"trajectory_segment_request(id,seg)","[485, 12]"
+2026-10-15,13:58:17.554,pick_request,"[568.708, -886.074, 265.589]"
+2026-10-15,13:58:17.555,ack_ok_0_0,1
+2026-10-15,13:58:17.555,robot_blocked_s,0.0009
+2026-10-15,13:58:17.556,wait_stage,"""capture"""
+2026-10-15,13:58:17.799,robot_blocked_s,0.243221
+2026-10-15,13:58:17.801,wait_stage,"""detector"""
+2026-10-15,13:58:18.192,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 5]"
+2026-10-15,13:58:18.192,robot_blocked_s,0.391372
+2026-10-15,13:58:18.196,wait_stage,"""motion_planner"""
+2026-10-15,13:58:19.429,"trajectory_segment_request(id,seg)","[486, 4]"
+2026-10-15,13:58:19.430,"trajectory_segment_request(id,seg)","[486, 6]"
+2026-10-15,13:58:19.431,"trajectory_segment_request(id,seg)","[486, 7]"
+2026-10-15,13:58:19.432,"trajectory_segment_request(id,seg)","[486, 11]"
+2026-10-15,13:58:21.799,pick_request,"[564.606, -886.977, 266.618]"
+2026-10-15,13:58:21.800,ack_ok_0_0,1
+2026-10-15,13:58:21.800,robot_blocked_s,0.001053
+2026-10-15,13:58:21.801,wait_stage,"""capture"""
+2026-10-15,13:58:22.047,ack_ok_0_0,1
+2026-10-15,13:58:22.047,robot_blocked_s,0.245661
+2026-10-15,13:58:22.048,wait_stage,"""detector"""
+2026-10-15,13:58:22.440,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,13:58:22.440,robot_blocked_s,0.39153
+2026-10-15,13:58:22.443,wait_stage,"""motion_planner"""
+2026-10-15,13:58:23.540,"trajectory_segment_request(id,seg)","[487, 3]"
+2026-10-15,13:58:23.541,"trajectory_segment_request(id,seg)","[487, 5]"
+2026-10-15,13:58:23.542,"trajectory_segment_request(id,seg)","[487, 6]"
+2026-10-15,13:58:23.543,"trajectory_segment_request(id,seg)","[487, 10]"
+2026-10-15,13:58:26.814,pick_request,"[403.695, -794.739, 240.422]"
+2026-10-15,13:58:26.815,ack_ok_0_0,1
+2026-10-15,13:58:26.815,robot_blocked_s,0.000898
+2026-10-15,13:58:26.816,wait_stage,"""capture"""
+2026-10-15,13:58:27.062,ack_ok_0_0,1
+2026-10-15,13:58:27.062,robot_blocked_s,0.24555
+2026-10-15,13:58:27.062,wait_stage,"""detector"""
+2026-10-15,13:58:27.462,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 0]"
+2026-10-15,13:58:27.462,robot_blocked_s,0.399901
+2026-10-15,13:58:27.466,wait_stage,"""motion_planner"""
+2026-10-15,13:58:29.267,"trajectory_segment_request(id,seg)","[488, 5]"
+2026-10-15,13:58:29.268,"trajectory_segment_request(id,seg)","[488, 8]"
+2026-10-15,13:58:29.269,"trajectory_segment_request(id,seg)","[488, 9]"
+2026-10-15,13:58:29.270,"trajectory_segment_request(id,seg)","[488, 13]"
+2026-10-15,13:59:31.240,pick_request,"[570.577, -933.595, 266.944]"
+2026-10-15,13:59:31.241,ack_ok_0_0,1
+2026-10-15,13:59:31.241,robot_blocked_s,0.001086
+2026-10-15,13:59:31.243,wait_stage,"""capture"""
+2026-10-15,13:59:31.488,robot_blocked_s,0.245322
+2026-10-15,13:59:31.489,wait_stage,"""detector"""
+2026-10-15,13:59:31.875,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 1, 0, 2]"
+2026-10-15,13:59:31.875,robot_blocked_s,0.386483
+2026-10-15,13:59:31.879,wait_stage,"""motion_planner"""
+2026-10-15,13:59:33.303,"trajectory_segment_request(id,seg)","[489, 4]"
+2026-10-15,13:59:33.304,"trajectory_segment_request(id,seg)","[489, 6]"
+2026-10-15,13:59:33.305,"trajectory_segment_request(id,seg)","[489, 7]"
+2026-10-15,13:59:33.306,"trajectory_segment_request(id,seg)","[489, 11]"
+2026-10-15,13:59:37.284,pick_request,"[412.959, -794.002, 235.599]"
+2026-10-15,13:59:37.285,ack_ok_0_0,1
+2026-10-15,13:59:37.285,robot_blocked_s,0.0012
+2026-10-15,13:59:37.286,wait_stage,"""capture"""
+2026-10-15,13:59:37.530,robot_blocked_s,0.243003
+2026-10-15,13:59:37.531,wait_stage,"""detector"""
+2026-10-15,13:59:37.917,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 3]"
+2026-10-15,13:59:37.917,robot_blocked_s,0.385812
+2026-10-15,13:59:37.920,wait_stage,"""motion_planner"""
+2026-10-15,13:59:39.250,"trajectory_segment_request(id,seg)","[490, 5]"
+2026-10-15,13:59:39.251,"trajectory_segment_request(id,seg)","[490, 7]"
+2026-10-15,13:59:39.252,"trajectory_segment_request(id,seg)","[490, 8]"
+2026-10-15,13:59:39.253,"trajectory_segment_request(id,seg)","[490, 12]"
+2026-10-15,13:59:41.632,pick_request,"[572.178, -885.295, 264.717]"
+2026-10-15,13:59:41.633,ack_ok_0_0,1
+2026-10-15,13:59:41.633,robot_blocked_s,0.000898
+2026-10-15,13:59:41.635,wait_stage,"""capture"""
+2026-10-15,13:59:41.880,robot_blocked_s,0.245129
+2026-10-15,13:59:41.881,wait_stage,"""detector"""
+2026-10-15,13:59:42.278,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 2, 0, 3]"
+2026-10-15,13:59:42.278,robot_blocked_s,0.396727
+2026-10-15,13:59:42.282,wait_stage,"""motion_planner"""
+2026-10-15,13:59:43.628,"trajectory_segment_request(id,seg)","[491, 5]"
+2026-10-15,13:59:43.628,"trajectory_segment_request(id,seg)","[491, 7]"
+2026-10-15,13:59:43.629,"trajectory_segment_request(id,seg)","[491, 8]"
+2026-10-15,13:59:43.630,"trajectory_segment_request(id,seg)","[491, 12]"
+2026-10-15,13:59:45.984,pick_request,"[564.801, -886.934, 266.569]"
+2026-10-15,13:59:45.985,ack_ok_0_0,1
+2026-10-15,13:59:45.985,robot_blocked_s,0.000948
+2026-10-15,13:59:45.986,wait_stage,"""capture"""
+2026-10-15,13:59:46.230,robot_blocked_s,0.244208
+2026-10-15,13:59:46.231,wait_stage,"""detector"""
+2026-10-15,13:59:46.629,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 1, 0, 4]"
+2026-10-15,13:59:46.629,robot_blocked_s,0.397838
+2026-10-15,13:59:46.633,wait_stage,"""motion_planner"""
+2026-10-15,13:59:47.761,"trajectory_segment_request(id,seg)","[492, 5]"
+2026-10-15,13:59:47.763,"trajectory_segment_request(id,seg)","[492, 7]"
+2026-10-15,13:59:47.764,"trajectory_segment_request(id,seg)","[492, 9]"
+2026-10-15,13:59:47.765,"trajectory_segment_request(id,seg)","[492, 13]"
+2026-10-15,13:59:53.134,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,13:59:53.135,ack_ok_0_0,1
+2026-10-15,13:59:53.135,robot_blocked_s,0.001207
+2026-10-15,13:59:53.136,wait_stage,"""capture"""
+2026-10-15,13:59:53.380,robot_blocked_s,0.244397
+2026-10-15,13:59:53.381,wait_stage,"""detector"""
+2026-10-15,13:59:53.785,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 3]"
+2026-10-15,13:59:53.785,robot_blocked_s,0.403998
+2026-10-15,13:59:53.789,wait_stage,"""motion_planner"""
+2026-10-15,13:59:54.882,"trajectory_segment_request(id,seg)","[493, 3]"
+2026-10-15,13:59:54.883,"trajectory_segment_request(id,seg)","[493, 5]"
+2026-10-15,13:59:54.884,"trajectory_segment_request(id,seg)","[493, 6]"
+2026-10-15,13:59:54.885,"trajectory_segment_request(id,seg)","[493, 10]"
+2026-10-15,13:59:57.198,robot_blocked_s,0.000902
+2026-10-15,13:59:57.198,pick_request,"[571.159, -885.526, 264.973]"
+2026-10-15,13:59:57.199,ack_ok_0_0,1
+2026-10-15,13:59:57.200,wait_stage,"""capture"""
+2026-10-15,13:59:57.444,ack_ok_0_0,1
+2026-10-15,13:59:57.444,robot_blocked_s,0.244027
+2026-10-15,13:59:57.445,wait_stage,"""detector"""
+2026-10-15,13:59:57.841,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 3]"
+2026-10-15,13:59:57.841,robot_blocked_s,0.396909
+2026-10-15,13:59:57.846,wait_stage,"""motion_planner"""
+2026-10-15,13:59:58.943,"trajectory_segment_request(id,seg)","[494, 4]"
+2026-10-15,13:59:58.943,"trajectory_segment_request(id,seg)","[494, 6]"
+2026-10-15,13:59:58.944,"trajectory_segment_request(id,seg)","[494, 7]"
+2026-10-15,13:59:58.945,"trajectory_segment_request(id,seg)","[494, 11]"
+2026-10-15,14:00:01.091,pick_request,"[565.253, -886.836, 266.456]"
+2026-10-15,14:00:01.092,ack_ok_0_0,1
+2026-10-15,14:00:01.092,robot_blocked_s,0.001002
+2026-10-15,14:00:01.093,wait_stage,"""capture"""
+2026-10-15,14:00:01.342,robot_blocked_s,0.248318
+2026-10-15,14:00:01.343,wait_stage,"""detector"""
+2026-10-15,14:00:01.714,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 2]"
+2026-10-15,14:00:01.714,robot_blocked_s,0.371312
+2026-10-15,14:00:01.718,wait_stage,"""motion_planner"""
+2026-10-15,14:00:02.809,"trajectory_segment_request(id,seg)","[495, 8]"
+2026-10-15,14:00:02.810,"trajectory_segment_request(id,seg)","[495, 9]"
+2026-10-15,14:00:02.811,"trajectory_segment_request(id,seg)","[495, 13]"
+2026-10-15,14:00:02.812,"trajectory_segment_request(id,seg)","[495, 17]"
+2026-10-15,14:00:05.220,pick_request,"[561.193, -887.713, 267.471]"
+2026-10-15,14:00:05.221,ack_ok_0_0,1
+2026-10-15,14:00:05.221,robot_blocked_s,0.000857
+2026-10-15,14:00:05.222,wait_stage,"""capture"""
+2026-10-15,14:00:05.467,robot_blocked_s,0.245179
+2026-10-15,14:00:05.468,wait_stage,"""detector"""
+2026-10-15,14:00:05.850,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 3]"
+2026-10-15,14:00:05.850,robot_blocked_s,0.381516
+2026-10-15,14:00:05.854,wait_stage,"""motion_planner"""
+2026-10-15,14:00:06.965,"trajectory_segment_request(id,seg)","[496, 3]"
+2026-10-15,14:00:06.966,"trajectory_segment_request(id,seg)","[496, 5]"
+2026-10-15,14:00:06.967,"trajectory_segment_request(id,seg)","[496, 6]"
+2026-10-15,14:00:06.968,"trajectory_segment_request(id,seg)","[496, 10]"
+2026-10-15,14:00:10.751,pick_request,"[410.074, -795.101, 236.242]"
+2026-10-15,14:00:10.752,ack_ok_0_0,1
+2026-10-15,14:00:10.752,robot_blocked_s,0.000841
+2026-10-15,14:00:10.753,wait_stage,"""capture"""
+2026-10-15,14:00:11.002,robot_blocked_s,0.24908
+2026-10-15,14:00:11.003,ack_ok_0_0,1
+2026-10-15,14:00:11.003,wait_stage,"""detector"""
+2026-10-15,14:00:11.397,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 3]"
+2026-10-15,14:00:11.397,robot_blocked_s,0.393236
+2026-10-15,14:00:11.400,wait_stage,"""motion_planner"""
+2026-10-15,14:00:12.587,"trajectory_segment_request(id,seg)","[497, 7]"
+2026-10-15,14:00:12.588,"trajectory_segment_request(id,seg)","[497, 9]"
+2026-10-15,14:00:12.588,"trajectory_segment_request(id,seg)","[497, 10]"
+2026-10-15,14:00:12.589,"trajectory_segment_request(id,seg)","[497, 14]"
+2026-10-15,14:00:15.333,pick_request,"[618.233, -873.487, 252.233]"
+2026-10-15,14:00:15.334,ack_ok_0_0,1
+2026-10-15,14:00:15.334,robot_blocked_s,0.000981
+2026-10-15,14:00:15.581,robot_blocked_s,0.245271
+2026-10-15,14:00:15.582,wait_stage,"""detector"""
+2026-10-15,14:00:15.982,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:00:15.982,robot_blocked_s,0.399507
+2026-10-15,14:00:15.985,wait_stage,"""motion_planner"""
+2026-10-15,14:00:17.203,"trajectory_segment_request(id,seg)","[498, 5]"
+2026-10-15,14:00:17.204,"trajectory_segment_request(id,seg)","[498, 7]"
+2026-10-15,14:00:17.205,"trajectory_segment_request(id,seg)","[498, 8]"
+2026-10-15,14:00:17.206,"trajectory_segment_request(id,seg)","[498, 12]"
+2026-10-15,14:00:19.198,pick_request,"[569.225, -885.959, 265.459]"
+2026-10-15,14:00:19.200,ack_ok_0_0,1
+2026-10-15,14:00:19.200,robot_blocked_s,0.001212
+2026-10-15,14:00:19.201,wait_stage,"""capture"""
+2026-10-15,14:00:19.447,ack_ok_0_0,1
+2026-10-15,14:00:19.447,robot_blocked_s,0.24612
+2026-10-15,14:00:19.448,wait_stage,"""detector"""
+2026-10-15,14:00:19.843,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 2]"
+2026-10-15,14:00:19.843,robot_blocked_s,0.395118
+2026-10-15,14:00:19.847,wait_stage,"""motion_planner"""
+2026-10-15,14:00:21.183,"trajectory_segment_request(id,seg)","[499, 4]"
+2026-10-15,14:00:21.184,"trajectory_segment_request(id,seg)","[499, 6]"
+2026-10-15,14:00:21.185,"trajectory_segment_request(id,seg)","[499, 7]"
+2026-10-15,14:00:21.185,"trajectory_segment_request(id,seg)","[499, 11]"
+2026-10-15,14:00:25.799,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:00:25.800,robot_blocked_s,0.001117
+2026-10-15,14:00:25.801,wait_stage,"""capture"""
+2026-10-15,14:00:26.053,ack_ok_0_0,1
+2026-10-15,14:00:26.053,robot_blocked_s,0.252582
+2026-10-15,14:00:26.054,wait_stage,"""detector"""
+2026-10-15,14:00:26.441,"detections(14in,18in,anchor,pandrol,spike)","[10, 0, 1, 0, 2]"
+2026-10-15,14:00:26.441,robot_blocked_s,0.386683
+2026-10-15,14:00:26.445,wait_stage,"""motion_planner"""
+2026-10-15,14:00:27.691,"trajectory_segment_request(id,seg)","[500, 4]"
+2026-10-15,14:00:27.692,"trajectory_segment_request(id,seg)","[500, 6]"
+2026-10-15,14:00:27.693,"trajectory_segment_request(id,seg)","[500, 7]"
+2026-10-15,14:00:27.694,"trajectory_segment_request(id,seg)","[500, 11]"
+2026-10-15,14:00:29.895,pick_request,"[572.267, -885.274, 264.695]"
+2026-10-15,14:00:29.896,ack_ok_0_0,1
+2026-10-15,14:00:29.896,robot_blocked_s,0.001003
+2026-10-15,14:00:29.897,wait_stage,"""capture"""
+2026-10-15,14:00:30.141,ack_ok_0_0,1
+2026-10-15,14:00:30.141,robot_blocked_s,0.244271
+2026-10-15,14:00:30.142,wait_stage,"""detector"""
+2026-10-15,14:00:30.509,"detections(14in,18in,anchor,pandrol,spike)","[9, 0, 1, 0, 1]"
+2026-10-15,14:00:30.509,robot_blocked_s,0.367103
+2026-10-15,14:00:30.513,wait_stage,"""motion_planner"""
+2026-10-15,14:00:31.695,"trajectory_segment_request(id,seg)","[501, 5]"
+2026-10-15,14:00:31.696,"trajectory_segment_request(id,seg)","[501, 7]"
+2026-10-15,14:00:31.697,"trajectory_segment_request(id,seg)","[501, 8]"
+2026-10-15,14:00:31.698,"trajectory_segment_request(id,seg)","[501, 12]"
+2026-10-15,14:00:34.066,pick_request,"[578.552, -883.827, 263.104]"
+2026-10-15,14:00:34.067,ack_ok_0_0,1
+2026-10-15,14:00:34.067,robot_blocked_s,0.000951
+2026-10-15,14:00:34.068,wait_stage,"""capture"""
+2026-10-15,14:00:34.310,robot_blocked_s,0.242426
+2026-10-15,14:00:34.311,wait_stage,"""detector"""
+2026-10-15,14:00:34.693,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 2]"
+2026-10-15,14:00:34.693,robot_blocked_s,0.381577
+2026-10-15,14:00:34.696,wait_stage,"""motion_planner"""
+2026-10-15,14:00:35.964,"trajectory_segment_request(id,seg)","[502, 4]"
+2026-10-15,14:00:35.965,"trajectory_segment_request(id,seg)","[502, 6]"
+2026-10-15,14:00:35.965,"trajectory_segment_request(id,seg)","[502, 7]"
+2026-10-15,14:00:35.967,"trajectory_segment_request(id,seg)","[502, 11]"
+2026-10-15,14:00:38.003,pick_request,"[577.453, -884.082, 263.387]"
+2026-10-15,14:00:38.004,ack_ok_0_0,1
+2026-10-15,14:00:38.004,robot_blocked_s,0.000875
+2026-10-15,14:00:38.005,wait_stage,"""capture"""
+2026-10-15,14:00:38.248,robot_blocked_s,0.243333
+2026-10-15,14:00:38.249,wait_stage,"""detector"""
+2026-10-15,14:00:38.632,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 1]"
+2026-10-15,14:00:38.632,robot_blocked_s,0.38265
+2026-10-15,14:00:38.635,wait_stage,"""motion_planner"""
+2026-10-15,14:00:39.784,"trajectory_segment_request(id,seg)","[503, 9]"
+2026-10-15,14:00:39.785,"trajectory_segment_request(id,seg)","[503, 10]"
+2026-10-15,14:00:39.786,"trajectory_segment_request(id,seg)","[503, 14]"
+2026-10-15,14:00:39.787,"trajectory_segment_request(id,seg)","[503, 18]"
+2026-10-15,14:00:42.392,pick_request,"[551.522, -889.725, 269.876]"
+2026-10-15,14:00:42.394,ack_ok_0_0,1
+2026-10-15,14:00:42.394,robot_blocked_s,0.00134
+2026-10-15,14:00:42.394,wait_stage,"""capture"""
+2026-10-15,14:00:42.640,ack_ok_0_0,1
+2026-10-15,14:00:42.640,robot_blocked_s,0.245671
+2026-10-15,14:00:42.641,wait_stage,"""detector"""
+2026-10-15,14:00:43.028,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 1, 1, 0]"
+2026-10-15,14:00:43.028,robot_blocked_s,0.386772
+2026-10-15,14:00:43.032,wait_stage,"""motion_planner"""
+2026-10-15,14:00:44.160,"trajectory_segment_request(id,seg)","[504, 4]"
+2026-10-15,14:00:44.161,"trajectory_segment_request(id,seg)","[504, 6]"
+2026-10-15,14:00:44.162,"trajectory_segment_request(id,seg)","[504, 7]"
+2026-10-15,14:00:44.163,"trajectory_segment_request(id,seg)","[504, 11]"
+2026-10-15,14:00:46.345,pick_request,"[563.78, -887.156, 266.825]"
+2026-10-15,14:00:46.346,ack_ok_0_0,1
+2026-10-15,14:00:46.346,robot_blocked_s,0.001084
+2026-10-15,14:00:46.347,wait_stage,"""capture"""
+2026-10-15,14:00:46.592,robot_blocked_s,0.244725
+2026-10-15,14:00:46.593,wait_stage,"""detector"""
+2026-10-15,14:00:46.890,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 3]"
+2026-10-15,14:00:46.990,robot_blocked_s,0.397021
+2026-10-15,14:00:46.995,wait_stage,"""motion_planner"""
+2026-10-15,14:00:48.260,"trajectory_segment_request(id,seg)","[505, 5]"
+2026-10-15,14:00:48.261,"trajectory_segment_request(id,seg)","[505, 7]"
+2026-10-15,14:00:48.262,"trajectory_segment_request(id,seg)","[505, 8]"
+2026-10-15,14:00:48.263,"trajectory_segment_request(id,seg)","[505, 12]"
+2026-10-15,14:00:50.436,pick_request,"[561.522, -887.643, 267.389]"
+2026-10-15,14:00:50.437,ack_ok_0_0,1
+2026-10-15,14:00:50.437,robot_blocked_s,0.001052
+2026-10-15,14:00:50.438,wait_stage,"""capture"""
+2026-10-15,14:00:50.683,robot_blocked_s,0.244322
+2026-10-15,14:00:50.684,wait_stage,"""detector"""
+2026-10-15,14:00:51.063,"detections(14in,18in,anchor,pandrol,spike)","[5, 1, 1, 0, 3]"
+2026-10-15,14:00:51.063,robot_blocked_s,0.379712
+2026-10-15,14:00:51.067,wait_stage,"""motion_planner"""
+2026-10-15,14:00:52.168,"trajectory_segment_request(id,seg)","[506, 9]"
+2026-10-15,14:00:52.169,"trajectory_segment_request(id,seg)","[506, 10]"
+2026-10-15,14:00:52.170,"trajectory_segment_request(id,seg)","[506, 14]"
+2026-10-15,14:00:52.171,"trajectory_segment_request(id,seg)","[506, 18]"
+2026-10-15,14:00:54.631,pick_request,"[574.16, -884.844, 264.217]"
+2026-10-15,14:00:54.632,ack_ok_0_0,1
+2026-10-15,14:00:54.632,robot_blocked_s,0.000781
+2026-10-15,14:00:54.633,wait_stage,"""capture"""
+2026-10-15,14:00:54.875,robot_blocked_s,0.242086
+2026-10-15,14:00:54.876,wait_stage,"""detector"""
+2026-10-15,14:00:55.254,robot_blocked_s,0.378071
+2026-10-15,14:00:55.255,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,14:00:55.258,wait_stage,"""motion_planner"""
+2026-10-15,14:00:56.369,"trajectory_segment_request(id,seg)","[507, 4]"
+2026-10-15,14:00:56.369,"trajectory_segment_request(id,seg)","[507, 6]"
+2026-10-15,14:00:56.370,"trajectory_segment_request(id,seg)","[507, 7]"
+2026-10-15,14:00:56.371,"trajectory_segment_request(id,seg)","[507, 11]"
+2026-10-15,14:01:00.215,pick_request,"[412.697, -794.102, 235.658]"
+2026-10-15,14:01:00.216,ack_ok_0_0,1
+2026-10-15,14:01:00.216,robot_blocked_s,0.001346
+2026-10-15,14:01:00.217,wait_stage,"""capture"""
+2026-10-15,14:01:00.459,ack_ok_0_0,1
+2026-10-15,14:01:00.459,robot_blocked_s,0.242583
+2026-10-15,14:01:00.461,wait_stage,"""detector"""
+2026-10-15,14:01:00.842,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 2]"
+2026-10-15,14:01:00.842,robot_blocked_s,0.380829
+2026-10-15,14:01:00.845,wait_stage,"""motion_planner"""
+2026-10-15,14:01:02.131,"trajectory_segment_request(id,seg)","[508, 5]"
+2026-10-15,14:01:02.132,"trajectory_segment_request(id,seg)","[508, 7]"
+2026-10-15,14:01:02.132,"trajectory_segment_request(id,seg)","[508, 8]"
+2026-10-15,14:01:02.133,"trajectory_segment_request(id,seg)","[508, 12]"
+2026-10-15,14:01:04.498,pick_request,"[559.229, -888.131, 267.961]"
+2026-10-15,14:01:04.499,ack_ok_0_0,1
+2026-10-15,14:01:04.499,robot_blocked_s,0.001023
+2026-10-15,14:01:04.501,wait_stage,"""capture"""
+2026-10-15,14:01:04.745,ack_ok_0_0,1
+2026-10-15,14:01:04.745,robot_blocked_s,0.243885
+2026-10-15,14:01:04.746,wait_stage,"""detector"""
+2026-10-15,14:01:05.126,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 1, 0, 3]"
+2026-10-15,14:01:05.126,robot_blocked_s,0.379982
+2026-10-15,14:01:05.130,wait_stage,"""motion_planner"""
+2026-10-15,14:01:06.269,"trajectory_segment_request(id,seg)","[509, 4]"
+2026-10-15,14:01:06.270,"trajectory_segment_request(id,seg)","[509, 6]"
+2026-10-15,14:01:06.271,"trajectory_segment_request(id,seg)","[509, 7]"
+2026-10-15,14:01:06.272,"trajectory_segment_request(id,seg)","[509, 11]"
+2026-10-15,14:01:08.615,pick_request,"[582.289, -882.94, 262.148]"
+2026-10-15,14:01:08.616,ack_ok_0_0,1
+2026-10-15,14:01:08.616,robot_blocked_s,0.000986
+2026-10-15,14:01:08.617,wait_stage,"""capture"""
+2026-10-15,14:01:08.860,robot_blocked_s,0.242443
+2026-10-15,14:01:08.861,wait_stage,"""detector"""
+2026-10-15,14:01:09.242,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:01:09.242,robot_blocked_s,0.381027
+2026-10-15,14:01:09.246,wait_stage,"""motion_planner"""
+2026-10-15,14:01:10.571,"trajectory_segment_request(id,seg)","[510, 4]"
+2026-10-15,14:01:10.572,"trajectory_segment_request(id,seg)","[510, 6]"
+2026-10-15,14:01:10.573,"trajectory_segment_request(id,seg)","[510, 7]"
+2026-10-15,14:01:10.574,"trajectory_segment_request(id,seg)","[510, 11]"
+2026-10-15,14:01:12.739,pick_request,"[568.074, -886.215, 265.749]"
+2026-10-15,14:01:12.740,ack_ok_0_0,1
+2026-10-15,14:01:12.740,robot_blocked_s,0.001462
+2026-10-15,14:01:12.741,wait_stage,"""capture"""
+2026-10-15,14:01:12.986,robot_blocked_s,0.244515
+2026-10-15,14:01:12.987,wait_stage,"""detector"""
+2026-10-15,14:01:13.380,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 2]"
+2026-10-15,14:01:13.380,robot_blocked_s,0.393505
+2026-10-15,14:01:13.385,wait_stage,"""motion_planner"""
+2026-10-15,14:01:14.552,"trajectory_segment_request(id,seg)","[511, 3]"
+2026-10-15,14:01:14.553,"trajectory_segment_request(id,seg)","[511, 5]"
+2026-10-15,14:01:14.554,"trajectory_segment_request(id,seg)","[511, 6]"
+2026-10-15,14:01:14.556,"trajectory_segment_request(id,seg)","[511, 10]"
+2026-10-15,14:01:18.967,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:01:18.968,ack_ok_0_0,1
+2026-10-15,14:01:18.968,robot_blocked_s,0.001263
+2026-10-15,14:01:18.970,wait_stage,"""capture"""
+2026-10-15,14:01:19.213,ack_ok_0_0,1
+2026-10-15,14:01:19.213,robot_blocked_s,0.243901
+2026-10-15,14:01:19.214,wait_stage,"""detector"""
+2026-10-15,14:01:19.615,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,14:01:19.615,robot_blocked_s,0.40075
+2026-10-15,14:01:19.619,wait_stage,"""motion_planner"""
+2026-10-15,14:01:20.739,"trajectory_segment_request(id,seg)","[512, 3]"
+2026-10-15,14:01:20.740,"trajectory_segment_request(id,seg)","[512, 5]"
+2026-10-15,14:01:20.741,"trajectory_segment_request(id,seg)","[512, 6]"
+2026-10-15,14:01:20.742,"trajectory_segment_request(id,seg)","[512, 10]"
+2026-10-15,14:01:24.894,pick_request,"[406.346, -796.502, 237.071]"
+2026-10-15,14:01:24.895,ack_ok_0_0,1
+2026-10-15,14:01:24.895,robot_blocked_s,0.001081
+2026-10-15,14:01:24.896,wait_stage,"""capture"""
+2026-10-15,14:01:25.140,ack_ok_0_0,1
+2026-10-15,14:01:25.140,robot_blocked_s,0.24365
+2026-10-15,14:01:25.140,wait_stage,"""detector"""
+2026-10-15,14:01:25.535,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 1, 0, 2]"
+2026-10-15,14:01:25.535,robot_blocked_s,0.394348
+2026-10-15,14:01:25.539,wait_stage,"""motion_planner"""
+2026-10-15,14:01:26.725,"trajectory_segment_request(id,seg)","[513, 4]"
+2026-10-15,14:01:26.726,"trajectory_segment_request(id,seg)","[513, 6]"
+2026-10-15,14:01:26.727,"trajectory_segment_request(id,seg)","[513, 7]"
+2026-10-15,14:01:26.728,"trajectory_segment_request(id,seg)","[513, 11]"
+2026-10-15,14:01:29.178,pick_request,"[570.876, -885.589, 265.044]"
+2026-10-15,14:01:29.180,ack_ok_0_0,1
+2026-10-15,14:01:29.181,wait_stage,"""capture"""
+2026-10-15,14:01:29.437,robot_blocked_s,0.256019
+2026-10-15,14:01:29.438,wait_stage,"""detector"""
+2026-10-15,14:01:29.831,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 2]"
+2026-10-15,14:01:29.831,robot_blocked_s,0.393019
+2026-10-15,14:01:29.835,wait_stage,"""motion_planner"""
+2026-10-15,14:01:31.166,"trajectory_segment_request(id,seg)","[514, 3]"
+2026-10-15,14:01:31.167,"trajectory_segment_request(id,seg)","[514, 5]"
+2026-10-15,14:01:31.168,"trajectory_segment_request(id,seg)","[514, 6]"
+2026-10-15,14:01:31.170,"trajectory_segment_request(id,seg)","[514, 10]"
+2026-10-15,14:01:33.647,pick_request,"[640.39, -859.343, 143.779]"
+2026-10-15,14:01:33.649,ack_ok_0_0,1
+2026-10-15,14:01:33.649,robot_blocked_s,0.001489
+2026-10-15,14:01:33.650,wait_stage,"""capture"""
+2026-10-15,14:01:33.892,robot_blocked_s,0.242503
+2026-10-15,14:01:33.894,wait_stage,"""detector"""
+2026-10-15,14:01:34.273,"detections(14in,18in,anchor,pandrol,spike)","[9, 0, 0, 0, 3]"
+2026-10-15,14:01:34.273,robot_blocked_s,0.379304
+2026-10-15,14:01:34.276,wait_stage,"""motion_planner"""
+2026-10-15,14:01:35.451,"trajectory_segment_request(id,seg)","[515, 5]"
+2026-10-15,14:01:35.452,"trajectory_segment_request(id,seg)","[515, 7]"
+2026-10-15,14:01:35.453,"trajectory_segment_request(id,seg)","[515, 9]"
+2026-10-15,14:01:35.454,"trajectory_segment_request(id,seg)","[515, 13]"
+2026-10-15,14:01:37.734,pick_request,"[564.254, -887.054, 266.706]"
+2026-10-15,14:01:37.735,ack_ok_0_0,1
+2026-10-15,14:01:37.736,wait_stage,"""capture"""
+2026-10-15,14:01:37.979,robot_blocked_s,0.242504
+2026-10-15,14:01:37.980,wait_stage,"""detector"""
+2026-10-15,14:01:38.379,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 3]"
+2026-10-15,14:01:38.379,robot_blocked_s,0.39918
+2026-10-15,14:01:38.384,wait_stage,"""motion_planner"""
+2026-10-15,14:01:39.480,"trajectory_segment_request(id,seg)","[516, 4]"
+2026-10-15,14:01:39.482,"trajectory_segment_request(id,seg)","[516, 6]"
+2026-10-15,14:01:39.483,"trajectory_segment_request(id,seg)","[516, 7]"
+2026-10-15,14:01:39.484,"trajectory_segment_request(id,seg)","[516, 11]"
+2026-10-15,14:01:41.796,pick_request,"[556.781, -888.644, 268.57]"
+2026-10-15,14:01:41.797,ack_ok_0_0,1
+2026-10-15,14:01:41.797,robot_blocked_s,0.001377
+2026-10-15,14:01:41.798,wait_stage,"""capture"""
+2026-10-15,14:01:42.045,ack_ok_0_0,1
+2026-10-15,14:01:42.045,robot_blocked_s,0.246736
+2026-10-15,14:01:42.046,wait_stage,"""detector"""
+2026-10-15,14:01:42.433,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 2]"
+2026-10-15,14:01:42.433,robot_blocked_s,0.387206
+2026-10-15,14:01:42.436,wait_stage,"""motion_planner"""
+2026-10-15,14:01:43.590,"trajectory_segment_request(id,seg)","[517, 4]"
+2026-10-15,14:01:43.591,"trajectory_segment_request(id,seg)","[517, 6]"
+2026-10-15,14:01:43.592,"trajectory_segment_request(id,seg)","[517, 7]"
+2026-10-15,14:01:43.593,"trajectory_segment_request(id,seg)","[517, 11]"
+2026-10-15,14:01:45.880,pick_request,"[568.412, -886.14, 265.664]"
+2026-10-15,14:01:45.881,ack_ok_0_0,1
+2026-10-15,14:01:45.881,robot_blocked_s,0.001278
+2026-10-15,14:01:45.882,wait_stage,"""capture"""
+2026-10-15,14:01:46.125,ack_ok_0_0,1
+2026-10-15,14:01:46.125,robot_blocked_s,0.242979
+2026-10-15,14:01:46.126,wait_stage,"""detector"""
+2026-10-15,14:01:46.504,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 1]"
+2026-10-15,14:01:46.504,robot_blocked_s,0.377917
+2026-10-15,14:01:46.508,wait_stage,"""motion_planner"""
+2026-10-15,14:01:47.695,"trajectory_segment_request(id,seg)","[518, 5]"
+2026-10-15,14:01:47.696,"trajectory_segment_request(id,seg)","[518, 7]"
+2026-10-15,14:01:47.697,"trajectory_segment_request(id,seg)","[518, 9]"
+2026-10-15,14:01:47.698,"trajectory_segment_request(id,seg)","[518, 13]"
+2026-10-15,14:01:50.176,pick_request,"[571.028, -885.555, 265.005]"
+2026-10-15,14:01:50.177,ack_ok_0_0,1
+2026-10-15,14:01:50.177,robot_blocked_s,0.00136
+2026-10-15,14:01:50.178,wait_stage,"""capture"""
+2026-10-15,14:01:50.421,robot_blocked_s,0.242722
+2026-10-15,14:01:50.422,wait_stage,"""detector"""
+2026-10-15,14:01:50.809,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 3]"
+2026-10-15,14:01:50.809,robot_blocked_s,0.387077
+2026-10-15,14:01:50.813,wait_stage,"""motion_planner"""
+2026-10-15,14:01:51.981,"trajectory_segment_request(id,seg)","[519, 4]"
+2026-10-15,14:01:51.982,"trajectory_segment_request(id,seg)","[519, 6]"
+2026-10-15,14:01:51.983,"trajectory_segment_request(id,seg)","[519, 8]"
+2026-10-15,14:01:51.983,"trajectory_segment_request(id,seg)","[519, 12]"
+2026-10-15,14:01:54.758,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:01:54.759,ack_ok_0_0,1
+2026-10-15,14:01:54.759,robot_blocked_s,0.000838
+2026-10-15,14:01:54.760,wait_stage,"""capture"""
+2026-10-15,14:01:55.004,ack_ok_0_0,1
+2026-10-15,14:01:55.004,robot_blocked_s,0.244479
+2026-10-15,14:01:55.005,wait_stage,"""detector"""
+2026-10-15,14:01:55.394,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 3]"
+2026-10-15,14:01:55.394,robot_blocked_s,0.389372
+2026-10-15,14:01:55.398,wait_stage,"""motion_planner"""
+2026-10-15,14:01:56.512,"trajectory_segment_request(id,seg)","[520, 4]"
+2026-10-15,14:01:56.513,"trajectory_segment_request(id,seg)","[520, 6]"
+2026-10-15,14:01:56.514,"trajectory_segment_request(id,seg)","[520, 7]"
+2026-10-15,14:01:56.515,"trajectory_segment_request(id,seg)","[520, 11]"
+2026-10-15,14:02:00.607,pick_request,"[406.346, -796.502, 237.071]"
+2026-10-15,14:02:00.608,ack_ok_0_0,1
+2026-10-15,14:02:00.608,robot_blocked_s,0.001176
+2026-10-15,14:02:00.610,wait_stage,"""capture"""
+2026-10-15,14:02:00.853,robot_blocked_s,0.243773
+2026-10-15,14:02:00.854,wait_stage,"""detector"""
+2026-10-15,14:02:01.232,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 2]"
+2026-10-15,14:02:01.232,robot_blocked_s,0.37732
+2026-10-15,14:02:01.235,wait_stage,"""motion_planner"""
+2026-10-15,14:02:02.437,"trajectory_segment_request(id,seg)","[521, 6]"
+2026-10-15,14:02:02.438,"trajectory_segment_request(id,seg)","[521, 11]"
+2026-10-15,14:02:04.970,pick_request,"[568.883, -886.035, 265.545]"
+2026-10-15,14:02:04.972,ack_ok_0_0,1
+2026-10-15,14:02:04.972,robot_blocked_s,0.001244
+2026-10-15,14:02:04.973,wait_stage,"""capture"""
+2026-10-15,14:02:05.214,robot_blocked_s,0.241803
+2026-10-15,14:02:05.215,ack_ok_0_0,1
+2026-10-15,14:02:05.215,wait_stage,"""detector"""
+2026-10-15,14:02:05.613,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 4]"
+2026-10-15,14:02:05.613,robot_blocked_s,0.397589
+2026-10-15,14:02:05.617,wait_stage,"""motion_planner"""
+2026-10-15,14:02:06.907,"trajectory_segment_request(id,seg)","[522, 3]"
+2026-10-15,14:02:06.908,"trajectory_segment_request(id,seg)","[522, 5]"
+2026-10-15,14:02:06.909,"trajectory_segment_request(id,seg)","[522, 6]"
+2026-10-15,14:02:06.910,"trajectory_segment_request(id,seg)","[522, 10]"
+2026-10-15,14:02:08.953,pick_request,"[572.377, -885.25, 264.667]"
+2026-10-15,14:02:08.954,ack_ok_0_0,1
+2026-10-15,14:02:08.954,robot_blocked_s,0.00095
+2026-10-15,14:02:08.955,wait_stage,"""capture"""
+2026-10-15,14:02:09.198,ack_ok_0_0,1
+2026-10-15,14:02:09.198,robot_blocked_s,0.242526
+2026-10-15,14:02:09.199,wait_stage,"""detector"""
+2026-10-15,14:02:09.586,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 3]"
+2026-10-15,14:02:09.586,robot_blocked_s,0.387082
+2026-10-15,14:02:09.590,wait_stage,"""motion_planner"""
+2026-10-15,14:02:10.733,"trajectory_segment_request(id,seg)","[523, 6]"
+2026-10-15,14:02:10.734,"trajectory_segment_request(id,seg)","[523, 8]"
+2026-10-15,14:02:10.735,"trajectory_segment_request(id,seg)","[523, 10]"
+2026-10-15,14:02:10.736,"trajectory_segment_request(id,seg)","[523, 14]"
+2026-10-15,14:02:13.520,pick_request,"[564.516, -886.996, 266.64]"
+2026-10-15,14:02:13.521,ack_ok_0_0,1
+2026-10-15,14:02:13.521,robot_blocked_s,0.001127
+2026-10-15,14:02:13.523,wait_stage,"""capture"""
+2026-10-15,14:02:13.770,robot_blocked_s,0.247145
+2026-10-15,14:02:13.771,wait_stage,"""detector"""
+2026-10-15,14:02:14.163,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 1, 3]"
+2026-10-15,14:02:14.163,robot_blocked_s,0.391564
+2026-10-15,14:02:14.166,wait_stage,"""motion_planner"""
+2026-10-15,14:02:15.242,"trajectory_segment_request(id,seg)","[524, 5]"
+2026-10-15,14:02:15.243,"trajectory_segment_request(id,seg)","[524, 7]"
+2026-10-15,14:02:15.244,"trajectory_segment_request(id,seg)","[524, 9]"
+2026-10-15,14:02:15.246,"trajectory_segment_request(id,seg)","[524, 13]"
+2026-10-15,14:02:19.368,pick_request,"[407.609, -796.029, 236.791]"
+2026-10-15,14:02:19.369,ack_ok_0_0,1
+2026-10-15,14:02:19.369,robot_blocked_s,0.000979
+2026-10-15,14:02:19.370,wait_stage,"""capture"""
+2026-10-15,14:02:19.611,robot_blocked_s,0.241752
+2026-10-15,14:02:19.612,wait_stage,"""detector"""
+2026-10-15,14:02:20.007,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,14:02:20.007,robot_blocked_s,0.394705
+2026-10-15,14:02:20.010,wait_stage,"""motion_planner"""
+2026-10-15,14:02:21.201,"trajectory_segment_request(id,seg)","[525, 4]"
+2026-10-15,14:02:21.202,"trajectory_segment_request(id,seg)","[525, 6]"
+2026-10-15,14:02:21.203,"trajectory_segment_request(id,seg)","[525, 7]"
+2026-10-15,14:02:21.204,"trajectory_segment_request(id,seg)","[525, 11]"
+2026-10-15,14:02:23.573,pick_request,"[572.958, -885.0, 117.0]"
+2026-10-15,14:02:23.574,ack_ok_0_0,1
+2026-10-15,14:02:23.574,robot_blocked_s,0.001197
+2026-10-15,14:02:23.575,wait_stage,"""capture"""
+2026-10-15,14:02:23.822,robot_blocked_s,0.247021
+2026-10-15,14:02:23.823,wait_stage,"""detector"""
+2026-10-15,14:02:24.206,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 1]"
+2026-10-15,14:02:24.206,robot_blocked_s,0.383064
+2026-10-15,14:02:24.210,wait_stage,"""motion_planner"""
+2026-10-15,14:02:25.387,"trajectory_segment_request(id,seg)","[526, 5]"
+2026-10-15,14:02:25.388,"trajectory_segment_request(id,seg)","[526, 7]"
+2026-10-15,14:02:25.389,"trajectory_segment_request(id,seg)","[526, 8]"
+2026-10-15,14:02:25.390,"trajectory_segment_request(id,seg)","[526, 12]"
+2026-10-15,14:02:27.509,pick_request,"[557.981, -888.393, 268.272]"
+2026-10-15,14:02:27.510,ack_ok_0_0,1
+2026-10-15,14:02:27.510,robot_blocked_s,0.000958
+2026-10-15,14:02:27.511,wait_stage,"""capture"""
+2026-10-15,14:02:27.755,ack_ok_0_0,1
+2026-10-15,14:02:27.755,robot_blocked_s,0.243774
+2026-10-15,14:02:27.756,wait_stage,"""detector"""
+2026-10-15,14:02:28.154,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 3]"
+2026-10-15,14:02:28.154,robot_blocked_s,0.398726
+2026-10-15,14:02:28.158,wait_stage,"""motion_planner"""
+2026-10-15,14:02:29.191,"trajectory_segment_request(id,seg)","[527, 4]"
+2026-10-15,14:02:29.192,"trajectory_segment_request(id,seg)","[527, 6]"
+2026-10-15,14:02:29.193,"trajectory_segment_request(id,seg)","[527, 7]"
+2026-10-15,14:02:29.194,"trajectory_segment_request(id,seg)","[527, 11]"
+2026-10-15,14:02:32.981,pick_request,"[411.812, -794.44, 235.855]"
+2026-10-15,14:02:32.982,ack_ok_0_0,1
+2026-10-15,14:02:32.982,robot_blocked_s,0.000949
+2026-10-15,14:02:32.983,wait_stage,"""capture"""
+2026-10-15,14:02:33.230,robot_blocked_s,0.246678
+2026-10-15,14:02:33.231,wait_stage,"""detector"""
+2026-10-15,14:02:33.617,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 4]"
+2026-10-15,14:02:33.617,robot_blocked_s,0.385487
+2026-10-15,14:02:33.621,wait_stage,"""motion_planner"""
+2026-10-15,14:02:34.838,"trajectory_segment_request(id,seg)","[528, 4]"
+2026-10-15,14:02:34.839,"trajectory_segment_request(id,seg)","[528, 6]"
+2026-10-15,14:02:34.840,"trajectory_segment_request(id,seg)","[528, 7]"
+2026-10-15,14:02:34.841,"trajectory_segment_request(id,seg)","[528, 11]"
+2026-10-15,14:02:38.896,pick_request,"[404.738, -797.1, 237.429]"
+2026-10-15,14:02:38.897,ack_ok_0_0,1
+2026-10-15,14:02:38.897,robot_blocked_s,0.001007
+2026-10-15,14:02:38.899,wait_stage,"""capture"""
+2026-10-15,14:02:39.148,ack_ok_0_0,1
+2026-10-15,14:02:39.148,robot_blocked_s,0.249096
+2026-10-15,14:02:39.149,wait_stage,"""detector"""
+2026-10-15,14:02:39.553,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:02:39.553,robot_blocked_s,0.403759
+2026-10-15,14:02:39.556,wait_stage,"""motion_planner"""
+2026-10-15,14:02:40.907,"trajectory_segment_request(id,seg)","[529, 3]"
+2026-10-15,14:02:40.908,"trajectory_segment_request(id,seg)","[529, 5]"
+2026-10-15,14:02:40.908,"trajectory_segment_request(id,seg)","[529, 6]"
+2026-10-15,14:02:40.909,"trajectory_segment_request(id,seg)","[529, 10]"
+2026-10-15,14:02:45.121,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:02:45.122,ack_ok_0_0,1
+2026-10-15,14:02:45.122,robot_blocked_s,0.000985
+2026-10-15,14:02:45.123,wait_stage,"""capture"""
+2026-10-15,14:02:45.365,ack_ok_0_0,1
+2026-10-15,14:02:45.365,robot_blocked_s,0.241413
+2026-10-15,14:02:45.366,wait_stage,"""detector"""
+2026-10-15,14:02:45.782,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 2]"
+2026-10-15,14:02:45.782,robot_blocked_s,0.41637
+2026-10-15,14:02:45.786,wait_stage,"""motion_planner"""
+2026-10-15,14:02:47.084,"trajectory_segment_request(id,seg)","[530, 6]"
+2026-10-15,14:02:47.085,"trajectory_segment_request(id,seg)","[530, 8]"
+2026-10-15,14:02:47.086,"trajectory_segment_request(id,seg)","[530, 9]"
+2026-10-15,14:02:47.087,"trajectory_segment_request(id,seg)","[530, 13]"
+2026-10-15,14:02:49.349,pick_request,"[570.843, -885.596, 265.053]"
+2026-10-15,14:02:49.350,ack_ok_0_0,1
+2026-10-15,14:02:49.350,robot_blocked_s,0.000833
+2026-10-15,14:02:49.352,wait_stage,"""capture"""
+2026-10-15,14:02:49.594,robot_blocked_s,0.242216
+2026-10-15,14:02:49.595,wait_stage,"""detector"""
+2026-10-15,14:02:49.983,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 2]"
+2026-10-15,14:02:49.983,robot_blocked_s,0.388558
+2026-10-15,14:02:49.987,wait_stage,"""motion_planner"""
+2026-10-15,14:02:51.246,"trajectory_segment_request(id,seg)","[531, 4]"
+2026-10-15,14:02:51.246,"trajectory_segment_request(id,seg)","[531, 6]"
+2026-10-15,14:02:51.247,"trajectory_segment_request(id,seg)","[531, 7]"
+2026-10-15,14:02:51.248,"trajectory_segment_request(id,seg)","[531, 11]"
+2026-10-15,14:02:53.501,pick_request,"[565.231, -886.841, 266.461]"
+2026-10-15,14:02:53.503,ack_ok_0_0,1
+2026-10-15,14:02:53.503,robot_blocked_s,0.001238
+2026-10-15,14:02:53.504,wait_stage,"""capture"""
+2026-10-15,14:02:53.745,robot_blocked_s,0.241283
+2026-10-15,14:02:53.746,wait_stage,"""detector"""
+2026-10-15,14:02:54.144,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 1]"
+2026-10-15,14:02:54.144,robot_blocked_s,0.397239
+2026-10-15,14:02:54.147,wait_stage,"""motion_planner"""
+2026-10-15,14:02:55.243,"trajectory_segment_request(id,seg)","[532, 5]"
+2026-10-15,14:02:55.245,"trajectory_segment_request(id,seg)","[532, 7]"
+2026-10-15,14:02:55.245,"trajectory_segment_request(id,seg)","[532, 8]"
+2026-10-15,14:02:55.246,"trajectory_segment_request(id,seg)","[532, 12]"
+2026-10-15,14:02:57.504,pick_request,"[565.677, -886.743, 266.35]"
+2026-10-15,14:02:57.505,ack_ok_0_0,1
+2026-10-15,14:02:57.505,robot_blocked_s,0.001067
+2026-10-15,14:02:57.506,wait_stage,"""capture"""
+2026-10-15,14:02:57.748,robot_blocked_s,0.24242
+2026-10-15,14:02:57.749,wait_stage,"""detector"""
+2026-10-15,14:02:58.148,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 0]"
+2026-10-15,14:02:58.148,robot_blocked_s,0.399132
+2026-10-15,14:02:58.152,wait_stage,"""motion_planner"""
+2026-10-15,14:02:59.597,"trajectory_segment_request(id,seg)","[533, 6]"
+2026-10-15,14:02:59.598,"trajectory_segment_request(id,seg)","[533, 8]"
+2026-10-15,14:02:59.599,"trajectory_segment_request(id,seg)","[533, 9]"
+2026-10-15,14:02:59.600,"trajectory_segment_request(id,seg)","[533, 13]"
+2026-10-15,14:03:01.863,pick_request,"[579.034, -883.712, 262.979]"
+2026-10-15,14:03:01.864,ack_ok_0_0,1
+2026-10-15,14:03:01.864,robot_blocked_s,0.001055
+2026-10-15,14:03:01.865,wait_stage,"""capture"""
+2026-10-15,14:03:02.108,ack_ok_0_0,1
+2026-10-15,14:03:02.109,wait_stage,"""detector"""
+2026-10-15,14:03:02.498,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 0]"
+2026-10-15,14:03:02.498,robot_blocked_s,0.389352
+2026-10-15,14:03:02.502,wait_stage,"""motion_planner"""
+2026-10-15,14:03:03.785,"trajectory_segment_request(id,seg)","[534, 10]"
+2026-10-15,14:03:03.785,"trajectory_segment_request(id,seg)","[534, 11]"
+2026-10-15,14:03:03.786,"trajectory_segment_request(id,seg)","[534, 15]"
+2026-10-15,14:03:03.788,"trajectory_segment_request(id,seg)","[534, 19]"
+2026-10-15,14:03:06.144,pick_request,"[559.554, -888.062, 267.88]"
+2026-10-15,14:03:06.145,ack_ok_0_0,1
+2026-10-15,14:03:06.145,robot_blocked_s,0.001037
+2026-10-15,14:03:06.146,wait_stage,"""capture"""
+2026-10-15,14:03:06.389,ack_ok_0_0,1
+2026-10-15,14:03:06.389,robot_blocked_s,0.243001
+2026-10-15,14:03:06.391,wait_stage,"""detector"""
+2026-10-15,14:03:06.784,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 1, 0, 0]"
+2026-10-15,14:03:06.784,robot_blocked_s,0.39343
+2026-10-15,14:03:06.788,wait_stage,"""motion_planner"""
+2026-10-15,14:03:07.939,"trajectory_segment_request(id,seg)","[535, 5]"
+2026-10-15,14:03:07.940,"trajectory_segment_request(id,seg)","[535, 7]"
+2026-10-15,14:03:07.941,"trajectory_segment_request(id,seg)","[535, 8]"
+2026-10-15,14:03:07.942,"trajectory_segment_request(id,seg)","[535, 12]"
+2026-10-15,14:03:10.277,pick_request,"[569.308, -885.94, 265.438]"
+2026-10-15,14:03:10.278,ack_ok_0_0,1
+2026-10-15,14:03:10.278,robot_blocked_s,0.001023
+2026-10-15,14:03:10.279,wait_stage,"""capture"""
+2026-10-15,14:03:10.525,wait_stage,"""detector"""
+2026-10-15,14:03:10.922,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 1, 0, 0]"
+2026-10-15,14:03:10.922,robot_blocked_s,0.397679
+2026-10-15,14:03:10.927,wait_stage,"""motion_planner"""
+2026-10-15,14:03:12.239,"trajectory_segment_request(id,seg)","[536, 6]"
+2026-10-15,14:03:12.240,"trajectory_segment_request(id,seg)","[536, 8]"
+2026-10-15,14:03:12.240,"trajectory_segment_request(id,seg)","[536, 9]"
+2026-10-15,14:03:12.241,"trajectory_segment_request(id,seg)","[536, 13]"
+2026-10-15,14:03:16.115,pick_request,"[409.144, -795.452, 236.449]"
+2026-10-15,14:03:16.116,ack_ok_0_0,1
+2026-10-15,14:03:16.116,robot_blocked_s,0.001088
+2026-10-15,14:03:16.117,wait_stage,"""capture"""
+2026-10-15,14:03:16.359,ack_ok_0_0,1
+2026-10-15,14:03:16.359,robot_blocked_s,0.242267
+2026-10-15,14:03:16.361,wait_stage,"""detector"""
+2026-10-15,14:03:16.759,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 0]"
+2026-10-15,14:03:16.759,robot_blocked_s,0.398092
+2026-10-15,14:03:16.763,wait_stage,"""motion_planner"""
+2026-10-15,14:03:17.877,"trajectory_segment_request(id,seg)","[537, 3]"
+2026-10-15,14:03:17.878,"trajectory_segment_request(id,seg)","[537, 5]"
+2026-10-15,14:03:17.879,"trajectory_segment_request(id,seg)","[537, 6]"
+2026-10-15,14:03:17.880,"trajectory_segment_request(id,seg)","[537, 10]"
+2026-10-15,14:03:22.821,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:03:22.822,ack_ok_0_0,1
+2026-10-15,14:03:22.822,robot_blocked_s,0.001049
+2026-10-15,14:03:22.823,wait_stage,"""capture"""
+2026-10-15,14:03:23.066,robot_blocked_s,0.242863
+2026-10-15,14:03:23.067,wait_stage,"""detector"""
+2026-10-15,14:03:23.443,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 0]"
+2026-10-15,14:03:23.443,robot_blocked_s,0.375785
+2026-10-15,14:03:23.447,wait_stage,"""motion_planner"""
+2026-10-15,14:03:24.663,"trajectory_segment_request(id,seg)","[538, 11]"
+2026-10-15,14:03:27.230,pick_request,"[570.702, -885.628, 265.088]"
+2026-10-15,14:03:27.231,ack_ok_0_0,1
+2026-10-15,14:03:27.231,robot_blocked_s,0.001115
+2026-10-15,14:03:27.232,wait_stage,"""capture"""
+2026-10-15,14:03:27.477,robot_blocked_s,0.244579
+2026-10-15,14:03:27.478,wait_stage,"""detector"""
+2026-10-15,14:03:27.855,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 0]"
+2026-10-15,14:03:27.855,robot_blocked_s,0.377859
+2026-10-15,14:03:27.859,wait_stage,"""motion_planner"""
+2026-10-15,14:03:29.083,"trajectory_segment_request(id,seg)","[539, 3]"
+2026-10-15,14:03:29.083,"trajectory_segment_request(id,seg)","[539, 5]"
+2026-10-15,14:03:29.085,"trajectory_segment_request(id,seg)","[539, 6]"
+2026-10-15,14:03:29.085,"trajectory_segment_request(id,seg)","[539, 10]"
+2026-10-15,14:03:31.261,pick_request,"[556.994, -888.6, 268.517]"
+2026-10-15,14:03:31.262,ack_ok_0_0,1
+2026-10-15,14:03:31.262,robot_blocked_s,0.000937
+2026-10-15,14:03:31.263,wait_stage,"""capture"""
+2026-10-15,14:03:31.504,robot_blocked_s,0.241738
+2026-10-15,14:03:31.505,wait_stage,"""detector"""
+2026-10-15,14:03:31.897,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 1, 1]"
+2026-10-15,14:03:31.897,robot_blocked_s,0.391968
+2026-10-15,14:03:31.901,wait_stage,"""motion_planner"""
+2026-10-15,14:03:33.177,"trajectory_segment_request(id,seg)","[540, 6]"
+2026-10-15,14:03:33.178,"trajectory_segment_request(id,seg)","[540, 8]"
+2026-10-15,14:03:33.179,"trajectory_segment_request(id,seg)","[540, 9]"
+2026-10-15,14:03:33.181,"trajectory_segment_request(id,seg)","[540, 13]"
+2026-10-15,14:03:37.093,pick_request,"[406.346, -796.502, 237.071]"
+2026-10-15,14:03:37.094,ack_ok_0_0,1
+2026-10-15,14:03:37.094,robot_blocked_s,0.001137
+2026-10-15,14:03:37.095,wait_stage,"""capture"""
+2026-10-15,14:03:37.339,robot_blocked_s,0.243646
+2026-10-15,14:03:37.340,wait_stage,"""detector"""
+2026-10-15,14:03:37.742,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 2]"
+2026-10-15,14:03:37.742,robot_blocked_s,0.402703
+2026-10-15,14:03:37.747,wait_stage,"""motion_planner"""
+2026-10-15,14:03:38.901,"trajectory_segment_request(id,seg)","[541, 4]"
+2026-10-15,14:03:38.902,"trajectory_segment_request(id,seg)","[541, 6]"
+2026-10-15,14:03:38.903,"trajectory_segment_request(id,seg)","[541, 7]"
+2026-10-15,14:03:38.903,"trajectory_segment_request(id,seg)","[541, 11]"
+2026-10-15,14:03:41.305,pick_request,"[580.708, -883.317, 262.552]"
+2026-10-15,14:03:41.306,ack_ok_0_0,1
+2026-10-15,14:03:41.306,robot_blocked_s,0.001307
+2026-10-15,14:03:41.308,wait_stage,"""capture"""
+2026-10-15,14:03:41.550,robot_blocked_s,0.242315
+2026-10-15,14:03:41.551,wait_stage,"""detector"""
+2026-10-15,14:03:41.945,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 0]"
+2026-10-15,14:03:41.945,robot_blocked_s,0.39373
+2026-10-15,14:03:41.948,wait_stage,"""motion_planner"""
+2026-10-15,14:03:43.186,"trajectory_segment_request(id,seg)","[542, 3]"
+2026-10-15,14:03:43.187,"trajectory_segment_request(id,seg)","[542, 5]"
+2026-10-15,14:03:43.188,"trajectory_segment_request(id,seg)","[542, 6]"
+2026-10-15,14:03:43.189,"trajectory_segment_request(id,seg)","[542, 10]"
+2026-10-15,14:03:45.351,pick_request,"[578.925, -883.737, 263.007]"
+2026-10-15,14:03:45.352,ack_ok_0_0,1
+2026-10-15,14:03:45.352,robot_blocked_s,0.00102
+2026-10-15,14:03:45.353,wait_stage,"""capture"""
+2026-10-15,14:03:45.596,robot_blocked_s,0.242688
+2026-10-15,14:03:45.598,wait_stage,"""detector"""
+2026-10-15,14:03:45.983,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 1]"
+2026-10-15,14:03:45.983,robot_blocked_s,0.384895
+2026-10-15,14:03:45.986,wait_stage,"""motion_planner"""
+2026-10-15,14:03:47.119,"trajectory_segment_request(id,seg)","[543, 2]"
+2026-10-15,14:03:47.120,"trajectory_segment_request(id,seg)","[543, 4]"
+2026-10-15,14:03:47.121,"trajectory_segment_request(id,seg)","[543, 5]"
+2026-10-15,14:03:47.122,"trajectory_segment_request(id,seg)","[543, 9]"
+2026-10-15,14:03:49.118,pick_request,"[577.984, -883.96, 263.248]"
+2026-10-15,14:03:49.120,ack_ok_0_0,1
+2026-10-15,14:03:49.120,robot_blocked_s,0.001408
+2026-10-15,14:03:49.121,wait_stage,"""capture"""
+2026-10-15,14:03:49.364,ack_ok_0_0,1
+2026-10-15,14:03:49.364,robot_blocked_s,0.24284
+2026-10-15,14:03:49.365,wait_stage,"""detector"""
+2026-10-15,14:03:49.762,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 1]"
+2026-10-15,14:03:49.762,robot_blocked_s,0.39727
+2026-10-15,14:03:49.766,wait_stage,"""motion_planner"""
+2026-10-15,14:03:50.870,"trajectory_segment_request(id,seg)","[544, 8]"
+2026-10-15,14:03:50.870,"trajectory_segment_request(id,seg)","[544, 9]"
+2026-10-15,14:03:50.871,"trajectory_segment_request(id,seg)","[544, 13]"
+2026-10-15,14:03:50.872,"trajectory_segment_request(id,seg)","[544, 17]"
+2026-10-15,14:03:53.282,pick_request,"[565.382, -886.808, 266.423]"
+2026-10-15,14:03:53.283,ack_ok_0_0,1
+2026-10-15,14:03:53.283,robot_blocked_s,0.000875
+2026-10-15,14:03:53.284,wait_stage,"""capture"""
+2026-10-15,14:03:53.531,robot_blocked_s,0.246688
+2026-10-15,14:03:53.531,wait_stage,"""detector"""
+2026-10-15,14:03:53.929,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:03:53.929,robot_blocked_s,0.397633
+2026-10-15,14:03:53.933,wait_stage,"""motion_planner"""
+2026-10-15,14:03:55.106,"trajectory_segment_request(id,seg)","[545, 5]"
+2026-10-15,14:03:55.107,"trajectory_segment_request(id,seg)","[545, 7]"
+2026-10-15,14:03:55.107,"trajectory_segment_request(id,seg)","[545, 8]"
+2026-10-15,14:03:55.108,"trajectory_segment_request(id,seg)","[545, 12]"
+2026-10-15,14:04:01.446,pick_request,"[645.436, -865.0, 145.0]"
+2026-10-15,14:04:01.447,ack_ok_0_0,1
+2026-10-15,14:04:01.447,robot_blocked_s,0.001111
+2026-10-15,14:04:01.448,wait_stage,"""capture"""
+2026-10-15,14:04:01.692,robot_blocked_s,0.24427
+2026-10-15,14:04:01.694,wait_stage,"""detector"""
+2026-10-15,14:04:02.088,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:04:02.088,robot_blocked_s,0.394336
+2026-10-15,14:04:02.092,wait_stage,"""motion_planner"""
+2026-10-15,14:04:03.215,"trajectory_segment_request(id,seg)","[546, 5]"
+2026-10-15,14:04:03.216,"trajectory_segment_request(id,seg)","[546, 7]"
+2026-10-15,14:04:03.217,"trajectory_segment_request(id,seg)","[546, 8]"
+2026-10-15,14:04:03.219,"trajectory_segment_request(id,seg)","[546, 12]"
+2026-10-15,14:04:05.955,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:04:05.956,ack_ok_0_0,1
+2026-10-15,14:04:05.956,robot_blocked_s,0.000927
+2026-10-15,14:04:05.958,wait_stage,"""capture"""
+2026-10-15,14:04:06.207,robot_blocked_s,0.249592
+2026-10-15,14:04:06.208,wait_stage,"""detector"""
+2026-10-15,14:04:06.592,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 2]"
+2026-10-15,14:04:06.592,robot_blocked_s,0.383339
+2026-10-15,14:04:06.595,wait_stage,"""motion_planner"""
+2026-10-15,14:04:07.696,"trajectory_segment_request(id,seg)","[547, 5]"
+2026-10-15,14:04:07.698,"trajectory_segment_request(id,seg)","[547, 7]"
+2026-10-15,14:04:07.699,"trajectory_segment_request(id,seg)","[547, 8]"
+2026-10-15,14:04:07.699,"trajectory_segment_request(id,seg)","[547, 12]"
+2026-10-15,14:04:10.567,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:04:10.568,ack_ok_0_0,1
+2026-10-15,14:04:10.568,robot_blocked_s,0.001138
+2026-10-15,14:04:10.570,wait_stage,"""capture"""
+2026-10-15,14:04:10.813,robot_blocked_s,0.243543
+2026-10-15,14:04:10.814,wait_stage,"""detector"""
+2026-10-15,14:04:11.193,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 1]"
+2026-10-15,14:04:11.193,robot_blocked_s,0.378994
+2026-10-15,14:04:11.197,wait_stage,"""motion_planner"""
+2026-10-15,14:04:12.391,"trajectory_segment_request(id,seg)","[548, 3]"
+2026-10-15,14:04:12.392,"trajectory_segment_request(id,seg)","[548, 5]"
+2026-10-15,14:04:12.393,"trajectory_segment_request(id,seg)","[548, 6]"
+2026-10-15,14:04:12.394,"trajectory_segment_request(id,seg)","[548, 10]"
+2026-10-15,14:04:17.316,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:04:17.317,ack_ok_0_0,1
+2026-10-15,14:04:17.317,robot_blocked_s,0.000948
+2026-10-15,14:04:17.318,wait_stage,"""capture"""
+2026-10-15,14:04:17.563,robot_blocked_s,0.24456
+2026-10-15,14:04:17.564,wait_stage,"""detector"""
+2026-10-15,14:04:17.957,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 0]"
+2026-10-15,14:04:17.957,robot_blocked_s,0.393435
+2026-10-15,14:04:17.961,wait_stage,"""motion_planner"""
+2026-10-15,14:04:19.242,"trajectory_segment_request(id,seg)","[549, 9]"
+2026-10-15,14:04:19.242,"trajectory_segment_request(id,seg)","[549, 10]"
+2026-10-15,14:04:19.244,"trajectory_segment_request(id,seg)","[549, 14]"
+2026-10-15,14:04:19.245,"trajectory_segment_request(id,seg)","[549, 18]"
+2026-10-15,14:04:21.728,pick_request,"[575.378, -884.564, 263.909]"
+2026-10-15,14:04:21.729,ack_ok_0_0,1
+2026-10-15,14:04:21.729,robot_blocked_s,0.001255
+2026-10-15,14:04:21.731,wait_stage,"""capture"""
+2026-10-15,14:04:21.980,ack_ok_0_0,1
+2026-10-15,14:04:21.980,robot_blocked_s,0.249209
+2026-10-15,14:04:21.981,wait_stage,"""detector"""
+2026-10-15,14:04:22.371,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 0]"
+2026-10-15,14:04:22.371,robot_blocked_s,0.389842
+2026-10-15,14:04:22.375,wait_stage,"""motion_planner"""
+2026-10-15,14:04:23.631,"trajectory_segment_request(id,seg)","[550, 6]"
+2026-10-15,14:04:23.632,"trajectory_segment_request(id,seg)","[550, 8]"
+2026-10-15,14:04:23.633,"trajectory_segment_request(id,seg)","[550, 9]"
+2026-10-15,14:04:23.634,"trajectory_segment_request(id,seg)","[550, 13]"
+2026-10-15,14:04:26.359,pick_request,"[640.384, -859.343, 143.753]"
+2026-10-15,14:04:26.360,ack_ok_0_0,1
+2026-10-15,14:04:26.360,robot_blocked_s,0.001183
+2026-10-15,14:04:26.361,wait_stage,"""capture"""
+2026-10-15,14:04:26.606,robot_blocked_s,0.244886
+2026-10-15,14:04:26.607,wait_stage,"""detector"""
+2026-10-15,14:04:26.993,"detections(14in,18in,anchor,pandrol,spike)","[7, 1, 0, 0, 1]"
+2026-10-15,14:04:26.993,robot_blocked_s,0.385856
+2026-10-15,14:04:26.997,wait_stage,"""motion_planner"""
+2026-10-15,14:04:28.105,"trajectory_segment_request(id,seg)","[551, 3]"
+2026-10-15,14:04:28.106,"trajectory_segment_request(id,seg)","[551, 5]"
+2026-10-15,14:04:28.107,"trajectory_segment_request(id,seg)","[551, 6]"
+2026-10-15,14:04:28.108,"trajectory_segment_request(id,seg)","[551, 10]"
+2026-10-15,14:04:31.898,pick_request,"[412.697, -794.102, 235.658]"
+2026-10-15,14:04:31.899,ack_ok_0_0,1
+2026-10-15,14:04:31.899,robot_blocked_s,0.001046
+2026-10-15,14:04:31.901,wait_stage,"""capture"""
+2026-10-15,14:04:32.143,ack_ok_0_0,1
+2026-10-15,14:04:32.143,robot_blocked_s,0.242438
+2026-10-15,14:04:32.144,wait_stage,"""detector"""
+2026-10-15,14:04:32.536,"detections(14in,18in,anchor,pandrol,spike)","[11, 1, 0, 0, 0]"
+2026-10-15,14:04:32.536,robot_blocked_s,0.392504
+2026-10-15,14:04:32.540,wait_stage,"""motion_planner"""
+2026-10-15,14:04:33.647,"trajectory_segment_request(id,seg)","[552, 9]"
+2026-10-15,14:04:33.648,"trajectory_segment_request(id,seg)","[552, 10]"
+2026-10-15,14:04:33.649,"trajectory_segment_request(id,seg)","[552, 14]"
+2026-10-15,14:04:33.650,"trajectory_segment_request(id,seg)","[552, 18]"
+2026-10-15,14:04:36.340,pick_request,"[568.04, -886.222, 265.757]"
+2026-10-15,14:04:36.341,ack_ok_0_0,1
+2026-10-15,14:04:36.341,robot_blocked_s,0.001026
+2026-10-15,14:04:36.343,wait_stage,"""capture"""
+2026-10-15,14:04:36.585,robot_blocked_s,0.242586
+2026-10-15,14:04:36.586,wait_stage,"""detector"""
+2026-10-15,14:04:36.977,"detections(14in,18in,anchor,pandrol,spike)","[11, 1, 0, 0, 3]"
+2026-10-15,14:04:36.977,robot_blocked_s,0.39087
+2026-10-15,14:04:36.983,wait_stage,"""motion_planner"""
+2026-10-15,14:04:38.091,"trajectory_segment_request(id,seg)","[553, 8]"
+2026-10-15,14:04:38.092,"trajectory_segment_request(id,seg)","[553, 9]"
+2026-10-15,14:04:38.093,"trajectory_segment_request(id,seg)","[553, 13]"
+2026-10-15,14:04:38.094,"trajectory_segment_request(id,seg)","[553, 17]"
+2026-10-15,14:04:40.501,pick_request,"[580.318, -883.409, 262.652]"
+2026-10-15,14:04:40.502,ack_ok_0_0,1
+2026-10-15,14:04:40.502,robot_blocked_s,0.001026
+2026-10-15,14:04:40.503,wait_stage,"""capture"""
+2026-10-15,14:04:40.745,robot_blocked_s,0.242761
+2026-10-15,14:04:40.746,wait_stage,"""detector"""
+2026-10-15,14:04:41.141,"detections(14in,18in,anchor,pandrol,spike)","[10, 0, 0, 0, 0]"
+2026-10-15,14:04:41.141,robot_blocked_s,0.394433
+2026-10-15,14:04:41.145,wait_stage,"""motion_planner"""
+2026-10-15,14:04:42.319,"trajectory_segment_request(id,seg)","[554, 4]"
+2026-10-15,14:04:42.320,"trajectory_segment_request(id,seg)","[554, 6]"
+2026-10-15,14:04:42.323,"trajectory_segment_request(id,seg)","[554, 11]"
+2026-10-15,14:04:44.732,pick_request,"[576.973, -884.193, 263.508]"
+2026-10-15,14:04:44.733,ack_ok_0_0,1
+2026-10-15,14:04:44.733,robot_blocked_s,0.001084
+2026-10-15,14:04:44.734,wait_stage,"""capture"""
+2026-10-15,14:04:44.982,robot_blocked_s,0.24744
+2026-10-15,14:04:44.983,wait_stage,"""detector"""
+2026-10-15,14:04:45.372,"detections(14in,18in,anchor,pandrol,spike)","[9, 0, 0, 0, 2]"
+2026-10-15,14:04:45.372,robot_blocked_s,0.389249
+2026-10-15,14:04:45.376,wait_stage,"""motion_planner"""
+2026-10-15,14:04:46.478,"trajectory_segment_request(id,seg)","[555, 8]"
+2026-10-15,14:04:46.479,"trajectory_segment_request(id,seg)","[555, 9]"
+2026-10-15,14:04:46.481,"trajectory_segment_request(id,seg)","[555, 13]"
+2026-10-15,14:04:46.481,"trajectory_segment_request(id,seg)","[555, 17]"
+2026-10-15,14:04:48.923,pick_request,"[561.537, -887.639, 267.385]"
+2026-10-15,14:04:48.924,ack_ok_0_0,1
+2026-10-15,14:04:48.924,robot_blocked_s,0.001151
+2026-10-15,14:04:48.925,wait_stage,"""capture"""
+2026-10-15,14:04:49.169,ack_ok_0_0,1
+2026-10-15,14:04:49.169,robot_blocked_s,0.244244
+2026-10-15,14:04:49.171,wait_stage,"""detector"""
+2026-10-15,14:04:49.555,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 0]"
+2026-10-15,14:04:49.555,robot_blocked_s,0.384114
+2026-10-15,14:04:49.558,wait_stage,"""motion_planner"""
+2026-10-15,14:04:50.689,"trajectory_segment_request(id,seg)","[556, 5]"
+2026-10-15,14:04:50.691,"trajectory_segment_request(id,seg)","[556, 7]"
+2026-10-15,14:04:50.691,"trajectory_segment_request(id,seg)","[556, 8]"
+2026-10-15,14:04:50.692,"trajectory_segment_request(id,seg)","[556, 12]"
+2026-10-15,14:04:52.979,pick_request,"[573.905, -884.902, 264.281]"
+2026-10-15,14:04:52.980,ack_ok_0_0,1
+2026-10-15,14:04:52.980,robot_blocked_s,0.001005
+2026-10-15,14:04:52.981,wait_stage,"""capture"""
+2026-10-15,14:04:53.228,robot_blocked_s,0.246428
+2026-10-15,14:04:53.229,wait_stage,"""detector"""
+2026-10-15,14:04:53.612,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 1, 0, 1]"
+2026-10-15,14:04:53.612,robot_blocked_s,0.383001
+2026-10-15,14:04:53.616,wait_stage,"""motion_planner"""
+2026-10-15,14:04:54.733,"trajectory_segment_request(id,seg)","[557, 5]"
+2026-10-15,14:04:54.734,"trajectory_segment_request(id,seg)","[557, 7]"
+2026-10-15,14:04:54.735,"trajectory_segment_request(id,seg)","[557, 8]"
+2026-10-15,14:04:54.736,"trajectory_segment_request(id,seg)","[557, 12]"
+2026-10-15,14:04:57.104,pick_request,"[565.75, -886.727, 266.331]"
+2026-10-15,14:04:57.105,ack_ok_0_0,1
+2026-10-15,14:04:57.105,robot_blocked_s,0.000556
+2026-10-15,14:04:57.350,ack_ok_0_0,1
+2026-10-15,14:04:57.350,robot_blocked_s,0.244525
+2026-10-15,14:04:57.352,wait_stage,"""detector"""
+2026-10-15,14:04:57.741,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 1]"
+2026-10-15,14:04:57.741,robot_blocked_s,0.389303
+2026-10-15,14:04:57.744,wait_stage,"""motion_planner"""
+2026-10-15,14:04:58.871,"trajectory_segment_request(id,seg)","[558, 4]"
+2026-10-15,14:04:58.872,"trajectory_segment_request(id,seg)","[558, 6]"
+2026-10-15,14:04:58.873,"trajectory_segment_request(id,seg)","[558, 7]"
+2026-10-15,14:04:58.874,"trajectory_segment_request(id,seg)","[558, 11]"
+2026-10-15,14:05:01.164,pick_request,"[570.356, -885.706, 265.176]"
+2026-10-15,14:05:01.165,ack_ok_0_0,1
+2026-10-15,14:05:01.165,robot_blocked_s,0.000986
+2026-10-15,14:05:01.166,wait_stage,"""capture"""
+2026-10-15,14:05:01.410,robot_blocked_s,0.244299
+2026-10-15,14:05:01.411,wait_stage,"""detector"""
+2026-10-15,14:05:01.788,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 0]"
+2026-10-15,14:05:01.788,robot_blocked_s,0.376613
+2026-10-15,14:05:01.792,wait_stage,"""motion_planner"""
+2026-10-15,14:05:02.908,"trajectory_segment_request(id,seg)","[559, 4]"
+2026-10-15,14:05:02.908,"trajectory_segment_request(id,seg)","[559, 6]"
+2026-10-15,14:05:02.909,"trajectory_segment_request(id,seg)","[559, 7]"
+2026-10-15,14:05:02.911,"trajectory_segment_request(id,seg)","[559, 11]"
+2026-10-15,14:05:05.010,pick_request,"[553.813, -889.258, 269.308]"
+2026-10-15,14:05:05.011,ack_ok_0_0,1
+2026-10-15,14:05:05.011,robot_blocked_s,0.00097
+2026-10-15,14:05:05.012,wait_stage,"""capture"""
+2026-10-15,14:05:05.263,ack_ok_0_0,1
+2026-10-15,14:05:05.263,robot_blocked_s,0.250981
+2026-10-15,14:05:05.264,wait_stage,"""detector"""
+2026-10-15,14:05:05.655,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 1]"
+2026-10-15,14:05:05.655,robot_blocked_s,0.391064
+2026-10-15,14:05:05.659,wait_stage,"""motion_planner"""
+2026-10-15,14:05:06.868,"trajectory_segment_request(id,seg)","[560, 4]"
+2026-10-15,14:05:06.868,"trajectory_segment_request(id,seg)","[560, 6]"
+2026-10-15,14:05:06.869,"trajectory_segment_request(id,seg)","[560, 7]"
+2026-10-15,14:05:06.870,"trajectory_segment_request(id,seg)","[560, 11]"
+2026-10-15,14:05:09.145,pick_request,"[574.564, -884.751, 264.115]"
+2026-10-15,14:05:09.146,ack_ok_0_0,1
+2026-10-15,14:05:09.146,robot_blocked_s,0.001017
+2026-10-15,14:05:09.147,wait_stage,"""capture"""
+2026-10-15,14:05:09.393,ack_ok_0_0,1
+2026-10-15,14:05:09.393,robot_blocked_s,0.245759
+2026-10-15,14:05:09.394,wait_stage,"""detector"""
+2026-10-15,14:05:09.774,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 2]"
+2026-10-15,14:05:09.774,robot_blocked_s,0.38032
+2026-10-15,14:05:09.778,wait_stage,"""motion_planner"""
+2026-10-15,14:05:11.022,"trajectory_segment_request(id,seg)","[561, 7]"
+2026-10-15,14:05:11.023,"trajectory_segment_request(id,seg)","[561, 8]"
+2026-10-15,14:05:11.024,"trajectory_segment_request(id,seg)","[561, 12]"
+2026-10-15,14:05:11.025,"trajectory_segment_request(id,seg)","[561, 16]"
+2026-10-15,14:05:13.252,pick_request,"[580.785, -883.301, 262.535]"
+2026-10-15,14:05:13.253,ack_ok_0_0,1
+2026-10-15,14:05:13.253,robot_blocked_s,0.000984
+2026-10-15,14:05:13.254,wait_stage,"""capture"""
+2026-10-15,14:05:13.498,robot_blocked_s,0.243815
+2026-10-15,14:05:13.499,wait_stage,"""detector"""
+2026-10-15,14:05:13.896,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 1, 0, 2]"
+2026-10-15,14:05:13.896,robot_blocked_s,0.397227
+2026-10-15,14:05:13.900,wait_stage,"""motion_planner"""
+2026-10-15,14:05:15.111,"trajectory_segment_request(id,seg)","[562, 5]"
+2026-10-15,14:05:15.113,"trajectory_segment_request(id,seg)","[562, 7]"
+2026-10-15,14:05:15.114,"trajectory_segment_request(id,seg)","[562, 9]"
+2026-10-15,14:05:15.114,"trajectory_segment_request(id,seg)","[562, 13]"
+2026-10-15,14:05:19.839,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:05:19.841,ack_ok_0_0,1
+2026-10-15,14:05:19.841,robot_blocked_s,0.001233
+2026-10-15,14:05:19.842,wait_stage,"""capture"""
+2026-10-15,14:05:20.087,ack_ok_0_0,1
+2026-10-15,14:05:20.087,robot_blocked_s,0.245026
+2026-10-15,14:05:20.088,wait_stage,"""detector"""
+2026-10-15,14:05:20.488,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 0]"
+2026-10-15,14:05:20.488,robot_blocked_s,0.400348
+2026-10-15,14:05:20.492,wait_stage,"""motion_planner"""
+2026-10-15,14:05:21.684,"trajectory_segment_request(id,seg)","[563, 5]"
+2026-10-15,14:05:21.686,"trajectory_segment_request(id,seg)","[563, 10]"
+2026-10-15,14:05:23.928,pick_request,"[561.928, -887.556, 267.287]"
+2026-10-15,14:05:23.929,ack_ok_0_0,1
+2026-10-15,14:05:23.929,robot_blocked_s,0.00102
+2026-10-15,14:05:23.930,wait_stage,"""capture"""
+2026-10-15,14:05:24.178,ack_ok_0_0,1
+2026-10-15,14:05:24.178,robot_blocked_s,0.247688
+2026-10-15,14:05:24.179,wait_stage,"""detector"""
+2026-10-15,14:05:24.561,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 0]"
+2026-10-15,14:05:24.561,robot_blocked_s,0.38253
+2026-10-15,14:05:24.565,wait_stage,"""motion_planner"""
+2026-10-15,14:05:25.768,"trajectory_segment_request(id,seg)","[564, 4]"
+2026-10-15,14:05:25.769,"trajectory_segment_request(id,seg)","[564, 6]"
+2026-10-15,14:05:25.770,"trajectory_segment_request(id,seg)","[564, 7]"
+2026-10-15,14:05:25.771,"trajectory_segment_request(id,seg)","[564, 11]"
+2026-10-15,14:05:28.163,pick_request,"[559.831, -888.003, 267.81]"
+2026-10-15,14:05:28.164,ack_ok_0_0,1
+2026-10-15,14:05:28.164,robot_blocked_s,0.001134
+2026-10-15,14:05:28.165,wait_stage,"""capture"""
+2026-10-15,14:05:28.408,robot_blocked_s,0.242838
+2026-10-15,14:05:28.409,wait_stage,"""detector"""
+2026-10-15,14:05:28.786,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 1, 1, 0]"
+2026-10-15,14:05:28.786,robot_blocked_s,0.376273
+2026-10-15,14:05:28.789,wait_stage,"""motion_planner"""
+2026-10-15,14:05:30.073,"trajectory_segment_request(id,seg)","[565, 4]"
+2026-10-15,14:05:30.073,"trajectory_segment_request(id,seg)","[565, 6]"
+2026-10-15,14:05:30.074,"trajectory_segment_request(id,seg)","[565, 7]"
+2026-10-15,14:05:30.075,"trajectory_segment_request(id,seg)","[565, 11]"
+2026-10-15,14:05:32.281,pick_request,"[570.267, -885.726, 265.0]"
+2026-10-15,14:05:32.282,ack_ok_0_0,1
+2026-10-15,14:05:32.282,robot_blocked_s,0.000845
+2026-10-15,14:05:32.283,wait_stage,"""capture"""
+2026-10-15,14:05:32.531,robot_blocked_s,0.247935
+2026-10-15,14:05:32.532,wait_stage,"""detector"""
+2026-10-15,14:05:32.923,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:05:32.923,robot_blocked_s,0.390842
+2026-10-15,14:05:32.928,wait_stage,"""motion_planner"""
+2026-10-15,14:05:36.398,pick_request,"[562.249, -887.487, 267.207]"
+2026-10-15,14:05:36.399,ack_ok_0_0,1
+2026-10-15,14:05:36.399,robot_blocked_s,0.001136
+2026-10-15,14:05:36.400,wait_stage,"""capture"""
+2026-10-15,14:05:36.643,robot_blocked_s,0.243472
+2026-10-15,14:05:36.644,wait_stage,"""detector"""
+2026-10-15,14:05:37.012,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 0]"
+2026-10-15,14:05:37.012,robot_blocked_s,0.367644
+2026-10-15,14:05:37.016,wait_stage,"""motion_planner"""
+2026-10-15,14:05:38.269,"trajectory_segment_request(id,seg)","[567, 4]"
+2026-10-15,14:05:38.270,"trajectory_segment_request(id,seg)","[567, 6]"
+2026-10-15,14:05:38.270,"trajectory_segment_request(id,seg)","[567, 7]"
+2026-10-15,14:05:38.272,"trajectory_segment_request(id,seg)","[567, 11]"
+2026-10-15,14:05:43.666,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:05:43.667,ack_ok_0_0,1
+2026-10-15,14:05:43.667,robot_blocked_s,0.001023
+2026-10-15,14:05:43.668,wait_stage,"""capture"""
+2026-10-15,14:05:43.913,robot_blocked_s,0.245149
+2026-10-15,14:05:43.914,wait_stage,"""detector"""
+2026-10-15,14:05:44.312,"detections(14in,18in,anchor,pandrol,spike)","[7, 1, 1, 0, 2]"
+2026-10-15,14:05:44.312,robot_blocked_s,0.397904
+2026-10-15,14:05:44.316,wait_stage,"""motion_planner"""
+2026-10-15,14:05:48.016,pick_request,"[568.869, -886.038, 265.548]"
+2026-10-15,14:05:48.017,ack_ok_0_0,1
+2026-10-15,14:05:48.017,robot_blocked_s,0.00117
+2026-10-15,14:05:48.018,wait_stage,"""capture"""
+2026-10-15,14:05:48.262,robot_blocked_s,0.243818
+2026-10-15,14:05:48.263,wait_stage,"""detector"""
+2026-10-15,14:05:48.658,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 1]"
+2026-10-15,14:05:48.658,robot_blocked_s,0.395771
+2026-10-15,14:05:48.662,wait_stage,"""motion_planner"""
+2026-10-15,14:05:49.942,"trajectory_segment_request(id,seg)","[569, 9]"
+2026-10-15,14:05:49.944,"trajectory_segment_request(id,seg)","[569, 10]"
+2026-10-15,14:05:49.945,"trajectory_segment_request(id,seg)","[569, 14]"
+2026-10-15,14:05:49.946,"trajectory_segment_request(id,seg)","[569, 18]"
+2026-10-15,14:05:52.277,pick_request,"[561.357, -887.678, 267.43]"
+2026-10-15,14:05:52.279,ack_ok_0_0,1
+2026-10-15,14:05:52.279,robot_blocked_s,0.00143
+2026-10-15,14:05:52.281,wait_stage,"""capture"""
+2026-10-15,14:05:52.529,robot_blocked_s,0.247961
+2026-10-15,14:05:52.530,wait_stage,"""detector"""
+2026-10-15,14:05:52.927,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 1, 1, 1]"
+2026-10-15,14:05:52.927,robot_blocked_s,0.3968
+2026-10-15,14:05:52.931,wait_stage,"""motion_planner"""
+2026-10-15,14:05:54.092,"trajectory_segment_request(id,seg)","[570, 8]"
+2026-10-15,14:05:54.093,"trajectory_segment_request(id,seg)","[570, 9]"
+2026-10-15,14:05:54.094,"trajectory_segment_request(id,seg)","[570, 13]"
+2026-10-15,14:05:54.094,"trajectory_segment_request(id,seg)","[570, 17]"
+2026-10-15,14:05:56.750,pick_request,"[571.262, -885.502, 264.947]"
+2026-10-15,14:05:56.752,ack_ok_0_0,1
+2026-10-15,14:05:56.752,robot_blocked_s,0.001615
+2026-10-15,14:05:56.753,wait_stage,"""capture"""
+2026-10-15,14:05:57.001,ack_ok_0_0,1
+2026-10-15,14:05:57.001,robot_blocked_s,0.24777
+2026-10-15,14:05:57.002,wait_stage,"""detector"""
+2026-10-15,14:05:57.386,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 1, 1]"
+2026-10-15,14:05:57.386,robot_blocked_s,0.384016
+2026-10-15,14:05:57.390,wait_stage,"""motion_planner"""
+2026-10-15,14:05:58.487,"trajectory_segment_request(id,seg)","[571, 3]"
+2026-10-15,14:05:58.488,"trajectory_segment_request(id,seg)","[571, 5]"
+2026-10-15,14:05:58.489,"trajectory_segment_request(id,seg)","[571, 6]"
+2026-10-15,14:05:58.490,"trajectory_segment_request(id,seg)","[571, 10]"
+2026-10-15,14:06:01.148,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:06:01.150,ack_ok_0_0,1
+2026-10-15,14:06:01.150,robot_blocked_s,0.001228
+2026-10-15,14:06:01.151,wait_stage,"""capture"""
+2026-10-15,14:06:01.395,robot_blocked_s,0.243775
+2026-10-15,14:06:01.396,wait_stage,"""detector"""
+2026-10-15,14:06:01.774,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 1, 2]"
+2026-10-15,14:06:01.774,robot_blocked_s,0.377382
+2026-10-15,14:06:01.777,wait_stage,"""motion_planner"""
+2026-10-15,14:06:02.949,"trajectory_segment_request(id,seg)","[572, 6]"
+2026-10-15,14:06:02.950,"trajectory_segment_request(id,seg)","[572, 8]"
+2026-10-15,14:06:02.951,"trajectory_segment_request(id,seg)","[572, 9]"
+2026-10-15,14:06:02.952,"trajectory_segment_request(id,seg)","[572, 13]"
+2026-10-15,14:06:05.466,pick_request,"[637.287, -867.692, 244.035]"
+2026-10-15,14:06:05.467,ack_ok_0_0,1
+2026-10-15,14:06:05.467,robot_blocked_s,0.000995
+2026-10-15,14:06:05.469,wait_stage,"""capture"""
+2026-10-15,14:06:05.726,robot_blocked_s,0.257871
+2026-10-15,14:06:05.727,wait_stage,"""detector"""
+2026-10-15,14:06:06.118,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 0]"
+2026-10-15,14:06:06.118,robot_blocked_s,0.390171
+2026-10-15,14:06:06.122,wait_stage,"""motion_planner"""
+2026-10-15,14:06:07.354,"trajectory_segment_request(id,seg)","[573, 4]"
+2026-10-15,14:06:07.356,"trajectory_segment_request(id,seg)","[573, 6]"
+2026-10-15,14:06:07.357,"trajectory_segment_request(id,seg)","[573, 7]"
+2026-10-15,14:06:07.357,"trajectory_segment_request(id,seg)","[573, 11]"
+2026-10-15,14:06:09.747,pick_request,"[579.571, -883.586, 262.842]"
+2026-10-15,14:06:09.748,ack_ok_0_0,1
+2026-10-15,14:06:09.748,robot_blocked_s,0.001084
+2026-10-15,14:06:09.749,wait_stage,"""capture"""
+2026-10-15,14:06:09.993,robot_blocked_s,0.244106
+2026-10-15,14:06:09.994,ack_ok_0_0,1
+2026-10-15,14:06:09.994,wait_stage,"""detector"""
+2026-10-15,14:06:10.375,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 1]"
+2026-10-15,14:06:10.375,robot_blocked_s,0.381022
+2026-10-15,14:06:10.379,wait_stage,"""motion_planner"""
+2026-10-15,14:06:11.533,"trajectory_segment_request(id,seg)","[574, 10]"
+2026-10-15,14:06:11.534,"trajectory_segment_request(id,seg)","[574, 11]"
+2026-10-15,14:06:11.535,"trajectory_segment_request(id,seg)","[574, 15]"
+2026-10-15,14:06:11.537,"trajectory_segment_request(id,seg)","[574, 19]"
+2026-10-15,14:06:13.879,pick_request,"[579.876, -883.516, 262.766]"
+2026-10-15,14:06:13.880,ack_ok_0_0,1
+2026-10-15,14:06:13.880,robot_blocked_s,0.000981
+2026-10-15,14:06:13.881,wait_stage,"""capture"""
+2026-10-15,14:06:14.125,ack_ok_0_0,1
+2026-10-15,14:06:14.125,robot_blocked_s,0.243226
+2026-10-15,14:06:14.126,wait_stage,"""detector"""
+2026-10-15,14:06:14.512,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 1]"
+2026-10-15,14:06:14.512,robot_blocked_s,0.386769
+2026-10-15,14:06:14.516,wait_stage,"""motion_planner"""
+2026-10-15,14:06:15.617,"trajectory_segment_request(id,seg)","[575, 5]"
+2026-10-15,14:06:15.618,"trajectory_segment_request(id,seg)","[575, 7]"
+2026-10-15,14:06:15.618,"trajectory_segment_request(id,seg)","[575, 8]"
+2026-10-15,14:06:15.620,"trajectory_segment_request(id,seg)","[575, 12]"
+2026-10-15,14:06:17.871,pick_request,"[567.379, -886.369, 265.923]"
+2026-10-15,14:06:17.872,ack_ok_0_0,1
+2026-10-15,14:06:17.872,robot_blocked_s,0.001175
+2026-10-15,14:06:17.873,wait_stage,"""capture"""
+2026-10-15,14:06:18.130,ack_ok_0_0,1
+2026-10-15,14:06:18.130,robot_blocked_s,0.256086
+2026-10-15,14:06:18.130,wait_stage,"""detector"""
+2026-10-15,14:06:18.520,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 1]"
+2026-10-15,14:06:18.520,robot_blocked_s,0.389259
+2026-10-15,14:06:18.524,wait_stage,"""motion_planner"""
+2026-10-15,14:06:19.633,"trajectory_segment_request(id,seg)","[576, 3]"
+2026-10-15,14:06:19.633,"trajectory_segment_request(id,seg)","[576, 5]"
+2026-10-15,14:06:19.634,"trajectory_segment_request(id,seg)","[576, 6]"
+2026-10-15,14:06:19.635,"trajectory_segment_request(id,seg)","[576, 10]"
+2026-10-15,14:06:21.903,pick_request,"[569.934, -885.801, 265.282]"
+2026-10-15,14:06:21.904,ack_ok_0_0,1
+2026-10-15,14:06:21.904,robot_blocked_s,0.000902
+2026-10-15,14:06:21.905,wait_stage,"""capture"""
+2026-10-15,14:06:22.150,ack_ok_0_0,1
+2026-10-15,14:06:22.150,robot_blocked_s,0.245525
+2026-10-15,14:06:22.152,wait_stage,"""detector"""
+2026-10-15,14:06:22.538,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:06:22.538,robot_blocked_s,0.386897
+2026-10-15,14:06:22.542,wait_stage,"""motion_planner"""
+2026-10-15,14:06:23.680,"trajectory_segment_request(id,seg)","[577, 10]"
+2026-10-15,14:06:23.687,"trajectory_segment_request(id,seg)","[577, 3]"
+2026-10-15,14:06:23.687,"trajectory_segment_request(id,seg)","[577, 5]"
+2026-10-15,14:06:23.689,"trajectory_segment_request(id,seg)","[577, 6]"
+2026-10-15,14:06:27.461,pick_request,"[404.435, -797.212, 237.496]"
+2026-10-15,14:06:27.462,ack_ok_0_0,1
+2026-10-15,14:06:27.462,robot_blocked_s,0.00105
+2026-10-15,14:06:27.463,wait_stage,"""capture"""
+2026-10-15,14:06:27.706,robot_blocked_s,0.242772
+2026-10-15,14:06:27.707,wait_stage,"""detector"""
+2026-10-15,14:06:28.099,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 2]"
+2026-10-15,14:06:28.099,robot_blocked_s,0.392456
+2026-10-15,14:06:28.103,wait_stage,"""motion_planner"""
+2026-10-15,14:06:29.257,"trajectory_segment_request(id,seg)","[578, 5]"
+2026-10-15,14:06:29.258,"trajectory_segment_request(id,seg)","[578, 7]"
+2026-10-15,14:06:29.259,"trajectory_segment_request(id,seg)","[578, 8]"
+2026-10-15,14:06:29.260,"trajectory_segment_request(id,seg)","[578, 12]"
+2026-10-15,14:06:31.663,pick_request,"[558.963, -888.187, 268.027]"
+2026-10-15,14:06:31.664,ack_ok_0_0,1
+2026-10-15,14:06:31.664,robot_blocked_s,0.00106
+2026-10-15,14:06:31.665,wait_stage,"""capture"""
+2026-10-15,14:06:31.909,robot_blocked_s,0.243274
+2026-10-15,14:06:31.909,wait_stage,"""detector"""
+2026-10-15,14:06:32.303,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 0]"
+2026-10-15,14:06:32.303,robot_blocked_s,0.393611
+2026-10-15,14:06:32.307,wait_stage,"""motion_planner"""
+2026-10-15,14:06:33.550,"trajectory_segment_request(id,seg)","[579, 4]"
+2026-10-15,14:06:33.550,"trajectory_segment_request(id,seg)","[579, 6]"
+2026-10-15,14:06:33.551,"trajectory_segment_request(id,seg)","[579, 7]"
+2026-10-15,14:06:33.552,"trajectory_segment_request(id,seg)","[579, 11]"
+2026-10-15,14:06:38.443,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:06:38.444,ack_ok_0_0,1
+2026-10-15,14:06:38.445,wait_stage,"""capture"""
+2026-10-15,14:06:38.692,ack_ok_0_0,1
+2026-10-15,14:06:38.692,robot_blocked_s,0.246304
+2026-10-15,14:06:38.692,wait_stage,"""detector"""
+2026-10-15,14:06:39.089,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 4]"
+2026-10-15,14:06:39.089,robot_blocked_s,0.39656
+2026-10-15,14:06:39.093,wait_stage,"""motion_planner"""
+2026-10-15,14:06:40.261,"trajectory_segment_request(id,seg)","[580, 4]"
+2026-10-15,14:06:40.262,"trajectory_segment_request(id,seg)","[580, 6]"
+2026-10-15,14:06:40.263,"trajectory_segment_request(id,seg)","[580, 7]"
+2026-10-15,14:06:40.264,"trajectory_segment_request(id,seg)","[580, 11]"
+2026-10-15,14:06:42.542,pick_request,"[571.478, -885.453, 264.894]"
+2026-10-15,14:06:42.543,ack_ok_0_0,1
+2026-10-15,14:06:42.543,robot_blocked_s,0.000976
+2026-10-15,14:06:42.544,wait_stage,"""capture"""
+2026-10-15,14:06:42.788,robot_blocked_s,0.243998
+2026-10-15,14:06:42.789,wait_stage,"""detector"""
+2026-10-15,14:06:43.162,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 1, 0, 1]"
+2026-10-15,14:06:43.162,robot_blocked_s,0.372972
+2026-10-15,14:06:43.166,wait_stage,"""motion_planner"""
+2026-10-15,14:06:44.307,"trajectory_segment_request(id,seg)","[581, 4]"
+2026-10-15,14:06:44.308,"trajectory_segment_request(id,seg)","[581, 6]"
+2026-10-15,14:06:44.309,"trajectory_segment_request(id,seg)","[581, 7]"
+2026-10-15,14:06:44.311,"trajectory_segment_request(id,seg)","[581, 11]"
+2026-10-15,14:06:48.067,pick_request,"[400.354, -798.712, 238.401]"
+2026-10-15,14:06:48.068,ack_ok_0_0,1
+2026-10-15,14:06:48.068,robot_blocked_s,0.001276
+2026-10-15,14:06:48.069,wait_stage,"""capture"""
+2026-10-15,14:06:48.315,ack_ok_0_0,1
+2026-10-15,14:06:48.315,robot_blocked_s,0.245574
+2026-10-15,14:06:48.316,wait_stage,"""detector"""
+2026-10-15,14:06:48.711,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 2]"
+2026-10-15,14:06:48.711,robot_blocked_s,0.395082
+2026-10-15,14:06:48.715,wait_stage,"""motion_planner"""
+2026-10-15,14:06:49.956,"trajectory_segment_request(id,seg)","[582, 5]"
+2026-10-15,14:06:49.957,"trajectory_segment_request(id,seg)","[582, 7]"
+2026-10-15,14:06:49.958,"trajectory_segment_request(id,seg)","[582, 8]"
+2026-10-15,14:06:49.959,"trajectory_segment_request(id,seg)","[582, 12]"
+2026-10-15,14:06:52.570,pick_request,"[570.691, -885.63, 265.09]"
+2026-10-15,14:06:52.571,ack_ok_0_0,1
+2026-10-15,14:06:52.571,robot_blocked_s,0.001325
+2026-10-15,14:06:52.572,wait_stage,"""capture"""
+2026-10-15,14:06:52.817,robot_blocked_s,0.245453
+2026-10-15,14:06:52.818,wait_stage,"""detector"""
+2026-10-15,14:06:53.212,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:06:53.212,robot_blocked_s,0.393875
+2026-10-15,14:06:53.216,wait_stage,"""motion_planner"""
+2026-10-15,14:06:54.516,"trajectory_segment_request(id,seg)","[583, 5]"
+2026-10-15,14:06:54.517,"trajectory_segment_request(id,seg)","[583, 7]"
+2026-10-15,14:06:54.517,"trajectory_segment_request(id,seg)","[583, 9]"
+2026-10-15,14:06:54.519,"trajectory_segment_request(id,seg)","[583, 13]"
+2026-10-15,14:06:57.244,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:06:57.245,ack_ok_0_0,1
+2026-10-15,14:06:57.245,robot_blocked_s,0.001125
+2026-10-15,14:06:57.246,wait_stage,"""capture"""
+2026-10-15,14:06:57.494,ack_ok_0_0,1
+2026-10-15,14:06:57.494,robot_blocked_s,0.248268
+2026-10-15,14:06:57.495,wait_stage,"""detector"""
+2026-10-15,14:06:57.888,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:06:57.888,robot_blocked_s,0.39209
+2026-10-15,14:06:57.892,wait_stage,"""motion_planner"""
+2026-10-15,14:06:59.035,"trajectory_segment_request(id,seg)","[584, 4]"
+2026-10-15,14:06:59.036,"trajectory_segment_request(id,seg)","[584, 6]"
+2026-10-15,14:06:59.037,"trajectory_segment_request(id,seg)","[584, 7]"
+2026-10-15,14:06:59.038,"trajectory_segment_request(id,seg)","[584, 11]"
+2026-10-15,14:07:01.863,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:07:01.864,ack_ok_0_0,1
+2026-10-15,14:07:01.864,robot_blocked_s,0.001378
+2026-10-15,14:07:01.866,wait_stage,"""capture"""
+2026-10-15,14:07:02.114,ack_ok_0_0,1
+2026-10-15,14:07:02.114,robot_blocked_s,0.248004
+2026-10-15,14:07:02.115,wait_stage,"""detector"""
+2026-10-15,14:07:02.505,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 1]"
+2026-10-15,14:07:02.505,robot_blocked_s,0.389745
+2026-10-15,14:07:02.509,wait_stage,"""motion_planner"""
+2026-10-15,14:07:03.550,"trajectory_segment_request(id,seg)","[585, 3]"
+2026-10-15,14:07:03.551,"trajectory_segment_request(id,seg)","[585, 5]"
+2026-10-15,14:07:03.552,"trajectory_segment_request(id,seg)","[585, 6]"
+2026-10-15,14:07:03.553,"trajectory_segment_request(id,seg)","[585, 10]"
+2026-10-15,14:07:08.603,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:07:08.604,ack_ok_0_0,1
+2026-10-15,14:07:08.604,robot_blocked_s,0.001605
+2026-10-15,14:07:08.606,wait_stage,"""capture"""
+2026-10-15,14:07:08.849,robot_blocked_s,0.242725
+2026-10-15,14:07:08.850,wait_stage,"""detector"""
+2026-10-15,14:07:09.253,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 4]"
+2026-10-15,14:07:09.253,robot_blocked_s,0.402532
+2026-10-15,14:07:09.256,wait_stage,"""motion_planner"""
+2026-10-15,14:07:10.487,"trajectory_segment_request(id,seg)","[586, 5]"
+2026-10-15,14:07:10.489,"trajectory_segment_request(id,seg)","[586, 11]"
+2026-10-15,14:07:13.228,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:07:13.230,ack_ok_0_0,1
+2026-10-15,14:07:13.230,robot_blocked_s,0.001334
+2026-10-15,14:07:13.231,wait_stage,"""capture"""
+2026-10-15,14:07:13.475,ack_ok_0_0,1
+2026-10-15,14:07:13.475,robot_blocked_s,0.244269
+2026-10-15,14:07:13.476,wait_stage,"""detector"""
+2026-10-15,14:07:13.876,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 2]"
+2026-10-15,14:07:13.880,wait_stage,"""motion_planner"""
+2026-10-15,14:07:15.015,"trajectory_segment_request(id,seg)","[587, 6]"
+2026-10-15,14:07:15.016,"trajectory_segment_request(id,seg)","[587, 8]"
+2026-10-15,14:07:15.017,"trajectory_segment_request(id,seg)","[587, 9]"
+2026-10-15,14:07:15.018,"trajectory_segment_request(id,seg)","[587, 13]"
+2026-10-15,14:07:17.347,pick_request,"[562.364, -887.462, 267.178]"
+2026-10-15,14:07:17.348,ack_ok_0_0,1
+2026-10-15,14:07:17.348,robot_blocked_s,0.000874
+2026-10-15,14:07:17.349,wait_stage,"""capture"""
+2026-10-15,14:07:17.591,robot_blocked_s,0.242702
+2026-10-15,14:07:17.592,wait_stage,"""detector"""
+2026-10-15,14:07:17.966,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 1]"
+2026-10-15,14:07:17.966,robot_blocked_s,0.374076
+2026-10-15,14:07:17.970,wait_stage,"""motion_planner"""
+2026-10-15,14:07:19.157,"trajectory_segment_request(id,seg)","[588, 6]"
+2026-10-15,14:07:19.158,"trajectory_segment_request(id,seg)","[588, 8]"
+2026-10-15,14:07:19.159,"trajectory_segment_request(id,seg)","[588, 9]"
+2026-10-15,14:07:19.160,"trajectory_segment_request(id,seg)","[588, 13]"
+2026-10-15,14:07:21.515,pick_request,"[567.409, -886.362, 265.915]"
+2026-10-15,14:07:21.517,ack_ok_0_0,1
+2026-10-15,14:07:21.517,robot_blocked_s,0.001333
+2026-10-15,14:07:21.518,wait_stage,"""capture"""
+2026-10-15,14:07:21.761,robot_blocked_s,0.242941
+2026-10-15,14:07:21.762,wait_stage,"""detector"""
+2026-10-15,14:07:22.142,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 2]"
+2026-10-15,14:07:22.142,robot_blocked_s,0.380117
+2026-10-15,14:07:22.147,wait_stage,"""motion_planner"""
+2026-10-15,14:07:23.284,"trajectory_segment_request(id,seg)","[589, 3]"
+2026-10-15,14:07:23.285,"trajectory_segment_request(id,seg)","[589, 5]"
+2026-10-15,14:07:23.286,"trajectory_segment_request(id,seg)","[589, 6]"
+2026-10-15,14:07:23.287,"trajectory_segment_request(id,seg)","[589, 10]"
+2026-10-15,14:07:25.351,pick_request,"[571.864, -885.366, 264.797]"
+2026-10-15,14:07:25.352,ack_ok_0_0,1
+2026-10-15,14:07:25.352,robot_blocked_s,0.001087
+2026-10-15,14:07:25.353,wait_stage,"""capture"""
+2026-10-15,14:07:25.597,robot_blocked_s,0.243803
+2026-10-15,14:07:25.599,wait_stage,"""detector"""
+2026-10-15,14:07:25.973,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:07:25.973,robot_blocked_s,0.374039
+2026-10-15,14:07:25.976,wait_stage,"""motion_planner"""
+2026-10-15,14:07:27.344,"trajectory_segment_request(id,seg)","[590, 5]"
+2026-10-15,14:07:27.345,"trajectory_segment_request(id,seg)","[590, 7]"
+2026-10-15,14:07:27.346,"trajectory_segment_request(id,seg)","[590, 8]"
+2026-10-15,14:07:27.347,"trajectory_segment_request(id,seg)","[590, 12]"
+2026-10-15,14:07:31.291,pick_request,"[398.601, -799.35, 238.789]"
+2026-10-15,14:07:31.292,ack_ok_0_0,1
+2026-10-15,14:07:31.292,robot_blocked_s,0.001127
+2026-10-15,14:07:31.293,wait_stage,"""capture"""
+2026-10-15,14:07:31.538,robot_blocked_s,0.24442
+2026-10-15,14:07:31.539,wait_stage,"""detector"""
+2026-10-15,14:07:31.942,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 1]"
+2026-10-15,14:07:31.942,robot_blocked_s,0.402779
+2026-10-15,14:07:31.946,wait_stage,"""motion_planner"""
+2026-10-15,14:07:33.200,"trajectory_segment_request(id,seg)","[591, 5]"
+2026-10-15,14:07:33.201,"trajectory_segment_request(id,seg)","[591, 7]"
+2026-10-15,14:07:33.202,"trajectory_segment_request(id,seg)","[591, 8]"
+2026-10-15,14:07:33.203,"trajectory_segment_request(id,seg)","[591, 12]"
+2026-10-15,14:07:35.945,pick_request,"[627.067, -870.918, 248.899]"
+2026-10-15,14:07:35.947,ack_ok_0_0,1
+2026-10-15,14:07:35.947,robot_blocked_s,0.001235
+2026-10-15,14:07:35.948,wait_stage,"""capture"""
+2026-10-15,14:07:36.214,robot_blocked_s,0.266413
+2026-10-15,14:07:36.215,wait_stage,"""detector"""
+2026-10-15,14:07:36.596,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 0]"
+2026-10-15,14:07:36.596,robot_blocked_s,0.380361
+2026-10-15,14:07:36.599,wait_stage,"""motion_planner"""
+2026-10-15,14:07:37.851,"trajectory_segment_request(id,seg)","[592, 9]"
+2026-10-15,14:07:37.852,"trajectory_segment_request(id,seg)","[592, 10]"
+2026-10-15,14:07:37.853,"trajectory_segment_request(id,seg)","[592, 14]"
+2026-10-15,14:07:37.853,"trajectory_segment_request(id,seg)","[592, 18]"
+2026-10-15,14:07:40.133,pick_request,"[563.2, -887.282, 266.969]"
+2026-10-15,14:07:40.134,robot_blocked_s,0.001439
+2026-10-15,14:07:40.135,ack_ok_0_0,1
+2026-10-15,14:07:40.136,wait_stage,"""capture"""
+2026-10-15,14:07:40.381,robot_blocked_s,0.245151
+2026-10-15,14:07:40.383,wait_stage,"""detector"""
+2026-10-15,14:07:40.756,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 0]"
+2026-10-15,14:07:40.756,robot_blocked_s,0.372954
+2026-10-15,14:07:40.759,wait_stage,"""motion_planner"""
+2026-10-15,14:07:41.883,"trajectory_segment_request(id,seg)","[593, 4]"
+2026-10-15,14:07:41.884,"trajectory_segment_request(id,seg)","[593, 6]"
+2026-10-15,14:07:41.885,"trajectory_segment_request(id,seg)","[593, 7]"
+2026-10-15,14:07:41.886,"trajectory_segment_request(id,seg)","[593, 11]"
+2026-10-15,14:07:44.089,pick_request,"[559.179, -888.141, 267.973]"
+2026-10-15,14:07:44.090,ack_ok_0_0,1
+2026-10-15,14:07:44.090,robot_blocked_s,0.001019
+2026-10-15,14:07:44.091,wait_stage,"""capture"""
+2026-10-15,14:07:44.335,robot_blocked_s,0.244445
+2026-10-15,14:07:44.336,wait_stage,"""detector"""
+2026-10-15,14:07:44.719,robot_blocked_s,0.383091
+2026-10-15,14:07:44.720,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 1, 0]"
+2026-10-15,14:07:44.723,wait_stage,"""motion_planner"""
+2026-10-15,14:07:46.004,"trajectory_segment_request(id,seg)","[594, 5]"
+2026-10-15,14:07:46.005,"trajectory_segment_request(id,seg)","[594, 7]"
+2026-10-15,14:07:46.007,"trajectory_segment_request(id,seg)","[594, 8]"
+2026-10-15,14:07:46.008,"trajectory_segment_request(id,seg)","[594, 12]"
+2026-10-15,14:07:48.140,pick_request,"[565.64, -886.751, 266.359]"
+2026-10-15,14:07:48.141,ack_ok_0_0,1
+2026-10-15,14:07:48.141,robot_blocked_s,0.000944
+2026-10-15,14:07:48.143,wait_stage,"""capture"""
+2026-10-15,14:07:48.390,ack_ok_0_0,1
+2026-10-15,14:07:48.390,robot_blocked_s,0.247101
+2026-10-15,14:07:48.391,wait_stage,"""detector"""
+2026-10-15,14:07:48.768,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:07:48.768,robot_blocked_s,0.376142
+2026-10-15,14:07:48.772,wait_stage,"""motion_planner"""
+2026-10-15,14:07:50.051,"trajectory_segment_request(id,seg)","[595, 5]"
+2026-10-15,14:07:50.052,"trajectory_segment_request(id,seg)","[595, 7]"
+2026-10-15,14:07:50.053,"trajectory_segment_request(id,seg)","[595, 8]"
+2026-10-15,14:07:50.054,"trajectory_segment_request(id,seg)","[595, 12]"
+2026-10-15,14:07:53.832,pick_request,"[399.826, -798.905, 238.518]"
+2026-10-15,14:07:53.833,ack_ok_0_0,1
+2026-10-15,14:07:53.833,robot_blocked_s,0.00081
+2026-10-15,14:07:53.833,wait_stage,"""capture"""
+2026-10-15,14:07:54.078,ack_ok_0_0,1
+2026-10-15,14:07:54.078,robot_blocked_s,0.245112
+2026-10-15,14:07:54.079,wait_stage,"""detector"""
+2026-10-15,14:07:54.472,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 1]"
+2026-10-15,14:07:54.472,robot_blocked_s,0.392384
+2026-10-15,14:07:54.476,wait_stage,"""motion_planner"""
+2026-10-15,14:07:56.201,"trajectory_segment_request(id,seg)","[596, 3]"
+2026-10-15,14:07:56.202,"trajectory_segment_request(id,seg)","[596, 5]"
+2026-10-15,14:07:56.203,"trajectory_segment_request(id,seg)","[596, 6]"
+2026-10-15,14:07:56.204,"trajectory_segment_request(id,seg)","[596, 10]"
+2026-10-15,14:08:00.769,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:08:00.770,ack_ok_0_0,1
+2026-10-15,14:08:00.770,robot_blocked_s,0.001025
+2026-10-15,14:08:00.772,wait_stage,"""capture"""
+2026-10-15,14:08:01.017,ack_ok_0_0,1
+2026-10-15,14:08:01.017,robot_blocked_s,0.2457
+2026-10-15,14:08:01.018,wait_stage,"""detector"""
+2026-10-15,14:08:01.404,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 1, 0, 1]"
+2026-10-15,14:08:01.404,robot_blocked_s,0.385155
+2026-10-15,14:08:01.407,wait_stage,"""motion_planner"""
+2026-10-15,14:08:02.590,"trajectory_segment_request(id,seg)","[597, 3]"
+2026-10-15,14:08:02.591,"trajectory_segment_request(id,seg)","[597, 5]"
+2026-10-15,14:08:02.592,"trajectory_segment_request(id,seg)","[597, 6]"
+2026-10-15,14:08:02.593,"trajectory_segment_request(id,seg)","[597, 10]"
+2026-10-15,14:08:04.997,pick_request,"[567.944, -886.244, 265.781]"
+2026-10-15,14:08:04.998,ack_ok_0_0,1
+2026-10-15,14:08:04.998,robot_blocked_s,0.001003
+2026-10-15,14:08:05.000,wait_stage,"""capture"""
+2026-10-15,14:08:05.244,ack_ok_0_0,1
+2026-10-15,14:08:05.244,robot_blocked_s,0.244567
+2026-10-15,14:08:05.245,wait_stage,"""detector"""
+2026-10-15,14:08:05.646,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 2]"
+2026-10-15,14:08:05.646,robot_blocked_s,0.400736
+2026-10-15,14:08:05.650,wait_stage,"""motion_planner"""
+2026-10-15,14:08:06.910,"trajectory_segment_request(id,seg)","[598, 5]"
+2026-10-15,14:08:06.911,"trajectory_segment_request(id,seg)","[598, 7]"
+2026-10-15,14:08:06.912,"trajectory_segment_request(id,seg)","[598, 8]"
+2026-10-15,14:08:06.913,"trajectory_segment_request(id,seg)","[598, 12]"
+2026-10-15,14:08:09.215,pick_request,"[554.634, -889.09, 269.104]"
+2026-10-15,14:08:09.216,ack_ok_0_0,1
+2026-10-15,14:08:09.216,robot_blocked_s,0.001085
+2026-10-15,14:08:09.217,wait_stage,"""capture"""
+2026-10-15,14:08:09.462,robot_blocked_s,0.244739
+2026-10-15,14:08:09.462,wait_stage,"""detector"""
+2026-10-15,14:08:09.852,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 2]"
+2026-10-15,14:08:09.852,robot_blocked_s,0.390072
+2026-10-15,14:08:09.856,wait_stage,"""motion_planner"""
+2026-10-15,14:08:11.094,"trajectory_segment_request(id,seg)","[599, 6]"
+2026-10-15,14:08:15.148,pick_request,"[404.738, -797.1, 237.429]"
+2026-10-15,14:08:15.149,ack_ok_0_0,1
+2026-10-15,14:08:15.149,robot_blocked_s,0.001046
+2026-10-15,14:08:15.150,wait_stage,"""capture"""
+2026-10-15,14:08:15.394,ack_ok_0_0,1
+2026-10-15,14:08:15.394,robot_blocked_s,0.244571
+2026-10-15,14:08:15.396,wait_stage,"""detector"""
+2026-10-15,14:08:15.762,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 1]"
+2026-10-15,14:08:15.762,robot_blocked_s,0.366488
+2026-10-15,14:08:17.015,"trajectory_segment_request(id,seg)","[600, 4]"
+2026-10-15,14:08:17.017,"trajectory_segment_request(id,seg)","[600, 7]"
+2026-10-15,14:08:19.318,pick_request,"[577.899, -883.978, 263.268]"
+2026-10-15,14:08:19.319,ack_ok_0_0,1
+2026-10-15,14:08:19.319,robot_blocked_s,0.001071
+2026-10-15,14:08:19.320,wait_stage,"""capture"""
+2026-10-15,14:08:19.566,robot_blocked_s,0.245721
+2026-10-15,14:08:19.567,wait_stage,"""detector"""
+2026-10-15,14:08:19.941,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 4]"
+2026-10-15,14:08:19.941,robot_blocked_s,0.373199
+2026-10-15,14:08:19.944,wait_stage,"""motion_planner"""
+2026-10-15,14:08:21.229,"trajectory_segment_request(id,seg)","[601, 10]"
+2026-10-15,14:08:21.229,"trajectory_segment_request(id,seg)","[601, 11]"
+2026-10-15,14:08:21.231,"trajectory_segment_request(id,seg)","[601, 15]"
+2026-10-15,14:08:21.233,"trajectory_segment_request(id,seg)","[601, 19]"
+2026-10-15,14:08:23.655,pick_request,"[558.634, -888.256, 268.109]"
+2026-10-15,14:08:23.656,ack_ok_0_0,1
+2026-10-15,14:08:23.656,robot_blocked_s,0.001358
+2026-10-15,14:08:23.657,wait_stage,"""capture"""
+2026-10-15,14:08:23.901,robot_blocked_s,0.243983
+2026-10-15,14:08:23.902,wait_stage,"""detector"""
+2026-10-15,14:08:24.290,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 1, 0, 0]"
+2026-10-15,14:08:24.290,robot_blocked_s,0.388324
+2026-10-15,14:08:24.294,wait_stage,"""motion_planner"""
+2026-10-15,14:08:25.700,"trajectory_segment_request(id,seg)","[602, 5]"
+2026-10-15,14:08:25.701,"trajectory_segment_request(id,seg)","[602, 7]"
+2026-10-15,14:08:25.702,"trajectory_segment_request(id,seg)","[602, 8]"
+2026-10-15,14:08:25.703,"trajectory_segment_request(id,seg)","[602, 12]"
+2026-10-15,14:08:27.974,pick_request,"[571.966, -885.343, 264.771]"
+2026-10-15,14:08:27.975,ack_ok_0_0,1
+2026-10-15,14:08:27.975,robot_blocked_s,0.001234
+2026-10-15,14:08:27.976,wait_stage,"""capture"""
+2026-10-15,14:08:28.223,ack_ok_0_0,1
+2026-10-15,14:08:28.223,robot_blocked_s,0.246604
+2026-10-15,14:08:28.224,wait_stage,"""detector"""
+2026-10-15,14:08:28.623,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 1, 1, 1]"
+2026-10-15,14:08:28.623,robot_blocked_s,0.399144
+2026-10-15,14:08:28.627,wait_stage,"""motion_planner"""
+2026-10-15,14:08:29.834,"trajectory_segment_request(id,seg)","[603, 3]"
+2026-10-15,14:08:29.835,"trajectory_segment_request(id,seg)","[603, 5]"
+2026-10-15,14:08:29.836,"trajectory_segment_request(id,seg)","[603, 6]"
+2026-10-15,14:08:29.837,"trajectory_segment_request(id,seg)","[603, 10]"
+2026-10-15,14:08:31.926,pick_request,"[562.643, -887.402, 267.109]"
+2026-10-15,14:08:31.927,ack_ok_0_0,1
+2026-10-15,14:08:31.927,robot_blocked_s,0.001365
+2026-10-15,14:08:31.928,wait_stage,"""capture"""
+2026-10-15,14:08:32.174,ack_ok_0_0,1
+2026-10-15,14:08:32.174,robot_blocked_s,0.248126
+2026-10-15,14:08:32.175,wait_stage,"""detector"""
+2026-10-15,14:08:32.547,robot_blocked_s,0.372295
+2026-10-15,14:08:32.548,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 1, 0, 0]"
+2026-10-15,14:08:32.551,wait_stage,"""motion_planner"""
+2026-10-15,14:08:33.755,"trajectory_segment_request(id,seg)","[604, 6]"
+2026-10-15,14:08:33.756,"trajectory_segment_request(id,seg)","[604, 8]"
+2026-10-15,14:08:33.757,"trajectory_segment_request(id,seg)","[604, 9]"
+2026-10-15,14:08:33.758,"trajectory_segment_request(id,seg)","[604, 13]"
+2026-10-15,14:08:35.957,pick_request,"[564.123, -887.082, 266.738]"
+2026-10-15,14:08:35.959,ack_ok_0_0,1
+2026-10-15,14:08:35.959,robot_blocked_s,0.001732
+2026-10-15,14:08:35.961,wait_stage,"""capture"""
+2026-10-15,14:08:36.204,robot_blocked_s,0.243465
+2026-10-15,14:08:36.205,wait_stage,"""detector"""
+2026-10-15,14:08:36.582,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 1, 0, 2]"
+2026-10-15,14:08:36.582,robot_blocked_s,0.376642
+2026-10-15,14:08:36.586,wait_stage,"""motion_planner"""
+2026-10-15,14:08:37.901,"trajectory_segment_request(id,seg)","[605, 4]"
+2026-10-15,14:08:37.902,"trajectory_segment_request(id,seg)","[605, 6]"
+2026-10-15,14:08:37.903,"trajectory_segment_request(id,seg)","[605, 7]"
+2026-10-15,14:08:37.905,"trajectory_segment_request(id,seg)","[605, 11]"
+2026-10-15,14:08:40.261,pick_request,"[565.826, -886.711, 266.312]"
+2026-10-15,14:08:40.262,ack_ok_0_0,1
+2026-10-15,14:08:40.262,robot_blocked_s,0.001319
+2026-10-15,14:08:40.263,wait_stage,"""capture"""
+2026-10-15,14:08:40.507,robot_blocked_s,0.243791
+2026-10-15,14:08:40.509,wait_stage,"""detector"""
+2026-10-15,14:08:40.896,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 1, 0, 0]"
+2026-10-15,14:08:40.896,robot_blocked_s,0.387029
+2026-10-15,14:08:40.899,wait_stage,"""motion_planner"""
+2026-10-15,14:08:42.189,"trajectory_segment_request(id,seg)","[606, 4]"
+2026-10-15,14:08:42.190,"trajectory_segment_request(id,seg)","[606, 6]"
+2026-10-15,14:08:42.191,"trajectory_segment_request(id,seg)","[606, 7]"
+2026-10-15,14:08:42.192,"trajectory_segment_request(id,seg)","[606, 11]"
+2026-10-15,14:08:48.523,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:08:48.524,ack_ok_0_0,1
+2026-10-15,14:08:48.524,robot_blocked_s,0.001117
+2026-10-15,14:08:48.525,wait_stage,"""capture"""
+2026-10-15,14:08:48.773,robot_blocked_s,0.24738
+2026-10-15,14:08:48.774,wait_stage,"""detector"""
+2026-10-15,14:08:49.147,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 1, 0, 1]"
+2026-10-15,14:08:49.147,robot_blocked_s,0.372943
+2026-10-15,14:08:49.151,wait_stage,"""motion_planner"""
+2026-10-15,14:08:51.285,"trajectory_segment_request(id,seg)","[607, 4]"
+2026-10-15,14:08:51.285,"trajectory_segment_request(id,seg)","[607, 6]"
+2026-10-15,14:08:51.286,"trajectory_segment_request(id,seg)","[607, 7]"
+2026-10-15,14:08:51.287,"trajectory_segment_request(id,seg)","[607, 11]"
+2026-10-15,14:08:53.618,pick_request,"[569.148, -854.796, 265.198]"
+2026-10-15,14:08:53.619,ack_ok_0_0,1
+2026-10-15,14:08:53.619,robot_blocked_s,0.000978
+2026-10-15,14:08:53.621,wait_stage,"""capture"""
+2026-10-15,14:08:53.864,robot_blocked_s,0.242781
+2026-10-15,14:08:53.865,wait_stage,"""detector"""
+2026-10-15,14:08:54.277,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:08:54.277,robot_blocked_s,0.411989
+2026-10-15,14:08:54.281,wait_stage,"""motion_planner"""
+2026-10-15,14:08:55.607,"trajectory_segment_request(id,seg)","[608, 4]"
+2026-10-15,14:08:55.609,"trajectory_segment_request(id,seg)","[608, 6]"
+2026-10-15,14:08:55.609,"trajectory_segment_request(id,seg)","[608, 7]"
+2026-10-15,14:08:55.611,"trajectory_segment_request(id,seg)","[608, 11]"
+2026-10-15,14:08:57.630,pick_request,"[569.27, -885.949, 265.448]"
+2026-10-15,14:08:57.631,ack_ok_0_0,1
+2026-10-15,14:08:57.631,robot_blocked_s,0.000936
+2026-10-15,14:08:57.632,wait_stage,"""capture"""
+2026-10-15,14:08:57.876,robot_blocked_s,0.243765
+2026-10-15,14:08:57.877,wait_stage,"""detector"""
+2026-10-15,14:08:58.267,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:08:58.267,robot_blocked_s,0.390316
+2026-10-15,14:08:58.271,wait_stage,"""motion_planner"""
+2026-10-15,14:08:59.516,"trajectory_segment_request(id,seg)","[609, 4]"
+2026-10-15,14:08:59.517,"trajectory_segment_request(id,seg)","[609, 6]"
+2026-10-15,14:08:59.518,"trajectory_segment_request(id,seg)","[609, 7]"
+2026-10-15,14:08:59.519,"trajectory_segment_request(id,seg)","[609, 11]"
+2026-10-15,14:09:01.667,pick_request,"[579.001, -883.722, 262.99]"
+2026-10-15,14:09:01.668,ack_ok_0_0,1
+2026-10-15,14:09:01.668,robot_blocked_s,0.001337
+2026-10-15,14:09:01.669,wait_stage,"""capture"""
+2026-10-15,14:09:01.911,robot_blocked_s,0.241826
+2026-10-15,14:09:01.913,wait_stage,"""detector"""
+2026-10-15,14:09:02.296,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 0]"
+2026-10-15,14:09:02.296,robot_blocked_s,0.38333
+2026-10-15,14:09:02.300,wait_stage,"""motion_planner"""
+2026-10-15,14:09:03.493,"trajectory_segment_request(id,seg)","[610, 4]"
+2026-10-15,14:09:03.495,"trajectory_segment_request(id,seg)","[610, 6]"
+2026-10-15,14:09:03.496,"trajectory_segment_request(id,seg)","[610, 7]"
+2026-10-15,14:09:03.497,"trajectory_segment_request(id,seg)","[610, 11]"
+2026-10-15,14:09:08.122,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:09:08.124,ack_ok_0_0,1
+2026-10-15,14:09:08.124,robot_blocked_s,0.001595
+2026-10-15,14:09:08.125,wait_stage,"""capture"""
+2026-10-15,14:09:08.366,robot_blocked_s,0.241273
+2026-10-15,14:09:08.367,wait_stage,"""detector"""
+2026-10-15,14:09:08.739,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 1]"
+2026-10-15,14:09:08.739,robot_blocked_s,0.371383
+2026-10-15,14:09:08.743,wait_stage,"""motion_planner"""
+2026-10-15,14:09:09.950,"trajectory_segment_request(id,seg)","[611, 5]"
+2026-10-15,14:09:09.951,"trajectory_segment_request(id,seg)","[611, 7]"
+2026-10-15,14:09:09.952,"trajectory_segment_request(id,seg)","[611, 8]"
+2026-10-15,14:09:09.953,"trajectory_segment_request(id,seg)","[611, 12]"
+2026-10-15,14:09:13.983,robot_blocked_s,0.000964
+2026-10-15,14:09:13.984,wait_stage,"""capture"""
+2026-10-15,14:09:14.228,ack_ok_0_0,1
+2026-10-15,14:09:14.228,robot_blocked_s,0.24461
+2026-10-15,14:09:14.229,wait_stage,"""detector"""
+2026-10-15,14:09:14.627,"detections(14in,18in,anchor,pandrol,spike)","[9, 0, 2, 0, 1]"
+2026-10-15,14:09:14.627,robot_blocked_s,0.39743
+2026-10-15,14:09:14.630,wait_stage,"""motion_planner"""
+2026-10-15,14:09:15.640,"trajectory_segment_request(id,seg)","[612, 8]"
+2026-10-15,14:09:15.982,pick_request,"[409.144, -795.452, 236.449]"
+2026-10-15,14:09:18.164,robot_blocked_s,0.000949
+2026-10-15,14:09:18.409,ack_ok_0_0,1
+2026-10-15,14:09:18.409,wait_stage,"""detector"""
+2026-10-15,14:09:18.814,"detections(14in,18in,anchor,pandrol,spike)","[9, 0, 0, 0, 1]"
+2026-10-15,14:09:18.814,robot_blocked_s,0.404217
+2026-10-15,14:09:19.964,"trajectory_segment_request(id,seg)","[613, 7]"
+2026-10-15,14:09:22.302,pick_request,"[566.057, -886.66, 266.254]"
+2026-10-15,14:09:22.303,ack_ok_0_0,1
+2026-10-15,14:09:22.303,robot_blocked_s,0.000992
+2026-10-15,14:09:22.305,wait_stage,"""capture"""
+2026-10-15,14:09:22.551,robot_blocked_s,0.245616
+2026-10-15,14:09:22.552,wait_stage,"""detector"""
+2026-10-15,14:09:22.928,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 2, 0, 1]"
+2026-10-15,14:09:22.928,robot_blocked_s,0.375789
+2026-10-15,14:09:22.931,wait_stage,"""motion_planner"""
+2026-10-15,14:09:24.206,"trajectory_segment_request(id,seg)","[614, 5]"
+2026-10-15,14:09:24.208,"trajectory_segment_request(id,seg)","[614, 7]"
+2026-10-15,14:09:24.209,"trajectory_segment_request(id,seg)","[614, 8]"
+2026-10-15,14:09:24.210,"trajectory_segment_request(id,seg)","[614, 12]"
+2026-10-15,14:09:26.541,pick_request,"[567.541, -886.333, 265.882]"
+2026-10-15,14:09:26.543,ack_ok_0_0,1
+2026-10-15,14:09:26.543,robot_blocked_s,0.00139
+2026-10-15,14:09:26.544,wait_stage,"""capture"""
+2026-10-15,14:09:26.792,robot_blocked_s,0.248352
+2026-10-15,14:09:26.793,wait_stage,"""detector"""
+2026-10-15,14:09:27.216,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 3, 0, 2]"
+2026-10-15,14:09:27.216,robot_blocked_s,0.422812
+2026-10-15,14:09:27.220,wait_stage,"""motion_planner"""
+2026-10-15,14:09:28.324,"trajectory_segment_request(id,seg)","[615, 7]"
+2026-10-15,14:09:28.324,"trajectory_segment_request(id,seg)","[615, 8]"
+2026-10-15,14:09:28.326,"trajectory_segment_request(id,seg)","[615, 12]"
+2026-10-15,14:09:28.327,"trajectory_segment_request(id,seg)","[615, 16]"
+2026-10-15,14:09:30.479,ack_ok_0_0,1
+2026-10-15,14:09:30.479,robot_blocked_s,0.000667
+2026-10-15,14:09:30.479,pick_request,"[561.112, -887.73, 267.491]"
+2026-10-15,14:09:30.480,wait_stage,"""capture"""
+2026-10-15,14:09:30.725,robot_blocked_s,0.244793
+2026-10-15,14:09:30.726,wait_stage,"""detector"""
+2026-10-15,14:09:31.111,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 2, 0, 3]"
+2026-10-15,14:09:31.111,robot_blocked_s,0.384253
+2026-10-15,14:09:31.115,wait_stage,"""motion_planner"""
+2026-10-15,14:09:32.230,"trajectory_segment_request(id,seg)","[616, 3]"
+2026-10-15,14:09:32.231,"trajectory_segment_request(id,seg)","[616, 5]"
+2026-10-15,14:09:32.231,"trajectory_segment_request(id,seg)","[616, 6]"
+2026-10-15,14:09:32.232,"trajectory_segment_request(id,seg)","[616, 10]"
+2026-10-15,14:09:34.854,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:09:34.855,ack_ok_0_0,1
+2026-10-15,14:09:34.855,robot_blocked_s,0.000981
+2026-10-15,14:09:34.856,wait_stage,"""capture"""
+2026-10-15,14:09:35.106,ack_ok_0_0,1
+2026-10-15,14:09:35.106,robot_blocked_s,0.249829
+2026-10-15,14:09:35.107,wait_stage,"""detector"""
+2026-10-15,14:09:35.498,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 3]"
+2026-10-15,14:09:35.498,robot_blocked_s,0.391716
+2026-10-15,14:09:35.502,wait_stage,"""motion_planner"""
+2026-10-15,14:09:36.631,"trajectory_segment_request(id,seg)","[617, 6]"
+2026-10-15,14:09:36.632,"trajectory_segment_request(id,seg)","[617, 8]"
+2026-10-15,14:09:36.632,"trajectory_segment_request(id,seg)","[617, 9]"
+2026-10-15,14:09:36.634,"trajectory_segment_request(id,seg)","[617, 13]"
+2026-10-15,14:09:39.195,pick_request,"[572.759, -885.163, 264.571]"
+2026-10-15,14:09:39.196,ack_ok_0_0,1
+2026-10-15,14:09:39.196,robot_blocked_s,0.001146
+2026-10-15,14:09:39.197,wait_stage,"""capture"""
+2026-10-15,14:09:39.440,robot_blocked_s,0.243878
+2026-10-15,14:09:39.442,wait_stage,"""detector"""
+2026-10-15,14:09:39.847,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 3]"
+2026-10-15,14:09:39.847,robot_blocked_s,0.404945
+2026-10-15,14:09:39.851,wait_stage,"""motion_planner"""
+2026-10-15,14:09:40.971,"trajectory_segment_request(id,seg)","[618, 6]"
+2026-10-15,14:09:40.972,"trajectory_segment_request(id,seg)","[618, 8]"
+2026-10-15,14:09:40.973,"trajectory_segment_request(id,seg)","[618, 10]"
+2026-10-15,14:09:40.974,"trajectory_segment_request(id,seg)","[618, 14]"
+2026-10-15,14:09:43.431,pick_request,"[582.559, -882.876, 262.079]"
+2026-10-15,14:09:43.432,ack_ok_0_0,1
+2026-10-15,14:09:43.432,robot_blocked_s,0.000952
+2026-10-15,14:09:43.434,wait_stage,"""capture"""
+2026-10-15,14:09:43.675,robot_blocked_s,0.240938
+2026-10-15,14:09:43.676,wait_stage,"""detector"""
+2026-10-15,14:09:44.075,"detections(14in,18in,anchor,pandrol,spike)","[6, 0, 0, 0, 5]"
+2026-10-15,14:09:44.075,robot_blocked_s,0.399337
+2026-10-15,14:09:44.079,wait_stage,"""motion_planner"""
+2026-10-15,14:09:45.271,"trajectory_segment_request(id,seg)","[619, 8]"
+2026-10-15,14:09:45.272,"trajectory_segment_request(id,seg)","[619, 9]"
+2026-10-15,14:09:45.273,"trajectory_segment_request(id,seg)","[619, 13]"
+2026-10-15,14:09:45.274,"trajectory_segment_request(id,seg)","[619, 17]"
+2026-10-15,14:09:47.751,pick_request,"[576.508, -884.303, 263.623]"
+2026-10-15,14:09:47.752,ack_ok_0_0,1
+2026-10-15,14:09:47.752,robot_blocked_s,0.001386
+2026-10-15,14:09:47.753,wait_stage,"""capture"""
+2026-10-15,14:09:47.997,robot_blocked_s,0.243633
+2026-10-15,14:09:47.998,wait_stage,"""detector"""
+2026-10-15,14:09:48.401,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,14:09:48.401,robot_blocked_s,0.402635
+2026-10-15,14:09:48.405,wait_stage,"""motion_planner"""
+2026-10-15,14:09:49.627,"trajectory_segment_request(id,seg)","[620, 6]"
+2026-10-15,14:09:49.628,"trajectory_segment_request(id,seg)","[620, 8]"
+2026-10-15,14:09:49.629,"trajectory_segment_request(id,seg)","[620, 9]"
+2026-10-15,14:09:49.630,"trajectory_segment_request(id,seg)","[620, 13]"
+2026-10-15,14:09:51.850,pick_request,"[559.679, -888.035, 267.849]"
+2026-10-15,14:09:51.852,ack_ok_0_0,1
+2026-10-15,14:09:51.852,robot_blocked_s,0.001577
+2026-10-15,14:09:51.853,wait_stage,"""capture"""
+2026-10-15,14:09:52.097,ack_ok_0_0,1
+2026-10-15,14:09:52.097,robot_blocked_s,0.243358
+2026-10-15,14:09:52.098,wait_stage,"""detector"""
+2026-10-15,14:09:52.485,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 3]"
+2026-10-15,14:09:52.485,robot_blocked_s,0.386694
+2026-10-15,14:09:52.488,wait_stage,"""motion_planner"""
+2026-10-15,14:09:53.851,"trajectory_segment_request(id,seg)","[621, 4]"
+2026-10-15,14:09:53.852,"trajectory_segment_request(id,seg)","[621, 6]"
+2026-10-15,14:09:53.853,"trajectory_segment_request(id,seg)","[621, 7]"
+2026-10-15,14:09:53.854,"trajectory_segment_request(id,seg)","[621, 11]"
+2026-10-15,14:09:56.199,pick_request,"[560.318, -893.807, 266.94]"
+2026-10-15,14:09:56.200,ack_ok_0_0,1
+2026-10-15,14:09:56.200,robot_blocked_s,0.000788
+2026-10-15,14:09:56.201,wait_stage,"""capture"""
+2026-10-15,14:09:56.444,ack_ok_0_0,1
+2026-10-15,14:09:56.444,robot_blocked_s,0.243302
+2026-10-15,14:09:56.445,wait_stage,"""detector"""
+2026-10-15,14:09:56.845,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 2]"
+2026-10-15,14:09:56.845,robot_blocked_s,0.400367
+2026-10-15,14:09:56.849,wait_stage,"""motion_planner"""
+2026-10-15,14:09:57.987,"trajectory_segment_request(id,seg)","[622, 5]"
+2026-10-15,14:09:57.988,"trajectory_segment_request(id,seg)","[622, 7]"
+2026-10-15,14:09:57.989,"trajectory_segment_request(id,seg)","[622, 9]"
+2026-10-15,14:09:57.990,"trajectory_segment_request(id,seg)","[622, 13]"
+2026-10-15,14:10:02.142,pick_request,"[407.609, -796.029, 236.791]"
+2026-10-15,14:10:02.143,robot_blocked_s,0.001213
+2026-10-15,14:10:02.144,ack_ok_0_0,1
+2026-10-15,14:10:02.145,wait_stage,"""capture"""
+2026-10-15,14:10:02.398,ack_ok_0_0,1
+2026-10-15,14:10:02.398,robot_blocked_s,0.25309
+2026-10-15,14:10:02.399,wait_stage,"""detector"""
+2026-10-15,14:10:02.800,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 0]"
+2026-10-15,14:10:02.800,robot_blocked_s,0.401256
+2026-10-15,14:10:02.804,wait_stage,"""motion_planner"""
+2026-10-15,14:10:04.051,"trajectory_segment_request(id,seg)","[623, 6]"
+2026-10-15,14:10:04.052,"trajectory_segment_request(id,seg)","[623, 8]"
+2026-10-15,14:10:04.053,"trajectory_segment_request(id,seg)","[623, 9]"
+2026-10-15,14:10:04.054,"trajectory_segment_request(id,seg)","[623, 13]"
+2026-10-15,14:10:06.346,pick_request,"[561.837, -887.575, 267.31]"
+2026-10-15,14:10:06.347,ack_ok_0_0,1
+2026-10-15,14:10:06.347,robot_blocked_s,0.001063
+2026-10-15,14:10:06.348,wait_stage,"""capture"""
+2026-10-15,14:10:06.592,robot_blocked_s,0.243732
+2026-10-15,14:10:06.593,wait_stage,"""detector"""
+2026-10-15,14:10:06.998,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:10:06.998,robot_blocked_s,0.405088
+2026-10-15,14:10:07.002,wait_stage,"""motion_planner"""
+2026-10-15,14:10:08.141,"trajectory_segment_request(id,seg)","[624, 3]"
+2026-10-15,14:10:08.143,"trajectory_segment_request(id,seg)","[624, 5]"
+2026-10-15,14:10:08.144,"trajectory_segment_request(id,seg)","[624, 6]"
+2026-10-15,14:10:08.145,"trajectory_segment_request(id,seg)","[624, 10]"
+2026-10-15,14:10:13.571,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:10:13.573,ack_ok_0_0,1
+2026-10-15,14:10:13.573,robot_blocked_s,0.001065
+2026-10-15,14:10:13.574,wait_stage,"""capture"""
+2026-10-15,14:10:13.823,wait_stage,"""detector"""
+2026-10-15,14:10:14.219,"detections(14in,18in,anchor,pandrol,spike)","[5, 2, 0, 0, 0]"
+2026-10-15,14:10:14.219,robot_blocked_s,0.396344
+2026-10-15,14:10:14.223,wait_stage,"""motion_planner"""
+2026-10-15,14:10:15.433,"trajectory_segment_request(id,seg)","[625, 4]"
+2026-10-15,14:10:15.434,"trajectory_segment_request(id,seg)","[625, 6]"
+2026-10-15,14:10:15.435,"trajectory_segment_request(id,seg)","[625, 7]"
+2026-10-15,14:10:15.436,"trajectory_segment_request(id,seg)","[625, 11]"
+2026-10-15,14:10:17.796,pick_request,"[573.143, -885.075, 264.472]"
+2026-10-15,14:10:17.797,ack_ok_0_0,1
+2026-10-15,14:10:17.797,robot_blocked_s,0.001069
+2026-10-15,14:10:17.798,wait_stage,"""capture"""
+2026-10-15,14:10:18.046,ack_ok_0_0,1
+2026-10-15,14:10:18.046,robot_blocked_s,0.247575
+2026-10-15,14:10:18.047,wait_stage,"""detector"""
+2026-10-15,14:10:18.438,"detections(14in,18in,anchor,pandrol,spike)","[5, 1, 0, 0, 0]"
+2026-10-15,14:10:18.438,robot_blocked_s,0.391535
+2026-10-15,14:10:18.442,wait_stage,"""motion_planner"""
+2026-10-15,14:10:19.564,"trajectory_segment_request(id,seg)","[626, 4]"
+2026-10-15,14:10:19.565,"trajectory_segment_request(id,seg)","[626, 6]"
+2026-10-15,14:10:19.565,"trajectory_segment_request(id,seg)","[626, 7]"
+2026-10-15,14:10:19.566,"trajectory_segment_request(id,seg)","[626, 11]"
+2026-10-15,14:10:23.584,pick_request,"[410.35, -794.996, 236.181]"
+2026-10-15,14:10:23.585,ack_ok_0_0,1
+2026-10-15,14:10:23.585,robot_blocked_s,0.001015
+2026-10-15,14:10:23.586,wait_stage,"""capture"""
+2026-10-15,14:10:23.835,robot_blocked_s,0.248796
+2026-10-15,14:10:23.835,wait_stage,"""detector"""
+2026-10-15,14:10:24.240,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 2]"
+2026-10-15,14:10:24.240,robot_blocked_s,0.404342
+2026-10-15,14:10:24.244,wait_stage,"""motion_planner"""
+2026-10-15,14:10:25.505,"trajectory_segment_request(id,seg)","[627, 4]"
+2026-10-15,14:10:25.506,"trajectory_segment_request(id,seg)","[627, 6]"
+2026-10-15,14:10:25.507,"trajectory_segment_request(id,seg)","[627, 7]"
+2026-10-15,14:10:25.508,"trajectory_segment_request(id,seg)","[627, 11]"
+2026-10-15,14:10:27.710,pick_request,"[572.889, -885.134, 264.538]"
+2026-10-15,14:10:27.711,ack_ok_0_0,1
+2026-10-15,14:10:27.711,robot_blocked_s,0.000917
+2026-10-15,14:10:27.712,wait_stage,"""capture"""
+2026-10-15,14:10:27.957,robot_blocked_s,0.245607
+2026-10-15,14:10:27.959,wait_stage,"""detector"""
+2026-10-15,14:10:28.329,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 0, 0, 1]"
+2026-10-15,14:10:28.329,robot_blocked_s,0.37017
+2026-10-15,14:10:28.333,wait_stage,"""motion_planner"""
+2026-10-15,14:10:29.439,"trajectory_segment_request(id,seg)","[628, 5]"
+2026-10-15,14:10:29.440,"trajectory_segment_request(id,seg)","[628, 7]"
+2026-10-15,14:10:29.441,"trajectory_segment_request(id,seg)","[628, 8]"
+2026-10-15,14:10:29.442,"trajectory_segment_request(id,seg)","[628, 12]"
+2026-10-15,14:10:31.869,pick_request,"[565.459, -886.791, 266.404]"
+2026-10-15,14:10:31.871,ack_ok_0_0,1
+2026-10-15,14:10:31.871,robot_blocked_s,0.001596
+2026-10-15,14:10:31.872,wait_stage,"""capture"""
+2026-10-15,14:10:32.118,ack_ok_0_0,1
+2026-10-15,14:10:32.118,robot_blocked_s,0.246013
+2026-10-15,14:10:32.119,wait_stage,"""detector"""
+2026-10-15,14:10:32.500,"detections(14in,18in,anchor,pandrol,spike)","[8, 0, 1, 0, 1]"
+2026-10-15,14:10:32.500,robot_blocked_s,0.380782
+2026-10-15,14:10:32.504,wait_stage,"""motion_planner"""
+2026-10-15,14:10:33.676,"trajectory_segment_request(id,seg)","[629, 7]"
+2026-10-15,14:10:33.677,"trajectory_segment_request(id,seg)","[629, 9]"
+2026-10-15,14:10:33.677,"trajectory_segment_request(id,seg)","[629, 11]"
+2026-10-15,14:10:33.678,"trajectory_segment_request(id,seg)","[629, 15]"
+2026-10-15,14:10:36.451,pick_request,"[563.853, -887.14, 266.806]"
+2026-10-15,14:10:36.453,ack_ok_0_0,1
+2026-10-15,14:10:36.453,robot_blocked_s,0.001726
+2026-10-15,14:10:36.454,wait_stage,"""capture"""
+2026-10-15,14:10:36.699,robot_blocked_s,0.244638
+2026-10-15,14:10:36.700,wait_stage,"""detector"""
+2026-10-15,14:10:37.080,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 0]"
+2026-10-15,14:10:37.080,robot_blocked_s,0.380083
+2026-10-15,14:10:37.085,wait_stage,"""motion_planner"""
+2026-10-15,14:10:39.987,"trajectory_segment_request(id,seg)","[630, 8]"
+2026-10-15,14:10:39.988,"trajectory_segment_request(id,seg)","[630, 9]"
+2026-10-15,14:10:39.989,"trajectory_segment_request(id,seg)","[630, 13]"
+2026-10-15,14:10:39.990,"trajectory_segment_request(id,seg)","[630, 17]"
+2026-10-15,14:10:42.435,pick_request,"[580.297, -880.078, 263.616]"
+2026-10-15,14:10:42.437,ack_ok_0_0,1
+2026-10-15,14:10:42.437,robot_blocked_s,0.001456
+2026-10-15,14:10:42.438,wait_stage,"""capture"""
+2026-10-15,14:10:42.683,robot_blocked_s,0.244967
+2026-10-15,14:10:42.684,wait_stage,"""detector"""
+2026-10-15,14:10:43.065,"detections(14in,18in,anchor,pandrol,spike)","[7, 0, 0, 0, 2]"
+2026-10-15,14:10:43.065,robot_blocked_s,0.381862
+2026-10-15,14:10:43.069,wait_stage,"""motion_planner"""
+2026-10-15,14:10:44.181,"trajectory_segment_request(id,seg)","[631, 10]"
+2026-10-15,14:10:44.182,"trajectory_segment_request(id,seg)","[631, 12]"
+2026-10-15,14:10:44.183,"trajectory_segment_request(id,seg)","[631, 16]"
+2026-10-15,14:10:44.184,"trajectory_segment_request(id,seg)","[631, 20]"
+2026-10-15,14:10:46.767,pick_request,"[570.316, -885.715, 265.185]"
+2026-10-15,14:10:46.768,ack_ok_0_0,1
+2026-10-15,14:10:46.768,robot_blocked_s,0.001063
+2026-10-15,14:10:46.769,wait_stage,"""capture"""
+2026-10-15,14:10:47.012,ack_ok_0_0,1
+2026-10-15,14:10:47.012,robot_blocked_s,0.242813
+2026-10-15,14:10:47.012,wait_stage,"""detector"""
+2026-10-15,14:10:47.410,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,14:10:47.410,robot_blocked_s,0.397881
+2026-10-15,14:10:47.414,wait_stage,"""motion_planner"""
+2026-10-15,14:10:58.596,candidate_unpickable,1
+2026-10-15,14:10:59.771,"trajectory_segment_request(id,seg)","[632, 8]"
+2026-10-15,14:10:59.772,"trajectory_segment_request(id,seg)","[632, 9]"
+2026-10-15,14:10:59.773,"trajectory_segment_request(id,seg)","[632, 13]"
+2026-10-15,14:10:59.778,pipeline_result,"""pickable part detected"""
+2026-10-15,14:11:11.220,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:11:11.221,ack_ok_0_0,1
+2026-10-15,14:11:11.221,robot_blocked_s,0.001144
+2026-10-15,14:11:11.222,wait_stage,"""capture"""
+2026-10-15,14:11:11.467,robot_blocked_s,0.245094
+2026-10-15,14:11:11.468,wait_stage,"""detector"""
+2026-10-15,14:11:11.851,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 0]"
+2026-10-15,14:11:11.851,robot_blocked_s,0.382464
+2026-10-15,14:11:11.855,wait_stage,"""motion_planner"""
+2026-10-15,14:11:13.010,pipeline_result,"""pickable part detected"""
+2026-10-15,14:11:13.011,"trajectory_segment_request(id,seg)","[633, 7]"
+2026-10-15,14:11:13.012,"trajectory_segment_request(id,seg)","[633, 9]"
+2026-10-15,14:11:13.013,"trajectory_segment_request(id,seg)","[633, 10]"
+2026-10-15,14:11:13.013,"trajectory_segment_request(id,seg)","[633, 14]"
+2026-10-15,14:11:15.855,pick_request,"[565.793, -886.718, 268.32]"
+2026-10-15,14:11:15.856,ack_ok_0_0,1
+2026-10-15,14:11:15.856,robot_blocked_s,0.000966
+2026-10-15,14:11:15.857,wait_stage,"""capture"""
+2026-10-15,14:11:16.100,ack_ok_0_0,1
+2026-10-15,14:11:16.100,robot_blocked_s,0.243026
+2026-10-15,14:11:16.101,wait_stage,"""detector"""
+2026-10-15,14:11:16.480,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 0, 0, 0]"
+2026-10-15,14:11:16.480,robot_blocked_s,0.379584
+2026-10-15,14:11:16.484,wait_stage,"""motion_planner"""
+2026-10-15,14:11:35.357,candidate_unpickable,1
+2026-10-15,14:11:36.486,"trajectory_segment_request(id,seg)","[634, 12]"
+2026-10-15,14:11:36.487,"trajectory_segment_request(id,seg)","[634, 16]"
+2026-10-15,14:11:36.488,"trajectory_segment_request(id,seg)","[634, 20]"
+2026-10-15,14:11:36.626,pipeline_result,"""pickable part detected"""
+2026-10-15,14:11:38.845,pick_request,"[580.498, -883.366, 262.616]"
+2026-10-15,14:11:38.847,ack_ok_0_0,1
+2026-10-15,14:11:38.847,robot_blocked_s,0.001408
+2026-10-15,14:11:38.848,wait_stage,"""capture"""
+2026-10-15,14:11:39.089,robot_blocked_s,0.241703
+2026-10-15,14:11:39.090,wait_stage,"""detector"""
+2026-10-15,14:11:39.472,"detections(14in,18in,anchor,pandrol,spike)","[5, 0, 0, 0, 2]"
+2026-10-15,14:11:39.472,robot_blocked_s,0.381951
+2026-10-15,14:11:39.475,wait_stage,"""motion_planner"""
+2026-10-15,14:11:40.689,"trajectory_segment_request(id,seg)","[635, 5]"
+2026-10-15,14:11:40.689,"trajectory_segment_request(id,seg)","[635, 6]"
+2026-10-15,14:11:40.691,"trajectory_segment_request(id,seg)","[635, 10]"
+2026-10-15,14:11:40.693,pipeline_result,"""pickable part detected"""
+2026-10-15,14:11:42.782,pick_request,"[575.898, -884.443, 263.775]"
+2026-10-15,14:11:42.783,ack_ok_0_0,1
+2026-10-15,14:11:42.783,robot_blocked_s,0.000982
+2026-10-15,14:11:42.785,wait_stage,"""capture"""
+2026-10-15,14:11:43.029,ack_ok_0_0,1
+2026-10-15,14:11:43.029,robot_blocked_s,0.244127
+2026-10-15,14:11:43.030,wait_stage,"""detector"""
+2026-10-15,14:11:43.419,"detections(14in,18in,anchor,pandrol,spike)","[4, 0, 1, 0, 1]"
+2026-10-15,14:11:43.419,robot_blocked_s,0.388721
+2026-10-15,14:11:43.427,wait_stage,"""motion_planner"""
+2026-10-15,14:11:44.589,"trajectory_segment_request(id,seg)","[636, 9]"
+2026-10-15,14:11:44.590,"trajectory_segment_request(id,seg)","[636, 10]"
+2026-10-15,14:11:44.592,"trajectory_segment_request(id,seg)","[636, 14]"
+2026-10-15,14:11:44.593,"trajectory_segment_request(id,seg)","[636, 18]"
+2026-10-15,14:11:47.116,pick_request,"[568.4, -886.143, 265.666]"
+2026-10-15,14:11:47.117,ack_ok_0_0,1
+2026-10-15,14:11:47.117,robot_blocked_s,0.001186
+2026-10-15,14:11:47.118,wait_stage,"""capture"""
+2026-10-15,14:11:47.360,robot_blocked_s,0.242252
+2026-10-15,14:11:47.361,wait_stage,"""detector"""
+2026-10-15,14:11:47.764,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 1]"
+2026-10-15,14:11:47.764,robot_blocked_s,0.402818
+2026-10-15,14:11:47.767,wait_stage,"""motion_planner"""
+2026-10-15,14:11:48.909,"trajectory_segment_request(id,seg)","[637, 7]"
+2026-10-15,14:11:48.910,"trajectory_segment_request(id,seg)","[637, 9]"
+2026-10-15,14:11:48.911,"trajectory_segment_request(id,seg)","[637, 10]"
+2026-10-15,14:11:48.912,"trajectory_segment_request(id,seg)","[637, 14]"
+2026-10-15,14:11:51.434,pick_request,"[580.125, -883.455, 262.701]"
+2026-10-15,14:11:51.435,ack_ok_0_0,1
+2026-10-15,14:11:51.435,robot_blocked_s,0.001022
+2026-10-15,14:11:51.437,wait_stage,"""capture"""
+2026-10-15,14:11:51.687,robot_blocked_s,0.250097
+2026-10-15,14:11:51.688,wait_stage,"""detector"""
+2026-10-15,14:11:52.080,"detections(14in,18in,anchor,pandrol,spike)","[2, 0, 0, 0, 1]"
+2026-10-15,14:11:52.080,robot_blocked_s,0.391932
+2026-10-15,14:11:52.083,wait_stage,"""motion_planner"""
+2026-10-15,14:11:53.289,"trajectory_segment_request(id,seg)","[638, 5]"
+2026-10-15,14:11:53.290,"trajectory_segment_request(id,seg)","[638, 7]"
+2026-10-15,14:11:53.290,"trajectory_segment_request(id,seg)","[638, 8]"
+2026-10-15,14:11:53.292,"trajectory_segment_request(id,seg)","[638, 12]"
+2026-10-15,14:11:56.058,pick_request,"[640.342, -859.344, 143.588]"
+2026-10-15,14:11:56.059,ack_ok_0_0,1
+2026-10-15,14:11:56.059,robot_blocked_s,0.001305
+2026-10-15,14:11:56.060,wait_stage,"""capture"""
+2026-10-15,14:11:56.302,robot_blocked_s,0.242107
+2026-10-15,14:11:56.303,wait_stage,"""detector"""
+2026-10-15,14:11:56.683,"detections(14in,18in,anchor,pandrol,spike)","[1, 0, 0, 0, 1]"
+2026-10-15,14:11:56.683,robot_blocked_s,0.379821
+2026-10-15,14:11:56.687,wait_stage,"""motion_planner"""
+2026-10-15,14:11:57.846,"trajectory_segment_request(id,seg)","[639, 11]"
+2026-10-15,14:12:04.002,pick_request,"[442.562, -782.026, 228.94]"
+2026-10-15,14:12:04.003,robot_blocked_s,0.001546
+2026-10-15,14:12:04.004,ack_ok_0_0,1
+2026-10-15,14:12:04.005,wait_stage,"""capture"""
+2026-10-15,14:12:04.247,robot_blocked_s,0.242173
+2026-10-15,14:12:04.248,wait_stage,"""detector"""
+2026-10-15,14:12:04.639,"detections(14in,18in,anchor,pandrol,spike)","[3, 0, 0, 0, 3]"
+2026-10-15,14:12:04.639,robot_blocked_s,0.390953
+2026-10-15,14:12:04.642,wait_stage,"""motion_planner"""
+2026-10-15,14:12:05.751,"trajectory_segment_request(id,seg)","[640, 10]"
+2026-10-15,14:12:05.752,"trajectory_segment_request(id,seg)","[640, 11]"
+2026-10-15,14:12:05.753,"trajectory_segment_request(id,seg)","[640, 15]"
+2026-10-15,14:12:05.754,"trajectory_segment_request(id,seg)","[640, 19]"
+2026-10-15,14:12:08.231,pick_request,"[560.106, -887.945, 267.742]"
+2026-10-15,14:12:08.233,ack_ok_0_0,1
+2026-10-15,14:12:08.233,robot_blocked_s,0.001639
+2026-10-15,14:12:08.234,wait_stage,"""capture"""

@@ -1,0 +1,126 @@
+{
+  "id": "0RLab",
+  "truck_unit": null,
+  "name": "Raiv lab bench robot (Raiv-Lab cell, SRS cell 'B&B LAB', controller 'Lab Test')",
+  "arm": {
+    "model": "Staubli TX2-140 (tx2_140-S2)",
+    "serial": "F_24_0060113_A_001",
+    "source": "Y-2026_M-03_D-20_12h50m/log/arm.json; usr/configs/libScpConfig/normal.json; safety file tx2_140-S2_202-101.pmt2"
+  },
+  "controller": {
+    "model": "Staubli CS9",
+    "serial": "F_24_0060113_C_001",
+    "safety_program_version": "202.101",
+    "application": "LAB_PlateSorter2",
+    "other_applications": [
+      "LAB_PlateSorterNEW",
+      "LAB_TwoBinCycle"
+    ],
+    "source": "backup folder names; 15h07 backup usr/usrapp listing; usr/configs/libScpConfig/normal.json"
+  },
+  "val3_version": "s8.15.1Cs9_BS3177",
+  "apera": {
+    "serial": null,
+    "version": "4.183.0 (config file 'version' field)",
+    "host": "192.168.10.10:14040",
+    "cameras": [
+      "4108851213",
+      "4108851214",
+      "4108818891",
+      "4108818892"
+    ],
+    "pipelines": [
+      "bin1_TCPA200",
+      "bin1_TCPA200_detect",
+      "bin1_AGMW80_AR70"
+    ],
+    "source": "0RLab_Apera/08282026_Lab_binpick_pipelines.json; README_MetricsRetain.md (sio.cfx)"
+  },
+  "plc": {
+    "program": null,
+    "version": null,
+    "note": "ClickPLC receives 50 Modbus metric registers (MetricsAudit_2026-08-28.md); 0RLab_PLC_HMI folder is empty"
+  },
+  "hmi": {
+    "type": "Staubli SP2 pendant user pages BASIC/LRC/PHASES/DETAIL (+ C-more referenced)",
+    "src_version": "8.15.1",
+    "program": null,
+    "version": null
+  },
+  "metrics": {
+    "source": "Metrics_0RLab_F_24_0060113_C_001/F_24_0060113_C_001_ALL_v2.csv (RAIV/CSV logMsg samples, cumulative since RESET)",
+    "cycles": null,
+    "samples": 15,
+    "mean_cycle_s": null,
+    "median_cycle_s": null,
+    "p90_cycle_s": null,
+    "date_range": [
+      "2026-08-28T15:01:56",
+      "2026-08-31T15:04:41"
+    ],
+    "target_s_per_plate": 2.965,
+    "target_plates_per_hr": 1214,
+    "best_sustained": {
+      "run": 3,
+      "run_min": 11.4,
+      "plates": 134,
+      "act_s_per_plate": 5.106,
+      "act_plates_per_hr": 705,
+      "pct_of_target": 58.1,
+      "lrc_p10_s": 3.75,
+      "lrc_fastest_clean_s": 3.51,
+      "lrc_clean_mean_s": 4.59,
+      "clean_pct": 85,
+      "b_prod": 4.453,
+      "b_belt": 0.554,
+      "b_vision": 0.094,
+      "ph15_to_capture_s": 1.469,
+      "ph2_pick_lin_approach_s": 1.277
+    },
+    "worst_sample": {
+      "run": 4,
+      "run_min": 3.2,
+      "act_s_per_plate": 11.209,
+      "act_plates_per_hr": 321
+    },
+    "camera_mean_s_range": [
+      1.29,
+      1.92
+    ],
+    "accept_pct": 100,
+    "note": "No per-cycle data; mean/median/p90 cycle not computable from cumulative samples"
+  },
+  "latest_backup": {
+    "name": "F_24_0060113_C_001/Y-2026_M-08_D-31_15h07m",
+    "date": "2026-08-31T15:13"
+  },
+  "backups": [
+    "2025-11-05T08:38",
+    "2025-11-20T10:14",
+    "2026-03-20T12:50",
+    "2026-08-28T15:09",
+    "2026-08-31T10:34",
+    "2026-08-31T12:28",
+    "2026-08-31T15:13"
+  ],
+  "latest_code_update": {
+    "name": "Lab_platesorter4_GripCheck_2026-10-05",
+    "date": "2026-10-05"
+  },
+  "open_issues": [
+    "Lab_platesorter4 (apera3 driver) builds rev A/B/C and bisect A refused to load; controller folder held 4 overlaid builds; no successful load recorded (LAB_PlateSorter2 remains fallback)",
+    "Intermittent FAULT flag set during runs (run 1 100% FAULT); source not yet identified",
+    "Early belt kick falls back ~1 cycle in 6; nBeltKickTimeout_s 3 s / nBeltClearHeight_mm 76.2 untuned; early kick caused over-torque 8/28",
+    "bLogRetain still false; retained RaivLog ring never exercised",
+    "F_24_0060113_C_001_ALL.csv is stale; _v2 is correct",
+    "No 200+ plate qualified baseline on a fed feeder yet",
+    "Comma in tkMetrics ABORT state string splits D1 CSV row (fixed only in Lab_platesorter4 builds)",
+    "ph15 (1.469 s) + ph2 (1.277 s) = 54% of cycle: next motion work",
+    "Multi-candidate Apera path (apera_trigtrj_a/apera_waittrj_i) registered but unused",
+    "ph0 blank on all samples: StowSelect_Pick0_Fix setMoveId(50) not in 15h07 backup",
+    "GripCheck built without controller; needs SRS build and accept-sensor polarity/timing checks; no grip tests logged"
+  ],
+  "files_total": 509,
+  "files_pulled": 64,
+  "folder_summary_rows": 40
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html SYSTEM "-//W3C//DTD VALHTML Strict//EN">
+  <html xmlns="http://www.staubli.com/robotics/2016/03/valhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"></meta>
+      <meta http-equiv="Pragma" content="no-cache"></meta>
+      <meta http-equiv="Expires" content="0"></meta>
+      <script type="text/javascript" src="/vendor/libs/stblUserPage.min.js"></script>
+      <link href="/vendor/libs/up.min.v2.css" rel="stylesheet" media="all" type="text/css"></link>
+      <meta name="src-version" content="8.15.1"></meta>
+    </head>
+    <body style="width: 480px; height: 690px; margin: 0">
+      <label id="lb0_LRC" style="left: 6px; top: 6px; width: 420px; height: 20px; position: absolute; font-weight: bold; font-size: 15px">RAIV LAB   LRC LOSS BUDGET</label>
+      <input id="v_State_LRC" value="--" readonly="readonly" style="left: 6px; top: 30px; width: 462px; height: 24px; position: absolute; background-color: #E8E8E8; font-weight: bold"></input>
+      <label id="lb2_LRC" style="left: 6px; top: 62px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">RATE vs TARGET</label>
+      <label id="lb3_LRC" style="left: 6px; top: 86px; width: 122px; height: 20px; position: absolute;">Target (pl/hr)</label>
+      <input id="v_TgtPPH" value="--" readonly="readonly" style="left: 132px; top: 84px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb5_LRC" style="left: 246px; top: 86px; width: 122px; height: 20px; position: absolute;">Actual (pl/hr)</label>
+      <input id="v_ActPPH" value="--" readonly="readonly" style="left: 372px; top: 84px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb7_LRC" style="left: 6px; top: 110px; width: 122px; height: 20px; position: absolute;">Target s/plate</label>
+      <input id="v_TgtSpC" value="--" readonly="readonly" style="left: 132px; top: 108px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb9_LRC" style="left: 246px; top: 110px; width: 122px; height: 20px; position: absolute;">Actual s/plate</label>
+      <input id="v_ActSpC" value="--" readonly="readonly" style="left: 372px; top: 108px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb11_LRC" style="left: 6px; top: 134px; width: 122px; height: 20px; position: absolute;">GAP s/plate</label>
+      <input id="v_GapSpC" value="--" readonly="readonly" style="left: 132px; top: 132px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb13_LRC" style="left: 246px; top: 134px; width: 122px; height: 20px; position: absolute;">Run (min)</label>
+      <input id="v_RunMin" value="--" readonly="readonly" style="left: 372px; top: 132px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb15_LRC" style="left: 6px; top: 160px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">LEAST REPEATABLE CYCLE - clean intervals only</label>
+      <label id="lb16_LRC" style="left: 6px; top: 184px; width: 122px; height: 20px; position: absolute;">LRC p10 (s)</label>
+      <input id="v_LRCp10" value="--" readonly="readonly" style="left: 132px; top: 182px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb18_LRC" style="left: 246px; top: 184px; width: 122px; height: 20px; position: absolute;">Fastest (s)</label>
+      <input id="v_LRCbest" value="--" readonly="readonly" style="left: 372px; top: 182px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb20_LRC" style="left: 6px; top: 208px; width: 122px; height: 20px; position: absolute;">Clean mean (s)</label>
+      <input id="v_LRCmean" value="--" readonly="readonly" style="left: 132px; top: 206px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb22_LRC" style="left: 246px; top: 208px; width: 122px; height: 20px; position: absolute;">Clean (%)</label>
+      <input id="v_CleanPct" value="--" readonly="readonly" style="left: 372px; top: 206px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb24_LRC" style="left: 6px; top: 232px; width: 122px; height: 20px; position: absolute;">Clean cycles</label>
+      <input id="v_CleanCt" value="--" readonly="readonly" style="left: 132px; top: 230px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb26_LRC" style="left: 246px; top: 232px; width: 122px; height: 20px; position: absolute;">Interrupted</label>
+      <input id="v_IntCt" value="--" readonly="readonly" style="left: 372px; top: 230px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb28_LRC" style="left: 6px; top: 258px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">LOSS BUDGET - s/plate, sums to Actual</label>
+      <label id="lb29_LRC" style="left: 6px; top: 282px; width: 122px; height: 20px; position: absolute;">Productive</label>
+      <input id="v_Bprod" value="--" readonly="readonly" style="left: 132px; top: 280px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb31_LRC" style="left: 246px; top: 282px; width: 122px; height: 20px; position: absolute;">Belt advance</label>
+      <input id="v_Bbelt" value="--" readonly="readonly" style="left: 372px; top: 280px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb33_LRC" style="left: 6px; top: 306px; width: 122px; height: 20px; position: absolute;">Feed starved</label>
+      <input id="v_Bstarve" value="--" readonly="readonly" style="left: 132px; top: 304px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb35_LRC" style="left: 246px; top: 306px; width: 122px; height: 20px; position: absolute;">Accept hold</label>
+      <input id="v_Baccept" value="--" readonly="readonly" style="left: 372px; top: 304px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb37_LRC" style="left: 6px; top: 330px; width: 122px; height: 20px; position: absolute;">Reject hold</label>
+      <input id="v_Breject" value="--" readonly="readonly" style="left: 132px; top: 328px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb39_LRC" style="left: 246px; top: 330px; width: 122px; height: 20px; position: absolute;">Vision wait</label>
+      <input id="v_Bvision" value="--" readonly="readonly" style="left: 372px; top: 328px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb41_LRC" style="left: 6px; top: 354px; width: 122px; height: 20px; position: absolute;">Fault</label>
+      <input id="v_Bfault" value="--" readonly="readonly" style="left: 132px; top: 352px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb43_LRC" style="left: 246px; top: 354px; width: 122px; height: 20px; position: absolute;">Unattributed</label>
+      <input id="v_Bother" value="--" readonly="readonly" style="left: 372px; top: 352px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb45_LRC" style="left: 6px; top: 380px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">BELT ADVANCE AND BATCH SIZE</label>
+      <label id="lb46_LRC" style="left: 6px; top: 404px; width: 122px; height: 20px; position: absolute;">Plates/batch</label>
+      <input id="v_BatchMean" value="--" readonly="readonly" style="left: 132px; top: 402px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb48_LRC" style="left: 246px; top: 404px; width: 122px; height: 20px; position: absolute;">Belt episodes</label>
+      <input id="v_BeltEps" value="--" readonly="readonly" style="left: 372px; top: 402px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb50_LRC" style="left: 6px; top: 428px; width: 122px; height: 20px; position: absolute;">Longest (s)</label>
+      <input id="v_BeltMax" value="--" readonly="readonly" style="left: 132px; top: 426px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <input id="chkTrack" type="checkbox" style="left: 8px; top: 462px; position: absolute; transform: scale(1.65)"></input>
+      <label id="lb53_LRC" style="left: 36px; top: 464px; width: 130px; height: 20px; position: absolute;">Tracking ON</label>
+      <button id="btnB" style="left: 6px; top: 496px; width: 148px; height: 46px; position: absolute; white-space: normal; word-break: break-word">BASIC</button>
+      <button id="btnR" style="left: 162px; top: 496px; width: 148px; height: 46px; position: absolute; white-space: normal; word-break: break-word">RESET</button>
+      <button id="btnP" style="left: 318px; top: 496px; width: 148px; height: 46px; position: absolute; white-space: normal; word-break: break-word">PHASES &gt;</button>
+    </body>
+  </html>

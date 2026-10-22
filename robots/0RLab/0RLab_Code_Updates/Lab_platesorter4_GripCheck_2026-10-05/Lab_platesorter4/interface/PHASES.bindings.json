@@ -1,0 +1,276 @@
+{
+  "version": "1.0",
+  "bindings": [
+    {
+      "id": "v_State_PHASES",
+      "attribute": "value",
+      "data": "_sM[\"State\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph0",
+      "attribute": "value",
+      "data": "_sM[\"Ph0\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph1",
+      "attribute": "value",
+      "data": "_sM[\"Ph1\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph2",
+      "attribute": "value",
+      "data": "_sM[\"Ph2\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph3",
+      "attribute": "value",
+      "data": "_sM[\"Ph3\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph4",
+      "attribute": "value",
+      "data": "_sM[\"Ph4\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph5",
+      "attribute": "value",
+      "data": "_sM[\"Ph5\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph6",
+      "attribute": "value",
+      "data": "_sM[\"Ph6\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph7",
+      "attribute": "value",
+      "data": "_sM[\"Ph7\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph8",
+      "attribute": "value",
+      "data": "_sM[\"Ph8\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph9",
+      "attribute": "value",
+      "data": "_sM[\"Ph9\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph10",
+      "attribute": "value",
+      "data": "_sM[\"Ph10\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph11",
+      "attribute": "value",
+      "data": "_sM[\"Ph11\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph12",
+      "attribute": "value",
+      "data": "_sM[\"Ph12\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph13",
+      "attribute": "value",
+      "data": "_sM[\"Ph13\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph14",
+      "attribute": "value",
+      "data": "_sM[\"Ph14\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Ph15",
+      "attribute": "value",
+      "data": "_sM[\"Ph15\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_PickStill",
+      "attribute": "value",
+      "data": "_sM[\"PickStill\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_StillPct",
+      "attribute": "value",
+      "data": "_sM[\"StillPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_MovePct",
+      "attribute": "value",
+      "data": "_sM[\"MovePct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpPick",
+      "attribute": "value",
+      "data": "_sM[\"GrpPick\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpPickPct",
+      "attribute": "value",
+      "data": "_sM[\"GrpPickPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpAcc",
+      "attribute": "value",
+      "data": "_sM[\"GrpAcc\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpAccPct",
+      "attribute": "value",
+      "data": "_sM[\"GrpAccPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpRej",
+      "attribute": "value",
+      "data": "_sM[\"GrpRej\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpRejPct",
+      "attribute": "value",
+      "data": "_sM[\"GrpRejPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpNoTraj",
+      "attribute": "value",
+      "data": "_sM[\"GrpNoTraj\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpNoTrajPct",
+      "attribute": "value",
+      "data": "_sM[\"GrpNoTrajPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpTool",
+      "attribute": "value",
+      "data": "_sM[\"GrpTool\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpToolPct",
+      "attribute": "value",
+      "data": "_sM[\"GrpToolPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpSum",
+      "attribute": "value",
+      "data": "_sM[\"GrpSum\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GrpSumPct",
+      "attribute": "value",
+      "data": "_sM[\"GrpSumPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "btnL2",
+      "event": "click",
+      "data": "ShowLRC",
+      "priority": 10
+    },
+    {
+      "id": "btnD2",
+      "event": "click",
+      "data": "ShowDetail",
+      "priority": 10
+    }
+  ],
+  "events": []
+}

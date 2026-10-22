@@ -1,0 +1,5 @@
+Error and warning classes across the whole log history						
+Error class	Log text matched	Count	Share	First seen	Last seen	Example line
+motion_cancelled	pending motion was cancelled	30	0.566	2026-04-07T14:23:22	2026-09-10T14:37:59	Application has ended, the pending motion was cancelled.
+val3_err60_timeout	ERR 60 Instruction timeout	22	0.4151	2026-04-03T18:45:49	2026-09-04T20:09:21	ERR 60 Instruction timeout. PlateSorter~.
+apera_image_capture	Image capture error	1	0.0189	2026-05-19T18:41:27	2026-05-19T18:41:27	er,Image capture error,-1

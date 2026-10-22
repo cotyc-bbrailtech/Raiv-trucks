@@ -1,0 +1,226 @@
+{
+  "version": "1.0",
+  "bindings": [
+    {
+      "id": "v_State_LRC",
+      "attribute": "value",
+      "data": "_sM[\"State\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_TgtPPH",
+      "attribute": "value",
+      "data": "_sM[\"TgtPPH\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_ActPPH",
+      "attribute": "value",
+      "data": "_sM[\"ActPPH\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_TgtSpC",
+      "attribute": "value",
+      "data": "_sM[\"TgtSpC\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_ActSpC",
+      "attribute": "value",
+      "data": "_sM[\"ActSpC\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_GapSpC",
+      "attribute": "value",
+      "data": "_sM[\"GapSpC\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_RunMin",
+      "attribute": "value",
+      "data": "_sM[\"RunMin\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_LRCp10",
+      "attribute": "value",
+      "data": "_sM[\"LRCp10\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_LRCbest",
+      "attribute": "value",
+      "data": "_sM[\"LRCbest\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_LRCmean",
+      "attribute": "value",
+      "data": "_sM[\"LRCmean\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_CleanPct",
+      "attribute": "value",
+      "data": "_sM[\"CleanPct\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_CleanCt",
+      "attribute": "value",
+      "data": "_sM[\"CleanCt\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_IntCt",
+      "attribute": "value",
+      "data": "_sM[\"IntCt\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Bprod",
+      "attribute": "value",
+      "data": "_sM[\"Bprod\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Bbelt",
+      "attribute": "value",
+      "data": "_sM[\"Bbelt\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Bstarve",
+      "attribute": "value",
+      "data": "_sM[\"Bstarve\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Baccept",
+      "attribute": "value",
+      "data": "_sM[\"Baccept\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Breject",
+      "attribute": "value",
+      "data": "_sM[\"Breject\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Bvision",
+      "attribute": "value",
+      "data": "_sM[\"Bvision\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Bfault",
+      "attribute": "value",
+      "data": "_sM[\"Bfault\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_Bother",
+      "attribute": "value",
+      "data": "_sM[\"Bother\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_BatchMean",
+      "attribute": "value",
+      "data": "_sM[\"BatchMean\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_BeltEps",
+      "attribute": "value",
+      "data": "_sM[\"BeltEps\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "v_BeltMax",
+      "attribute": "value",
+      "data": "_sM[\"BeltMax\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "chkTrack",
+      "attribute": "checked",
+      "data": "bMetricEnable[0]",
+      "size": 1,
+      "direction": "rw",
+      "refresh": 1
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "btnB",
+      "event": "click",
+      "data": "ShowBasic",
+      "priority": 10
+    },
+    {
+      "id": "btnR",
+      "event": "click",
+      "data": "ResetMetrics",
+      "priority": 10
+    },
+    {
+      "id": "btnP",
+      "event": "click",
+      "data": "ShowPhases",
+      "priority": 10
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,144 @@
+Workbook: 2 worksheets. Cell values are tab-separated rows; "Formulas" lists formula cells by source (which can differ from the displayed value).
+Worksheets (startPage and endPage select them by these numbers):
+1. Cycle Data
+2. Header Key
+
+## Sheet: Cycle Data — 19 rows × 60 columns (A1:BH19)
+Provenance		Run			Rate vs target					Cycle quality (LRC)						Loss budget (s/plate)											Belt behaviour			Phase means (s)																Part counts								Camera & motion
+Backup	Run	Run min	Plates	State at sample	Actual s/plate	Actual pl/hr	Target s/plate	Gap s/plate	% of target	LRC p10 s	Fastest clean s	Clean mean s	Clean cycles	Interrupted	Clean %	Productive	Belt advance	Feed starved	Accept hold	Reject hold	Vision wait	Fault	Unattributed	Operator hold	Partition sum (8)	Sum − actual	Plates/advance	Belt episodes	Longest belt s	ph0 Wait at capture	ph1 Pick approach	ph2 Pick lin approach	ph3 Pick lin retreat	ph4 Pick retreat	ph5 Accept start	ph6 Accept approach	ph7 Accept lin appr	ph8 Accept lin retr	ph9 Accept retreat	ph10 Reject start	ph11 Reject approach	ph12 Reject lin appr	ph13 Reject lin retr	ph14 Reject retreat	ph15 Move to capture	Accepted	Rejected	Accept %	14 in	18 in	Pandrol	Spike	Anchor	Camera mean s	Camera looks	Peak TCP mm/s	Still %	Move %	Pick still %
+2026-08-31_12h23		4.8	47	FAULT	6.189	582	2.965	3.224	47.9%	0.00	0.00	n/a	0	46	0.0%	0.000	0.000	0.000	0.000	0.000	0.000	6.189	0.000		6.189	0.000	n/a	0	0.0	n/a	0.583	1.147	0.222	0.455	0.370	0.228	0.701	0.218	0.224	n/a	n/a	n/a	n/a	n/a	2.766	47	0	100.0%	47	0	0	0	0	1.39	54	2011	44.0%	56.0%	22.1%
+2026-08-31_12h23		5.1	50	FAULT	6.088	591	2.965	3.123	48.7%	0.00	0.00	n/a	0	49	0.0%	0.000	0.000	0.000	0.000	0.000	0.000	6.088	0.000		6.088	0.000	n/a	0	0.0	n/a	0.582	1.150	0.218	0.459	0.366	0.227	0.701	0.216	0.222	n/a	n/a	n/a	n/a	n/a	2.642	50	0	100.0%	50	0	0	0	0	1.39	57	2011	43.1%	56.9%	22.1%
+2026-08-31_12h23		3.6	41	BELT ADVANCE	5.311	678	2.965	2.345	55.8%	3.75	3.49	3.82	29	11	72.5%	3.672	1.633	0.000	0.000	0.000	0.002	0.004	0.000		5.311	0.000	3.4	13	10.6	n/a	0.302	1.154	0.219	0.456	0.280	0.262	0.682	0.194	0.243	n/a	n/a	n/a	n/a	n/a	4.839	41	0	100.0%	41	0	0	0	0	1.65	45	2423	45.7%	54.3%	25.4%
+2026-08-31_12h23		3.8	42	FAULT	5.391	668	2.965	2.426	55.0%	3.75	3.49	3.82	29	12	70.7%	3.666	1.707	0.000	0.000	0.000	0.002	0.017	0.000		5.392	0.001	3.2	14	10.6	n/a	0.305	1.153	0.219	0.456	0.279	0.263	0.682	0.194	0.241	n/a	n/a	n/a	n/a	n/a	4.806	42	0	100.0%	42	0	0	0	0	1.64	46	2423	46.3%	53.7%	25.4%
+2026-08-31_12h23	1	3.7	29	FAULT	7.606	473	2.965	4.640	39.0%	0.00	0.00	n/a	0	28	0.0%	0.000	0.000	0.000	0.000	0.000	0.000	7.606	0.000		7.606	0.000	n/a	0	0.0	n/a	0.540	1.612	0.396	0.756	0.505	0.488	0.822	0.330	0.440	n/a	n/a	n/a	n/a	n/a	5.723	29	0	100.0%	29	0	0	0	0	1.29	30	1094	33.9%	66.1%	17.1%
+2026-08-31_12h23	2	2.0	16	FAULT	7.457	483	2.965	4.491	39.8%	0.00	5.75	6.05	9	6	60.0%	5.795	1.568	0.000	0.000	0.000	0.074	0.020	0.000		7.457	0.000	2.5	7	7.9	n/a	0.647	1.657	0.351	0.881	0.531	0.478	0.832	0.329	0.425	n/a	n/a	n/a	n/a	n/a	2.798	16	0	100.0%	16	0	0	0	0	1.39	21	1190	27.9%	72.1%	16.5%
+2026-08-31_12h23	3	4.5	39	RUNNING	6.892	522	2.965	3.926	43.0%	5.75	5.31	6.29	30	8	78.9%	5.957	0.818	0.000	0.000	0.000	0.116	0.000	0.000		6.891	-0.001	4.6	9	5.7	n/a	0.642	1.696	0.331	0.914	0.505	0.480	0.824	0.327	0.433	n/a	n/a	n/a	n/a	n/a	2.361	39	0	100.0%	39	0	0	0	0	1.49	42	1219	22.7%	77.3%	15.6%
+2026-08-31_12h23	3	9.5	104	RUNNING	5.469	658	2.965	2.503	54.2%	3.75	3.51	4.86	83	20	80.6%	4.661	0.714	0.000	0.000	0.000	0.094	0.000	0.000		5.469	0.000	4.6	21	5.7	n/a	0.463	1.340	0.253	0.626	0.361	0.341	0.743	0.248	0.308	n/a	n/a	n/a	n/a	n/a	1.787	104	0	100.0%	104	0	0	0	0	1.51	114	2137	28.7%	71.3%	20.4%
+2026-08-31_12h23	3	11.4	134	FAULT	5.106	705	2.965	2.141	58.1%	3.75	3.51	4.59	113	20	85.0%	4.453	0.554	0.000	0.000	0.000	0.094	0.005	0.000		5.106	0.000	4.6	21	5.7	n/a	0.432	1.277	0.244	0.582	0.335	0.320	0.727	0.236	0.292	n/a	n/a	n/a	n/a	n/a	1.469	134	0	100.0%	134	0	0	0	0	1.55	144	2137	28.6%	71.4%	21.5%
+2026-08-31_15h07	4	3.2	17	ABORT - press Cycle,or Abort again to Stow	11.209	321	2.965	8.243	26.4%	6.00	5.55	6.03	12	4	75.0%	10.350	0.855	0.000	0.000	0.000	0.004	0.000	0.000	0.039	11.209	0.000	3.2	5	6.2	n/a	0.540	5.705	0.401	0.845	0.508	0.479	0.829	0.323	0.428	n/a	n/a	n/a	n/a	n/a	2.181	17	0	100.0%	17	0	0	0	0	1.92	20	1158	53.2%	46.8%	62.6%
+2026-08-31_15h07	4	6.2	40	FEED STARVED - check upstream	9.280	388	2.965	6.314	32.0%	4.00	3.67	5.57	17	22	43.6%	6.480	2.636	0.156	0.000	0.000	0.008	0.000	0.000	0.017	9.280	0.000	1.7	24	36.2	n/a	0.464	3.148	0.305	0.622	0.368	0.356	0.754	0.250	0.309	n/a	n/a	n/a	n/a	n/a	3.867	40	0	100.0%	40	0	0	0	0	1.56	53	1759	55.7%	44.3%	51.8%
+2026-08-31_15h07	4	6.3	40	ABORT - press Cycle,or Abort again to Stow	9.488	379	2.965	6.522	31.2%	4.00	3.67	5.57	17	22	43.6%	6.480	2.795	0.205	0.000	0.000	0.008	0.000	0.000	0.047	9.488	0.000	1.7	25	38.2	n/a	0.464	3.148	0.305	0.622	0.368	0.356	0.754	0.250	0.309	n/a	n/a	n/a	n/a	n/a	4.038	40	0	100.0%	40	0	0	0	0	1.56	54	1759	56.6%	43.4%	51.8%
+2026-08-31_15h07	4	0.0	0	ABORT - press Cycle,or Abort again to Stow	0.000	0	2.965	-2.965		0.00	0.00	n/a	0	0	0.0%	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	0.000	0.000	n/a	1	2.1	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	2.463	0	0	0.0%	0	0	0	0	0	1.52	1	456	76.6%	23.4%	0.0%
+2026-08-31_15h07	5	1.3	10	RUNNING	7.779	463	2.965	4.814	38.1%	0.00	5.86	6.20	7	2	77.8%	5.938	1.835	0.000	0.000	0.000	0.006	0.000	0.000	0.026	7.779	0.000	4.5	3	14.4	n/a	0.744	1.735	0.362	0.931	0.516	0.492	0.812	0.347	0.428	n/a	n/a	n/a	n/a	n/a	5.916	10	0	100.0%	10	0	0	0	0	1.34	14	1143	34.5%	65.5%	15.7%
+2026-08-31_15h07	5	1.6	13	ABORT - press Cycle,or Abort again to Stow	7.480	481	2.965	4.514	39.6%	6.00	5.85	6.16	10	2	83.3%	6.064	1.412	0.000	0.000	0.000	0.004	0.000	0.000	0.033	7.480	0.000	4.5	3	14.4	n/a	0.682	1.714	0.392	0.919	0.500	0.486	0.822	0.331	0.436	n/a	n/a	n/a	n/a	n/a	5.916	13	0	100.0%	13	0	0	0	0	1.73	18	1150	31.1%	68.9%	15.6%
+[1 empty row]
+Blank = the build that produced this sample did not emit that column.   n/a = the controller emitted "--", meaning defined but not enough data yet.   See the Header Key sheet.
+Formulas:
+J3: =IF(N(G3)=0,"",G3/'Header Key'!$B$6)
+Z3: =SUM(Q3:X3)
+AA3: =Z3-N(F3)
+J4: =IF(N(G4)=0,"",G4/'Header Key'!$B$6)
+Z4: =SUM(Q4:X4)
+AA4: =Z4-N(F4)
+J5: =IF(N(G5)=0,"",G5/'Header Key'!$B$6)
+Z5: =SUM(Q5:X5)
+AA5: =Z5-N(F5)
+J6: =IF(N(G6)=0,"",G6/'Header Key'!$B$6)
+Z6: =SUM(Q6:X6)
+AA6: =Z6-N(F6)
+J7: =IF(N(G7)=0,"",G7/'Header Key'!$B$6)
+Z7: =SUM(Q7:X7)
+AA7: =Z7-N(F7)
+J8: =IF(N(G8)=0,"",G8/'Header Key'!$B$6)
+Z8: =SUM(Q8:X8)
+AA8: =Z8-N(F8)
+J9: =IF(N(G9)=0,"",G9/'Header Key'!$B$6)
+Z9: =SUM(Q9:X9)
+AA9: =Z9-N(F9)
+J10: =IF(N(G10)=0,"",G10/'Header Key'!$B$6)
+Z10: =SUM(Q10:X10)
+AA10: =Z10-N(F10)
+J11: =IF(N(G11)=0,"",G11/'Header Key'!$B$6)
+Z11: =SUM(Q11:X11)
+AA11: =Z11-N(F11)
+J12: =IF(N(G12)=0,"",G12/'Header Key'!$B$6)
+Z12: =SUM(Q12:X12)
+AA12: =Z12-N(F12)
+J13: =IF(N(G13)=0,"",G13/'Header Key'!$B$6)
+Z13: =SUM(Q13:X13)
+AA13: =Z13-N(F13)
+J14: =IF(N(G14)=0,"",G14/'Header Key'!$B$6)
+Z14: =SUM(Q14:X14)
+AA14: =Z14-N(F14)
+J15: =IF(N(G15)=0,"",G15/'Header Key'!$B$6)
+Z15: =SUM(Q15:X15)
+AA15: =Z15-N(F15)
+J16: =IF(N(G16)=0,"",G16/'Header Key'!$B$6)
+Z16: =SUM(Q16:X16)
+AA16: =Z16-N(F16)
+J17: =IF(N(G17)=0,"",G17/'Header Key'!$B$6)
+Z17: =SUM(Q17:X17)
+AA17: =Z17-N(F17)
+
+## Sheet: Header Key — 71 rows × 7 columns (A1:G71)
+Header Key — Raiv-Lab cycle metrics, unit F_24_0060113_C_001
+What every column on the Cycle Data sheet means, where it comes from, and how it can mislead you.
+[1 empty row]
+TARGETS  (edit these two cells — the % of target column recalculates from them)
+Target seconds per plate	2.965	Cell budget set by Genesis Rail. Source: user, this project.
+Target plates per hour	1214	3600 / 2.965, rounded. The 'Cycle Data' % of target column divides actual pl/hr by B6.
+[1 empty row]
+How to read this data
+One row = one sample		tkMetrics emits a sample every nLogPeriodSec (300 s), plus one just before RESET and one at application stop. A row is cumulative since the last RESET — not a snapshot of one plate.
+Blank vs n/a		Blank = the software build that produced that sample did not emit the column yet. n/a = the controller emitted "--", meaning the figure is defined but there is not enough data (e.g. LRC p10 needs 10 clean cycles).
+Do not compare rates across the Operator hold boundary		Before that column existed, operator-hold time was counted inside the rate. After, it is excluded. Actual s/plate means something slightly different either side.
+Only long runs are trendable		Run 3 (134 plates, 11.4 min) is the only sample long enough to judge. The 10–40 plate rows are post-deployment shakedowns.
+The bucket sum is the self-check		The eight loss buckets partition run time, so Bucket sum should equal Actual s/plate. The Sum − actual column should read 0.000 on every valid row. If it does not, the partition is missing a state.
+[1 empty row]
+Group	Column (sheet)	CSV name	Units	What it measures	Where it comes from	Watch out
+Provenance	Backup	source_backup	—	Which controller backup this sample was recovered from.	Folder name of the backup.	The CS9 log is cumulative, so a newer backup contains older samples too. Duplicates were removed.
+Provenance	Run	run	count	Application run number. Increments once each time the app starts.	RaivLog:nRunId, retained across power cycles.	Blank on samples from before the run counter existed.
+Run	Run min	runmin	minutes	Production run time since the last RESET. Excludes operator-hold time.	_nM["RunSec"] / 60.	Not wall-clock. The cell can be powered and idle without this advancing.
+Run	Plates	plates	count	Plates picked since the last RESET.	Counted on the rising edge of Pick3 linear retreat — the same event the PLC ladder counts.
+Run	State at sample	state	—	What the cell was doing at the instant the sample was written.	tkMetrics state machine.	FAULT on the last sample of a run usually just means the operator ended it with the Abort button.
+Rate vs target	Actual s/plate	act_spc	seconds	Run time divided by plates. The headline rate.	RunSec / Plates.	Dragged down by every loss, so it is always worse than the cell's capability. Compare against Fastest clean s.
+Rate vs target	Actual pl/hr	act_pph	plates/hour	Same figure as rate per hour.	3600 / Actual s/plate.
+Rate vs target	Target s/plate	tgt_spc	seconds	The budget. 2.965 s.	nTargetSpC on the controller.	Constant on every row.
+Rate vs target	Gap s/plate	gap_spc	seconds	How far over budget each plate runs.	Actual − Target.	This is the number to drive to zero.
+Rate vs target	% of target	(derived)	%	Actual rate as a share of the 1,214 pl/hr target.	Formula: Actual pl/hr ÷ B6 on this sheet.	Recalculates if you change the target in B6.
+Cycle quality (LRC)	LRC p10 s	lrc_p10	seconds	Least Repeatable Cycle, 10th percentile. A pessimistic floor for what the cell repeats.	Upper edge of the histogram bin holding the 10th percentile of clean cycles.	Suppressed below 10 clean cycles — a tenth percentile of nine samples is not a percentile. Pessimistic by up to one bin, never optimistic.
+Cycle quality (LRC)	Fastest clean s	lrc_best	seconds	The quickest uninterrupted plate-to-plate interval measured.	Minimum clean cycle since RESET.	The cell's demonstrated capability. The gap between this and Actual s/plate is losses, not capability.
+Cycle quality (LRC)	Clean mean s	lrc_mean	seconds	Mean of the clean intervals only.	CleanSum / CleanCount.
+Cycle quality (LRC)	Clean cycles	clean_ct	count	Intervals where no loss bucket moved.	tkMetrics clean test.
+Cycle quality (LRC)	Interrupted	int_ct	count	Intervals where something did interfere.	Complement of clean.	A high count with a good LRC means the cell is capable but keeps being stopped.
+Cycle quality (LRC)	Clean %	clean_pct	%	Share of intervals that were clean.	Clean ÷ (Clean + Interrupted).	Rising clean % through a run is the cell settling in.
+Loss budget (s/plate)	Productive	b_prod	seconds	Time the arm was actually picking or placing.	ProdSec / Plates.	Not waste — but it is where the time is once the other buckets are small.
+Loss budget (s/plate)	Belt advance	b_belt	seconds	Indexing the feeder to bring the next parts into view.	BeltSec / Plates.	Cost per plate falls as plates per advance rises, so read it beside Plates/advance.
+Loss budget (s/plate)	Feed starved	b_starve	seconds	Belt running with nothing arriving.	Belt time beyond nStarveSec in one episode.	Upstream supply, not a cell problem.
+Loss budget (s/plate)	Accept hold	b_accept	seconds	Waiting because the accept station was full.	AcceptSec / Plates.
+Loss budget (s/plate)	Reject hold	b_reject	seconds	Waiting because the reject station was full.	RejectSec / Plates.
+Loss budget (s/plate)	Vision wait	b_vision	seconds	Arm idle waiting on the camera.	Gap time that ended in a pick.	Near zero here — the capture is hidden behind concurrent motion. A faster camera would buy almost nothing.
+Loss budget (s/plate)	Fault	b_fault	seconds	Time in a genuine fault.	bERROR["schunk"] only, since the Aug 31 split.	Before that split this bucket also caught the abort button, which made whole runs read 100% fault.
+Loss budget (s/plate)	Unattributed	b_other	seconds	Time no bucket claimed.	Pending gap written off after nPendMax.	This is the partition's self-test. If it grows, a state is missing from the model.
+Loss budget (s/plate)	Operator hold	b_hold	seconds	Abort routine active, or parked waiting for the operator to choose Cycle or Stow.	HoldSec / Plates.	Deliberately outside the rate: it is downtime, not slow production. Blank before this column existed.
+Loss budget (s/plate)	Partition sum (8)	(derived)	seconds	The eight partition buckets added up. Operator hold is deliberately NOT one of them.	Formula on the data sheet: Productive through Unattributed.	Should equal Actual s/plate. Operator hold is excluded because it sits outside run time — adding it would break the check by exactly the hold figure.
+Loss budget (s/plate)	Sum − actual	(derived)	seconds	Validation residual.	Partition sum − Actual s/plate.	Should be 0.000. Anything else means the data is misaligned or the partition is incomplete.
+Belt behaviour	Plates/advance	batch_mean	count	How many plates one belt advance yields.	BatchSum / BatchCount.	Doubling this halves belt cost per plate without the belt getting any faster.
+Belt behaviour	Belt episodes	belt_eps	count	Number of belt advances.	Counted on entry to the belt state.	Consecutive fruitless passes count as one episode.
+Belt behaviour	Longest belt s	belt_max	seconds	The worst single belt episode.	Max episode duration.	A large value with low Plates/advance is a starving feeder.
+Phase means (s)	ph0 … ph15 (all)	ph0–ph15	seconds	Mean time per OCCURRENCE of each motion phase. The sixteen phases below are the arm cycle split at the setMoveId() calls in PartPick and PartPlace.	_nPhSec[i] / _nPhCount[i] in tkMetrics. The phase is picked from bRobotMotion[...], which tkGetMoveID sets from getMoveId() bands.	PER OCCURRENCE, NOT PER PLATE — accept phases run only on accepted plates, reject phases only on rejected ones. For per-plate: × occurrences ÷ Plates. They also do NOT sum to the cycle: moveId 900 and the 400s/550s/650s/800+ ranges are in no band, and the abort move (700–749) has a flag but no ph index.
+Phase means (s)	ph0  Pick start	ph0	seconds	Nothing. No move in the deployed build is tagged in this band.	moveId 50–99. There is NO setMoveId() in that range anywhere in the deployed project.	ALWAYS BLANK, and that is not a data gap. StowSelect_Pick0_Fix (Aug 31) adds setMoveId(50) to tkCycle for the stow-select wait, but it was never deployed — the 15h07 backup has no 50–99 setter. Blank on all 15 samples. The 'Wait at capture' label on the Cycle Data sheet describes the intent, not the running code.
+Phase means (s)	ph1  Pick approach	ph1	seconds	movej to the belt pick approach pose, arm empty.	PartPick setMoveId(100) → movej(pBelt_START, tGripper, mBlend). pBelt_START = jointToPoint(tGripper, world, jBelt["start"]).	For tie plates that point is then multiplied by pPoseTransform (the Apera pose offset), so the target — and this duration — moves with where the plate is lying. Spike and Anchor skip the transform.
+Phase means (s)	ph2  Pick lin approach	ph2	seconds	The Apera trajectory down onto the plate, ending with the gripper closing.	PartPick setMoveId(200) → apera2:apera_exec_traj("LINEAR_APPROACH", mFAST) then waitEndMove(). Waypoints come from Apera, not from a stored point.	Also contains tTool("ON") and dDoComply_xyz=false, so it is motion PLUS gripper actuation dwell. Longest pick phase at ~1.15 s, and roughly half of that is the tool, not the move.
+Phase means (s)	ph3  Pick lin retreat	ph3	seconds	The Apera trajectory lifting the gripped plate clear of the belt.	PartPick setMoveId(250) → apera_exec_traj("LINEAR_RETREAT", mFAST), with dDoComply_xyz=true restored first, then wait(getMoveId()>=250 and <300).	THIS IS THE CYCLE BOUNDARY. tkMetrics counts a plate on its rising edge — the same edge the PLC counts on X114 — so Plates, LRC and every per-plate figure on this sheet key off this one phase.
+Phase means (s)	ph4  Pick retreat	ph4	seconds	movej out to the belt exit pose with the plate held.	PartPick setMoveId(300) → movej(pBelt_END, tGripper, mBlend). pBelt_END = jointToPoint(tGripper, world, jBelt["end"]), × pPoseTransform for tie plates.	OVER-REPORTS. PartPick then sets moveId 900, which is in NO band, so tkGetMoveID leaves this flag TRUE until PartPlace issues setMoveId(500). The dead time between the pick finishing and the place starting is charged here, so read ph4 as 'retreat plus handover', not as travel.
+Phase means (s)	ph5  Accept start	ph5	seconds	movej into the accept station with the plate held.	PartPlace accept branch, setMoveId(500) → movej(pPlace_AcceptEND, tGripper, mBlend). Target is jAccept["end"] × pPoseTransform.	Named START but the target is the station's END pose — the very point ph9 returns to. jAccept["start"] is computed in PartPlace and then never moved to, so nothing measures it.
+Phase means (s)	ph6  Accept approach	ph6	seconds	movej to the standoff 50 mm above the accept drop point.	setMoveId(510) → movej(appro(pPlace_Accept, trZ["50mm"]), tGripper, mBlend). pPlace_Accept = jAccept["pos"] × pPoseTransform.	Uses mSlow instead of mBlend when the station was full (bAccept_Overflow), so a hold inflates this phase as well as filling the Accept hold bucket — the two are not independent.
+Phase means (s)	ph7  Accept lin appr	ph7	seconds	movel the last 50 mm down onto the accept drop, then release the plate.	setMoveId(520) → movel(pPlace_Accept, tGripper, mNomSpeed), then waitEndMove() and tTool("OFF").	Contains the gripper-release dwell, which is why it is the longest place phase at ~0.7 s. mSlow on an overflow hold.
+Phase means (s)	ph8  Accept lin retr	ph8	seconds	movel straight back up to the 50 mm standoff, arm now empty.	setMoveId(530) → movel(appro(pPlace_Accept, trZ["50mm"]), tGripper, mNomSpeed).	The cleanest phase on the sheet — one short linear move, no tool action, no vision. Useful as the reference when judging whether another phase is slow.
+Phase means (s)	ph9  Accept retreat	ph9	seconds	movej back out to the accept station END pose, arm empty.	setMoveId(540) → movej(pPlace_AcceptEND, tGripper, mBlend) — the same point ph5 came in to.	OVER-REPORTS like ph4: the flag stays true after PartPlace returns until the next setMoveId — 100 for the next pick, or 750 for a capture move — so the inter-cycle gap is charged here.
+Phase means (s)	ph10  Reject start	ph10	seconds	movej into the reject station with the plate held.	PartPlace reject branch, setMoveId(600) → movej(jReject["start"], tGripper, mBlend).	Moves to the JOINT target directly, so the Apera pose transform is NOT applied here — unlike the accept side. n/a on every sample: Accept % is 100% and nothing has been rejected yet.
+Phase means (s)	ph11  Reject approach	ph11	seconds	movej to the standoff 50 mm above the reject drop point.	setMoveId(610) → movej(appro(pPlace_Reject, trZ["50mm"]), tGripper, mFAST). pPlace_Reject = jReject["pos"] × pPoseTransform.	mSlow on a reject-station overflow hold. Blank on every sample so far.
+Phase means (s)	ph12  Reject lin appr	ph12	seconds	movel the last 50 mm down onto the reject drop, then release the plate.	setMoveId(620) → movel(pPlace_Reject, tGripper, mFAST), then waitEndMove() and tTool("OFF").	Reject uses mFAST where the matching accept phase (ph7) uses mNomSpeed, so ph12 and ph7 are NOT comparable. Blank on every sample so far.
+Phase means (s)	ph13  Reject lin retr	ph13	seconds	movel straight back up to the 50 mm standoff, arm now empty.	setMoveId(630) → movel(appro(pPlace_Reject, trZ["50mm"]), tGripper, mFAST).	Blank on every sample so far.
+Phase means (s)	ph14  Reject retreat	ph14	seconds	movej out to the reject station exit pose, arm empty.	setMoveId(640) → movej(jReject["end"], tGripper, mFAST[1]).	Joint target, no pose transform. Over-reports like ph4 and ph9. Blank on every sample so far.
+Phase means (s)	ph15  Move to capture	ph15	seconds	movej back to the camera capture pose over the belt, arm empty. Runs only when vision returned no trajectory.	tkCycle's else branch, setMoveId(750) → movej(jBelt["capt"], tGripper, mBlend), then delay(nLoopPace).	ONE OCCURRENCE PER FRUITLESS VISION PASS, not one per plate — so its occurrence count is the no-trajectory count. Longest phase on the sheet (1.5–2.6 s) and it is the belt-advance transit, which is why Belt advance and ph15 move together.
+Part counts	Accepted / Rejected	accepted, rejected	count	Plates sent to each station.	Counted in PartPlace.
+Part counts	Accept %	acc_pct	%	Share accepted.	Accepted ÷ Plates.	100% on every run to date.
+Part counts	14 in … Anchor	p14, p18, pandrol, spike, anchor	count	Plates by part type.	Apera pick-point ID mapped to part class.	Only 14-inch tie plates have run so far.
+Camera & motion	Camera mean s	cam_mean	seconds	Mean duration of one trajectory capture.	CamSec / CamRuns.	High here with Vision wait near zero means the look is hidden behind motion. Read the two together or you will chase the wrong thing.
+Camera & motion	Camera looks	cam_looks	count	Number of trajectory captures.	Counted on the rising edge of the trajectory flag.
+Camera & motion	Peak TCP mm/s	tcp_peak	mm/s	Fastest tool-centre-point speed seen.	getSpeed(), values above nTcpMaxMMS discarded.	A peak, not an average.
+Camera & motion	Still %	still_pct	%	Share of run time the arm was below nStopMMS.	StillSec ÷ (Still + Move).	Standing still is not always waste — the gripper has to close.
+Camera & motion	Move %	move_pct	%	Share of run time the arm was moving.	Complement of Still %.
+Camera & motion	Pick still %	pick_still	%	Share of the pick phases with the arm stationary.	Phase still-time ÷ phase time.	Mostly gripper actuation and waitEndMove handshakes. Now measured directly as tTool dwell.
