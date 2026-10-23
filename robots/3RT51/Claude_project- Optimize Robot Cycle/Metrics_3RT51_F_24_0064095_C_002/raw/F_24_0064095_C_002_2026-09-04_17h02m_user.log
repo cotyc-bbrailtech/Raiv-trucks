@@ -1,0 +1,941 @@
+﻿{"entry":{"date":"2024-11-28T16:59:34","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2025-03-27T14:21:18","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-02T12:17:25","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-02T14:52:27","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-02T19:15:34","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-03T11:07:48","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-03T11:37:55","ts":"1806.737248165","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a5eb7e143b2cfe668c"}
+{"entry":{"date":"2026-04-03T11:37:55","ts":"1806.737854569","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. IO not linked to a hardware input-output.. PlateSorter~. "},"hash":"98a30c36f6d278ef39"}
+{"entry":{"date":"2026-04-03T11:37:55","ts":"1806.737933181","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 123 IO not linked to a hardware input-output.. PlateSorter~. "},"hash":"1599309ffe541700d2"}
+{"entry":{"date":"2026-04-03T11:51:35","ts":"2626.964564447","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. IO not linked to a hardware input-output.. ~PlateSorter. "},"hash":"4e1810498f6a963e97"}
+{"entry":{"date":"2026-04-03T11:51:35","ts":"2626.964593438","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 123 IO not linked to a hardware input-output.. ~PlateSorter. "},"hash":"d0bc145874675b4f6f"}
+{"entry":{"date":"2026-04-03T18:30:10","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-03T18:45:43","ts":"933.045590569","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a3a65174d4d592d50c"}
+{"entry":{"date":"2026-04-03T18:45:49","ts":"939.045978602","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. PlateSorter~. "},"hash":"15d7155664460b7514"}
+{"entry":{"date":"2026-04-03T18:45:49","ts":"939.046009370","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. PlateSorter~. "},"hash":"49aad6ef73c618a3a5"}
+{"entry":{"date":"2026-04-03T18:53:21","ts":"1391.032686929","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"7b8ec97ee9a81b0464"}
+{"entry":{"date":"2026-04-03T18:53:34","ts":"1403.872758306","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"709597bb88407a9d07"}
+{"entry":{"date":"2026-04-03T18:53:40","ts":"1409.873082497","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. PlateSorter~. "},"hash":"6484e5acd1084043a4"}
+{"entry":{"date":"2026-04-03T18:53:40","ts":"1409.873114164","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. PlateSorter~. "},"hash":"8c37e5de2efa3d1339"}
+{"entry":{"date":"2026-04-03T19:11:16","ts":"2465.956552199","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"e3489eb710a0da4a5f"}
+{"entry":{"date":"2026-04-03T19:14:28","ts":"2657.479142309","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"e457f2276f374861ce"}
+{"entry":{"date":"2026-04-06T11:52:05","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-06T13:13:16","ts":"4870.528404533","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c18d4d56d56331407b"}
+{"entry":{"date":"2026-04-06T13:13:16","ts":"4870.529068187","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"1481c60d132f51f68b"}
+{"entry":{"date":"2026-04-06T13:13:16","ts":"4870.529087327","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"edb3ec372ac0e10f30"}
+{"entry":{"date":"2026-04-06T13:20:05","ts":"5279.599381690","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"2d4322a435ece96815"}
+{"entry":{"date":"2026-04-06T13:20:05","ts":"5279.599407563","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"cbf361cc7a69e666fe"}
+{"entry":{"date":"2026-04-06T13:52:35","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-06T13:53:48","ts":"73.181230238","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a80c471439362392d2"}
+{"entry":{"date":"2026-04-06T13:53:48","ts":"73.181907513","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"1308edaacefd2b0467"}
+{"entry":{"date":"2026-04-06T13:53:48","ts":"73.181927386","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"e81a634dcbe1bbefd7"}
+{"entry":{"date":"2026-04-06T14:18:41","ts":"1565.615976316","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"1efd35690593bafa63"}
+{"entry":{"date":"2026-04-06T14:18:41","ts":"1565.616002884","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"fae45ca9ff49c63539"}
+{"entry":{"date":"2026-04-06T14:35:09","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-06T15:05:30","ts":"1820.858789303","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"466f4171e89cab09d8"}
+{"entry":{"date":"2026-04-06T15:05:30","ts":"1820.859429784","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"e597d9585688899fef"}
+{"entry":{"date":"2026-04-06T15:05:30","ts":"1820.859457876","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"3eeafdeda68a37992f"}
+{"entry":{"date":"2026-04-06T15:23:00","ts":"2871.180500451","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"224e3c5a731763e619"}
+{"entry":{"date":"2026-04-06T15:23:00","ts":"2871.180531795","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"c0189d92e0bb0bb292"}
+{"entry":{"date":"2026-04-06T15:31:29","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-06T15:32:45","ts":"76.520337846","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"fd1a7817be3f21a0fa"}
+{"entry":{"date":"2026-04-06T19:51:07","ts":"15577.971298227","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"861d5d9a3ab404c5e1"}
+{"entry":{"date":"2026-04-06T19:51:07","ts":"15577.971326427","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"96981813e401df82ab"}
+{"entry":{"date":"2026-04-06T19:51:07","ts":"15577.972231449","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"fbb3ace3797584a48e"}
+{"entry":{"date":"2026-04-06T19:51:07","ts":"15577.972243005","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"3e3fe5f999fb8ec934"}
+{"entry":{"date":"2026-04-06T19:51:07","ts":"15577.986293834","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"54506884f199d3c0a4"}
+{"entry":{"date":"2026-04-06T19:51:07","ts":"15577.986365582","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"8314a7ed953a4d6a3e"}
+{"entry":{"date":"2026-04-07T11:01:13","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-07T11:13:54","ts":"760.927850752","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"38faee9409292cc37e"}
+{"entry":{"date":"2026-04-07T11:16:07","ts":"894.592720649","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"dae341c4ddc5824330"}
+{"entry":{"date":"2026-04-07T11:16:07","ts":"894.592753745","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"587d88353b849ba3b4"}
+{"entry":{"date":"2026-04-07T11:26:32","ts":"1519.431586871","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"4438f787ae65eb14ff"}
+{"entry":{"date":"2026-04-07T11:26:50","ts":"1536.824093311","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7d85566385101e2e83"}
+{"entry":{"date":"2026-04-07T11:29:00","ts":"1666.897015060","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"61e9511bf2491fcdf8"}
+{"entry":{"date":"2026-04-07T11:29:00","ts":"1666.897042000","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"6de1bc32c9fb5d9b9a"}
+{"entry":{"date":"2026-04-07T11:35:07","ts":"2034.363561890","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"761ffab36851043e64"}
+{"entry":{"date":"2026-04-07T11:35:13","ts":"2040.223311806","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c6d30d4ab2ad391463"}
+{"entry":{"date":"2026-04-07T11:36:42","ts":"2129.232717179","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"19693fde8e0602568a"}
+{"entry":{"date":"2026-04-07T11:36:42","ts":"2129.232750754","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"28b63e04072ed8325d"}
+{"entry":{"date":"2026-04-07T11:58:30","ts":"3437.223545142","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"823fe6996330b7a84b"}
+{"entry":{"date":"2026-04-07T11:58:32","ts":"3439.161456934","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5e8190926f1e30e151"}
+{"entry":{"date":"2026-04-07T11:59:39","ts":"3505.979543473","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"c6b75a408a0d4ecfcf"}
+{"entry":{"date":"2026-04-07T11:59:39","ts":"3505.979563957","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"90ffb5e2f02ee7fc80"}
+{"entry":{"date":"2026-04-07T12:01:54","ts":"3641.210760514","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"ec169da568d35d2849"}
+{"entry":{"date":"2026-04-07T12:01:54","ts":"3641.210782534","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"0862223bedd8870bd3"}
+{"entry":{"date":"2026-04-07T12:02:11","ts":"3657.777058759","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d285b8a8fdb75d6914"}
+{"entry":{"date":"2026-04-07T12:02:26","ts":"3673.420241822","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2b69d51636eb99f5fc"}
+{"entry":{"date":"2026-04-07T12:05:24","ts":"3851.052975924","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"cfa386815601ccee0b"}
+{"entry":{"date":"2026-04-07T12:05:24","ts":"3851.052997127","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"6623bec82b23dc09a2"}
+{"entry":{"date":"2026-04-07T12:17:03","ts":"4550.166898904","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"2141577f4c35fcc069"}
+{"entry":{"date":"2026-04-07T12:17:11","ts":"4557.794003039","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a15fe0f5d02bd3f3c8"}
+{"entry":{"date":"2026-04-07T12:18:20","ts":"4627.405477999","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"39317c3811cefd5999"}
+{"entry":{"date":"2026-04-07T12:18:20","ts":"4627.405498831","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"5cc027a2415653c55c"}
+{"entry":{"date":"2026-04-07T12:18:41","ts":"4648.674097523","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"4375140a0741f2ac95"}
+{"entry":{"date":"2026-04-07T12:18:43","ts":"4650.645514212","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8e8a61708802070b0b"}
+{"entry":{"date":"2026-04-07T12:19:47","ts":"4714.707689681","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"c11e5878457821472d"}
+{"entry":{"date":"2026-04-07T12:19:47","ts":"4714.707711353","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"3805a3f6368446e1c5"}
+{"entry":{"date":"2026-04-07T12:23:19","ts":"4926.386494845","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"4d4eedb3da9f117bd7"}
+{"entry":{"date":"2026-04-07T12:23:22","ts":"4929.159481087","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"6a33684e95538464a0"}
+{"entry":{"date":"2026-04-07T12:24:31","ts":"4998.584598190","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"c1a682bef38d8164dc"}
+{"entry":{"date":"2026-04-07T12:24:31","ts":"4998.584618338","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"0e7b07b7cea64bfea7"}
+{"entry":{"date":"2026-04-07T12:34:33","ts":"5599.965093824","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"97c81ab73f272a6141"}
+{"entry":{"date":"2026-04-07T12:34:33","ts":"5599.965113912","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"6ec69b590c43668831"}
+{"entry":{"date":"2026-04-07T12:34:33","ts":"5600.004419094","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"93d3967ff5a40b0d9f"}
+{"entry":{"date":"2026-04-07T12:34:33","ts":"5600.004461621","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"e5cdaefbb8bd119ed0"}
+{"entry":{"date":"2026-04-07T12:34:53","ts":"5620.644697018","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"acfa06b7cdcdbbc2a9"}
+{"entry":{"date":"2026-04-07T12:36:40","ts":"5727.085256422","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c2297c0c1041327dd4"}
+{"entry":{"date":"2026-04-07T12:37:51","ts":"5797.934406814","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"f5e70e1dea50819fe4"}
+{"entry":{"date":"2026-04-07T12:37:51","ts":"5797.934433442","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"7d2fc5b5fccd605607"}
+{"entry":{"date":"2026-04-07T12:44:49","ts":"6215.795054953","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"a761b76bc5e427b2d3"}
+{"entry":{"date":"2026-04-07T12:45:25","ts":"6251.862438814","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"9c24e57de55f829165"}
+{"entry":{"date":"2026-04-07T12:47:33","ts":"6379.814011735","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"ce65d5a22df7aafb5d"}
+{"entry":{"date":"2026-04-07T12:47:33","ts":"6379.814039407","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. basic.btn1_Copy1.click_Apera_TestPipeline. "},"hash":"e6531245769624c09c"}
+{"entry":{"date":"2026-04-07T14:17:18","ts":"11765.202807764","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"a70b991e201a2efa59"}
+{"entry":{"date":"2026-04-07T14:17:42","ts":"11788.931691165","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"aba1ef127da913a8f2"}
+{"entry":{"date":"2026-04-07T14:17:50","ts":"11797.666059170","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,System miscalibration detected,-1\r"},"hash":"be202fb258cce920ef"}
+{"entry":{"date":"2026-04-07T14:23:22","ts":"12129.004840749","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"621a0530028fe8aa76"}
+{"entry":{"date":"2026-04-07T14:23:22","ts":"12129.007572863","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d3ea27f6353bc5ce9a"}
+{"entry":{"date":"2026-04-07T14:27:05","ts":"12352.705258808","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"e60c938851989d0f35"}
+{"entry":{"date":"2026-04-07T14:27:12","ts":"12359.062883037","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d7a7f800ddbb800684"}
+{"entry":{"date":"2026-04-07T14:27:20","ts":"12367.123625183","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"141845e42cffed623d"}
+{"entry":{"date":"2026-04-07T14:47:17","ts":"13563.962953545","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"f3cc7dd40df0527ef9"}
+{"entry":{"date":"2026-04-07T14:47:17","ts":"13563.963599729","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"517deadb6627121fbf"}
+{"entry":{"date":"2026-04-07T14:47:19","ts":"13566.645043106","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"49bcecf33eb7205eca"}
+{"entry":{"date":"2026-04-07T14:48:52","ts":"13658.742434751","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"c07c2b4be99c31d128"}
+{"entry":{"date":"2026-04-07T14:48:59","ts":"13665.778806492","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ee7f1e6cdf720a9101"}
+{"entry":{"date":"2026-04-07T15:35:35","ts":"16462.021087603","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"c4c2ac0f308a1ddb99"}
+{"entry":{"date":"2026-04-07T15:35:35","ts":"16462.021119595","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"44c1bf66866e365e64"}
+{"entry":{"date":"2026-04-07T15:36:08","ts":"16494.959592448","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"0669078614d93e167c"}
+{"entry":{"date":"2026-04-07T15:36:23","ts":"16509.787073646","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f395db9d1a5dc1f384"}
+{"entry":{"date":"2026-04-07T16:38:19","ts":"20225.981895172","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"9f7fa4b537de5ab341"}
+{"entry":{"date":"2026-04-07T17:05:59","ts":"21885.904166574","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"6297980c6ba4e108c6"}
+{"entry":{"date":"2026-04-07T17:09:22","ts":"22089.726323623","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"13ddd80f969b8a7630"}
+{"entry":{"date":"2026-04-07T17:09:23","ts":"22089.726354894","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"074aef74efe20af67a"}
+{"entry":{"date":"2026-04-07T17:10:49","ts":"22176.287578653","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"8eb74062ec545234c2"}
+{"entry":{"date":"2026-04-07T17:10:52","ts":"22179.232832969","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"041552306190a44d72"}
+{"entry":{"date":"2026-04-07T18:47:00","ts":"27947.570033121","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"2a5faa916c79db3f88"}
+{"entry":{"date":"2026-04-07T18:47:00","ts":"27947.571583107","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"9b20c629ba81f7d418"}
+{"entry":{"date":"2026-04-08T11:09:31","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-08T12:46:52","ts":"5841.459756509","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ee9b5f5c36a2b12771"}
+{"entry":{"date":"2026-04-08T12:47:30","ts":"5879.426481007","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"c94fdcdc9da4e0cdbe"}
+{"entry":{"date":"2026-04-08T12:47:30","ts":"5879.426510131","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"916f22b657a3581001"}
+{"entry":{"date":"2026-04-08T12:47:30","ts":"5879.450543505","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"fd6c0ed4e00db71e46"}
+{"entry":{"date":"2026-04-08T12:47:30","ts":"5879.450675288","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"228a13df5ae60ac81a"}
+{"entry":{"date":"2026-04-08T14:05:31","ts":"10559.793989949","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d92cf25e19b23d2ed1"}
+{"entry":{"date":"2026-04-08T14:05:44","ts":"10573.285867254","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d17d60c8d7263d8887"}
+{"entry":{"date":"2026-04-08T14:08:45","ts":"10753.614416543","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"c5fd803dd24a6ea9c1"}
+{"entry":{"date":"2026-04-08T14:08:45","ts":"10753.614437723","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"84dd43fced74f9c79c"}
+{"entry":{"date":"2026-04-08T14:08:45","ts":"10753.614687765","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"383253bc5d04abb619"}
+{"entry":{"date":"2026-04-08T14:08:45","ts":"10753.614699021","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"130f8d9acfdfa786ad"}
+{"entry":{"date":"2026-04-08T14:08:45","ts":"10753.625188410","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"60a2fd628c7b99c616"}
+{"entry":{"date":"2026-04-08T14:08:45","ts":"10753.625201610","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"7c5f9f947133567f3d"}
+{"entry":{"date":"2026-04-09T16:42:17","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-09T16:51:59","ts":"582.063756477","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"218795f7c742bcfc56"}
+{"entry":{"date":"2026-04-09T16:51:59","ts":"582.165438238","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"a44e890cfc59a53c46"}
+{"entry":{"date":"2026-04-09T16:51:59","ts":"582.165749047","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"a782b0858342a0cfe1"}
+{"entry":{"date":"2026-04-09T16:59:58","ts":"1060.834447696","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"c38e2ea578574b0fb5"}
+{"entry":{"date":"2026-04-09T17:00:09","ts":"1071.368754875","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"14ca21764ed5f04ea5"}
+{"entry":{"date":"2026-04-09T17:00:09","ts":"1071.470177499","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"cf765fc5bd9e7c9cef"}
+{"entry":{"date":"2026-04-09T17:00:09","ts":"1071.470204751","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"89ff0a7547e66bb40d"}
+{"entry":{"date":"2026-04-09T17:05:03","ts":"1365.493879354","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"18a46c9af6df9e2d78"}
+{"entry":{"date":"2026-04-09T17:05:20","ts":"1382.934597321","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cff62e7b5c91d13f7f"}
+{"entry":{"date":"2026-04-09T17:32:58","ts":"3040.939517258","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"2b67e00460b5a24671"}
+{"entry":{"date":"2026-04-09T17:32:58","ts":"3040.939543406","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"44af2b1cfe8d68bbcf"}
+{"entry":{"date":"2026-04-09T17:32:58","ts":"3040.939836887","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"dc309268d7ce6eec48"}
+{"entry":{"date":"2026-04-09T17:32:58","ts":"3040.939847796","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"df96cb90ea60b131f1"}
+{"entry":{"date":"2026-04-09T17:32:58","ts":"3040.940320593","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"32f00ade337a12ce6e"}
+{"entry":{"date":"2026-04-09T17:32:58","ts":"3040.940331465","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"8a076290e856fdab93"}
+{"entry":{"date":"2026-04-09T17:34:32","ts":"3134.688878275","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"781d47fca33e701846"}
+{"entry":{"date":"2026-04-09T17:34:32","ts":"3134.688909246","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"44df16493315039f50"}
+{"entry":{"date":"2026-04-09T17:52:32","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-09T17:54:32","ts":"119.618828137","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1919dcec6d20ae0318"}
+{"entry":{"date":"2026-04-09T17:55:27","ts":"174.652883796","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"6cca993439c979428e"}
+{"entry":{"date":"2026-04-09T17:57:12","ts":"279.858806256","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"46d8126285e0e28a0c"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.377233244","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"0f2c7735c2b5fed639"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.377264454","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"e0bf2f0ea08796a6ca"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.377431985","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"19fce976c743b3aa80"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.377442521","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"0729a892148c2d19f6"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.378726199","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"a8ec7452f3c014a54e"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.378738175","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"56f28401f01678dd88"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.525632033","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Abort. "},"hash":"094f9c6dbcfa58edc6"}
+{"entry":{"date":"2026-04-09T18:03:15","ts":"643.525657377","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Abort. "},"hash":"3c4906b824415253ec"}
+{"entry":{"date":"2026-04-09T18:23:53","ts":"1880.729109381","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"1cd4940b1dcc9693ae"}
+{"entry":{"date":"2026-04-09T18:23:53","ts":"1880.729141912","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"a4929ee0645338df59"}
+{"entry":{"date":"2026-04-09T18:25:26","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-09T18:27:17","ts":"110.865401557","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"dde579a4c584a19d7c"}
+{"entry":{"date":"2026-04-09T18:32:12","ts":"405.860155541","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"e30e43d4c8b8e5763b"}
+{"entry":{"date":"2026-04-09T19:00:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-09T19:08:31","ts":"504.025829095","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f2b96f5324b9606916"}
+{"entry":{"date":"2026-04-09T19:08:31","ts":"504.026389142","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"c1102b0f9f42ecd6d0"}
+{"entry":{"date":"2026-04-09T19:08:31","ts":"504.026408462","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"250d33c4db7612562b"}
+{"entry":{"date":"2026-04-09T19:08:57","ts":"530.020238833","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"07f9b3812c2de62de5"}
+{"entry":{"date":"2026-04-09T19:08:57","ts":"530.020265208","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"73bd6c0286eda3e166"}
+{"entry":{"date":"2026-04-09T19:12:03","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-09T19:20:15","ts":"492.227807425","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"64872954d171544ed7"}
+{"entry":{"date":"2026-04-09T19:27:35","ts":"932.058338965","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"07d320bb3b6c654330"}
+{"entry":{"date":"2026-04-09T19:27:35","ts":"932.058376441","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"63e2797b05e8e9ceb8"}
+{"entry":{"date":"2026-04-09T19:27:35","ts":"932.058698688","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"fc575b06725351436b"}
+{"entry":{"date":"2026-04-09T19:27:35","ts":"932.058710016","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"1907bc82e0d95f7f04"}
+{"entry":{"date":"2026-04-09T19:27:35","ts":"932.059818701","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"7f9f697616ac8e4415"}
+{"entry":{"date":"2026-04-09T19:27:35","ts":"932.059830773","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"039f094488edffc7c6"}
+{"entry":{"date":"2026-04-09T19:29:08","ts":"1025.619309424","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"a90a952741aee4b9e5"}
+{"entry":{"date":"2026-04-09T19:29:08","ts":"1025.619334816","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"e5c79f17ef3dc905c0"}
+{"entry":{"date":"2026-04-09T19:30:26","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-04-09T19:32:54","ts":"148.168449433","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"358cf14a5c1e889e72"}
+{"entry":{"date":"2026-05-12T15:03:56","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-18T13:58:05","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-18T18:49:46","ts":"17501.160704208","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"01a2c6b3647560a91c"}
+{"entry":{"date":"2026-05-18T18:50:38","ts":"17552.925034017","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"6676af8d01894bf05b"}
+{"entry":{"date":"2026-05-18T19:05:20","ts":"18435.193270890","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f6d9e0180fe63b2b46"}
+{"entry":{"date":"2026-05-19T11:52:36","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-19T11:58:42","ts":"365.528226120","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"79ff333ae6600aac9c"}
+{"entry":{"date":"2026-05-19T13:37:51","ts":"6314.971671710","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"bee2e5ac93d6ec7b2b"}
+{"entry":{"date":"2026-05-19T13:37:51","ts":"6314.972640800","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d81e97a609ab23e0b9"}
+{"entry":{"date":"2026-05-19T13:38:59","ts":"6382.649999544","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c78f284ca233a245c4"}
+{"entry":{"date":"2026-05-19T13:39:22","ts":"6405.533542286","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"3af64162b56c178f13"}
+{"entry":{"date":"2026-05-19T13:39:22","ts":"6405.533571073","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"60caa8d0ef5d9ee59f"}
+{"entry":{"date":"2026-05-19T13:39:22","ts":"6405.533737763","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"5855f7c61360eb0945"}
+{"entry":{"date":"2026-05-19T13:39:22","ts":"6405.533748719","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"243563774b2b2f0274"}
+{"entry":{"date":"2026-05-19T13:39:22","ts":"6405.534169699","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"faef2623688f76e930"}
+{"entry":{"date":"2026-05-19T13:39:22","ts":"6405.534180546","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"a46dab4ddc7a580938"}
+{"entry":{"date":"2026-05-19T13:39:36","ts":"6419.532221713","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"c822d7b359fae109c7"}
+{"entry":{"date":"2026-05-19T13:42:23","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-19T13:43:09","ts":"46.325643719","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7698f1fdbc6cb2aa2a"}
+{"entry":{"date":"2026-05-19T14:15:25","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-19T14:16:13","ts":"47.342568436","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"fe57afa6bd8943dfb2"}
+{"entry":{"date":"2026-05-19T14:16:13","ts":"47.343221295","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"d8d7271204e7733b0d"}
+{"entry":{"date":"2026-05-19T14:16:13","ts":"47.343240075","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"bdd787cfe6aff6d417"}
+{"entry":{"date":"2026-05-19T14:16:49","ts":"83.500998662","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"fa3151f0d102facd5a"}
+{"entry":{"date":"2026-05-19T14:16:49","ts":"83.501024534","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"5fc67e25dc7fce62a1"}
+{"entry":{"date":"2026-05-19T14:17:03","ts":"97.640650290","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"14f91342679715f1f4"}
+{"entry":{"date":"2026-05-19T14:17:30","ts":"124.864673054","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"bdad7f1740f82832e5"}
+{"entry":{"date":"2026-05-19T14:17:30","ts":"124.865175262","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"60dd009176607af24b"}
+{"entry":{"date":"2026-05-19T14:17:30","ts":"124.865189866","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"3c992f2f34562ae938"}
+{"entry":{"date":"2026-05-19T15:12:02","ts":"3396.808450561","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. ~PlateSorter. "},"hash":"32a873c5f68f55c959"}
+{"entry":{"date":"2026-05-19T15:12:02","ts":"3396.808476445","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. ~PlateSorter. "},"hash":"8a6c9e5e30bc197ced"}
+{"entry":{"date":"2026-05-19T15:22:02","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-19T15:22:48","ts":"46.240332822","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"b98783e97324ec7f2b"}
+{"entry":{"date":"2026-05-19T16:29:36","ts":"4053.673906698","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"83552b2e819e805c6c"}
+{"entry":{"date":"2026-05-19T16:30:09","ts":"4086.918065195","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"bf0b8d5e9488532e8e"}
+{"entry":{"date":"2026-05-19T18:41:27","ts":"11965.235837971","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Image capture error,-1\r"},"hash":"ebc6c43b512d731c72"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":1}],"date":"2026-05-19T18:51:19","ts":"11965.236830241","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"7ea361713445356757"}
+{"entry":{"date":"2026-05-19T18:51:19","ts":"12556.929893953","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"11b8f751855098c98e"}
+{"entry":{"date":"2026-05-19T18:51:26","ts":"12563.637833063","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"0d643ef9764177cd23"}
+{"entry":{"date":"2026-05-20T12:27:28","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-20T12:28:12","ts":"44.482154907","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"92672a046f089c08ae"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.322371881","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"1f2db7eddee250f486"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.322404953","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"48c68e4cb438d8c64d"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.322712727","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"e17681133cb94075e7"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.322723587","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"67498b3122d584ca0c"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.323176260","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"c1b09b9c875f46f0ce"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.323187024","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"47184b9edea4b12fe1"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.356292021","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Abort. "},"hash":"3834f7278885f35720"}
+{"entry":{"date":"2026-05-20T14:13:48","ts":"6380.356305905","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Abort. "},"hash":"ef633ed3b1f3ecdfd1"}
+{"entry":{"date":"2026-05-20T14:29:20","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-20T14:30:07","ts":"46.690212926","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"354fd2019f69d02024"}
+{"entry":{"date":"2026-05-20T14:53:51","ts":"1470.558303016","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"1dd6241a0158da4b0a"}
+{"entry":{"date":"2026-05-20T14:53:51","ts":"1470.558334097","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"2250c476404dfa73b4"}
+{"entry":{"date":"2026-05-20T15:00:18","ts":"1857.456463592","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"2cd7f2cef22007c84f"}
+{"entry":{"date":"2026-05-20T15:00:21","ts":"1860.606941451","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2108b21b1c923dc593"}
+{"entry":{"date":"2026-05-21T13:38:16","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-21T13:39:01","ts":"44.936077256","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ce004e36702cb2990e"}
+{"entry":{"date":"2026-05-21T13:46:28","ts":"492.064237628","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"7c9d337db5732f4b95"}
+{"entry":{"date":"2026-05-21T13:46:34","ts":"497.575936952","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"30a9b7cdba54f0b233"}
+{"entry":{"date":"2026-05-21T13:48:00","ts":"583.798229872","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"7446b897e074fbc2fc"}
+{"entry":{"date":"2026-05-21T13:50:04","ts":"707.539475453","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8858fefad7e8aa3f40"}
+{"entry":{"date":"2026-05-21T13:50:10","ts":"713.540076229","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. PlateSorter~. "},"hash":"062ccd017d75814265"}
+{"entry":{"date":"2026-05-21T13:50:10","ts":"713.540108892","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. PlateSorter~. "},"hash":"95437331cd6f0c8c85"}
+{"entry":{"date":"2026-05-21T14:01:42","ts":"1405.531393336","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"334576e7772c350262"}
+{"entry":{"date":"2026-05-21T14:02:26","ts":"1450.248839837","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cef75ca822408aed25"}
+{"entry":{"date":"2026-05-21T14:36:38","ts":"3501.707963170","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"9422b61f517b549101"}
+{"entry":{"date":"2026-05-21T16:49:05","ts":"11448.711086533","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"9562609f40a6a20f8b"}
+{"entry":{"date":"2026-05-21T17:59:13","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-21T18:00:00","ts":"46.436848909","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f8edf9632b95b32819"}
+{"entry":{"date":"2026-05-21T19:04:17","ts":"3904.048025404","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"74cc8cf6e44b6eec35"}
+{"entry":{"date":"2026-05-21T19:04:56","ts":"3942.634455227","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5b7755798efaa6853d"}
+{"entry":{"date":"2026-05-21T19:35:40","ts":"5787.107170910","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"05804b731d8f1b247b"}
+{"entry":{"date":"2026-05-21T19:35:40","ts":"5787.108027295","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"f498f5796d3b552030"}
+{"entry":{"date":"2026-05-21T20:43:27","ts":"9854.001274068","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"4a6eaaa0205fb4c0b6"}
+{"entry":{"date":"2026-05-22T14:52:54","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-22T14:53:41","ts":"46.976181522","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"29ba83685992d34b4e"}
+{"entry":{"date":"2026-05-22T15:00:10","ts":"436.372015622","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"0e2ffcd8589592824c"}
+{"entry":{"date":"2026-05-22T15:00:10","ts":"436.372053698","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"3d928032b0dda35749"}
+{"entry":{"date":"2026-05-22T15:00:34","ts":"459.931797683","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"d46a381f154ad2c189"}
+{"entry":{"date":"2026-05-22T15:00:34","ts":"459.931831703","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"824b0ccef98ab857e0"}
+{"entry":{"date":"2026-05-22T15:02:09","ts":"555.441185391","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"e0c71458ccc84b3573"}
+{"entry":{"date":"2026-05-22T15:02:09","ts":"555.442262642","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"15cd1845dbfe58f10b"}
+{"entry":{"date":"2026-05-22T15:02:11","ts":"556.964022609","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"350bd697def4ef446c"}
+{"entry":{"date":"2026-05-22T15:05:42","ts":"767.495510201","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"10ef0769ce4cb492a8"}
+{"entry":{"date":"2026-05-22T15:05:42","ts":"767.498285173","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"713a571b53df0dd48e"}
+{"entry":{"date":"2026-05-22T15:16:00","ts":"1386.047041588","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2a81df3c410f1c1d3c"}
+{"entry":{"date":"2026-05-22T15:21:10","ts":"1696.222277919","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"e2f03157879dc203d9"}
+{"entry":{"date":"2026-05-22T15:21:16","ts":"1701.716227548","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"b55caf3215937409a0"}
+{"entry":{"date":"2026-05-22T17:19:34","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-22T17:20:20","ts":"46.398495477","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ae06ce9dd1e72dc3ba"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.633860664","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"a1e39f47c54e2fac7c"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.633889752","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"f05d4f9644535bc1f9"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.634161337","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"f8e33ca2b5d6e6cf93"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.634172053","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"78d4daf11507f000ca"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.634550439","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"cc1b0c412a3134bdf7"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.634560891","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"0ed21505c080ecc609"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.756836384","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Abort. "},"hash":"ea68f0cf2dfbf7cbeb"}
+{"entry":{"date":"2026-05-22T17:26:48","ts":"433.756860900","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Abort. "},"hash":"0e539bdbb58c843d46"}
+{"entry":{"date":"2026-05-24T15:17:58","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-24T15:18:44","ts":"46.248562639","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ffd94f23ee756926ce"}
+{"entry":{"date":"2026-05-31T13:53:44","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-05-31T13:54:30","ts":"46.891916834","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cac7630fbdc093a4f7"}
+{"entry":{"date":"2026-06-03T14:20:04","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-03T14:20:49","ts":"44.757614626","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"881bdfaf3e7cd94621"}
+{"entry":{"date":"2026-06-03T15:31:44","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-03T15:32:29","ts":"44.914399846","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"777aa131fa6223f0c6"}
+{"entry":{"date":"2026-06-03T16:58:50","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-03T16:59:37","ts":"47.702484465","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8c9d95e02c6f8782f6"}
+{"entry":{"date":"2026-06-04T12:14:37","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-04T12:15:23","ts":"46.175006115","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5ab0badbbf8df32760"}
+{"entry":{"date":"2026-06-04T15:38:51","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-04T15:39:41","ts":"49.827750906","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"450f7361699054f0c4"}
+{"entry":{"date":"2026-06-04T16:05:42","ts":"1610.848797346","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"fbd20c28c91d6d1926"}
+{"entry":{"date":"2026-06-04T16:05:42","ts":"1610.851443395","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"606bfaf7ddcdaf77c8"}
+{"entry":{"date":"2026-06-04T16:05:44","ts":"1613.251947944","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d1fc65944601de15d5"}
+{"entry":{"date":"2026-06-04T16:24:22","ts":"2730.818533276","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"e4e9df720dad4d7610"}
+{"entry":{"date":"2026-06-04T16:24:22","ts":"2730.819490764","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"f35a02b0aa86fa41c1"}
+{"entry":{"date":"2026-06-04T16:25:28","ts":"2796.634698786","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"84f91b53345c9f5dbd"}
+{"entry":{"date":"2026-06-04T18:41:38","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-04T18:42:23","ts":"45.426213601","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ccf8c4f6c1ae81bff6"}
+{"entry":{"date":"2026-06-04T20:42:53","ts":"7275.401163562","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"5b9cf6b124b29968d6"}
+{"entry":{"date":"2026-06-04T20:42:53","ts":"7275.401201769","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"86ff1c86bcb94e6d91"}
+{"entry":{"date":"2026-06-04T20:48:46","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-04T20:49:31","ts":"45.287534112","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5a58a5474b11472df4"}
+{"entry":{"date":"2026-06-08T13:28:03","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-08T13:28:48","ts":"45.378332255","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ebac6ab3007d564ddd"}
+{"entry":{"date":"2026-06-08T18:32:25","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-08T18:33:10","ts":"44.816503190","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"553214303c0cf8a71e"}
+{"entry":{"date":"2026-06-09T12:57:22","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-09T12:58:08","ts":"46.365893074","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"838d68008031058ce6"}
+{"entry":{"date":"2026-06-09T16:42:11","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-09T16:42:59","ts":"48.116609497","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2726f355263a0ed889"}
+{"entry":{"date":"2026-06-10T12:33:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-10T12:33:52","ts":"45.217406088","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"87e74cee6a4c05d5e7"}
+{"entry":{"date":"2026-06-10T12:42:27","ts":"560.045190628","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"f1243bfbbc3877a7db"}
+{"entry":{"date":"2026-06-10T12:42:27","ts":"560.047256660","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"84c818098a21f8783b"}
+{"entry":{"date":"2026-06-10T12:42:30","ts":"563.110167974","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"0378d9637e90b015dc"}
+{"entry":{"date":"2026-06-10T12:54:15","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-10T12:55:00","ts":"45.409367818","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c4ff6912dcf4633a6d"}
+{"entry":{"date":"2026-06-10T15:56:42","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-10T15:57:28","ts":"46.499222549","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3dd4a7f91cd39d58a6"}
+{"entry":{"date":"2026-06-11T13:54:48","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-11T13:55:33","ts":"45.534285722","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"97480c04b14a7fd4a4"}
+{"entry":{"date":"2026-06-11T14:35:33","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-11T14:36:20","ts":"47.413032394","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"920a3c8755768c13f8"}
+{"entry":{"date":"2026-06-11T15:00:42","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-11T15:01:28","ts":"46.544510091","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"dece49bffa71703067"}
+{"entry":{"date":"2026-06-11T15:11:10","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-11T15:11:55","ts":"45.540806343","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"34a00d5c52916078fa"}
+{"entry":{"date":"2026-06-11T15:44:44","ts":"2014.159958292","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"f6c735ac83ef950f71"}
+{"entry":{"date":"2026-06-11T15:44:44","ts":"2014.162559344","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"959fc1aa91419de283"}
+{"entry":{"date":"2026-06-11T15:49:20","ts":"2290.728447182","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d1e2186ce7ca39d4cc"}
+{"entry":{"date":"2026-06-11T15:51:48","ts":"2438.422538942","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"41eea65f2165493f43"}
+{"entry":{"date":"2026-06-11T15:51:48","ts":"2438.426476062","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"8421ad5e6a972f7bb3"}
+{"entry":{"date":"2026-06-11T15:51:56","ts":"2446.146518744","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"fda4fcf8dcfb3e1770"}
+{"entry":{"date":"2026-06-12T14:47:14","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-12T14:50:52","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-12T14:51:37","ts":"45.032004630","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"fdd3ab19cd0df7211f"}
+{"entry":{"date":"2026-06-12T18:04:09","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-12T18:04:56","ts":"46.904867101","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f60ba439cbab6fa5f7"}
+{"entry":{"date":"2026-06-15T12:51:33","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-15T12:52:20","ts":"46.868593818","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cdc21c714b08b3a34e"}
+{"entry":{"date":"2026-06-15T15:12:17","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-15T15:13:04","ts":"46.606590037","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"14098dca3d50d43d23"}
+{"entry":{"date":"2026-06-15T15:24:01","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-15T15:24:48","ts":"46.753507881","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"30285998651b020062"}
+{"entry":{"date":"2026-06-15T18:25:56","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-15T18:26:43","ts":"46.966641540","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"fbf3b44c6f403cf70f"}
+{"entry":{"date":"2026-06-16T12:33:39","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-16T12:34:24","ts":"44.741115725","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cdb2a814108802c978"}
+{"entry":{"date":"2026-06-16T19:56:05","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-16T19:56:51","ts":"46.388053854","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"471e2f1a1be2c55192"}
+{"entry":{"date":"2026-06-17T14:20:28","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-17T14:21:13","ts":"44.818098313","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f7942a4eaacc879926"}
+{"entry":{"date":"2026-06-17T20:14:02","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-17T20:14:48","ts":"46.265640269","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2442c0e7d1c5b1622c"}
+{"entry":{"date":"2026-06-18T12:50:17","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-18T12:51:03","ts":"46.191039552","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c1d03ae550e56ad76d"}
+{"entry":{"date":"2026-06-18T16:21:01","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-18T16:21:45","ts":"44.802485433","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d17606f467046ca4f7"}
+{"entry":{"date":"2026-06-22T13:54:27","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-22T13:55:16","ts":"48.799446926","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cfdef743cf59ff94c9"}
+{"entry":{"date":"2026-06-22T14:10:11","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-22T14:10:58","ts":"47.393320015","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"34b95bc3deeceb2527"}
+{"entry":{"date":"2026-06-22T17:27:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-22T17:27:52","ts":"45.021577367","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"249f1c2a02b2fd0cf1"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3679.869008964","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"ac9f41ad3e7ded1bad"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3679.869038291","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"428a178e9bb45d87ba"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3679.870014888","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"29e0405a97ea27d013"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3679.870026600","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"895d0ca5dcec344707"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3679.923985281","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"27d7571a309ee2bcd4"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3679.923999141","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"8c581d734b2ad99965"}
+{"entry":{"date":"2026-06-22T18:28:27","ts":"3680.681518542","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Cycle. "},"hash":"dc7d0d5e88f5e96e1c"}
+{"entry":{"date":"2026-06-22T18:28:28","ts":"3680.681545494","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Cycle. "},"hash":"0d3fa0a4d889887168"}
+{"entry":{"date":"2026-06-22T18:29:26","ts":"3739.241664557","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. PartFinder. "},"hash":"c83776a7a2413cfa50"}
+{"entry":{"date":"2026-06-22T18:29:26","ts":"3739.241690957","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. PartFinder. "},"hash":"df2db05e69810daa11"}
+{"entry":{"date":"2026-06-22T18:43:24","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-22T18:44:10","ts":"45.884981382","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2c985afc1778d0f59d"}
+{"entry":{"date":"2026-06-23T13:46:23","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-23T13:47:08","ts":"45.401484088","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a2401dbca873714a87"}
+{"entry":{"date":"2026-06-23T18:27:25","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-23T18:28:11","ts":"46.087742690","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"4a8145b59cfba9c8a8"}
+{"entry":{"date":"2026-06-24T13:36:29","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-24T13:37:16","ts":"46.400590054","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1c1d4ebde5a1d585eb"}
+{"entry":{"date":"2026-06-24T18:53:49","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-24T18:54:35","ts":"45.565015192","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7203843c80bb04b9fe"}
+{"entry":{"date":"2026-06-25T12:10:40","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-25T12:11:27","ts":"46.886509587","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2708c645b3b1fb5a2d"}
+{"entry":{"date":"2026-06-25T12:15:09","ts":"269.250541393","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"3e323951414edbf29e"}
+{"entry":{"date":"2026-06-25T12:15:09","ts":"269.252344998","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"eb224eec1d15ace45b"}
+{"entry":{"date":"2026-06-25T12:21:38","ts":"657.402118051","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"252c0d734ec57eca94"}
+{"entry":{"date":"2026-06-25T12:22:28","ts":"707.976587069","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"e5c481295babae7e61"}
+{"entry":{"date":"2026-06-25T12:27:25","ts":"1004.764712002","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"4c73e2059b2ad5e775"}
+{"entry":{"date":"2026-06-25T12:55:08","ts":"2667.481452247","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. RoCal. "},"hash":"2be956e11c7e9e4f52"}
+{"entry":{"date":"2026-06-25T12:55:08","ts":"2667.481484562","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. RoCal. "},"hash":"c01492519c761ebe5d"}
+{"entry":{"date":"2026-06-25T13:01:50","ts":"3069.588365459","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"3b02592a9f9bcc728b"}
+{"entry":{"date":"2026-06-25T13:01:52","ts":"3071.594547183","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"233cdeb0c8ce12b76e"}
+{"entry":{"date":"2026-06-25T13:04:22","ts":"3221.498604558","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. RoCal. "},"hash":"f809e3ff98e91ede61"}
+{"entry":{"date":"2026-06-25T13:04:22","ts":"3221.498631786","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. RoCal. "},"hash":"3efc1652e2208e5d0a"}
+{"entry":{"date":"2026-06-25T13:06:10","ts":"3330.108297286","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"719d448c132289798a"}
+{"entry":{"date":"2026-06-25T13:06:27","ts":"3346.868307570","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"663bc8f9640aaad293"}
+{"entry":{"date":"2026-06-25T13:10:17","ts":"3576.465617592","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. RoCal. "},"hash":"95e59aeb441d1b31d3"}
+{"entry":{"date":"2026-06-25T13:10:17","ts":"3576.465643392","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. RoCal. "},"hash":"6133041ede5e31f498"}
+{"entry":{"date":"2026-06-25T13:19:46","ts":"4146.176344958","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d7cafa093307c835b9"}
+{"entry":{"date":"2026-06-25T13:19:53","ts":"4153.014832419","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"b4ad770f6270827e31"}
+{"entry":{"date":"2026-06-25T13:22:46","ts":"4325.773903727","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"02c2df03ecd8102b39"}
+{"entry":{"date":"2026-06-25T13:22:46","ts":"4325.776362738","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"44a29d3097218e0195"}
+{"entry":{"date":"2026-06-25T13:22:51","ts":"4330.468637140","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"b12afe2b16a44c8968"}
+{"entry":{"date":"2026-06-25T13:25:36","ts":"4496.023299577","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"1fc6d7513db594874d"}
+{"entry":{"date":"2026-06-25T13:25:36","ts":"4496.024357606","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"e9a522d008a53b3e04"}
+{"entry":{"date":"2026-06-25T13:25:41","ts":"4501.219477795","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"2a66b64f67493379d1"}
+{"entry":{"date":"2026-06-25T13:28:20","ts":"4659.734528966","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"7ebade02f79071a52e"}
+{"entry":{"date":"2026-06-25T13:28:20","ts":"4659.736338902","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"72c857bbfffd3b198c"}
+{"entry":{"date":"2026-06-25T13:28:26","ts":"4665.345569725","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cc77ddf605d2d6d0f4"}
+{"entry":{"date":"2026-06-25T13:31:55","ts":"4874.542250351","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"89d5977e8e675d10dd"}
+{"entry":{"date":"2026-06-25T15:33:03","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-25T15:33:49","ts":"46.595666046","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a0c491e11e83fb1305"}
+{"entry":{"date":"2026-06-25T15:47:18","ts":"855.440281649","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"124fbcd998516c5840"}
+{"entry":{"date":"2026-06-25T15:47:18","ts":"855.441825786","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"aa1b41f63f506472c4"}
+{"entry":{"date":"2026-06-25T15:47:23","ts":"860.682620644","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"744637cbad5859024c"}
+{"entry":{"date":"2026-06-25T15:58:46","ts":"1543.063001443","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"7fb81525b9678a6c91"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":2}],"date":"2026-06-25T16:29:23","ts":"1570.340968423","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"99cfeb0f342e8b35f3"}
+{"entry":{"date":"2026-06-25T16:29:23","ts":"3380.345831513","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d3f43411d1f3841264"}
+{"entry":{"date":"2026-06-25T16:29:34","ts":"3391.325779643","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"83305bcad44ca23327"}
+{"entry":{"date":"2026-06-26T12:47:05","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-06-26T12:47:51","ts":"46.659066596","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d2640d772fd33665b6"}
+{"entry":{"date":"2026-07-15T15:19:45","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-15T15:20:32","ts":"46.591120595","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"51a9182984caee135a"}
+{"entry":{"date":"2026-07-15T16:51:48","ts":"5523.142317908","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"db797fae9c4bc69144"}
+{"entry":{"date":"2026-07-15T16:53:21","ts":"5615.328066925","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8d572d137b7a95beb6"}
+{"entry":{"date":"2026-07-15T18:59:07","ts":"13162.195128614","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d687b77e6023bde9e7"}
+{"entry":{"date":"2026-07-15T18:59:20","ts":"13174.515932456","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"74cf93f924cfc87ca0"}
+{"entry":{"date":"2026-07-16T11:05:01","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-16T11:05:49","ts":"47.860065558","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"964c1eb579fdde7380"}
+{"entry":{"date":"2026-07-16T14:46:00","ts":"13259.022177435","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"89ff5186aef9bb93fc"}
+{"entry":{"date":"2026-07-16T14:46:00","ts":"13259.026061979","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"ae38b4758608fd1be2"}
+{"entry":{"date":"2026-07-16T14:46:13","ts":"13271.817552759","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"64d5888c7e4ad21eeb"}
+{"entry":{"date":"2026-07-16T14:47:34","ts":"13353.264658396","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"ea774c635e3e98fbfe"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":5}],"date":"2026-07-16T14:51:05","ts":"13562.572548633","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"f2b15369178d257c4c"}
+{"entry":{"date":"2026-07-16T14:51:05","ts":"13563.655099624","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"6a8c0e1d4747b91563"}
+{"entry":{"date":"2026-07-16T14:58:00","ts":"13978.837149193","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"6607527d920b40b831"}
+{"entry":{"date":"2026-07-16T14:58:00","ts":"13978.838121100","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"5cfa53669772c142ac"}
+{"entry":{"date":"2026-07-16T14:58:11","ts":"13990.340235329","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3bd43809ff00c3c9cb"}
+{"entry":{"date":"2026-07-16T14:59:37","ts":"14076.214837484","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"2e2d2ec25ae44b7e39"}
+{"entry":{"date":"2026-07-16T15:00:05","ts":"14103.791627721","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"5f47bb0981b7985be5"}
+{"entry":{"date":"2026-07-16T15:00:05","ts":"14103.791659185","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"f1141cd331d0eb8556"}
+{"entry":{"date":"2026-07-16T15:02:53","ts":"14271.630094557","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"352cbed7818ffb9161"}
+{"entry":{"date":"2026-07-16T16:33:02","ts":"19680.546097316","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d6acdb579e5c3f4fcb"}
+{"entry":{"date":"2026-07-16T16:33:11","ts":"19689.985967026","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d3a73310196b9f23ed"}
+{"entry":{"date":"2026-07-16T16:50:19","ts":"20718.031977091","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"ad4724d9dcda8bbbde"}
+{"entry":{"date":"2026-07-16T16:50:19","ts":"20718.034094053","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"45489e0a49f3358c57"}
+{"entry":{"date":"2026-07-16T16:50:24","ts":"20723.261385652","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"bb52eca440ee64ec27"}
+{"entry":{"date":"2026-07-16T16:56:58","ts":"21116.757121736","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"13a2f5443c3ae9ca66"}
+{"entry":{"date":"2026-07-17T20:18:33","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-17T20:19:17","ts":"44.081283115","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7dd03bf5ca86efa3a5"}
+{"entry":{"date":"2026-07-17T20:21:42","ts":"188.964416303","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"605d70a1bb49195390"}
+{"entry":{"date":"2026-07-19T20:00:09","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-19T20:00:54","ts":"45.470107527","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"59063310c7d2a95aea"}
+{"entry":{"date":"2026-07-19T20:04:29","ts":"261.142497472","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"13441458926b02fc19"}
+{"entry":{"date":"2026-07-19T20:04:29","ts":"261.142526235","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"db15a6b71327d59ae4"}
+{"entry":{"date":"2026-07-19T20:04:29","ts":"261.142682930","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"130c15983d707b31ef"}
+{"entry":{"date":"2026-07-19T20:04:29","ts":"261.142694690","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"b3510d9ffe7cd9faaf"}
+{"entry":{"date":"2026-07-19T20:04:29","ts":"261.142947505","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"c77967fdd32a843f5a"}
+{"entry":{"date":"2026-07-19T20:04:30","ts":"261.142958245","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"d69a998fe6c53d1206"}
+{"entry":{"date":"2026-07-19T21:16:12","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-19T21:16:58","ts":"46.591779764","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5bef330e984e55780b"}
+{"entry":{"date":"2026-07-20T12:19:38","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-20T12:20:23","ts":"44.882612237","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5ddba2d6c52dbf0739"}
+{"entry":{"date":"2026-07-20T12:23:21","ts":"223.387471393","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"4fa1376547aab4a0ec"}
+{"entry":{"date":"2026-07-20T13:59:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-20T13:59:52","ts":"45.462999868","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8697000926d99bed49"}
+{"entry":{"date":"2026-07-20T14:12:57","ts":"830.385659102","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"8e14eed59643ee06c0"}
+{"entry":{"date":"2026-07-20T14:12:57","ts":"830.385690302","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"8dab6dc490965123ea"}
+{"entry":{"date":"2026-07-20T14:13:33","ts":"865.782758260","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"db78cef76c4e6f859e"}
+{"entry":{"date":"2026-07-20T14:13:37","ts":"870.678448590","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"12429bce0a3613f35b"}
+{"entry":{"date":"2026-07-20T14:14:13","ts":"906.109264527","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"60ecd72342175f8bf3"}
+{"entry":{"date":"2026-07-20T14:14:13","ts":"906.109299375","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"5b2feb78a91e651c69"}
+{"entry":{"date":"2026-07-20T14:15:09","ts":"962.198752164","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"b3d6917ca192d52826"}
+{"entry":{"date":"2026-07-20T14:15:14","ts":"967.661263585","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5fa7c3a9b49b45a8b7"}
+{"entry":{"date":"2026-07-20T15:22:54","ts":"5026.902723232","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"b89a31d68773a911a3"}
+{"entry":{"date":"2026-07-20T15:25:30","ts":"5183.528709144","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"95bb68647b3a94ddac"}
+{"entry":{"date":"2026-07-20T15:37:43","ts":"5916.230763110","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"62f7b6e6d12ec244fc"}
+{"entry":{"date":"2026-07-20T15:37:51","ts":"5924.554695395","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"704ca138374a13449c"}
+{"entry":{"date":"2026-07-21T12:03:14","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-21T12:04:01","ts":"47.048578938","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"eae1c70587846a6737"}
+{"entry":{"date":"2026-07-21T12:06:40","ts":"206.085227799","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"01086c77a262522644"}
+{"entry":{"date":"2026-07-21T13:00:39","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-21T13:01:25","ts":"46.040239106","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"6ea0c7d07bd38bdf9a"}
+{"entry":{"date":"2026-07-22T11:43:43","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-22T11:44:29","ts":"45.980693130","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"185765b3abe73345bb"}
+{"entry":{"date":"2026-07-22T19:39:55","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-22T19:40:41","ts":"46.316118885","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ab417ee1f51910e4c7"}
+{"entry":{"date":"2026-07-22T20:16:11","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-22T20:16:56","ts":"44.719948558","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8807fee3c70bf63754"}
+{"entry":{"date":"2026-07-22T20:22:00","ts":"349.395706445","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Cycle. "},"hash":"36a597a54eccf8032b"}
+{"entry":{"date":"2026-07-22T20:22:00","ts":"349.395743982","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Cycle. "},"hash":"af2e5686c5c519e475"}
+{"entry":{"date":"2026-07-22T20:22:19","ts":"368.097832328","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"c0f5044dccee6fe6bf"}
+{"entry":{"date":"2026-07-22T20:22:22","ts":"370.795392829","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d136839baccb3a9a83"}
+{"entry":{"date":"2026-07-23T11:43:45","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-23T12:41:28","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-23T12:42:13","ts":"45.586408235","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"33d3118f7b7047a58b"}
+{"entry":{"date":"2026-07-23T12:44:58","ts":"210.057974270","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"c6a131d3dcb08ca4c8"}
+{"entry":{"date":"2026-07-23T15:59:50","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-23T16:00:37","ts":"47.423545405","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a6f1383b31ae7d72d9"}
+{"entry":{"date":"2026-07-23T18:19:46","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-23T18:20:35","ts":"48.972570897","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"70e03d1cce7775c473"}
+{"entry":{"date":"2026-07-23T19:31:20","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-23T19:32:05","ts":"44.812847944","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1f9ff382c6d70d1510"}
+{"entry":{"date":"2026-07-24T13:03:09","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-24T13:03:56","ts":"46.546849972","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"6aa99b10eda7ff56dc"}
+{"entry":{"date":"2026-07-24T16:29:54","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-24T16:30:39","ts":"45.238420790","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"b663040df27608c2ee"}
+{"entry":{"date":"2026-07-24T16:53:23","ts":"1408.873376516","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"7128ea06bd0f35af9e"}
+{"entry":{"date":"2026-07-24T16:58:35","ts":"1721.255786409","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"4cb0cd0e03d9ae0455"}
+{"entry":{"date":"2026-07-24T16:58:35","ts":"1721.258931440","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"f5491e2e7a07dcd87f"}
+{"entry":{"date":"2026-07-24T16:58:39","ts":"1724.493866365","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cbd0a4ef86b992b492"}
+{"entry":{"date":"2026-07-27T11:30:12","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-27T11:30:57","ts":"44.921582477","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f3d3d4b9aa698b8565"}
+{"entry":{"date":"2026-07-28T11:18:56","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-28T11:19:41","ts":"44.718603003","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"efe5c282867cd2a7cd"}
+{"entry":{"date":"2026-07-29T11:13:45","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-29T11:14:31","ts":"46.268417334","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"dbbd98cedf495d6ddd"}
+{"entry":{"date":"2026-07-30T11:58:17","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-07-30T11:59:02","ts":"44.962241076","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"90ba1411c89f48b160"}
+{"entry":{"date":"2026-07-30T12:06:05","ts":"467.979631001","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"795fd972d3d72ec935"}
+{"entry":{"date":"2026-07-30T12:14:25","ts":"968.219113507","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. RoCal. "},"hash":"7ff250a9ffc9af8164"}
+{"entry":{"date":"2026-07-30T12:14:26","ts":"968.219152723","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. RoCal. "},"hash":"f7355eacf6e773df79"}
+{"entry":{"date":"2026-07-30T12:16:59","ts":"1121.496710100","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"67623a1f8621e57c4c"}
+{"entry":{"date":"2026-07-30T12:17:14","ts":"1136.969575428","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"dcfbcf898df6695800"}
+{"entry":{"date":"2026-07-30T12:24:12","ts":"1555.018570571","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"5e60bbe403f7d43b34"}
+{"entry":{"date":"2026-08-10T11:11:00","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-10T11:11:45","ts":"45.610069194","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7ca7cda0930a33ff8d"}
+{"entry":{"date":"2026-08-11T11:19:40","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-11T11:20:25","ts":"45.585352150","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"aad81cbde70274c887"}
+{"entry":{"date":"2026-08-11T11:22:15","ts":"155.144606666","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"cbaeafbdfe546c8476"}
+{"entry":{"date":"2026-08-12T11:07:59","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-12T11:08:46","ts":"47.428026513","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c1b355cadd2e8fcc87"}
+{"entry":{"date":"2026-08-13T10:57:39","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-13T10:58:26","ts":"46.954768748","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"9b40460ad4d4b3fdd0"}
+{"entry":{"date":"2026-08-14T11:03:13","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-14T11:03:58","ts":"45.180740138","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3366ed26547c47ae5f"}
+{"entry":{"date":"2026-08-17T10:59:30","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-17T11:00:16","ts":"46.594910357","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"b1559e18b48ca6449d"}
+{"entry":{"date":"2026-08-18T11:28:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-18T11:28:53","ts":"46.449911156","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d09255b9f074bec23c"}
+{"entry":{"date":"2026-08-19T11:36:36","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-19T11:37:20","ts":"44.654040991","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a186c7982613378209"}
+{"entry":{"date":"2026-08-19T13:31:47","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-19T13:32:32","ts":"45.072572209","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3656b81b1f99a7bb35"}
+{"entry":{"date":"2026-08-19T15:12:04","ts":"6017.586473672","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"c10de9c67128954ec6"}
+{"entry":{"date":"2026-08-19T15:12:05","ts":"6017.586514076","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"7539fc853fd6b2b1c5"}
+{"entry":{"date":"2026-08-19T15:24:23","ts":"6755.879210098","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"026673b59253e1e39c"}
+{"entry":{"date":"2026-08-19T15:24:42","ts":"6775.176429724","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"9e7f7a87547d406c2c"}
+{"entry":{"date":"2026-08-19T22:15:51","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-19T22:16:36","ts":"45.664532030","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a675e16dd732033eab"}
+{"entry":{"date":"2026-08-19T23:21:23","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-19T23:22:07","ts":"44.561318456","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"0d91b98201e9f82211"}
+{"entry":{"date":"2026-08-19T23:38:21","ts":"1018.562078267","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"3ecc1126519c7b5eb6"}
+{"entry":{"date":"2026-08-19T23:38:21","ts":"1018.562118107","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"cbf791df77e4fa48e9"}
+{"entry":{"date":"2026-08-19T23:39:10","ts":"1067.671070069","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"e2ae0116ef3f856db9"}
+{"entry":{"date":"2026-08-19T23:39:30","ts":"1087.651073449","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"09a5d8713b3ec85949"}
+{"entry":{"date":"2026-08-19T23:50:37","ts":"1754.599062425","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"29e9fb1fbb1321ea15"}
+{"entry":{"date":"2026-08-19T23:51:12","ts":"1789.308975654","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"be8891da281ba276be"}
+{"entry":{"date":"2026-08-20T00:33:38","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-20T00:34:24","ts":"46.708929315","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7957102fd92d797817"}
+{"entry":{"date":"2026-08-20T11:52:03","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-20T11:52:48","ts":"44.966856641","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7c3ed6aa4371f2abcf"}
+{"entry":{"date":"2026-08-20T11:54:37","ts":"153.730996190","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"c1a32f4afdf0343a57"}
+{"entry":{"date":"2026-08-20T17:46:46","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-20T17:47:32","ts":"46.184303328","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"17c19d4039a8aa9905"}
+{"entry":{"date":"2026-08-20T18:47:29","ts":"3642.677733052","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"ee57376163272f1b06"}
+{"entry":{"date":"2026-08-20T18:47:29","ts":"3642.677767588","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"31545aa88fef31feb8"}
+{"entry":{"date":"2026-08-20T18:48:29","ts":"3703.071489529","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"0c13d4372b3cdd7dca"}
+{"entry":{"date":"2026-08-20T18:48:29","ts":"3703.075266721","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"0ed34fa1c0282b6a78"}
+{"entry":{"date":"2026-08-20T18:49:14","ts":"3747.963709485","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5d68337ce95ab34d5c"}
+{"entry":{"date":"2026-08-20T18:57:35","ts":"4248.778149804","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"6ef725699e155b071f"}
+{"entry":{"date":"2026-08-20T18:57:35","ts":"4248.778175423","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"fe7a90831e0a163df8"}
+{"entry":{"date":"2026-08-20T19:00:20","ts":"4413.937762208","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle. "},"hash":"0902a7378e75b58875"}
+{"entry":{"date":"2026-08-20T19:00:20","ts":"4413.937798759","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 532 The cartesian position is out of the workspace.. Cycle. "},"hash":"cc3e778686c1e0d188"}
+{"entry":{"date":"2026-08-21T11:30:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-21T11:30:55","ts":"48.152385294","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"a3b9f31a80c3eb1f7f"}
+{"entry":{"date":"2026-08-24T11:24:23","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-24T11:25:12","ts":"49.411129130","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3c9a1f2930883a6bc0"}
+{"entry":{"date":"2026-08-24T17:47:34","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-24T17:48:19","ts":"44.894391123","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"18e1638a8e3b77ac9b"}
+{"entry":{"date":"2026-08-25T11:57:45","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-25T11:58:32","ts":"46.794279637","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"5e5d833472b8cac8aa"}
+{"entry":{"date":"2026-08-25T12:34:01","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-25T12:34:48","ts":"46.573001450","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3686f92e473ccbc9aa"}
+{"entry":{"date":"2026-08-25T12:52:39","ts":"1118.374252072","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"ffff40ea84d3809f3b"}
+{"entry":{"date":"2026-08-25T12:54:09","ts":"1207.996694487","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1040792b8126e9b0d3"}
+{"entry":{"date":"2026-08-25T12:56:32","ts":"1351.133231862","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"9e68bedf8ff3441c10"}
+{"entry":{"date":"2026-08-25T12:56:32","ts":"1351.134278700","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"bdbc4ab32f30345f3d"}
+{"entry":{"date":"2026-08-25T12:58:24","ts":"1462.704264633","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"7217ca9ac5db15f8c8"}
+{"entry":{"date":"2026-08-25T21:35:14","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-25T21:35:58","ts":"44.644128286","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"560fcb58c26c709a8b"}
+{"entry":{"date":"2026-08-26T11:20:14","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-26T11:21:01","ts":"46.849354760","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d723834a1eb6aa90d1"}
+{"entry":{"date":"2026-08-26T11:23:57","ts":"223.439556015","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"008afbeaebb5005ecc"}
+{"entry":{"date":"2026-08-26T13:39:36","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-26T13:40:21","ts":"45.021492698","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"04fe25624c3918d9dd"}
+{"entry":{"date":"2026-08-26T15:16:47","ts":"5830.550922474","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"878681c1ac632bb874"}
+{"entry":{"date":"2026-08-26T15:30:45","ts":"6669.044083488","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"46f9377616a72a67b5"}
+{"entry":{"date":"2026-08-26T15:32:36","ts":"6780.487925682","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"2d7d7fe4fd743c4448"}
+{"entry":{"date":"2026-08-26T15:32:36","ts":"6780.490903641","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"2f3768c3d308d673bf"}
+{"entry":{"date":"2026-08-26T15:37:54","ts":"7098.193386493","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"52cfe77a8963b47d28"}
+{"entry":{"date":"2026-08-26T15:38:12","ts":"7116.305660133","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"2f5f1b388e9ef358f4"}
+{"entry":{"date":"2026-08-26T15:38:21","ts":"7124.707941469","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"edfd269e1086f8f79e"}
+{"entry":{"date":"2026-08-26T15:47:12","ts":"7655.972237903","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"2b7b0413c8d9b48856"}
+{"entry":{"date":"2026-08-26T15:47:12","ts":"7655.974921067","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"ddf3ab712be1e84370"}
+{"entry":{"date":"2026-08-26T15:51:14","ts":"7898.051728703","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"980860165218d12dab"}
+{"entry":{"date":"2026-08-26T18:28:45","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-26T18:29:30","ts":"44.403888792","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"74937e7bd9a501aa74"}
+{"entry":{"date":"2026-08-26T22:41:41","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-26T22:42:26","ts":"45.410261339","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"591465ef080d8617a7"}
+{"entry":{"date":"2026-08-27T12:34:07","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-27T12:34:53","ts":"46.403127430","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f892f96ea365a303b2"}
+{"entry":{"date":"2026-08-27T12:36:57","ts":"170.683592879","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"2e34ae87f0aa2d383b"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":23}],"date":"2026-08-27T12:39:23","ts":"315.275654757","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"3b485275a9d590c630"}
+{"entry":{"date":"2026-08-27T12:39:23","ts":"316.339021792","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"458de6da18fe1418bf"}
+{"entry":{"date":"2026-08-27T12:59:51","ts":"1544.449471503","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"90eb16069cdd341d70"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":19}],"date":"2026-08-27T13:02:06","ts":"1678.582933090","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"7330c18ba39558131c"}
+{"entry":{"date":"2026-08-27T13:02:06","ts":"1679.674952639","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"9c1ef5c54508896b81"}
+{"entry":{"date":"2026-08-27T13:10:48","ts":"2201.145151003","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"aa36e86b16b4fcb016"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":32}],"date":"2026-08-27T13:12:53","ts":"2324.731001918","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"5caea3717cbcbf84bc"}
+{"entry":{"date":"2026-08-27T13:12:53","ts":"2325.807552859","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"7797f75cf3be088bef"}
+{"entry":{"date":"2026-08-27T13:33:55","ts":"3588.445701768","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"b2c831be25a08f86b7"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":28}],"date":"2026-08-27T13:36:16","ts":"3725.585916068","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"9a20a94270e4c57024"}
+{"entry":{"date":"2026-08-27T13:36:16","ts":"3729.278830575","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"903c2e414c1d1b31c5"}
+{"entry":{"date":"2026-08-27T13:44:42","ts":"4235.539493887","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"b0035152651dd5540c"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":29}],"date":"2026-08-27T13:46:56","ts":"4368.166485793","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"f6c7e7be1f3a925514"}
+{"entry":{"date":"2026-08-27T13:46:56","ts":"4369.253531712","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"db393cf67b86969a40"}
+{"entry":{"date":"2026-08-27T13:52:43","ts":"4715.861608593","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"2cbc4e29ae8e205e5a"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":23}],"date":"2026-08-27T13:54:52","ts":"4832.987935551","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"3300bc3d2cc0359119"}
+{"entry":{"date":"2026-08-27T13:54:52","ts":"4844.848222961","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"e75c1e5b85c5df2f29"}
+{"entry":{"date":"2026-08-27T13:56:35","ts":"4948.612900181","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"1fc188f892a34b44e0"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":29}],"date":"2026-08-27T13:59:29","ts":"5121.442805305","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"c7b419a667d1b4aaea"}
+{"entry":{"date":"2026-08-27T13:59:29","ts":"5122.529101180","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"ba289d0b911cfa2fa0"}
+{"entry":{"date":"2026-08-27T14:02:48","ts":"5321.095867354","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"8dbcf186f4cb8aa962"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":35}],"date":"2026-08-27T14:04:48","ts":"5440.308706354","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"5657a91259e2efcb67"}
+{"entry":{"date":"2026-08-27T14:04:48","ts":"5441.397196277","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"01899642e7a2076221"}
+{"entry":{"date":"2026-08-27T14:13:55","ts":"5988.506422766","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"63419e19c143a49929"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":27}],"date":"2026-08-27T14:16:03","ts":"6115.406648750","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"c47711af6c4a9dda89"}
+{"entry":{"date":"2026-08-27T14:16:03","ts":"6116.477023467","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"7e4f0c9c08e9139ec7"}
+{"entry":{"date":"2026-08-27T14:20:32","ts":"6385.336983668","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"c55b0cda335c05e61f"}
+{"entry":{"date":"2026-08-27T14:20:32","ts":"6385.337012960","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"d7950f5912865a0ddb"}
+{"entry":{"date":"2026-08-27T14:20:32","ts":"6385.337170302","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"24c38245191bfd97ea"}
+{"entry":{"date":"2026-08-27T14:20:32","ts":"6385.337181054","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"a739a3c7150b3824b0"}
+{"entry":{"date":"2026-08-27T14:20:32","ts":"6385.337423235","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"bc5578ce36faee6de7"}
+{"entry":{"date":"2026-08-27T14:20:32","ts":"6385.337434299","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"b0a4933d0ef87c902a"}
+{"entry":{"date":"2026-08-27T14:23:43","ts":"6576.664657069","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"e8000d41e4fb62cd2b"}
+{"entry":{"date":"2026-08-27T14:23:51","ts":"6583.793701232","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cac97d6a53435ee80a"}
+{"entry":{"date":"2026-08-27T14:25:46","ts":"6698.952684879","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"d46ce00bc1aab1bc65"}
+{"entry":{"date":"2026-08-27T14:25:50","ts":"6703.149474999","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c99741ad38e4b426f9"}
+{"entry":{"date":"2026-08-27T14:31:50","ts":"7062.977190038","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"87f439aa5ac2c5b56c"}
+{"entry":{"date":"2026-08-27T14:31:50","ts":"7062.977212550","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"7869fa3095829c651a"}
+{"entry":{"date":"2026-08-27T14:31:50","ts":"7062.977434813","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"dafb2583a33d9a6da1"}
+{"entry":{"date":"2026-08-27T14:31:50","ts":"7062.977462630","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"bfbef8a2ad646dc5ae"}
+{"entry":{"date":"2026-08-27T14:31:50","ts":"7062.977590238","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"23aa06450b1255e868"}
+{"entry":{"date":"2026-08-27T14:31:50","ts":"7062.977600798","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"2185316f6f332f8bce"}
+{"entry":{"date":"2026-08-28T11:00:38","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-28T11:01:25","ts":"46.513167253","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"ed7b227d2ed2602025"}
+{"entry":{"date":"2026-08-28T13:07:52","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-28T13:08:37","ts":"44.848955719","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"e2f79c6c8103da1e5b"}
+{"entry":{"date":"2026-08-28T17:24:55","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-28T17:25:39","ts":"44.489487198","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"8511f2382124aac9e2"}
+{"entry":{"date":"2026-08-31T11:13:38","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-31T11:14:24","ts":"46.416244074","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"9572a0a0577e7d9eeb"}
+{"entry":{"date":"2026-08-31T13:32:09","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-31T13:32:56","ts":"46.477135043","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"60fe8f0bb03e7de2a5"}
+{"entry":{"date":"2026-08-31T16:23:25","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-31T16:24:11","ts":"45.870546837","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1368a58ffe3c23b6e6"}
+{"entry":{"date":"2026-08-31T16:34:32","ts":"666.874524239","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"07f3331a12cc07044b"}
+{"entry":{"date":"2026-08-31T16:35:01","ts":"696.360524029","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"c4fd3bdf4b8d9e393a"}
+{"entry":{"date":"2026-08-31T19:29:01","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-08-31T19:29:46","ts":"45.055112922","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"91d1f93e5e560a69c4"}
+{"entry":{"date":"2026-08-31T19:32:55","ts":"234.573972388","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"d75e61a93c0800925b"}
+{"entry":{"date":"2026-09-01T11:50:50","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-01T11:51:37","ts":"46.616024655","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"f6d24f8d7457523687"}
+{"entry":{"date":"2026-09-01T11:53:34","ts":"163.816455149","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"4cb0f73fbf26edb9f1"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":33}],"date":"2026-09-01T11:55:51","ts":"300.312729232","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"d8c346c063dca95b6a"}
+{"entry":{"date":"2026-09-01T11:55:51","ts":"301.383653816","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"e528a631f00780deae"}
+{"entry":{"date":"2026-09-01T11:59:35","ts":"525.289686104","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"314b1611d2c8676f7a"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":34}],"date":"2026-09-01T12:01:40","ts":"646.325737537","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"a09fad74522604e37f"}
+{"entry":{"date":"2026-09-01T12:01:40","ts":"650.046571905","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"5ec550d39a5a1ee1c7"}
+{"entry":{"date":"2026-09-01T12:02:01","ts":"671.336258532","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"500a91770ff2a6c839"}
+{"entry":{"date":"2026-09-01T12:02:01","ts":"671.336287594","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"68f6cdc0c13e806304"}
+{"entry":{"date":"2026-09-01T12:02:01","ts":"671.336463418","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"4ff366eb1d2443a791"}
+{"entry":{"date":"2026-09-01T12:02:01","ts":"671.336474529","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"f48b6695092e975185"}
+{"entry":{"date":"2026-09-01T12:02:01","ts":"671.336918969","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"907ad9860ca2a7a9be"}
+{"entry":{"date":"2026-09-01T12:02:01","ts":"671.336929685","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"8f3877c0d2b1234fdb"}
+{"entry":{"date":"2026-09-01T12:02:03","ts":"673.251755308","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. RoCal. "},"hash":"3b76e9c50b3ec19627"}
+{"entry":{"date":"2026-09-01T12:02:03","ts":"673.251782500","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. RoCal. "},"hash":"756ab619c707251c2b"}
+{"entry":{"date":"2026-09-01T12:08:10","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-01T12:08:55","ts":"44.686772830","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"fda6c0a6f91bd54248"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.575565311","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"ad2744c3cc2dbf2dec"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.575594471","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"81211a5c38bfae7a31"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.575888552","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"7f1b57191f69db706b"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.575899855","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"69f0e7831b692fe56a"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.576011825","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"8ee9f9730e76adea1b"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.576022217","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"ecf23c2367285b913a"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.654949193","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Abort. "},"hash":"7a1bb1c46c8bd9ecec"}
+{"entry":{"date":"2026-09-01T13:18:28","ts":"4217.654978028","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Abort. "},"hash":"9c0d5083bf5c09654b"}
+{"entry":{"date":"2026-09-01T13:21:55","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-01T13:22:40","ts":"45.309580616","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"22d419368aa8e84810"}
+{"entry":{"date":"2026-09-01T13:42:12","ts":"1217.357002336","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"ba5153f2afcccf45a8"}
+{"entry":{"date":"2026-09-01T13:44:46","ts":"1371.741694854","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"e89fb473ebd215ea30"}
+{"entry":{"date":"2026-09-01T15:08:36","ts":"6401.562848316","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"c64f25a657b36370e0"}
+{"entry":{"date":"2026-09-01T15:08:36","ts":"6401.565010794","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"dff0d2095fa54b2942"}
+{"entry":{"date":"2026-09-01T15:08:52","ts":"6417.085423310","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"cfc3aa6a1b8cbf7605"}
+{"entry":{"date":"2026-09-01T15:12:21","ts":"6626.610917901","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"510beada5589291a5d"}
+{"entry":{"val":"The previous message appeared %d time(s)","data":[{"val":22}],"date":"2026-09-01T15:15:15","ts":"6799.561886431","type":"key","lvl":"INFO","id":"0x4A03"},"hash":"7dca402028094bce72"}
+{"entry":{"date":"2026-09-01T15:15:15","ts":"6800.618010567","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Hand-eye calibration end internal error,-1\r"},"hash":"610ee502a0070462f6"}
+{"entry":{"date":"2026-09-01T15:39:05","ts":"8230.290163418","type":"msg","lvl":"ERROR","id":"0x5464","val":"er,Instability detected while performing calibration call,-1\r"},"hash":"d0b4a4832f6fe35886"}
+{"entry":{"date":"2026-09-01T16:16:51","ts":"10496.693050698","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"e689d6e64a915660ba"}
+{"entry":{"date":"2026-09-01T16:16:51","ts":"10496.696974570","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"04f39e955cd17c5953"}
+{"entry":{"date":"2026-09-01T16:17:09","ts":"10514.469935599","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"9817c3e16199a3e294"}
+{"entry":{"date":"2026-09-01T16:18:36","ts":"10601.361574573","type":"msg","lvl":"WARN","id":"0x5401","val":"Application has ended, the pending motion was cancelled."},"hash":"c4e0123451998cfa3a"}
+{"entry":{"date":"2026-09-01T16:18:36","ts":"10601.365000702","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"c793e0955590e52256"}
+{"entry":{"date":"2026-09-01T16:19:28","ts":"10653.021018651","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"96696590f216282ccd"}
+{"entry":{"date":"2026-09-01T16:25:50","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-01T16:26:35","ts":"45.091078554","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"382264b0c002b26c64"}
+{"entry":{"date":"2026-09-01T16:32:51","ts":"420.778099021","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. PlateSorter~. "},"hash":"f7d60c06f9d36d357f"}
+{"entry":{"date":"2026-09-01T16:32:51","ts":"420.778128205","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. PlateSorter~. "},"hash":"858dca93c48fef3c18"}
+{"entry":{"date":"2026-09-01T16:32:51","ts":"420.778433025","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_IO. "},"hash":"077c05d5b6be7ace4d"}
+{"entry":{"date":"2026-09-01T16:32:51","ts":"420.778444509","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_IO. "},"hash":"851dddf34d9b8866b6"}
+{"entry":{"date":"2026-09-01T16:32:51","ts":"420.779348135","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Monitor_Robot. "},"hash":"09cd645e339e93db1e"}
+{"entry":{"date":"2026-09-01T16:32:51","ts":"420.779360039","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Monitor_Robot. "},"hash":"6c3fb3f2fb0fee45e3"}
+{"entry":{"date":"2026-09-01T16:37:14","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-01T16:37:58","ts":"44.631104962","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"d54480c874a58b10f0"}
+{"entry":{"date":"2026-09-01T17:15:28","ts":"2294.619388247","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Cycle. "},"hash":"9d7225f07d8899b4b1"}
+{"entry":{"date":"2026-09-01T17:15:28","ts":"2294.619506194","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Cycle. "},"hash":"018b8378dca6d853ee"}
+{"entry":{"date":"2026-09-01T17:21:14","ts":"2640.075969194","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"dd0a8793bf554a0644"}
+{"entry":{"date":"2026-09-01T17:21:14","ts":"2640.076000946","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"c3f0da9a5d4b4dbe93"}
+{"entry":{"date":"2026-09-01T17:21:26","ts":"2652.449120406","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"884e899918d1316aa4"}
+{"entry":{"date":"2026-09-01T17:21:48","ts":"2673.921387016","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"0ffcbe764431637d9b"}
+{"entry":{"date":"2026-09-02T11:26:56","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-02T11:27:43","ts":"47.100277145","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1601760c1833b7ed05"}
+{"entry":{"date":"2026-09-04T16:50:52","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-04T18:59:56","type":"run","version":"3.0.0"}}
+{"entry":{"date":"2026-09-04T19:00:49","ts":"53.041959222","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"3c22a5d05cfee17242"}
+{"entry":{"date":"2026-09-04T19:08:26","ts":"510.869617209","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"859e89f453802604e3"}
+{"entry":{"date":"2026-09-04T20:07:02","ts":"4026.087536174","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"1f46f56c50f50efbef"}
+{"entry":{"date":"2026-09-04T20:09:21","ts":"4165.190240565","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. Instruction timeout. Cycle. "},"hash":"0539ca6c5120df47e6"}
+{"entry":{"date":"2026-09-04T20:09:21","ts":"4165.190271464","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 60 Instruction timeout. Cycle. "},"hash":"37e6af794495346f26"}
+{"entry":{"date":"2026-09-04T20:11:00","ts":"4263.943498285","type":"msg","lvl":"ERROR","id":"0x5404","val":"VAL 3 runtime error. No answer from input-output.. Cycle. "},"hash":"ee3d83441319a8743e"}
+{"entry":{"date":"2026-09-04T20:11:00","ts":"4263.943573693","type":"msg","lvl":"ERROR","id":"0x5404","val":"ERR 125 No answer from input-output.. Cycle. "},"hash":"57baf862465608e4a1"}
+{"entry":{"date":"2026-09-04T20:11:24","ts":"4288.253029748","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"6d75a31401d374aa31"}
+{"entry":{"date":"2026-09-04T20:11:31","ts":"4295.349565558","type":"msg","lvl":"INFO","id":"0x5402","val":"Application 'Disk://PlateSorter' started."},"hash":"28a132d5d37a7afdfb"}
+{"entry":{"date":"2026-09-04T20:13:19","ts":"4402.989561376","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     1,6.36,1.36,0.54,0.5 ,2.16"},"hash":"708cd4f4493783d1aa"}
+{"entry":{"date":"2026-09-04T20:13:19","ts":"4402.989638559","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     1,1   ,0   ,0.8 ,   2,   5"},"hash":"f985abffc603136992"}
+{"entry":{"date":"2026-09-04T20:13:25","ts":"4409.096071450","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     2,6.1 ,1.08,0.55,0.5 ,2.15"},"hash":"cc64f838046eb24d99"}
+{"entry":{"date":"2026-09-04T20:13:25","ts":"4409.096149257","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     2,1   ,0   ,0.81,   2,   5"},"hash":"7df9eb9b72b3a68a03"}
+{"entry":{"date":"2026-09-04T20:13:30","ts":"4414.375427377","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     3,5.27,1.07,0.55,0.5 ,2.16"},"hash":"77dc47b9efec32961e"}
+{"entry":{"date":"2026-09-04T20:13:30","ts":"4414.375504031","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     3,1   ,0   ,0   ,   2,   5"},"hash":"992f712d210592d099"}
+{"entry":{"date":"2026-09-04T20:13:54","ts":"4438.660318771","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     4,6.47,1.35,0.55,0.5 ,2.15"},"hash":"60b7ba2293ca109d3c"}
+{"entry":{"date":"2026-09-04T20:13:54","ts":"4438.660394478","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     4,1   ,0   ,0.91,   2,   5"},"hash":"8ac20facaded30cf60"}
+{"entry":{"date":"2026-09-04T20:14:00","ts":"4444.800515240","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     5,6.13,1   ,0.55,0.5 ,2.15"},"hash":"1196bcfa82ab6e2a9b"}
+{"entry":{"date":"2026-09-04T20:14:00","ts":"4444.800590731","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     5,1   ,0   ,0.93,   2,   5"},"hash":"60e119e916df48dcb8"}
+{"entry":{"date":"2026-09-04T20:14:06","ts":"4449.992085342","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     6,5.19,0.98,0.55,0.5 ,2.15"},"hash":"6d398308455c3fba79"}
+{"entry":{"date":"2026-09-04T20:14:06","ts":"4449.992160451","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     6,1   ,0   ,0   ,   2,   5"},"hash":"6f168b63bd45c7e9e0"}
+{"entry":{"date":"2026-09-04T20:14:30","ts":"4474.387155750","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     7,6.44,1.35,0.55,0.5 ,2.15"},"hash":"e2c82d258bfefc79a2"}
+{"entry":{"date":"2026-09-04T20:14:30","ts":"4474.387235611","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     7,1   ,0   ,0.89,   2,   5"},"hash":"627499a12fb56f7105"}
+{"entry":{"date":"2026-09-04T20:14:36","ts":"4480.514946181","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     8,6.12,1.02,0.54,0.5 ,2.16"},"hash":"a3ab61ec4931c625fd"}
+{"entry":{"date":"2026-09-04T20:14:36","ts":"4480.515021794","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     8,1   ,0   ,0.89,   2,   5"},"hash":"3c038f106bec25fb8e"}
+{"entry":{"date":"2026-09-04T20:14:41","ts":"4485.733308727","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,     9,5.21,1.01,0.55,0.5 ,2.15"},"hash":"43040783e9fecdc50b"}
+{"entry":{"date":"2026-09-04T20:14:41","ts":"4485.733385252","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,     9,1   ,0   ,0   ,   2,   5"},"hash":"58ebd457042d4c5578"}
+{"entry":{"date":"2026-09-04T20:15:06","ts":"4510.076139107","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    10,6.43,1.35,0.55,0.5 ,2.16"},"hash":"9df6fe1d61e0e3817c"}
+{"entry":{"date":"2026-09-04T20:15:06","ts":"4510.076215018","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    10,1   ,0   ,0.88,   2,   5"},"hash":"8c4ff6bab4042496c2"}
+{"entry":{"date":"2026-09-04T20:15:12","ts":"4516.261348892","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    11,6.18,1.02,0.55,0.5 ,2.16"},"hash":"16343bb67dc7e8a4c5"}
+{"entry":{"date":"2026-09-04T20:15:12","ts":"4516.261424853","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    11,1   ,0   ,0.95,   2,   5"},"hash":"33a986a80e17fba9f5"}
+{"entry":{"date":"2026-09-04T20:15:17","ts":"4521.449267059","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    12,5.18,0.98,0.55,0.5 ,2.16"},"hash":"8bff3e50d564d214cc"}
+{"entry":{"date":"2026-09-04T20:15:17","ts":"4521.449350350","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    12,1   ,0   ,0   ,   2,   5"},"hash":"ff99eac7106f72fc8a"}
+{"entry":{"date":"2026-09-04T20:15:41","ts":"4545.860660910","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    13,6.47,1.36,0.54,0.5 ,2.16"},"hash":"592c82f7db4dd4b89b"}
+{"entry":{"date":"2026-09-04T20:15:42","ts":"4545.861170366","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    13,1   ,0   ,0.91,   2,   5"},"hash":"d246f8d25d51de6547"}
+{"entry":{"date":"2026-09-04T20:15:48","ts":"4552.015114152","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    14,6.15,1   ,0.55,0.5 ,2.15"},"hash":"095c7f10bf928cd12d"}
+{"entry":{"date":"2026-09-04T20:15:48","ts":"4552.015191394","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    14,1   ,0   ,0.95,   2,   5"},"hash":"6bd5c91e06b6460a30"}
+{"entry":{"date":"2026-09-04T20:15:53","ts":"4557.205458064","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    15,5.18,0.98,0.55,0.5 ,2.16"},"hash":"037f5678fdaa64c25f"}
+{"entry":{"date":"2026-09-04T20:15:53","ts":"4557.205535043","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    15,1   ,0   ,0   ,   2,   5"},"hash":"50d66f40eacd3948e1"}
+{"entry":{"date":"2026-09-04T20:16:16","ts":"4580.136268124","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    16,4.96,0.74,0.33,0.5 ,1.14"},"hash":"7fb1b12f4dc6566d78"}
+{"entry":{"date":"2026-09-04T20:16:16","ts":"4580.136344889","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    16,1   ,0   ,1.25,   2,   5"},"hash":"773fbd57142c447ac8"}
+{"entry":{"date":"2026-09-04T20:16:21","ts":"4584.937560437","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    17,4.79,0.56,0.33,0.5 ,1.14"},"hash":"dc8663c0d4b5e90621"}
+{"entry":{"date":"2026-09-04T20:16:21","ts":"4584.937637788","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    17,1   ,0   ,1.27,   2,   5"},"hash":"6790bb4131b1e82025"}
+{"entry":{"date":"2026-09-04T20:16:24","ts":"4588.469785255","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    18,3.52,0.56,0.33,0.5 ,1.14"},"hash":"dee7c1f61173e9f0ea"}
+{"entry":{"date":"2026-09-04T20:16:24","ts":"4588.469865282","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    18,1   ,0   ,0   ,   2,   5"},"hash":"f3202fc7ad643979ee"}
+{"entry":{"date":"2026-09-04T20:16:46","ts":"4610.434310439","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    19,4.95,0.73,0.33,0.5 ,1.14"},"hash":"5a749fc866c8b7ae65"}
+{"entry":{"date":"2026-09-04T20:16:46","ts":"4610.434435298","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    19,1   ,0   ,1.25,   2,   5"},"hash":"a9f4f78b9ce8c9e778"}
+{"entry":{"date":"2026-09-04T20:16:51","ts":"4615.221381001","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    20,4.78,0.55,0.33,0.5 ,1.14"},"hash":"31b7e327869e80c942"}
+{"entry":{"date":"2026-09-04T20:16:51","ts":"4615.221462623","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    20,1   ,0   ,1.26,   2,   5"},"hash":"1e4461554734da07c6"}
+{"entry":{"date":"2026-09-04T20:16:54","ts":"4618.753312754","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    21,3.52,0.56,0.33,0.5 ,1.13"},"hash":"59bf506e2258ab92b2"}
+{"entry":{"date":"2026-09-04T20:16:54","ts":"4618.753390838","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    21,1   ,0   ,0   ,   2,   5"},"hash":"d553c3ba7919589aef"}
+{"entry":{"date":"2026-09-04T20:17:16","ts":"4640.739053861","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    22,4.98,0.73,0.33,0.5 ,1.14"},"hash":"16ff0b9bbedc27caae"}
+{"entry":{"date":"2026-09-04T20:17:16","ts":"4640.739130972","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    22,1   ,0   ,1.28,   2,   5"},"hash":"f127df7ab8d112d874"}
+{"entry":{"date":"2026-09-04T20:17:21","ts":"4645.507058006","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    23,4.76,0.56,0.33,0.5 ,1.14"},"hash":"ac232d7a4848a4f176"}
+{"entry":{"date":"2026-09-04T20:17:21","ts":"4645.507133724","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    23,1   ,0   ,1.23,   2,   5"},"hash":"d9967a9ebca217caa4"}
+{"entry":{"date":"2026-09-04T20:17:25","ts":"4649.036659992","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    24,3.52,0.55,0.33,0.5 ,1.13"},"hash":"2559192f935933017c"}
+{"entry":{"date":"2026-09-04T20:17:25","ts":"4649.037163268","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    24,1   ,0   ,0   ,   2,   5"},"hash":"0a1b1e18d06c165299"}
+{"entry":{"date":"2026-09-04T20:17:46","ts":"4670.833195687","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    25,4.88,0.73,0.33,0.5 ,1.13"},"hash":"c2aa1052258df80f29"}
+{"entry":{"date":"2026-09-04T20:17:46","ts":"4670.833271406","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    25,1   ,0   ,1.18,   2,   5"},"hash":"c72db1328dea5f28ca"}
+{"entry":{"date":"2026-09-04T20:17:51","ts":"4675.577274362","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    26,4.74,0.56,0.33,0.5 ,1.13"},"hash":"44fc3b81bb98efb949"}
+{"entry":{"date":"2026-09-04T20:17:51","ts":"4675.577349876","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    26,1   ,0   ,1.21,   2,   5"},"hash":"545755548411fc28ac"}
+{"entry":{"date":"2026-09-04T20:17:55","ts":"4679.109501321","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    27,3.53,0.56,0.33,0.5 ,1.14"},"hash":"12b8d58a259614a309"}
+{"entry":{"date":"2026-09-04T20:17:55","ts":"4679.109579645","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    27,1   ,0   ,0   ,   2,   5"},"hash":"5a2f560ccd11cea291"}
+{"entry":{"date":"2026-09-04T20:18:17","ts":"4701.030174361","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    28,4.9 ,0.73,0.33,0.5 ,1.14"},"hash":"da1abf2fafa3febc2d"}
+{"entry":{"date":"2026-09-04T20:18:17","ts":"4701.030251065","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    28,1   ,0   ,1.2 ,   2,   5"},"hash":"f500420578d3896089"}
+{"entry":{"date":"2026-09-04T20:18:21","ts":"4705.730053601","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    29,4.69,0.56,0.33,0.5 ,1.13"},"hash":"affdd9235671e0f1c1"}
+{"entry":{"date":"2026-09-04T20:18:21","ts":"4705.730129850","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    29,1   ,0   ,1.17,   2,   5"},"hash":"d596a054400b494829"}
+{"entry":{"date":"2026-09-04T20:18:25","ts":"4709.261396840","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    30,3.52,0.56,0.33,0.5 ,1.14"},"hash":"cfaeb9dd23532cec86"}
+{"entry":{"date":"2026-09-04T20:18:25","ts":"4709.261472978","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    30,1   ,0   ,0   ,   2,   5"},"hash":"752209256e24e085c1"}
+{"entry":{"date":"2026-09-04T20:18:47","ts":"4731.097598887","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    31,4.93,0.73,0.33,0.5 ,1.14"},"hash":"11bb1ba12eb4d07735"}
+{"entry":{"date":"2026-09-04T20:18:47","ts":"4731.097799693","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    31,1   ,0   ,1.22,   2,   5"},"hash":"81945fee487ca9e9d0"}
+{"entry":{"date":"2026-09-04T20:18:52","ts":"4735.886570852","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    32,4.78,0.56,0.33,0.5 ,1.13"},"hash":"3fbf58246b09dfb5e3"}
+{"entry":{"date":"2026-09-04T20:18:52","ts":"4735.886646956","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    32,1   ,0   ,1.26,   2,   5"},"hash":"66e70af089be041749"}
+{"entry":{"date":"2026-09-04T20:18:55","ts":"4739.417650906","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    33,3.52,0.55,0.33,0.5 ,1.14"},"hash":"897121a50641230b0b"}
+{"entry":{"date":"2026-09-04T20:18:55","ts":"4739.417846529","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    33,1   ,0   ,0   ,   2,   5"},"hash":"698f59aad8b82fb7c4"}
+{"entry":{"date":"2026-09-04T20:19:17","ts":"4761.386795662","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    34,4.98,0.74,0.33,0.5 ,1.14"},"hash":"53be71e6494453bef5"}
+{"entry":{"date":"2026-09-04T20:19:17","ts":"4761.386874237","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    34,1   ,0   ,1.27,   2,   5"},"hash":"67a8b90cf2de02bf5f"}
+{"entry":{"date":"2026-09-04T20:19:22","ts":"4766.135215499","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    35,4.74,0.55,0.33,0.5 ,1.13"},"hash":"716708c79f5c28d856"}
+{"entry":{"date":"2026-09-04T20:19:22","ts":"4766.135291842","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    35,1   ,0   ,1.22,   2,   5"},"hash":"779c3744ee05b3d14e"}
+{"entry":{"date":"2026-09-04T20:19:25","ts":"4769.673177690","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    36,3.53,0.56,0.33,0.5 ,1.14"},"hash":"ebad8fd0149c9c75c6"}
+{"entry":{"date":"2026-09-04T20:19:25","ts":"4769.673254861","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    36,1   ,0   ,0   ,   2,   5"},"hash":"eb3a3d913c1fa99f70"}
+{"entry":{"date":"2026-09-04T20:19:47","ts":"4791.553513426","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    37,4.96,0.73,0.33,0.5 ,1.13"},"hash":"1f6e4a491554799b0e"}
+{"entry":{"date":"2026-09-04T20:19:47","ts":"4791.553590382","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    37,1   ,0   ,1.26,   2,   5"},"hash":"3c384f23c72b43d046"}
+{"entry":{"date":"2026-09-04T20:19:52","ts":"4796.303911761","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    38,4.74,0.56,0.33,0.5 ,1.13"},"hash":"5b91d8578a3264e5d9"}
+{"entry":{"date":"2026-09-04T20:19:52","ts":"4796.303988476","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    38,1   ,0   ,1.22,   2,   5"},"hash":"ad53ba075caf0f15dd"}
+{"entry":{"date":"2026-09-04T20:19:55","ts":"4799.833629660","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    39,3.52,0.55,0.33,0.5 ,1.14"},"hash":"c9f3209a20bab255e0"}
+{"entry":{"date":"2026-09-04T20:19:55","ts":"4799.833830514","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    39,1   ,0   ,0   ,   2,   5"},"hash":"6edf15af8574aad08e"}
+{"entry":{"date":"2026-09-04T20:20:17","ts":"4821.701278113","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    40,4.95,0.73,0.33,0.5 ,1.14"},"hash":"a863492cff13b5fd15"}
+{"entry":{"date":"2026-09-04T20:20:17","ts":"4821.701354456","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    40,1   ,0   ,1.24,   2,   5"},"hash":"724b78aca3ef8c6810"}
+{"entry":{"date":"2026-09-04T20:20:22","ts":"4826.525147003","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    41,4.82,0.56,0.33,0.5 ,1.14"},"hash":"b567803e3b794a15d2"}
+{"entry":{"date":"2026-09-04T20:20:22","ts":"4826.525226348","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    41,1   ,0   ,1.29,   2,   5"},"hash":"e2858233aa91f45cf5"}
+{"entry":{"date":"2026-09-04T20:20:26","ts":"4830.065387293","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    42,3.53,0.56,0.33,0.5 ,1.14"},"hash":"f6b2ec8e37f9299e80"}
+{"entry":{"date":"2026-09-04T20:20:26","ts":"4830.065465088","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    42,1   ,0   ,0   ,   2,   5"},"hash":"e215f0b654c5c47c84"}
+{"entry":{"date":"2026-09-04T20:20:48","ts":"4851.967449625","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    43,4.98,0.73,0.33,0.5 ,1.14"},"hash":"6862ded3ac9db31a62"}
+{"entry":{"date":"2026-09-04T20:20:48","ts":"4851.967529664","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    43,1   ,0   ,1.27,   2,   5"},"hash":"0e9a896e0731199148"}
+{"entry":{"date":"2026-09-04T20:20:52","ts":"4856.687588850","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    44,4.71,0.55,0.33,0.5 ,1.14"},"hash":"99ad3d2ac6f90d1d7c"}
+{"entry":{"date":"2026-09-04T20:20:52","ts":"4856.687797588","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    44,1   ,0   ,1.19,   2,   5"},"hash":"75c5d2e115390f452d"}
+{"entry":{"date":"2026-09-04T20:20:56","ts":"4860.216651690","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    45,3.52,0.55,0.33,0.5 ,1.13"},"hash":"83a441783a7684f1e4"}
+{"entry":{"date":"2026-09-04T20:20:56","ts":"4860.217158435","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    45,1   ,0   ,0   ,   2,   5"},"hash":"45f080bfcc551e3c3a"}
+{"entry":{"date":"2026-09-04T20:21:18","ts":"4882.149138983","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    46,5   ,0.74,0.33,0.5 ,1.14"},"hash":"27dff79f9aabbf5eb7"}
+{"entry":{"date":"2026-09-04T20:21:18","ts":"4882.149214055","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    46,1   ,0   ,1.29,   2,   5"},"hash":"788e4b20d9815d24fe"}
+{"entry":{"date":"2026-09-04T20:21:23","ts":"4886.960230246","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    47,4.8 ,0.56,0.33,0.5 ,1.14"},"hash":"a23ea215e4aab6a5d4"}
+{"entry":{"date":"2026-09-04T20:21:23","ts":"4886.960306217","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    47,1   ,0   ,1.28,   2,   5"},"hash":"b981cc58604c3198e4"}
+{"entry":{"date":"2026-09-04T20:21:26","ts":"4890.493416783","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    48,3.53,0.56,0.33,0.5 ,1.14"},"hash":"547b94896e91776a02"}
+{"entry":{"date":"2026-09-04T20:21:26","ts":"4890.493494314","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    48,1   ,0   ,0   ,   2,   5"},"hash":"183a4644037898fc02"}
+{"entry":{"date":"2026-09-04T20:21:48","ts":"4912.404250420","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    49,4.99,0.73,0.33,0.5 ,1.14"},"hash":"293f8fe8cbd705b673"}
+{"entry":{"date":"2026-09-04T20:21:48","ts":"4912.404327122","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    49,1   ,0   ,1.28,   2,   5"},"hash":"a5793d8a6c06200b83"}
+{"entry":{"date":"2026-09-04T20:21:53","ts":"4917.198283797","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    50,4.79,0.56,0.33,0.5 ,1.13"},"hash":"74d518150f7c85ec5d"}
+{"entry":{"date":"2026-09-04T20:21:53","ts":"4917.198359397","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    50,1   ,0   ,1.26,   2,   5"},"hash":"73b1fb10e43676a645"}
+{"entry":{"date":"2026-09-04T20:21:56","ts":"4920.729585868","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    51,3.52,0.56,0.33,0.5 ,1.13"},"hash":"735e79bd490b515293"}
+{"entry":{"date":"2026-09-04T20:21:56","ts":"4920.729785955","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    51,1   ,0   ,0   ,   2,   5"},"hash":"120e10961d17fd253c"}
+{"entry":{"date":"2026-09-04T20:22:18","ts":"4942.646116923","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    52,4.95,0.73,0.33,0.5 ,1.14"},"hash":"5bb236a000f1323a96"}
+{"entry":{"date":"2026-09-04T20:22:18","ts":"4942.646193662","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    52,1   ,0   ,1.24,   2,   5"},"hash":"9a4398f6a40fd78f48"}
+{"entry":{"date":"2026-09-04T20:22:23","ts":"4947.407589802","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    53,4.75,0.56,0.33,0.5 ,1.13"},"hash":"6d47864e23e03aad16"}
+{"entry":{"date":"2026-09-04T20:22:23","ts":"4947.407800819","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    53,1   ,0   ,1.23,   2,   5"},"hash":"9b119d3fee5c319aba"}
+{"entry":{"date":"2026-09-04T20:22:27","ts":"4950.937870854","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    54,3.52,0.55,0.33,0.5 ,1.13"},"hash":"c0d0ef38eb03551174"}
+{"entry":{"date":"2026-09-04T20:22:27","ts":"4950.937947724","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    54,1   ,0   ,0   ,   2,   5"},"hash":"bc762e52cee2298dd8"}
+{"entry":{"date":"2026-09-04T20:22:49","ts":"4972.872516975","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    55,4.98,0.74,0.33,0.5 ,1.14"},"hash":"06a837d02dbba0e61e"}
+{"entry":{"date":"2026-09-04T20:22:49","ts":"4972.872598489","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    55,1   ,0   ,1.28,   2,   5"},"hash":"5cb991fca2f5adf4d2"}
+{"entry":{"date":"2026-09-04T20:22:53","ts":"4977.605270170","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    56,4.73,0.56,0.33,0.5 ,1.13"},"hash":"6d59e1dcc0f830f9cf"}
+{"entry":{"date":"2026-09-04T20:22:53","ts":"4977.605351337","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    56,1   ,0   ,1.2 ,   2,   5"},"hash":"347fd37ff73e1be43e"}
+{"entry":{"date":"2026-09-04T20:22:57","ts":"4981.137075033","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    57,3.52,0.56,0.33,0.5 ,1.14"},"hash":"2bbf1389c66da63b92"}
+{"entry":{"date":"2026-09-04T20:22:57","ts":"4981.137165417","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    57,1   ,0   ,0   ,   2,   5"},"hash":"068fd3e3a4f8732b60"}
+{"entry":{"date":"2026-09-04T20:23:19","ts":"5003.005385113","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    58,4.93,0.74,0.33,0.5 ,1.14"},"hash":"9357a216e4c49b624d"}
+{"entry":{"date":"2026-09-04T20:23:19","ts":"5003.005461780","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    58,1   ,0   ,1.23,   2,   5"},"hash":"b2ff2a8d43115e7ef1"}
+{"entry":{"date":"2026-09-04T20:23:23","ts":"5007.771314904","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    59,4.76,0.56,0.33,0.5 ,1.13"},"hash":"05534e6ee1ff66b81a"}
+{"entry":{"date":"2026-09-04T20:23:23","ts":"5007.771391116","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    59,1   ,0   ,1.23,   2,   5"},"hash":"8dd03f228ecba1426c"}
+{"entry":{"date":"2026-09-04T20:23:27","ts":"5011.301177228","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    60,3.52,0.55,0.33,0.5 ,1.14"},"hash":"cdbf3663c0647fcf8b"}
+{"entry":{"date":"2026-09-04T20:23:27","ts":"5011.301254182","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    60,1   ,0   ,0   ,   2,   5"},"hash":"0ffaf4bb3a1da6de8a"}
+{"entry":{"date":"2026-09-04T20:23:49","ts":"5033.360083924","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    61,5.03,0.73,0.33,0.5 ,1.14"},"hash":"b5dc0b487d1c037722"}
+{"entry":{"date":"2026-09-04T20:23:49","ts":"5033.360159031","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    61,1   ,0   ,1.33,   2,   5"},"hash":"57f327486d64eee79a"}
+{"entry":{"date":"2026-09-04T20:23:54","ts":"5038.098076794","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    62,4.73,0.55,0.33,0.5 ,1.13"},"hash":"23c594a3c7c8a77f1e"}
+{"entry":{"date":"2026-09-04T20:23:54","ts":"5038.098152873","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    62,1   ,0   ,1.21,   2,   5"},"hash":"33ed6234e251e2b9f7"}
+{"entry":{"date":"2026-09-04T20:23:57","ts":"5041.629534541","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    63,3.52,0.56,0.33,0.5 ,1.13"},"hash":"56063f3bae038df650"}
+{"entry":{"date":"2026-09-04T20:23:57","ts":"5041.629612002","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    63,1   ,0   ,0   ,   2,   5"},"hash":"28431d657bef660c86"}
+{"entry":{"date":"2026-09-04T20:24:19","ts":"5063.596173917","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    64,4.99,0.74,0.33,0.5 ,1.14"},"hash":"40a4e8bfa1c6445e17"}
+{"entry":{"date":"2026-09-04T20:24:19","ts":"5063.596255984","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    64,1   ,0   ,1.28,   2,   5"},"hash":"3040e84afaf273c1c8"}
+{"entry":{"date":"2026-09-04T20:24:24","ts":"5068.373288406","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    65,4.77,0.55,0.33,0.5 ,1.14"},"hash":"774b72087906e632cc"}
+{"entry":{"date":"2026-09-04T20:24:24","ts":"5068.373365048","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    65,1   ,0   ,1.25,   2,   5"},"hash":"ff7e0eaa092148bb04"}
+{"entry":{"date":"2026-09-04T20:24:28","ts":"5071.905316296","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    66,3.52,0.56,0.33,0.5 ,1.13"},"hash":"d7f6f2bd23ae05b069"}
+{"entry":{"date":"2026-09-04T20:24:28","ts":"5071.905393000","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    66,1   ,0   ,0   ,   2,   5"},"hash":"efc49e3cecaa8d77d0"}
+{"entry":{"date":"2026-09-04T20:24:49","ts":"5093.813197472","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    67,4.99,0.73,0.33,0.5 ,1.14"},"hash":"b880242b7ad79fcc7f"}
+{"entry":{"date":"2026-09-04T20:24:49","ts":"5093.813273613","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    67,1   ,0   ,1.28,   2,   5"},"hash":"7b80820cf078b3660a"}
+{"entry":{"date":"2026-09-04T20:24:54","ts":"5098.631140376","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    68,4.81,0.56,0.33,0.5 ,1.13"},"hash":"4c4f78e51182cff697"}
+{"entry":{"date":"2026-09-04T20:24:54","ts":"5098.631217583","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    68,1   ,0   ,1.29,   2,   5"},"hash":"63c73a8e084e26ff67"}
+{"entry":{"date":"2026-09-04T20:24:58","ts":"5102.160580954","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    69,3.52,0.55,0.33,0.5 ,1.13"},"hash":"d5ca6ede648127d28c"}
+{"entry":{"date":"2026-09-04T20:24:58","ts":"5102.160658305","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    69,1   ,0   ,0   ,   2,   5"},"hash":"17ee1463bab4305d9a"}
+{"entry":{"date":"2026-09-04T20:25:20","ts":"5124.020614331","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    70,4.95,0.74,0.33,0.5 ,1.13"},"hash":"e07dc9f194a9391b9a"}
+{"entry":{"date":"2026-09-04T20:25:20","ts":"5124.021054598","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    70,1   ,0   ,1.25,   2,   5"},"hash":"ebc9d0bd1b173a5883"}
+{"entry":{"date":"2026-09-04T20:25:24","ts":"5128.824646397","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    71,4.8 ,0.56,0.33,0.5 ,1.13"},"hash":"44ad6d84829db40544"}
+{"entry":{"date":"2026-09-04T20:25:24","ts":"5128.825099874","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    71,1   ,0   ,1.27,   2,   5"},"hash":"d2fe3bb07e1ef9e6fa"}
+{"entry":{"date":"2026-09-04T20:25:28","ts":"5132.357453990","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    72,3.53,0.56,0.33,0.5 ,1.13"},"hash":"39eb20e778a27cc56f"}
+{"entry":{"date":"2026-09-04T20:25:28","ts":"5132.357533070","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    72,1   ,0   ,0   ,   2,   5"},"hash":"f133a295a3b84f2f2b"}
+{"entry":{"date":"2026-09-04T20:25:50","ts":"5154.258528949","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    73,4.98,0.73,0.33,0.5 ,1.13"},"hash":"14b5309f0783a9bf70"}
+{"entry":{"date":"2026-09-04T20:25:50","ts":"5154.258606578","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    73,1   ,0   ,1.28,   2,   5"},"hash":"b0539670a44c713179"}
+{"entry":{"date":"2026-09-04T20:25:55","ts":"5159.086839099","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    74,4.82,0.55,0.33,0.5 ,1.13"},"hash":"bc301fcb42616a0ee6"}
+{"entry":{"date":"2026-09-04T20:25:55","ts":"5159.086915598","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    74,1   ,0   ,1.3 ,   2,   5"},"hash":"71bb5be9afdb55a5b8"}
+{"entry":{"date":"2026-09-04T20:25:58","ts":"5162.617458309","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    75,3.52,0.55,0.33,0.5 ,1.13"},"hash":"677a25a2fd8bb0a81c"}
+{"entry":{"date":"2026-09-04T20:25:58","ts":"5162.617536836","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    75,1   ,0   ,0   ,   2,   5"},"hash":"d5a95737eab2e89128"}
+{"entry":{"date":"2026-09-04T20:26:20","ts":"5184.543312035","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    76,4.99,0.74,0.33,0.5 ,1.13"},"hash":"d2700673ed2c2d9f0a"}
+{"entry":{"date":"2026-09-04T20:26:20","ts":"5184.543388571","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    76,1   ,0   ,1.28,   2,   5"},"hash":"c2153f199410c0f99b"}
+{"entry":{"date":"2026-09-04T20:26:25","ts":"5189.303078597","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    77,4.75,0.55,0.33,0.5 ,1.13"},"hash":"f8b8d12caa3fbf8c3f"}
+{"entry":{"date":"2026-09-04T20:26:25","ts":"5189.303154675","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    77,1   ,0   ,1.23,   2,   5"},"hash":"ce5ff719f7df41676f"}
+{"entry":{"date":"2026-09-04T20:26:28","ts":"5192.833310833","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    78,3.52,0.55,0.33,0.5 ,1.14"},"hash":"3e75488ee012d97a3f"}
+{"entry":{"date":"2026-09-04T20:26:28","ts":"5192.833389193","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    78,1   ,0   ,0   ,   2,   5"},"hash":"b6f784971cfc5be5a6"}
+{"entry":{"date":"2026-09-04T20:26:50","ts":"5214.775626877","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    79,4.97,0.73,0.33,0.5 ,1.13"},"hash":"e8c5a57ee19f0cef1d"}
+{"entry":{"date":"2026-09-04T20:26:50","ts":"5214.775812694","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    79,1   ,0   ,1.27,   2,   5"},"hash":"dc3a06f5beba454d7d"}
+{"entry":{"date":"2026-09-04T20:26:55","ts":"5219.594020316","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    80,4.81,0.55,0.33,0.5 ,1.13"},"hash":"49caa8e4e30d776074"}
+{"entry":{"date":"2026-09-04T20:26:55","ts":"5219.594096635","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    80,1   ,0   ,1.29,   2,   5"},"hash":"a8f5dabab1c8dd95d7"}
+{"entry":{"date":"2026-09-04T20:26:59","ts":"5223.125408299","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    81,3.52,0.56,0.33,0.5 ,1.13"},"hash":"3e6fbbc765d2ebd1b3"}
+{"entry":{"date":"2026-09-04T20:26:59","ts":"5223.125487668","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    81,1   ,0   ,0   ,   2,   5"},"hash":"909b208cb8f9dd713a"}
+{"entry":{"date":"2026-09-04T20:27:21","ts":"5245.024407258","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    82,4.98,0.74,0.33,0.5 ,1.13"},"hash":"c98b1c2b59df844456"}
+{"entry":{"date":"2026-09-04T20:27:21","ts":"5245.024484838","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    82,1   ,0   ,1.28,   2,   5"},"hash":"5a20f26f5f57800eb6"}
+{"entry":{"date":"2026-09-04T20:27:25","ts":"5249.751439977","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    83,4.72,0.56,0.33,0.5 ,1.14"},"hash":"b898be3808ec7a309a"}
+{"entry":{"date":"2026-09-04T20:27:25","ts":"5249.751516357","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    83,1   ,0   ,1.19,   2,   5"},"hash":"605cf28cb8bb80ce7a"}
+{"entry":{"date":"2026-09-04T20:27:29","ts":"5253.281410697","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    84,3.52,0.55,0.33,0.5 ,1.13"},"hash":"f0157404be1fef8f67"}
+{"entry":{"date":"2026-09-04T20:27:29","ts":"5253.281495214","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    84,1   ,0   ,0   ,   2,   5"},"hash":"a5d72700dff6fbf61f"}
+{"entry":{"date":"2026-09-04T20:27:51","ts":"5275.187954131","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    85,4.92,0.74,0.33,0.5 ,1.13"},"hash":"6a7287efb3bf1e4607"}
+{"entry":{"date":"2026-09-04T20:27:51","ts":"5275.188031592","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    85,1   ,0   ,1.21,   2,   5"},"hash":"38167c33b5a85a9778"}
+{"entry":{"date":"2026-09-04T20:27:56","ts":"5279.970082989","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    86,4.77,0.55,0.33,0.5 ,1.13"},"hash":"c7eef5e65105a6cde3"}
+{"entry":{"date":"2026-09-04T20:27:56","ts":"5279.970159271","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    86,1   ,0   ,1.25,   2,   5"},"hash":"fd34c1f1875f8f5f3a"}
+{"entry":{"date":"2026-09-04T20:27:59","ts":"5283.501991902","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    87,3.52,0.56,0.33,0.5 ,1.14"},"hash":"4d2468545c4bc4e7b4"}
+{"entry":{"date":"2026-09-04T20:27:59","ts":"5283.502068760","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    87,1   ,0   ,0   ,   2,   5"},"hash":"9d1b7c5f87d2c8efb1"}
+{"entry":{"date":"2026-09-04T20:28:21","ts":"5305.491163799","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    88,5.01,0.74,0.33,0.5 ,1.14"},"hash":"bc8b2318d0f399a7c3"}
+{"entry":{"date":"2026-09-04T20:28:21","ts":"5305.491241967","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    88,1   ,0   ,1.3 ,   2,   5"},"hash":"affcb889e12cfc736b"}
+{"entry":{"date":"2026-09-04T20:28:26","ts":"5310.262871074","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    89,4.76,0.55,0.33,0.5 ,1.14"},"hash":"6e03689e96764c7ba9"}
+{"entry":{"date":"2026-09-04T20:28:26","ts":"5310.262948557","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    89,1   ,0   ,1.24,   2,   5"},"hash":"e130b6311caca47852"}
+{"entry":{"date":"2026-09-04T20:28:29","ts":"5313.793556264","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    90,3.52,0.55,0.33,0.5 ,1.14"},"hash":"cb815d7141a6a55526"}
+{"entry":{"date":"2026-09-04T20:28:29","ts":"5313.793639410","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    90,1   ,0   ,0   ,   2,   5"},"hash":"cd9f785a95596b03fa"}
+{"entry":{"date":"2026-09-04T20:28:51","ts":"5335.691188993","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    91,4.99,0.74,0.33,0.5 ,1.14"},"hash":"c107e1b4522faf5d5b"}
+{"entry":{"date":"2026-09-04T20:28:51","ts":"5335.691269741","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    91,1   ,0   ,1.28,   2,   5"},"hash":"9f660d0ea4a7942db7"}
+{"entry":{"date":"2026-09-04T20:28:56","ts":"5340.472125439","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    92,4.77,0.55,0.33,0.5 ,1.14"},"hash":"da44263a571e0a7398"}
+{"entry":{"date":"2026-09-04T20:28:56","ts":"5340.472201842","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    92,1   ,0   ,1.25,   2,   5"},"hash":"b2ed80c39ca9db8a53"}
+{"entry":{"date":"2026-09-04T20:29:23","ts":"5367.729157842","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,A,    93,27.25,24.28,0.33,0.5 ,1.14"},"hash":"1f9da10357b158fbf7"}
+{"entry":{"date":"2026-09-04T20:29:23","ts":"5367.729236825","type":"msg","lvl":"INFO","id":"0x5464","val":"RAIV/CSV,B,    93,1   ,0   ,0   ,   2,   5"},"hash":"8bb73ca178bda005a5"}
+{"entry":{"date":"2026-09-04T20:30:23","ts":"5426.989018034","type":"msg","lvl":"INFO","id":"0x5403","val":"Application 'Disk://PlateSorter' stopped."},"hash":"7ef0c1a2e9cadc11cd"}

@@ -1,0 +1,92 @@
+{
+  "id": "3RT51",
+  "truck_unit": "T-51",
+  "name": "Raiv-T3",
+  "arm": {
+    "model": "Staubli TX2-140 (Arm Type tx2_140-S2, Arm Version tx2_140-S2-R2)",
+    "serial": "F_24_0064095_A_002",
+    "operation_counter": 16299,
+    "source": "3RT51_SRS/RAIV_T3/Controller1/log/192.168.0.254/system.log; .../192.168.0.254/arm.json"
+  },
+  "controller": {
+    "model": "Staubli CS9",
+    "serial": "F_24_0064095_C_002",
+    "system_version": "s8.18.2cs9_BS4179",
+    "configuration_version": "c2.062.1",
+    "system_os": "3.3.1",
+    "cpu_sbl_serial": "28751944",
+    "cpt_serial": "28881831",
+    "rsi_safety_board": {"serial": "28834866", "software": "202.102", "name": "SCP855", "protocol": "FSoE"},
+    "starc": {"serial": "69659", "version": "9.3 v1.7.0", "fpga": "2023.1-26"},
+    "sp2_pendant": {"serial": "29101068", "other_serials_seen": ["29141597", "29045481"], "firmware": "3.01i", "software": "3.0.3"},
+    "dsi_serial": "29235028",
+    "ip": "192.168.0.254",
+    "safety_param_file": "tx2_140-S2_202-102.pmt2",
+    "source": "3RT51_SRS/RAIV_T3/Controller1/log/192.168.0.254/system.log (RSI/Starc/SP2 firmware lines on last page, not saved locally)"
+  },
+  "val3_version": "s8.18.2cs9_BS4179",
+  "val3_version_srs_emulator": "s8.20.2Cs9_BS4270",
+  "applications": {
+    "active": "PlateSorter",
+    "dormant": ["binpick_TiePlates"],
+    "apera_pipelines": {"PlateSorter": "RAIV_pick_belt_1", "binpick_TiePlates": "14in_tieplate"}
+  },
+  "apera": {
+    "serial": null,
+    "version": null
+  },
+  "plc": {
+    "model": "CLICK PLUS C0-10DD2E-D",
+    "ip": "192.168.0.10:502 (Modbus TCP)",
+    "program": "3RT51_ PLC V3.0 groc revision",
+    "version": "V3.0 (groc revision); earlier: V2.1 (Ver3.80)",
+    "pdf_export_date": "2026-09-22",
+    "files": ["3RT51_ PLC V2.1(Ver3.80).ckp", "3RT51_ PLC V3.0 groc revision.ckp"]
+  },
+  "hmi": {
+    "panels": [
+      {"file": "3RT51_ HMI-4 V2.1.cmpv", "size": "4.3in mini", "version": "V2.1"},
+      {"file": "3RT51_ HMI-10 V2.0.cmpv", "size": "10in in-cab", "version": "V2.0"}
+    ]
+  },
+  "metrics": {
+    "source": "Claude_project- Optimize Robot Cycle/Metrics_3RT51_F_24_0064095_C_002 (3RT51_CycleMetrics_F_24_0064095_C_002.xlsx Summary; F_24_0064095_C_002_cycles_ALL.csv)",
+    "cycles": 2587,
+    "mean_cycle_s": 5.38,
+    "mean_cycle_clean_s": 4.93,
+    "median_cycle_s": 4.62,
+    "p90_cycle_s": 6.3,
+    "best_cycle_s": 3.34,
+    "max_cycle_s": 203.38,
+    "plates_per_min_clean": 12.18,
+    "plates_per_hour_clean": 730.8,
+    "date_range": "2026-09-04T20:13:19 to 2026-09-20T23:19:12",
+    "run_sessions": 101,
+    "events_logged": 6050,
+    "median_p90_max_note": "median/p90/max computed by puller from cycles_ALL.csv; other figures from workbook Summary sheet",
+    "phase_budget_clean_mean_s": {"approach": 0.857, "linear_approach": 0.373, "tool_on": 0.5, "return": 1.508, "tool_off": 0.997, "vision_wait": 0, "finder_wait": 0.688}
+  },
+  "latest_backup": {
+    "name": "Y-2026_M-09_D-21_12h27m.OK",
+    "date": "2026-09-21"
+  },
+  "latest_code_update": {
+    "name": "RAIV_TPS_TRUCK_2026-09-28 (draft, not deployed)",
+    "date": "2026-09-28"
+  },
+  "open_issues": [
+    "LogCycleCSV.pgx and UpdateCycleWindow.pgx missing from CycleDataLogging_2026-09-04 folder though referenced by its .pjx",
+    "RAIV_TPS_TRUCK PLC-counter bundle is a draft: aiFromClick unbound, bPLCSnapshot_IOBound must be set, PLC register addresses unverified, parse_backups.py lacks RAIV/PLC entry",
+    "RAIV_TPS_TRUCK project folder lacks apera/ and interface/ subfolders",
+    "state_by_backup Seg*/AverageSec columns blank - application data never saved from SP2 before backup",
+    "No separate retreat segment; retreat folded into next cycle's approach",
+    "HMI derived efficiency percentages not historized",
+    "Error classes: motion_cancelled x30, ERR 60 Instruction timeout x22, Apera image capture error x1",
+    "Apera calibration errors (Instability detected during calibration call; Hand-eye calibration end internal error), ERR 125 No answer from input-output, ERR 532 cartesian position out of workspace seen in events log",
+    "Workbook narrative text stale (describes single 93-cycle run while Summary reports 2587 cycles)"
+  ],
+  "files_total": 341,
+  "files_pulled": 33,
+  "files_pulled_full": 24,
+  "files_pulled_partial": 9
+}

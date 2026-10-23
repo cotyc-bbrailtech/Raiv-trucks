@@ -1,0 +1,443 @@
+{
+  "version": "1.0",
+  "bindings": [
+    {
+      "id": "txt1",
+      "attribute": "value",
+      "data": "sTextTemp[\"MotorProbe1\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt1_Copy1",
+      "attribute": "value",
+      "data": "sTextTemp[\"MotorProbe2\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt1_Copy2",
+      "attribute": "value",
+      "data": "sTextTemp[\"MotorProbe3\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt1_Copy3",
+      "attribute": "value",
+      "data": "sTextTemp[\"MotorProbe4\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt1_Copy4",
+      "attribute": "value",
+      "data": "sTextTemp[\"MotorProbe5\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt1_Copy5",
+      "attribute": "value",
+      "data": "sTextTemp[\"MotorProbe6\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt1_Copy6",
+      "attribute": "value",
+      "data": "sTextTemp[\"DSI Temp\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt2",
+      "attribute": "value",
+      "data": "sPart[\"Picked\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt2_Copy1",
+      "attribute": "value",
+      "data": "sPart[\"Desired\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3",
+      "attribute": "style.visibility",
+      "data": "bTskSelected[\"Abort\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3_Copy5",
+      "attribute": "style.visibility",
+      "data": "bTskSelected[\"Cycle\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3_Copy2",
+      "attribute": "style.visibility",
+      "data": "bTskSelected[\"NONE\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3_Copy3",
+      "attribute": "style.visibility",
+      "data": "bTskSelected[\"RoCal\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3_Copy6",
+      "attribute": "style.visibility",
+      "data": "bTskStatus[\"Abort\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3_Copy8",
+      "attribute": "style.visibility",
+      "data": "bTskStatus[\"Cycle\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt3_Copy9",
+      "attribute": "style.visibility",
+      "data": "bTskStatus[\"Secondary\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"home\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy1",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"stow\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy3",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"clear\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy2",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"capture\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy4",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"start\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy5",
+      "attribute": "style.visibility",
+      "data": "bTrajectoryFound[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy6",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"end\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy7",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"accept\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy8",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"reject\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy9",
+      "attribute": "style.visibility",
+      "data": "bConveyorON[\"FWD\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "btn2",
+      "attribute": "style.visibility",
+      "data": "bRobotAT[\"home\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy10",
+      "attribute": "style.visibility",
+      "data": "diServo[\"Disable\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy12",
+      "attribute": "style.visibility",
+      "data": "diServo[\"DoorSwitch\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb1",
+      "attribute": "value",
+      "data": "nPartsFound[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt4",
+      "attribute": "value",
+      "data": "sClassID[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb2",
+      "attribute": "value",
+      "data": "nObjectCount[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt4_Copy1",
+      "attribute": "value",
+      "data": "sClassID[1]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt4_Copy2",
+      "attribute": "value",
+      "data": "sClassID[2]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb2_Copy1",
+      "attribute": "value",
+      "data": "nObjectCount[1]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb2_Copy2",
+      "attribute": "value",
+      "data": "nObjectCount[2]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb2_Copy3",
+      "attribute": "value",
+      "data": "nObjectCount[3]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt4_Copy3",
+      "attribute": "value",
+      "data": "sClassID[3]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb2_Copy4",
+      "attribute": "value",
+      "data": "nObjectCount[4]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "txt4_Copy4",
+      "attribute": "value",
+      "data": "sClassID[4]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb3",
+      "attribute": "value",
+      "data": "nMoveID[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "cbx1",
+      "attribute": "value",
+      "data": "sCamPair[0]",
+      "size": 1,
+      "direction": "rw",
+      "refresh": 1
+    },
+    {
+      "id": "txt5",
+      "attribute": "value",
+      "data": "sPipeline[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "cbx1_Copy1",
+      "attribute": "value",
+      "data": "sPipeline[0]",
+      "size": 1,
+      "direction": "rw",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy11",
+      "attribute": "style.visibility",
+      "data": "bTrajectoryLOGIC[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy13",
+      "attribute": "style.visibility",
+      "data": "bAREA[\"conveyor\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "lbl2_Copy14",
+      "attribute": "style.visibility",
+      "data": "bAREA[\"rejectstation\"]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "chkEarlyKick",
+      "attribute": "checked",
+      "data": "bEarlyBeltKick[0]",
+      "size": 1,
+      "direction": "rw",
+      "refresh": 1
+    },
+    {
+      "id": "lblEarlyKickON",
+      "attribute": "style.visibility",
+      "data": "bEarlyBeltKick[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "btn2",
+      "event": "click",
+      "data": "Apera_Restart",
+      "priority": 10
+    },
+    {
+      "id": "btn1_Copy1",
+      "event": "click",
+      "data": "Apera_TestPipeline",
+      "priority": 10
+    },
+    {
+      "id": "btn1_Copy4",
+      "event": "click",
+      "data": "apera2:apera_setup_cap",
+      "priority": 10
+    },
+    {
+      "id": "btnMetrics",
+      "event": "click",
+      "data": "ShowLRC",
+      "priority": 10
+    }
+  ],
+  "events": [
+    {
+      "id": "btn1_Copy2",
+      "event": "click",
+      "data": "bTskSelected[\"Cycle\"]",
+      "value": null
+    },
+    {
+      "id": "btn1_Copy3",
+      "event": "click",
+      "data": "bTskSelected[\"ClearPos\"]",
+      "value": null
+    },
+    {
+      "id": "btn1",
+      "event": "click",
+      "data": "bTskSelect[\"RoCal\"]",
+      "value": null
+    }
+  ]
+}

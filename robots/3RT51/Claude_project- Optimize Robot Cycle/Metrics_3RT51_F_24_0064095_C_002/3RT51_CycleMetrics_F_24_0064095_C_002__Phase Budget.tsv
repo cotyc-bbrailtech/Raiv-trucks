@@ -1,0 +1,14 @@
+Phase budget - where the cycle time goes							
+All 93 logged cycles are one continuous run (2026-09-04 20:13-20:29, seq 1-93). 'Clean' below excludes seq 93 (see Summary). There is no branch-B / feed-pass concept on this cell - PlateSorter always places to accept or reject.							
+							
+Phase	Clean mean s	% of clean cycle	All-rows mean s	Best s	Worst s	What it is	
+Approach	0.857	0.174	1.053	0.5	94.09	PartPick.pgx: the APERA-planned APPROACH move, through its waitEndMove(). Also absorbs any motion still queued from the end of the PREVIOUS cycle's PartPlace (retreat + return-to-Start) - see the CycleDataLogging_2026-09-04 bundle README for why that can't be split out without adding a new waitEndMove().	
+Linear approach	0.373	0.0757	0.374	0.26	10.62	PartPick.pgx: air-blast on + the LINEAR_APPROACH move down onto the part, through its waitEndMove(). Very consistent (0.33-0.55s) - almost pure dwell/short motion, little variance.	
+Tool on	0.5	0.1015	0.5	0.5	0.5	PartPick.pgx: the blocking call tTool("ON") itself - the Schunk EGM gripper's magnetize delay. Constant 0.50s every cycle (wait(Mag==true) + delay(0.5) inside tTool.pgx) - this is a fixed dwell, not motion.	
+Return	1.508	0.3061	1.767	0.88	130.17	PartPlace.pgx: entry through the waitEndMove() that lands the part at whichever destination (accept/reject/feed conveyor) that pick used.	
+Tool off	0.997	0.2024	0.997	0.5	1	PartPlace.pgx: the blocking call tTool("OFF") itself - the gripper's de-magnetize delay. Constant 1.00s every cycle - fixed dwell.	
+Vision wait	0	0	0	0	0	tkCycle.pgx: taskCreate "PartFinder" through wait(taskStatus==1) - the async task's launch/dispatch, not its result. Reads 0.00s every cycle - launching a task is near-instant; the real vision cost shows up as Finder wait below.	
+Finder wait	0.688	0.1398	0.683	0	6.11	tkCycle.pgx: wait(bRunning["PartFinder"]==false) after PartPlace() returns - the extra time (if any) spent waiting for the async PartFinder vision task to finish once the pick+place motion was already done. This is the real, visible cost of vision on this cell (avg ~0.8s) - it just shows up as a wait rather than inside a motion segment.	
+Phase sum	4.924	0.9995					
+Measured cycle	4.926		5.377	3.34	203.38	cycle_s directly - clock() at the top and bottom of tkCycle's if-branch.	
+Unaccounted	0.0024	0.00049				Essentially zero - the 7 segments plus the small gaps between them (queueing, not waited on) already cover the whole cycle, unlike 1RT53's coarser split. This is a much tighter accounting than 1RT53's cell, likely because PlateSorter's retreat-carry-over is small relative to its cycle time.	

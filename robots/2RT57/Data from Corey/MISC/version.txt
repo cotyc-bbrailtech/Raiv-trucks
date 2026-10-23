@@ -1,0 +1,7 @@
+{
+"info version":"2.0",
+"firmware version":"HD5.02.02.60.00",
+"wifi mac":"0441696550f1",
+"camera type":"HERO5 Black",
+"camera serial number":"C3161355977543",
+}

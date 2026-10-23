@@ -1,0 +1,47 @@
+Provenance,,,Backup contents,,,,Cycle-time state in the .dtx,,,,,Live counters,,,,,,Notes
+Backup,Build on the controller,Log events,.dtx bytes,Value elements,.dtx comments,Live data in .dtx?,Last s,10-sample avg s,100-win avg s,1000-win avg s,1000-win best s,Picks,Cap early,Cap at place,Cap deferred,Branch-B,FoV end,What changed in this build
+2026-08-25_17h52m_baseline,ORIGINAL (as-found baseline),4375,"23,850",,,no,,,,,,,,,,,,"As-found. No cycle timing, no counters."
+2026-08-26_12h45m,ORIGINAL,4383,"23,850",,,no,,,,,,,,,,,,"Carries a second project, binpick_TiePlates_REWRITE08262026, side by side."
+2026-08-26_13h49m_logsonly,ORIGINAL,4385,,,,no,,,,,,,,,,,,Log archive only - no usr/ tree in this backup.
+2026-08-26_14h13m,ORIGINAL,4385,"23,850",,,no,,,,,,,,,,,,Second project still present.
+2026-08-26_14h28m,ORIGINAL,4387,"23,850",,,no,,,,,,,,,,,,Second project still present.
+2026-08-26_14h58m,CycleTiming + CycleTimeLogging,4390,"29,089",,,no,,,,,,,,,,,,"First instrumented build: UpdateCycleWindow.pgx appears, .dtx grows 23,850 -> 29,089."
+2026-09-01_14h00m_logsonly,CycleTiming + CycleTimeLogging,4396,"29,089",,,no,,,,,,,,,,,,Log archive only.
+2026-09-01_14h42m,CycleTiming + CycleTimeLogging,4398,"29,089",271,0,no,,,,,,,,,,,,Unchanged from 14h58m.
+2026-09-01_17h50m,EarlyBeltAdvance_Rebase,4412,"30,457",274,1,no,,,,,,,,,,,,"tkCheckZone rewritten as the lift watcher (1,636 -> 4,839). nDetectorTries appears."
+2026-09-02_09h36m,BeltCameraSeq_COMPLETE,4654,"30,723",276,1,no,,,,,,,,,,,,"tkCycle 22,483 -> 28,188. Belt/camera sequencing. nPartsSettle and nFovClearTimeout_s appear."
+2026-09-02_14h14m,BeltScanParallel,4722,"35,379",279,10,no,,,,,,,,,,,,"tkBeltScan.pgx + AperaOwnSocket.pgx appear. Part_Accept 1,782 -> 4,682: the capture gate lands here."
+2026-09-02_15h26m,ScanDecouple_Fix,5021,"37,263",279,14,no,,,,,,,,,,,,Private scan arrays stop tkBeltScan corrupting nCountPlatesFound; bScanDone absorbing state fixed. nBranchBPasses and the FoV counters appear.
+2026-09-02_16h25m,EarlyTrajTrigger,5044,"39,377",280,17,no,,,,,,,,,,,,"Early trajectory trigger in tkBeltScan (15,384 -> 22,309). bEarlyTrigger, nCapEarly, nCapAtTrigPos appear."
+2026-09-02_17h43m,"EarlyTrajTrigger, data saved from SP2",5050,"53,654",775,0,YES,7.23,7.84,6.51,6.63,4.09,145,5,140,4,10,15,"THE ONLY BACKUP WITH LIVE GLOBALS. Application data saved from SP2 before the pull: <Value> 280 -> 775, .dtx 39,377 -> 53,654. Cost: all 17 .dtx comments stripped."
+2026-09-02_17h48m,CycleDataLogging,5122,"41,340",280,20,no,,,,,,,,,,,,"LogCycleCSV.pgx appears (4,439). This is the build on the controller now, and the source of the Cycle Data sheet."
+2026-09-03_09h56m,,5146,"41,340",280,20,no
+2026-09-03_13h31m,,5861,"45,917",324,20,no
+2026-09-04_10h18m,,5865,"45,917",324,20,no
+2026-09-04_11h19m,,6078,"49,238",347,20,no
+2026-09-08_11h34m,,6166,"49,238",347,20,no
+2026-09-08_14h19m,,6696,"49,238",347,20,no
+2026-09-09_09h13m,,9114,"73,467",1106,0,YES,4.70,4.52,4.65,4.79,4.19,56,0,212,0,0,0
+2026-09-09_11h51m,,15639,"81,761",1298,0,no
+2026-09-09_14h09m,,15943,"53,308",361,23,no
+2026-09-09_14h48m,,17650,"53,308",361,23,no
+2026-09-09_15h22m,,18013,"53,337",362,23,no
+2026-09-10_12h00m,,18223,"53,345",362,23,no
+2026-09-10_12h53m,,18961,"53,876",366,23,no
+2026-09-10_13h00m,,18961,"53,876",366,23,no
+2026-09-10_13h53m,,19496,"54,769",373,23,no
+2026-09-10_15h27m,,20025,"56,473",386,23,no
+2026-09-11_09h17m,,21119,"56,473",386,23,no
+2026-09-11_11h53m,,2393,"54,264",570,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-09-11_14h40m,,4544,"55,393",571,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-09-15_13h48m,,4939,"55,987",574,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-09-16_09h37m,,4942,"55,987",574,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-09-22_11h36m,,6341,"55,987",574,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-09-22_12h46m,,8145,"55,987",574,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-09-22_14h04m,,9120,"55,987",574,0,YES,65.01,11.20,11.20,11.20,3.28,10,0,11,0,2,2
+2026-10-12_14h07m,,3466,,,,no
+
+"Blank in the cycle-time and counter columns = the .dtx in that backup carries only the SHIPPED DEFAULTS (Last 4.9 s, 10-sample avg 6.22 s), not a measurement. Ordinary VAL3 globals reach a backup only when the application data is SAVED FROM SP2 first - which happened once, before the 17h43m pull. '10-sample avg' is the mean of the 10-slot _nCycleTime ring, NOT a run average - the 145-pick run's own average is the 1000-window figure, 6.63 s."
+"File size is a build fingerprint only until SP2 re-saves: the 17h43m save re-sorted <Local> declarations alphabetically and re-indented some loop bodies, changing sizes with no code change. It stripped all 17 .dtx comments, and preserved the .pgx comments exactly (tkCycle 519, tkBeltScan 249, both unchanged) - so documentation belongs in the .pgx files, never the .dtx."
+"Value elements and .dtx comments are blank where that backup is held as a zip whose .dtx is not extracted in the analysis folder - the byte size is still known. Log events is blank for 17h43m, whose logArchive.zip is a OneDrive cloud-only placeholder; hydrate it (right-click > Always keep on this device) and re-run parse_backups.py to fill it in."
+"Log events = unique entries recovered from that backup's logArchive.zip. The CS9 log is cumulative, so a newer backup contains the older entries too; the climb 4,375 -> 5,122 is new activity, not new history."

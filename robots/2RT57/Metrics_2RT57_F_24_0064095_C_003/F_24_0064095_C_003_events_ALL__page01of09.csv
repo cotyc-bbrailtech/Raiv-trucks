@@ -1,0 +1,1942 @@
+date,ts,type,lvl,id,msg,source_backup
+2019-02-14T10:12:04,,run,,,,2026-09-28_10h37m
+2019-02-14T10:12:05,,run,,,,2026-09-28_10h37m
+2019-02-14T10:12:48,44.937430545,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:49,45.882517853,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:49,46.253198626,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:50,46.411395160,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:50,46.434372843,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:50,47.010362605,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:50,47.218914777,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:50,47.225282742,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:50,47.491175419,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.304001556,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.353353138,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.450770301,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.622266333,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.638794457,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.664795806,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.679074909,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.694110785,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.699562701,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.702184903,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.715455255,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.721509534,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.726129151,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.748256443,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.758433213,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.800034133,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.810507374,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.821762241,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.837473486,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.856805179,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.857400626,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.861972430,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.897068469,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.901106735,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.972319898,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,47.983099154,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.010535803,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.029419999,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.088473534,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.121408501,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.161664482,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.249578797,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.321675581,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:51,48.340790562,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.247096923,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.286847688,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.338961268,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.446834440,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.531894901,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.680215375,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.705677136,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.730836264,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.731678058,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.744879716,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.764835969,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.780370799,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.781358018,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.787419629,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.795253717,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.795488679,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.802745729,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.842074178,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.982024988,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,48.982895612,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.055105563,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.147269627,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.158132109,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.183787219,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.190457889,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.230195994,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.251486375,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.275692323,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.277942622,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.289217743,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.326071842,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.330251778,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.471834618,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:52,49.475656795,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.285389845,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.316766371,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.328674354,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.349663414,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.391425948,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.454183539,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.454853507,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.526147097,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.526644696,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.577792908,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.609885612,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.610302844,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.621583314,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.625028248,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.635623605,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.713333461,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.756797461,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.786070471,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.801661052,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.836069827,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.857173460,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.872326787,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.931951876,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.940278912,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,49.991912905,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.019542848,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.021069845,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.079178139,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.127198975,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.175708514,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.299655804,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:53,50.444122554,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:54,50.620913221,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:55,51.237411909,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:55,51.489209691,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:55,51.882818843,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:55,51.882849695,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:55,52.035288672,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:55,52.253503963,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:55,52.253535139,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,52.411673140,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,52.411704880,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,52.434655586,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,52.434686533,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,52.455016510,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:56,53.010637339,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,53.010667999,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:56,53.012312992,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:56,53.203932683,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:57,53.316877994,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:57,53.579201528,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:57,53.659040138,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:57,53.694384365,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:57,53.694415719,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:57,53.734343163,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:57,54.010824691,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:57,54.010855866,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:57,54.233103827,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:57,54.488660880,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,54.563543244,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,54.721442784,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,54.733342754,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,54.955072387,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,55.093787146,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,55.148888450,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:58,55.158424137,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:12:58,55.158456056,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:12:59,55.467619694,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:59,55.851011267,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:59,55.866923886,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:12:59,56.021756353,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:59,56.021787696,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:12:59,56.229833738,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:13:00,56.475643231,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:13:02,59.012608345,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:02,59.012639040,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:03,59.579501787,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:03,59.579532134,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:03,60.233375758,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:03,60.233406190,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:04,60.721810092,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:04,60.721842396,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:11,67.833721628,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:13:11,67.833752936,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:13:13,69.491690862,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:13:20,77.040728534,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:13:20,77.040759949,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:13:22,79.220934913,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:22,79.220966364,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:23,79.984906009,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:23,79.984936836,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:24,80.533918175,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:24,80.533949771,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:24,81.332409149,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:24,81.332439869,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.318525233,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.318555690,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.392413464,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.392445623,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.393479194,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.393510225,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.456808422,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.456839033,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.933815785,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.933846877,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.993942173,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:25,81.993973048,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:25,82.021579834,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,82.021610961,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,82.080962006,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:25,82.080992978,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:25,82.177754018,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:25,82.177784545,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:27,83.491138118,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:27,83.491169401,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:28,84.456985668,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:28,84.457016076,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:29,85.660896439,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:29,85.661045020,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:13:30,86.666838756,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:13:30,86.666872380,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:13:32,88.579149823,key,ERROR,0x790E,Userpage: Page not found. Fullpath is '%s'.,2026-09-28_10h37m
+2019-02-14T10:13:38,95.342025307,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:13:41,97.688719112,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:13:45,101.493574700,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:45,101.493606907,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:13:48,104.863412990,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:13:48,104.863438418,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:13:50,106.750703452,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:13:54,110.848343295,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:14:06,122.836297406,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:14:08,125.024157850,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:14:09,126.385169498,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:14:09,126.385194925,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:14:26,142.850861132,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:14:26,142.850891995,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:14:47,163.614041909,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:14:47,163.614068369,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:15:08,184.859828561,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:15:11,188.176375397,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:15:12,189.138165628,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:15:12,189.138192904,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:15:12,189.185775847,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:15:12,189.185797315,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:15:17,194.305104054,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:15:19,195.683000707,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:15:20,197.063325120,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:15:23,200.029905286,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:15:23,200.029931434,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:15:24,200.958603457,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:15:25,202.124414922,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:15:48,224.659871879,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:15:50,226.897177323,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:15:51,227.354245411,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:15:51,227.786875542,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:15:51,227.786908529,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:15:56,233.062233746,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:15:56,233.062265534,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:16:01,237.698853883,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:16:02,239.188915067,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:16:10,247.354018260,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:16:23,259.457784841,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:16:23,259.457816160,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:16:31,267.504723363,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:16:32,269.284431200,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:16:33,269.701063837,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:16:33,269.701094821,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:16:41,277.760222397,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:16:42,279.356400119,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:16:42,279.356430646,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:16:44,280.743398095,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:16:55,292.022356685,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:16:55,292.022388100,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:16:55,292.022686704,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:16:55,292.022697852,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:16:55,292.023060463,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:16:55,292.023071035,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:16:56,292.631644559,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:16:56,292.631733730,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:16:59,295.778326826,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:17:02,298.984151954,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:17:02,298.984183213,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:17:02,298.985429898,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:17:02,298.985441778,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:17:02,298.994485299,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:17:02,298.994498474,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:17:05,301.486776177,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PartFinder.,2026-09-28_10h37m
+2019-02-14T10:17:05,301.486801064,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PartFinder.,2026-09-28_10h37m
+2019-02-14T10:17:10,306.929934084,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:17:22,318.468117075,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:17:22,318.468142766,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:17:24,320.392521426,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:17:24,320.392558578,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:17:24,320.394886590,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:17:26,322.670002524,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:17:26,322.670032596,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:17:26,322.670737709,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:17:27,323.537680682,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:17:27,323.537708282,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:17:27,324.037810487,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:17:27,324.038001189,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:17:27,324.040289975,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:17:27,324.040391758,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:17:27,324.041093329,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:17:27,324.042649893,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:17:31,327.981849576,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:17:32,328.682336492,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:17:32,328.682692312,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:17:32,328.683122483,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:17:33,329.375471847,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:17:33,329.375505183,msg,ERROR,0x5404,ERR 60 Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:17:41,338.167942198,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:17:49,345.448160865,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:18:07,363.227272852,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:18:07,363.229843358,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:18:10,366.526798314,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:10,366.526977651,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:10,366.528646061,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:10,367.174605458,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:10,367.174634138,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:10,367.175362663,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:11,367.482388034,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:11,367.482416689,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:11,367.982502589,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:11,367.982996659,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:11,367.985364511,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:11,367.985465190,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:11,367.986649932,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:11,367.987715371,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:12,369.050409690,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:18:13,369.751104837,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:13,369.751451056,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:18:13,369.752006025,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:24,380.600432174,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:24,380.600458873,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:24,380.602672525,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:25,381.318483148,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:25,381.318511359,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:25,381.319125525,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:25,381.658263311,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:25,381.658291055,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:25,382.158380832,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:25,382.158772220,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:25,382.161106132,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:25,382.161205382,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:25,382.162360831,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:25,382.163274939,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:27,383.302538568,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:18:27,384.003155510,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:27,384.003496892,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:18:27,384.004046351,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:36,392.879064267,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:36,392.879090895,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:36,392.881241452,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:37,393.610576924,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:37,393.610606359,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:37,393.611269539,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:37,393.902311179,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:37,393.902339091,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:38,394.402575017,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:38,394.402745955,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:38,394.405696484,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:38,394.405796358,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:38,394.407103924,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:38,394.407941265,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:39,395.474431413,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:18:39,396.175463190,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:39,396.175789397,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:18:39,396.176298847,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:40,396.898444506,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:40,396.898470138,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:40,396.901530577,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:41,397.554598086,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:41,397.554626646,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:41,397.555267746,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:41,397.794470339,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:41,397.794499606,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:42,398.295230346,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:42,398.295423761,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:42,398.298703687,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:42,398.298953284,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:42,398.299592861,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:42,398.300480104,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:43,399.486385952,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:18:43,400.187047155,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:43,400.187391899,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:18:43,400.187806205,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:44,400.918558157,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:44,400.918584065,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:44,400.921624861,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:45,401.578375593,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:45,401.578402963,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:45,401.579050507,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:45,401.818684579,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:45,401.818713438,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:46,402.319163877,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:46,402.319372651,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:46,402.322534594,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:46,402.322641152,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:46,402.323440257,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:46,402.324341875,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:47,403.526596885,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:18:47,404.227058577,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:47,404.227409682,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:18:47,404.227944697,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:48,405.049311313,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:48,405.049337569,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:48,405.052334656,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:52,408.739390906,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:18:52,408.739415854,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:18:53,409.994556293,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:53,409.994584241,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:53,409.995241230,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:54,410.314710822,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:54,410.314739993,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:54,410.815035523,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:54,410.815459707,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:54,410.818532513,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:54,410.818636721,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:54,410.819977804,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:54,410.820691648,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:55,412.006386745,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:18:56,412.706731241,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:56,412.707191614,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:18:56,412.707577505,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:57,413.437375268,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:57,413.437401811,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:57,413.440647476,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:18:57,414.066439848,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:18:57,414.066468840,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:18:57,414.067172078,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:18:58,414.358558353,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:18:58,414.358586613,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:18:58,414.858797546,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:58,414.859409897,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:18:58,414.862444914,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:58,414.862548583,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:18:58,414.863539248,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:18:58,414.864382016,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:18:59,416.130282716,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:19:00,416.830566279,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:00,416.831023184,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:19:00,416.831410750,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:01,417.619588214,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:01,417.619614447,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:01,417.622960987,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:01,418.246563690,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:02,418.246592406,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:02,418.247300780,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:02,418.538479659,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:02,418.538508279,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:02,418.744348773,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:19:02,419.038735439,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:02,419.039309980,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:02,419.042457045,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:02,419.042560758,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:02,419.043703209,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:02,419.044551426,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:04,420.306298777,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:19:04,421.007278658,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:04,421.007601369,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:19:04,421.008110759,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:05,421.780767502,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:05,421.780793662,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:05,421.784149850,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:06,422.402473369,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:06,422.402502001,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:06,422.403202117,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:06,422.694550961,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:06,422.694578885,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:06,423.195113609,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:06,423.195296234,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:06,423.199020401,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:06,423.199124572,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:06,423.199943753,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:06,423.200656140,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:08,424.422375817,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:19:08,425.123294785,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:08,425.123625497,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:19:08,425.124147679,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:09,425.970406358,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:09,425.970432805,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:09,425.973287531,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:10,426.570655241,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:10,426.570684064,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:10,426.571389437,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:10,426.862396770,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:10,426.862424682,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:11,427.362729038,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:11,427.363315292,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:11,427.365731123,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:11,427.366326770,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:11,427.367351424,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:11,427.368184356,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:11,427.502711232,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:19:12,428.582606889,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:19:13,429.283110878,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:13,429.283437585,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:19:13,429.283946028,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:13,429.503871654,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:19:13,429.935609839,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:19:13,430.126762465,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:13,430.126788000,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:13,430.129236274,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:14,430.710328223,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:14,430.710356663,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:14,430.711064465,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:14,431.002638956,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:14,431.002667263,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:15,431.503134742,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:15,431.503559511,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:15,431.506665076,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:15,431.506768431,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:15,431.507540488,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:15,431.508382074,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:16,432.653918480,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:19:21,437.696388383,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:19:27,443.696666210,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:19:27,443.696691481,msg,ERROR,0x5404,ERR 60 Instruction timeout. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:19:34,450.846919583,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:19:34,450.846946175,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:19:36,452.868369428,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:36,452.868396595,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:36,452.871089049,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:37,453.514507365,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:37,453.514535673,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:37,453.515209080,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:37,453.818479343,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:37,453.818507940,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:38,454.318667910,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:38,454.319206245,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:38,454.321170255,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:38,454.321270238,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:38,454.322412947,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:38,454.323281220,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:39,455.502307446,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:19:39,456.202783274,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:39,456.203245223,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:19:39,456.203630492,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:40,457.058700775,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:40,457.058726167,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:40,457.060322538,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:41,457.550793943,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:41,457.550952043,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:41,457.551476371,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:41,457.850690716,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:41,457.850720439,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:42,458.350966179,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:42,458.351300616,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:42,458.353311243,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:42,458.353410050,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:42,458.354650735,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:42,458.355514922,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:43,459.450964537,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:19:43,459.504034897,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:19:43,459.504059833,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:19:43,460.151446571,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:43,460.151773112,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:19:43,460.152284436,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:44,461.014357554,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:44,461.014383150,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:44,461.015975623,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:19:48,464.755965662,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:19:48,464.755991605,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:19:49,465.830400975,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:19:49,465.830429043,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:19:49,465.831091275,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:19:49,466.130584828,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:19:49,466.130613627,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:19:50,466.631142748,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:50,466.631469263,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:19:50,466.633424489,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:50,466.633523092,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:19:50,466.634787436,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:19:50,466.635643554,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:19:58,474.488187355,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:19:58,474.488221158,msg,ERROR,0x5404,ERR 60 Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:20:01,478.092224245,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:20:07,483.336070241,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:07,483.336096737,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:07,483.338417084,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:08,484.602267834,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:08,484.602294977,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:08,484.602801583,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:08,485.070634796,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:08,485.070663897,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:09,485.570769202,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:09,485.571083250,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:09,485.573097219,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:09,485.573195894,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:09,485.574647227,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:09,485.575578990,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:10,487.146539809,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:11,487.847053749,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:11,487.847411681,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:11,487.847945160,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:13,490.161164389,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:20:14,490.959039191,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:20:14,490.959061186,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:20:14,490.959211699,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:20:14,490.959222583,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:20:14,490.959854399,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:20:14,490.959865979,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:20:15,492.011740772,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:15,492.011766668,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:15,492.016118501,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:16,492.706801200,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:16,492.706958938,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:16,492.707449441,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:16,493.018332822,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:16,493.018360433,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:17,493.518440192,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:17,493.519296742,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:17,493.522772896,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:17,493.523021459,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:17,493.523774023,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:17,493.524669444,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:18,494.918363926,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:19,495.618983744,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:19,495.619330479,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:19,495.619745650,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:20,496.533677858,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:20,496.533703657,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:20,496.537415454,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:20,497.170433835,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:20,497.170462130,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:20,497.171182383,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:21,497.462408438,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:21,497.462436578,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:21,497.962761848,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:21,497.963097017,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:21,497.966416361,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:21,497.966520508,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:21,497.967368524,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:21,497.968260675,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:22,499.118421110,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:23,499.819105210,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:23,499.819458294,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:23,499.819998672,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:24,500.526552601,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:24,500.526579048,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:24,500.529037321,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:24,501.074504645,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:24,501.074532737,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:24,501.075263154,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:25,501.378337669,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:25,501.378366228,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:25,501.878451474,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:25,501.878630582,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:25,501.881194884,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:25,501.881295553,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:25,501.882474299,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:25,501.883345343,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:26,502.926507803,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:27,503.627925550,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:27,503.628255342,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:27,503.628637513,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:33,509.275589498,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:33,509.275615549,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:33,509.277710256,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:33,510.042632944,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:33,510.042663747,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:33,510.043337261,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:34,510.314382195,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:34,510.314411428,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:34,510.814956068,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:34,510.815135454,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:34,510.818503472,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:34,510.818608795,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:34,510.819333693,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:34,510.820230297,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:35,511.958806185,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:36,512.659363908,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:36,512.659707885,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:36,512.660251989,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:37,513.525699970,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:37,513.525725889,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:37,513.527552870,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:37,514.022613255,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:37,514.022642570,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:37,514.023373454,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:38,514.322491969,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:38,514.322520253,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:38,514.822955034,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:38,514.823131878,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:38,514.825231594,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:38,514.825331876,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:38,514.826713582,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:38,514.827565817,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:39,515.890448915,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:40,516.591222321,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:40,516.591545161,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:40,516.592050052,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:44,520.965711724,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:44,520.965738220,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:44,520.969384511,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:45,521.794383239,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:45,521.794411426,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:45,521.795109840,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:45,522.070414554,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:45,522.070443810,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:46,522.263253214,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:20:46,522.263279962,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:20:46,522.570960892,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:46,522.571458142,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:46,522.574614230,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:46,522.574718293,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:46,522.575711007,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:46,522.576606636,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:47,523.894425268,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:48,524.595168915,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:48,524.595513894,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:48,524.596053199,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:49,525.444531525,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:49,525.444557396,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:49,525.447383270,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:49,525.991765657,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:49,525.991791901,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:49,525.994521484,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:49,526.078416298,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:49,526.078444041,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:49,526.079141749,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:50,526.354566260,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:50,526.354594640,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:50,526.854667423,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:50,526.855004474,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:50,526.858338256,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:50,526.858442822,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:50,526.859414701,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:50,526.860313416,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:51,527.998460010,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:52,528.322090527,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:52,528.322119747,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:52,528.322830062,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:52,528.699050300,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:52,528.699402950,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:52,528.699939390,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:52,529.177851878,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:52,529.177880439,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:53,529.678142814,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:53,529.678457115,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:53,529.680596177,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:53,529.680697227,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:53,529.681890218,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:53,529.682806164,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:54,530.729068234,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:54,530.729093878,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:54,530.731218531,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:20:55,531.266411920,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:20:55,531.266439532,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:20:55,531.267096573,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:20:55,531.562243378,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:20:55,531.562271961,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:20:55,531.985135134,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:20:55,531.986836644,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:20:55,532.062448720,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:55,532.062627804,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:20:55,532.065115172,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:55,532.065220256,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:55,532.066423180,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:55,532.067334119,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:20:56,532.463023561,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:20:56,533.175070971,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:57,533.713730298,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:20:57,533.875647130,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:57,533.876111729,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:57,533.876530299,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:58,534.414403764,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:20:58,534.414748304,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:20:58,534.415164712,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:20:58,535.238842836,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:21:01,537.953302389,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:01,537.953328693,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:01,537.956138862,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:02,538.518595701,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:02,538.518625040,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:02,538.519353514,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:02,538.818262107,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:02,538.818290559,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:03,539.318979007,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:03,539.319429303,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:03,539.321716391,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:03,539.322292620,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:03,539.323114438,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:03,539.324009574,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:03,539.684151968,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:21:03,539.684177816,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:21:04,540.470371580,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:04,540.828730190,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:21:04,541.171041002,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:04,541.171385887,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:04,541.171803407,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:04,541.236974660,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:21:08,544.407645230,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:08,544.407671990,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:08,544.411024066,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:08,544.978433088,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:08,544.978461887,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:08,544.979180044,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:08,545.398260770,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:21:09,545.282545961,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:09,545.282575528,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:09,545.783146805,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:09,545.783608473,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:09,545.786536830,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:09,545.786640113,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:09,545.787366563,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:09,545.788268659,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:10,546.982475370,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:11,547.682801968,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:11,547.683276433,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:11,547.683692062,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:14,551.064661666,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:21:17,553.756543534,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:17,553.756569838,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:17,553.758679802,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:18,554.458391919,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:18,554.458420346,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:18,554.459073641,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:18,554.742487754,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:18,554.742516026,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:18,555.242781918,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:18,555.243101606,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:19,555.245409045,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:19,555.245507960,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:19,555.245776839,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:19,555.247474614,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:19,555.600243450,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:21:20,556.390604869,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:20,556.650063272,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:21:20,557.091437344,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:20,557.091763210,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:20,557.092275024,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:23,559.899935693,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:23,559.899960941,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:23,559.901151734,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:24,560.466513281,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:24,560.466541721,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:24,560.467187070,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:24,560.754579505,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:24,560.754608149,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:24,561.254963277,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:25,561.255143790,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:25,561.257502486,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:25,561.257600548,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:25,561.258982617,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:25,561.259747137,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:26,562.342266092,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:26,563.042788272,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:26,563.043270198,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:26,563.043687806,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:27,563.720798725,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:27,563.720954962,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:27,563.723544359,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:27,564.254273958,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:28,564.254302002,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:28,564.254796419,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:28,564.578512054,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:28,564.578540758,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:28,565.078610579,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:28,565.078782813,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:28,565.081211293,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:28,565.081311563,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:28,565.082584565,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:28,565.083491583,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:29,566.110390187,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:30,566.811523449,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:30,566.811983665,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:30,566.812403621,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:31,567.501040405,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:31,567.501065341,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:31,567.504725991,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:31,568.122335086,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:31,568.122363442,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:31,568.123081933,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:32,568.430425519,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:32,568.430454534,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:32,568.781877065,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:21:32,568.930537204,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:32,568.930713900,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:32,568.933763236,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:32,568.934363505,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:32,568.935112932,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:32,568.935951768,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:33,570.030337043,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:34,570.731021467,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:34,570.731356191,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:34,570.731739191,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:35,571.351506774,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:35,571.351532562,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:35,571.353802532,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:35,571.890292343,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:35,571.890320890,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:35,571.891028472,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:35,572.182579776,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:35,572.182608119,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:36,572.683299648,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:36,572.683476200,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:36,572.686288527,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:36,572.686394271,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:36,572.687260039,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:36,572.688160938,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:37,573.774667281,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:38,574.475348492,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:38,574.475688733,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:38,574.476228881,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:39,575.317670916,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:39,575.317697891,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:39,575.319586879,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:39,575.802313601,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:39,575.802341548,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:39,575.802776724,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:39,576.114311927,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:39,576.114339059,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:40,576.614472717,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:40,576.614646486,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:40,576.617112935,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:40,576.617211610,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:40,576.618292679,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:40,576.619161599,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:41,577.638527196,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:41,577.748058987,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:21:42,578.339208488,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:42,578.339527528,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:42,578.340033094,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:46,582.814694735,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:46,582.814722106,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:46,582.817379785,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:21:47,583.526617754,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:21:47,583.526646541,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:21:47,583.527240436,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:21:47,583.854443793,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:21:47,583.854472148,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:21:48,584.354956612,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:48,584.355141396,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:21:48,584.357740400,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:48,584.358333279,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:48,584.359070406,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:48,584.359786351,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:21:49,585.454409102,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:21:49,586.155270071,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:21:49,586.155592637,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:21:49,586.156102663,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:21:51,587.601507723,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:21:51,587.601533594,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:22:02,598.667025896,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:02,598.667052655,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:02,598.669690106,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:22:03,599.434314165,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:22:03,599.434341237,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:03,599.434985748,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:22:03,599.714413771,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:22:03,599.714442715,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:22:03,600.214767440,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:03,600.215082976,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:03,600.218383367,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:03,600.218487201,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:04,600.219569774,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:22:04,600.220463005,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:22:05,601.342408042,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:22:05,602.042947319,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:22:05,602.043294558,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:22:05,602.043710785,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:06,602.964954930,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:22:09,605.279168587,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:22:16,612.461716346,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:16,612.461743118,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:16,612.464661871,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:22:16,613.114526844,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:22:16,613.114556664,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:16,613.115212537,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:22:17,613.430706397,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:22:17,613.430735653,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:22:17,613.919012076,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:22:17,613.931064339,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:17,613.931504926,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:17,613.933694152,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:17,613.933792539,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:17,613.935148508,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:22:17,613.935985162,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:22:18,615.102579366,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:22:18,615.232009710,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:22:19,615.232032198,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:22:19,615.803171675,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:22:19,615.803494541,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:22:19,615.804010808,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:20,616.606361435,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:20,616.606386911,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:20,616.607667038,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:22:20,617.114280485,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:22:20,617.114307905,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:20,617.114954493,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:22:20,617.206834206,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:22:21,617.398598716,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:22:21,617.398627096,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:22:21,617.898697218,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:21,617.899015453,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:21,617.900972563,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:21,617.901071694,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:21,617.901781055,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:22:21,617.903133861,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:22:22,618.982589170,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:22:23,619.682958963,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:22:23,619.683298905,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:22:23,619.683681627,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:24,620.521677072,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:24,620.521703688,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:24,620.523924334,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:22:24,621.078326705,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:22:24,621.078354617,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:22:24,621.078943242,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:22:25,621.418534655,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:22:25,621.418564163,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:22:25,621.919177456,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:25,621.919363226,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:22:25,621.922430688,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:25,621.922533995,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:22:25,621.923369967,msg,INFO,0x5464,ACCEPT BIN FULL: Triggering Overflow Logic,2026-09-28_10h37m
+2019-02-14T10:22:26,622.761396677,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:22:30,626.748942082,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:23:04,660.602718055,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:23:07,664.194868030,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:23:10,666.787485294,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:10,666.788021265,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:11,668.234457575,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:11,668.234484011,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:11,668.236060092,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:12,668.778430334,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:12,668.778458221,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:12,668.779159085,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:12,668.945689588,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:23:12,669.070543717,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:12,669.070572708,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:13,669.571009109,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:13,669.571228573,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:13,669.573300565,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:13,669.573398100,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:13,669.574994619,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:13,669.575755167,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:14,670.690489959,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:15,671.390985926,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:15,671.391334499,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:15,671.391748327,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:17,673.416116468,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:17,673.416142615,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:17,673.417756933,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:17,673.982527590,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:17,673.982555897,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:17,673.983209181,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:18,674.266406956,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:18,674.266434988,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:18,674.766505997,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:18,674.766671474,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:18,674.769269892,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:18,674.769369898,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:18,674.769609631,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:18,674.771491720,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:19,675.830256148,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:19,675.914835313,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:23:20,676.530794958,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:20,676.531285143,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:20,676.531700915,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:24,680.270434288,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:24,680.270460303,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:24,680.273570639,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:24,680.838393476,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:24,680.838422072,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:24,680.839101164,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:24,681.146376219,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:24,681.146404515,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:25,681.504875095,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:23:25,681.646505307,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:25,681.647172068,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:25,681.649667318,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:25,681.649767961,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:25,681.651031512,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:25,681.651747069,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:26,682.890389500,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:27,683.591488798,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:27,683.591946149,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:27,683.592337441,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:27,684.299933771,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:23:30,686.716204834,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:30,686.716230754,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:30,686.719463132,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:31,687.342483820,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:31,687.342512308,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:31,687.343204411,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:31,687.610358985,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:31,687.610386645,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:31,688.111121890,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:31,688.111673748,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:31,688.114579984,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:31,688.114685522,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:31,688.115516894,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:31,688.116408670,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:33,689.398578804,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:33,690.099369516,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:33,690.099710371,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:33,690.100258040,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:35,691.585197141,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:35,691.585222677,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:35,691.588979093,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:35,692.154374072,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:35,692.154402248,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:35,692.155031903,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:36,692.466282994,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:36,692.466310989,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:36,692.966981120,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:36,692.967160601,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:36,692.969741485,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:36,692.970358433,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:36,692.971217850,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:36,692.972063693,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:37,694.030525217,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:38,694.730962387,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:38,694.731283056,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:38,694.731665872,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:39,695.506265736,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:39,695.506290503,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:39,695.509576331,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:39,696.094465432,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:39,696.094493991,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:39,696.095128446,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:40,696.406501832,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:40,696.406530703,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:40,696.906641096,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:40,696.906952156,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:40,696.909718523,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:40,696.910304763,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:40,696.911327645,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:40,696.912158553,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:41,697.970549075,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:42,698.671670857,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:42,698.672113650,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:42,698.672500752,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:46,702.729715480,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:46,702.729743763,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:46,702.731465738,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:47,703.386440670,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:47,703.386468330,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:47,703.387134752,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:47,703.678442574,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:47,703.678471386,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:47,704.179086411,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:47,704.179257468,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:47,704.181372493,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:47,704.181472368,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:47,704.182706989,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:47,704.183567453,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:48,705.202614062,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:49,705.903726312,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:49,705.904177687,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:49,705.904566616,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:50,706.702734758,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:50,706.702760006,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:50,706.706565818,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:51,707.346471652,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:51,707.346500224,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:51,707.347218086,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:51,707.646511659,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:51,707.646539522,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:51,708.146988472,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:51,708.147184488,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:51,708.150516680,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:51,708.150621847,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:51,708.151636821,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:52,708.152523423,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:53,709.314330119,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:53,710.015115447,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:53,710.015460489,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:53,710.015996110,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:54,710.681342889,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:54,710.681368688,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:54,710.684501850,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:55,711.262578209,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:55,711.262606732,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:55,711.263257151,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:55,711.518260766,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:55,711.518288305,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:55,712.018780211,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:55,712.019089062,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:55,712.021624354,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:55,712.021723881,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:55,712.023195204,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:55,712.024095134,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:23:56,713.162644894,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:23:57,713.863061118,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:57,713.863410649,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:23:57,713.863948443,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:58,714.601203388,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:58,714.601229056,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:58,714.603292240,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:23:58,715.082543500,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:23:58,715.082570967,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:23:58,715.083292095,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:23:59,715.382348223,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:23:59,715.382375943,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:23:59,715.882760019,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:59,715.883091861,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:23:59,715.885114102,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:59,715.885214181,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:23:59,715.886390192,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:23:59,715.887313388,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:00,716.966312289,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:01,717.667351949,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:01,717.667695682,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:01,717.668237724,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:02,718.464492573,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:02,718.464519225,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:02,718.467346760,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:02,719.026802922,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:02,719.026960840,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:02,719.027535931,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:03,719.326415949,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:03,719.326443956,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:03,719.826975467,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:03,719.827152358,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:03,719.829582599,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:03,719.829681010,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:03,719.831010011,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:03,719.831785537,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:04,720.651286052,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:24:04,720.651311984,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:24:04,720.866326726,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:05,721.566727195,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:05,721.567212503,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:05,721.567632664,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:06,722.261649787,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:06,722.261675490,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:06,722.264382084,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:06,722.822351984,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:06,722.822380028,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:06,722.823087584,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:06,723.110314027,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:06,723.110342323,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:07,723.611174141,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:07,723.611359574,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:07,723.614286003,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:07,723.614401405,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:07,723.615133357,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:07,723.615972413,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:08,724.754437493,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:09,725.454668819,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:09,725.455137234,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:09,725.455526174,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:10,726.710413059,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:24:11,727.602320157,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:11,727.602345404,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:11,727.603575026,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:11,728.130806200,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:11,728.130958478,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:11,728.131464346,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:12,728.414335650,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:12,728.414363789,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:12,728.914804348,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:12,728.915108364,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:12,728.917594377,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:12,728.917693640,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:12,728.919165364,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:12,728.919996901,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:13,729.978324050,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:14,730.679024623,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:14,730.679357906,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:14,730.679740628,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:15,731.456227681,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:15,731.456253913,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:15,731.458373420,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:15,731.885480653,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:24:15,731.986525511,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:15,731.986553291,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:15,731.987205830,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:16,732.278249024,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:16,732.278277500,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:16,732.778701562,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:16,732.779010281,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:16,732.782241610,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:16,732.782360779,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:16,732.783100027,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:16,732.784000005,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:17,733.826541725,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:18,734.527032557,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:18,734.527385245,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:18,734.527800956,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:19,736.172523826,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:19,736.172549482,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:19,736.176299226,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:20,736.778770849,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:20,736.778799348,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:20,736.779419945,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:20,737.098547058,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:20,737.098575797,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:21,737.599048749,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:21,737.599483167,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:21,737.602745402,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:21,737.602996150,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:21,737.603579736,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:21,737.604438337,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:22,738.830265125,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:23,739.530987453,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:23,739.531316523,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:23,739.531698356,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:24,740.490246323,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:24,740.490271127,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:24,740.494754443,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:24,741.110457742,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:24,741.110485101,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:24,741.111152354,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:25,741.402726240,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:25,741.402756324,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:25,741.903147687,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:25,741.903682986,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:25,741.907035006,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:25,741.907139740,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:25,741.908068802,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:25,741.908780138,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:25,742.115209257,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:24:26,743.178419725,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:27,743.878962740,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:27,743.879285546,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:27,743.879668615,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:28,744.834349885,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:28,744.834375361,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:28,744.838359640,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:29,745.462564614,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:29,745.462594542,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:29,745.463247896,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:29,745.738528937,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:29,745.738556393,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:29,746.239013629,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:29,746.239474711,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:30,746.242701674,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:30,746.242804908,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:30,746.244043914,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:30,746.244759933,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:31,747.538343224,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:31,748.238662004,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:31,748.239130310,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:32,748.239518146,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:40,757.261868249,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:24:41,758.244605547,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:41,758.244633386,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:42,758.247329358,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:42,758.958551210,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:42,758.958580597,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:42,758.959227113,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:42,759.250563096,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:43,759.250590683,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:43,759.751270979,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:43,759.751440524,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:43,759.754751360,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:43,759.755005494,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:43,759.755657462,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:43,759.756564154,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:44,760.822796116,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:45,761.523642493,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:45,761.524122042,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:45,761.524542934,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:47,763.886623970,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:24:47,763.886648989,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:24:50,766.561693220,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:24:50,766.656723525,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:50,766.656750020,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:50,766.661455947,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:51,767.462502258,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:51,767.462530877,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:51,767.463226749,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:51,767.742415939,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:51,767.742444018,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:51,768.243002717,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:51,768.243443337,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:52,768.246987132,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:52,768.247093402,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:52,768.247776960,msg,INFO,0x5464,10. Sweeping to Reject Bin,2026-09-28_10h37m
+2019-02-14T10:24:52,768.249131513,msg,INFO,0x5464,11. Hitting waitEndMove() for Reject Drop,2026-09-28_10h37m
+2019-02-14T10:24:54,770.258262773,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:54,770.958709242,msg,INFO,0x5464,13. Retreating from Reject Bin,2026-09-28_10h37m
+2019-02-14T10:24:54,770.959536967,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:54,770.960064948,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:54,770.960091384,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:54,770.960101776,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:54,770.962441355,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:24:56,772.682487560,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:24:56,772.682515304,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:56,772.683128090,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:24:56,772.808343054,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:24:56,772.986435861,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:24:56,772.986464073,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:24:57,773.486666667,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:57,773.486986799,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:24:57,773.489437216,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:57,773.489538087,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:57,773.490604874,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:57,773.491475966,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:24:57,773.975844322,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:24:57,773.975870157,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:24:58,774.686565348,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:24:59,775.387192629,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:24:59,775.387522313,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:24:59,775.388033866,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:59,776.092396690,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:24:59,776.092421890,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:24:59,776.093785285,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:00,776.614615488,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:00,776.614644216,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:00,776.615305915,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:00,776.761586449,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:25:00,776.918509702,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:00,776.918538598,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:01,777.419229106,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:01,777.419617506,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:01,777.421484754,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:01,777.421585564,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:01,777.422686199,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:01,777.423611120,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:02,778.574460458,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:03,779.274655389,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:03,779.275139835,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:03,779.275559435,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:03,780.028535543,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:03,780.028561007,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:03,780.030801806,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:04,780.586519339,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:04,780.586547563,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:04,780.587214923,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:04,780.902390980,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:04,780.902419947,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:05,781.402575145,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:05,781.403039705,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:05,781.405285043,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:05,781.405384126,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:05,781.406807745,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:05,781.407663811,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:06,782.574482707,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:07,783.275018520,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:07,783.275347300,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:07,783.275730307,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:07,784.003173482,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:07,784.003199306,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:07,784.004638609,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:08,784.466518913,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:08,784.466546116,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:08,784.467220482,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:08,784.762444225,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:08,784.762473253,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:09,785.262663228,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:09,785.262966848,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:09,785.265582260,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:09,785.265682134,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:09,785.267142288,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:09,785.267973736,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:10,786.286646915,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:10,786.987476720,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:10,786.987800235,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:10,786.988313657,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:11,787.690805907,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:11,787.690971324,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:11,787.692566862,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:11,787.740558193,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:25:11,788.182662560,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:11,788.182691948,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:11,788.183362330,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:12,788.494426370,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:12,788.494454102,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:12,788.994763813,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:12,788.995092499,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:12,788.997350972,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:12,788.997449635,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:12,788.998539943,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:12,788.999453680,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:17,793.463640583,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:25:17,793.463666478,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter.,2026-09-28_10h37m
+2019-02-14T10:25:19,796.152385273,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:25:19,796.154158005,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:25:24,801.281513116,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:25:36,812.983749783,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:36,812.983776351,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:36,812.986482787,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:37,813.598410613,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:37,813.598438729,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:37,813.599151926,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:37,813.902566263,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:37,813.902594930,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:38,814.403128870,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:38,814.403308508,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:38,814.405517644,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:38,814.405616799,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:38,814.406691948,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:38,814.407568691,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:39,815.446314999,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:39,816.146714097,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:39,816.147175813,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:39,816.147563945,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:40,816.880113186,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:40,816.880138458,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:40,816.881777536,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:41,817.370572549,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:41,817.370601421,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:41,817.371268624,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:41,817.682421725,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:41,817.682450165,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:41,818.182967555,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:41,818.183152089,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:41,818.185665707,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:41,818.185764573,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:41,818.187128370,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:41,818.188012307,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:42,819.230466181,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:43,819.931050457,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:43,819.931397829,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:43,819.931930154,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:46,822.817907299,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:25:46,822.817938595,msg,ERROR,0x5404,ERR 60 Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:25:49,825.551363932,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:49,825.551390956,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:49,825.553123074,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:49,826.226368096,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:49,826.226395863,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:49,826.227046494,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:50,826.522788195,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:50,826.522945093,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:50,827.023185470,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:50,827.023585411,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:50,827.025689600,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:50,827.025789678,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:50,827.027117987,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:50,827.028011444,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:51,828.186452271,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:52,828.886730131,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:52,828.887211323,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:52,828.887629949,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:53,829.428465423,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:25:53,829.546656635,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:53,829.546684031,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:53,829.549510812,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:53,830.110389374,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:53,830.110417765,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:53,830.111121433,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:54,830.382381370,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:54,830.382410302,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:54,830.883031650,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:54,830.883384960,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:54,830.886305231,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:54,830.886409245,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:54,830.887183378,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:54,830.888027533,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:55,832.034258814,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:25:55,832.229838908,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:25:56,832.735216462,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:56,832.735543795,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:25:56,832.736055890,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:57,833.423592095,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:57,833.423618771,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:57,833.426970310,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:25:57,833.978322883,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:25:57,833.978350987,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:25:57,833.979054190,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:25:57,834.254486164,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:25:58,834.254514399,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:25:58,834.755013934,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:58,834.755360924,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:25:58,834.758288616,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:58,834.758392956,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:25:58,834.759171003,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:25:58,834.760010430,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:25:59,835.898360460,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:00,836.599191990,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:00,836.599515122,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:00,836.600022068,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:01,837.333121517,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:01,837.333147100,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:01,837.336373295,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:01,837.886748380,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:01,837.886776184,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:01,837.887489607,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:01,837.929231020,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:26:01,837.931263430,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:26:01,838.162481611,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:01,838.162510471,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:02,838.662627346,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:02,838.663111698,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:02,838.665574784,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:02,838.665674155,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:02,838.666772513,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:02,838.667637591,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:03,839.810525612,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:04,840.511004583,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:04,840.511327785,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:04,840.511709487,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:05,841.489151463,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:05,841.489176855,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:05,841.491379210,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:05,841.962427564,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:05,841.962455799,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:05,841.963176618,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:06,842.266645166,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:06,842.266674410,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:06,842.766999694,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:06,842.767473003,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:06,842.769410725,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:06,842.769509700,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:06,842.770568437,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:06,842.771491837,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:07,843.914291277,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:08,844.614553283,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:08,844.615058105,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:08,844.615478420,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:13,850.187951249,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:13,850.187976784,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:13,850.191016085,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:14,850.898262422,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:14,850.898290322,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:14,850.899000150,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:14,851.182618826,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:14,851.182648093,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:15,851.683098711,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:15,851.683301806,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:15,851.685511323,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:15,851.685612062,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:15,851.687223329,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:15,851.688064966,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:16,852.826648351,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:17,853.527709887,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:17,853.528152511,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:17,853.528541472,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:19,855.348369231,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:19,855.348395378,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:19,855.350804901,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:19,855.878478167,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:19,855.878507134,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:19,855.879228267,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:19,856.162432837,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:19,856.162461828,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:20,856.662542571,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:20,856.663035262,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:20,856.665364565,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:20,856.665463840,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:20,856.667038262,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:20,856.667748832,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:21,857.567484601,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:26:21,857.798451407,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:22,858.499270553,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:22,858.499596240,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:22,858.500106723,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:24,860.334466483,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:24,860.334492775,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:24,860.336299311,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:24,860.862396456,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:24,860.862424116,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:24,860.863139208,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:24,861.146427717,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:24,861.146456325,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:25,861.646717943,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:25,861.647039851,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:25,861.649434193,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:25,861.649534750,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:25,861.651013482,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:25,861.651727627,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:25,861.938243273,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:26:26,862.770570258,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:27,863.471112598,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:27,863.471436630,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:27,863.471940721,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:30,866.452260642,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:30,866.452287089,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:30,866.456366767,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:30,867.062671958,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:30,867.062700770,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:30,867.063353370,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:31,867.342374825,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:31,867.342403397,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:31,867.842484929,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:31,867.843081909,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:31,867.845682840,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:31,867.845782294,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:31,867.847131433,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:31,867.848025159,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:32,869.134627905,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:26:33,869.835459887,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:33,869.835804773,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:26:33,869.836345534,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:35,871.672972536,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:35,871.672997519,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:35,871.676418241,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:26:36,873.453563377,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:26:39,875.574524744,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:26:39,875.574554491,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:26:39,875.575208528,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:26:39,875.842273271,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:26:39,875.842300846,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:26:40,876.342638375,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:40,876.343295487,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:26:40,876.346190901,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:40,876.346295792,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:26:40,876.347397298,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:26:40,876.348292506,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:26:40,876.919171803,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:26:40,876.919204767,msg,ERROR,0x5404,ERR 60 Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:26:53,889.586160397,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:26:55,891.453599467,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:26:55,891.454830420,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:26:57,893.940417778,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:26:57,893.940448774,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter2~.,2026-09-28_10h37m
+2019-02-14T10:27:00,896.880564007,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:00,896.880589902,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:00,896.883985424,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:00,897.240928616,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:27:01,898.186275749,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:01,898.186303241,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:01,898.187013608,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:02,898.698289146,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:02,898.698316925,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:02,899.198712939,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:02,899.199025389,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:02,899.201533055,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:02,899.201632677,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:02,899.203215982,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:02,899.204114120,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:04,901.118561984,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:05,901.819564259,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:05,901.820030717,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:05,901.820448970,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:06,902.343430045,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:06,902.343456097,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:06,902.345499680,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:06,903.142361391,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:06,903.142388726,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:06,903.143039347,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:07,903.490276904,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:07,903.490305092,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:07,903.650078149,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:27:07,903.650108161,msg,ERROR,0x5404,ERR 125 No answer from input-output.. PlateSorter~.,2026-09-28_10h37m
+2019-02-14T10:27:07,903.650263727,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:27:07,903.650274035,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_IO.,2026-09-28_10h37m
+2019-02-14T10:27:07,903.650815454,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:27:07,903.650826626,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Monitor_Robot.,2026-09-28_10h37m
+2019-02-14T10:27:07,903.990647532,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:07,903.991223911,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:07,903.993488346,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:07,903.993585353,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:07,903.994734334,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:07,903.995606350,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:08,904.588391324,msg,WARN,0x5401,"Application has ended, the pending motion was cancelled.",2026-09-28_10h37m
+2019-02-14T10:27:08,904.592095325,msg,INFO,0x5403,Application 'Disk://PlateSorter' stopped.,2026-09-28_10h37m
+2019-02-14T10:27:08,904.694215178,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. Cycle.,2026-09-28_10h37m
+2019-02-14T10:27:08,904.694241865,msg,ERROR,0x5404,ERR 125 No answer from input-output.. Cycle.,2026-09-28_10h37m
+2019-02-14T10:27:08,905.242591842,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:09,905.943029721,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:09,905.943354484,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:09,905.943737230,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:10,906.667639338,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:10,906.667665426,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:10,906.669673789,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:10,906.677637100,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:27:10,907.154573720,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:10,907.154601944,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:10,907.155322939,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:11,907.462407204,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:11,907.462434684,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:11,907.962980149,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:11,907.963157507,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:11,907.965281427,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:11,907.965381866,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:11,907.966488396,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:11,907.967406154,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:12,908.994594123,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:13,909.695243684,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:13,909.695594762,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:13,909.696140788,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:14,910.535363115,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:14,910.535388867,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:14,910.537037548,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:14,911.090532543,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:14,911.090561127,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:14,911.091218899,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:15,911.374753711,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:15,911.374782630,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:15,911.875442784,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:15,911.875765759,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:15,911.878381246,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:15,911.878485200,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:15,911.879348215,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:15,911.880241475,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:16,913.010583211,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:17,913.447041875,msg,INFO,0x5402,Application 'Disk://PlateSorter' started.,2026-09-28_10h37m
+2019-02-14T10:27:17,913.711409262,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:17,913.711748497,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:17,913.712291236,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:18,914.516313858,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:18,914.516339381,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:18,914.519065767,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:18,914.990381182,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:18,914.990410221,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:18,914.991129516,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:19,915.298581836,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:19,915.298609964,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:19,915.799299334,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:19,915.799657232,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:19,915.802296796,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:19,915.802401603,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:19,915.803159669,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:19,915.804064886,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:20,916.886509443,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:21,917.587389662,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:21,917.587741533,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:21,917.588285931,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:22,918.339305009,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:22,918.339332032,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:22,918.342314824,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:22,918.986588517,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:22,918.986617545,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:22,918.987243958,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:22,919.234779360,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:22,919.234940170,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:23,919.735266349,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:23,919.735571169,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:23,919.738638788,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:23,919.738742996,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:23,919.739730832,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:23,919.740564179,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:24,920.942702170,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:25,921.643434568,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:25,921.643759284,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:25,921.644278755,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:26,922.359804495,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:26,922.359952429,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:26,922.362967674,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:26,923.002421054,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:26,923.002449866,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:26,923.003095481,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:26,923.254272707,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:27,923.254301735,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:27,923.754667665,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:27,923.755120817,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:27,923.757675455,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:27,923.757776937,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:27,923.759257363,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:27,923.760106444,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:28,924.934949556,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:29,925.635468268,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:29,925.635789862,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:29,925.636304271,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:30,926.405305756,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:30,926.405332611,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:30,926.408347187,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:30,927.030739173,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:30,927.030767445,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:30,927.031408828,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:31,927.290346290,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:31,927.290374322,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:31,927.659772073,msg,ERROR,0x5404,VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:27:31,927.659797524,msg,ERROR,0x5404,ERR 125 No answer from input-output.. ~PlateSorter2.,2026-09-28_10h37m
+2019-02-14T10:27:31,927.790446433,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:31,927.790613747,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:31,927.793285715,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:31,927.793385373,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:31,927.794690633,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:31,927.795560219,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:32,928.938398753,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:33,929.639063627,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:33,929.639387812,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:33,929.639770171,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:35,931.368486609,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:35,931.368512468,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:35,931.370401580,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:35,931.894636271,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:35,931.894665226,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:35,931.895327657,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:35,932.182247147,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:35,932.182275467,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:36,932.682387688,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:36,932.682792588,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:36,932.684802049,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:36,932.685014194,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:36,932.686445077,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:36,932.687308689,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:36,933.275440030,msg,ERROR,0x5404,VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle.,2026-09-28_10h37m
+2019-02-14T10:27:36,933.275470378,msg,ERROR,0x5404,ERR 532 The cartesian position is out of the workspace.. Cycle.,2026-09-28_10h37m
+2019-02-14T10:27:37,933.858282007,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:38,934.558964671,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:38,934.559300954,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:38,934.559683833,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:41,937.826500433,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:41,937.826526736,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:41,937.828257569,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:42,938.322584811,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:42,938.322614246,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:42,938.323277598,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:42,938.622483397,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:42,938.622514188,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:42,939.122595728,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:42,939.122766473,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:42,939.125463651,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:42,939.125565913,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:42,939.126635341,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:42,939.127567158,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:42,939.132845217,msg,INFO,0x5403,Application 'Disk://PlateSorter2' stopped.,2026-09-28_10h37m
+2019-02-14T10:27:43,940.158565584,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:44,940.859393589,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:44,940.859734622,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:44,940.860281855,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:46,942.576739518,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:46,942.576766038,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:46,942.579593823,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:46,943.126475227,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:46,943.126503750,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:46,943.127133047,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:47,943.430326327,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:47,943.430353927,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:47,943.930562822,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:47,943.931119360,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:47,943.933441574,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:47,943.933541017,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:47,943.934613457,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:47,943.935491018,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:48,944.949321936,msg,INFO,0x5402,Application 'Disk://PlateSorter2' started.,2026-09-28_10h37m
+2019-02-14T10:27:48,945.090784628,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:49,945.791694846,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:49,945.792142690,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:49,945.792528973,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:54,950.407497906,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:54,950.407523826,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:54,950.410688732,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:54,951.118253495,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:54,951.118282499,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:54,951.118771240,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:27:55,951.442607543,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:27:55,951.442635310,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:27:55,951.943002833,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:55,951.943193044,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:27:55,951.945329992,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:55,951.945428522,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:55,951.946952636,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:55,951.947716419,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:27:56,953.027007002,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:27:57,953.727255974,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:27:57,953.727597631,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:27:57,953.728142575,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:59,955.557438178,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:27:59,955.557464326,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:59,955.561258772,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:27:59,956.210259109,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m
+2019-02-14T10:27:59,956.210286889,msg,INFO,0x5464,4. Calling Apera LINEAR_APPROACH,2026-09-28_10h37m
+2019-02-14T10:27:59,956.210996298,msg,INFO,0x5464,5. Hitting waitEndMove() for Linear Approach,2026-09-28_10h37m
+2019-02-14T10:28:00,956.494440692,msg,INFO,0x5464,6. Turning Air Blast OFF,2026-09-28_10h37m
+2019-02-14T10:28:00,956.494469024,msg,INFO,0x5464,7. Turning Magnet ON,2026-09-28_10h37m
+2019-02-14T10:28:00,956.994786997,msg,INFO,0x5464,8. Calling Apera LINEAR_RETREAT,2026-09-28_10h37m
+2019-02-14T10:28:00,956.995396591,msg,INFO,0x5464,9. Calling Apera RETREAT,2026-09-28_10h37m
+2019-02-14T10:28:00,956.998683103,msg,INFO,0x5464,--- END PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:28:00,956.998787586,msg,INFO,0x5464,--- START PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:28:00,956.999729475,msg,INFO,0x5464,10. Diving into Accept Bin,2026-09-28_10h37m
+2019-02-14T10:28:00,957.000614475,msg,INFO,0x5464,11. Hitting waitEndMove() for Accept Drop,2026-09-28_10h37m
+2019-02-14T10:28:01,957.645538792,msg,ERROR,0x5404,VAL 3 runtime error. Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:28:01,957.645562804,msg,ERROR,0x5404,ERR 60 Instruction timeout. Cycle.,2026-09-28_10h37m
+2019-02-14T10:28:01,958.250420750,msg,INFO,0x5464,12. Turning Magnet OFF,2026-09-28_10h37m
+2019-02-14T10:28:02,958.951009662,msg,INFO,0x5464,13. Retreating from Accept Bin,2026-09-28_10h37m
+2019-02-14T10:28:02,958.951364242,msg,INFO,0x5464,14. Returning to Apera Start,2026-09-28_10h37m
+2019-02-14T10:28:02,958.951779914,msg,INFO,0x5464,--- END PartPlace SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:28:03,959.833189318,msg,INFO,0x5464,--- START PartPick SEQUENCE ---,2026-09-28_10h37m
+2019-02-14T10:28:03,959.833214794,msg,INFO,0x5464,1. Calling Apera APPROACH,2026-09-28_10h37m
+2019-02-14T10:28:03,959.836447293,msg,INFO,0x5464,2. Hitting waitEndMove() for Approach,2026-09-28_10h37m
+2019-02-14T10:28:04,960.446378521,msg,INFO,0x5464,3. Turning Air Blast ON,2026-09-28_10h37m

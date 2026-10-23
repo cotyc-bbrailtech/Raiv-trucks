@@ -1,0 +1,5 @@
+2026/08/05 15:41:33 [error] 2400#34384: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /api/ios/ HTTP/1.1", upstream: "scgi://127.0.0.1:852", host: "127.0.0.1:850"
+2026/08/05 15:41:33 [error] 2400#34384: *1 CreateFile() "./temp/nginx/html/50x.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /api/ios/ HTTP/1.1", upstream: "scgi://127.0.0.1:852", host: "127.0.0.1:850"
+2026/08/11 09:40:55 [alert] 32356#9948: the event "ngx_master_32356" was not signaled for 5s
+2026/08/13 09:37:38 [alert] 19544#31488: the event "ngx_master_19544" was not signaled for 5s
+2026/08/18 07:22:33 [alert] 21760#17180: the event "ngx_master_21760" was not signaled for 5s

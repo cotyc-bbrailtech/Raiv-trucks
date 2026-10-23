@@ -1,0 +1,7 @@
+Card Slot ID: 0
+Manufacturer ID: 0x74
+OEM/Application ID: J`
+Product Name: SD
+Product Version: 6.1
+Product Serial Number: 0xd35
+Manufacture Month/Year: 4/2026

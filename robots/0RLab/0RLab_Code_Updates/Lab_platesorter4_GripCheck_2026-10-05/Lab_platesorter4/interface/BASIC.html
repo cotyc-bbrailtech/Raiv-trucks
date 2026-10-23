@@ -1,0 +1,89 @@
+<!DOCTYPE html SYSTEM "-//W3C//DTD VALHTML Strict//EN">
+  <html xmlns="http://www.staubli.com/robotics/2016/03/valhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"></meta>
+      <meta http-equiv="Pragma" content="no-cache"></meta>
+      <meta http-equiv="Expires" content="0"></meta>
+      <script type="text/javascript" src="/vendor/libs/stblUserPage.min.js"></script>
+      <link href="/vendor/libs/up.min.v2.css" rel="stylesheet" media="all" type="text/css"></link>
+      <meta name="src-version" content="8.15.1"></meta>
+    </head>
+    <body style="width: 480px; height: 690px; margin: 0">
+      <button style="top: 4px; position: absolute; left: 372px; width: 100px; height: 26px" id="btnMetrics">METRICS</button>
+      <button style="white-space: normal; word-break: break-word; top: 520px; position: absolute; left: 0px; width: 100px; height: 65px" id="btn1">Robot Calibration</button>
+      <button style="white-space: normal; word-break: break-word; top: 520px; position: absolute; left: 379px; width: 101px; height: 65px" id="btn1_Copy1">TEST PipeLine</button>
+      <button style="white-space: normal; word-break: break-word; top: 520px; position: absolute; left: 120px; width: 88px; height: 65px" id="btn1_Copy2">Cycle TiePlates</button>
+      <button style="white-space: normal; word-break: break-word; top: 520px; width: 119px; height: 65px; position: absolute; left: 230px" id="btn1_Copy3">Move to Clear Position</button>
+      <input value="Text" style="width: 60px; height: 26px; left: 0px; position: absolute; top: 440px" id="txt1"></input>
+      <input value="Text" style="width: 60px; height: 26px; left: 80px; position: absolute; top: 440px" id="txt1_Copy1"></input>
+      <input value="Text" style="width: 60px; height: 26px; left: 160px; position: absolute; top: 440px" id="txt1_Copy2"></input>
+      <input value="Text" style="width: 60px; height: 26px; left: 240px; position: absolute; top: 440px" id="txt1_Copy3"></input>
+      <input value="Text" style="width: 60px; height: 26px; left: 320px; position: absolute; top: 440px" id="txt1_Copy4"></input>
+      <input value="Text" style="width: 60px; height: 26px; left: 400px; position: absolute; top: 440px" id="txt1_Copy5"></input>
+      <input value="Text" style="top: 480px; position: absolute; left: 379px; width: 81px; height: 26px" id="txt1_Copy6"></input>
+      <label id="lbl1" style="width: 60px; height: 20px; left: 0px; text-align: center; position: absolute; top: 422px">J1</label>
+      <label style="width: 60px; height: 20px; text-align: center; left: 80px; position: absolute; top: 422px" id="lbl1_Copy1">J2</label>
+      <label style="width: 60px; height: 20px; text-align: center; left: 160px; position: absolute; top: 422px" id="lbl1_Copy2">J3</label>
+      <label style="width: 60px; height: 20px; text-align: center; left: 240px; position: absolute; top: 422px" id="lbl1_Copy3">J4</label>
+      <label style="width: 60px; height: 20px; text-align: center; left: 320px; position: absolute; top: 422px" id="lbl1_Copy4">J5</label>
+      <label style="width: 60px; height: 20px; text-align: center; left: 400px; position: absolute; top: 422px" id="lbl1_Copy5">J6</label>
+      <label style="width: 60px; height: 20px; text-align: center; top: 483px; position: absolute; left: 319px" id="lbl1_Copy6">DSI</label>
+      <label style="background-color: #1DFF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 157px" id="lbl2">atHOME</label>
+      <label style="background-color: #08FF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 134px" id="lbl2_Copy1">atSTOW</label>
+      <label style="background-color: #15FF00; height: 26px; width: 100px; left: 350px; position: absolute; top: 106px" id="lbl2_Copy3">atCLEAR</label>
+      <input value="Text" style="width: 120px; height: 26px; left: 150px; position: absolute; top: 322px" id="txt2"></input>
+      <label id="lbl3" style="width: 120px; height: 20px; top: 325px; position: absolute; left: 30px">sPart_picked</label>
+      <label style="width: 120px; height: 20px; left: 30px; position: absolute; top: 301px" id="lbl3_Copy1">sPart_desired</label>
+      <input value="Text" style="width: 120px; height: 26px; left: 150px; position: absolute; top: 298px" id="txt2_Copy1"></input>
+      <input style="width: 50px; height: 26px; top: 36px; position: absolute; left: 155px" value="Abort" id="txt3"></input>
+      <input style="width: 50px; height: 26px; top: 35px; position: absolute; left: 155px" value="NONE" id="txt3_Copy2"></input>
+      <input style="width: 50px; height: 26px; top: 36px; position: absolute; left: 155px" value="RoCal" id="txt3_Copy3"></input>
+      <input style="width: 50px; height: 26px; top: 36px; position: absolute; left: 155px" value="Cycle" id="txt3_Copy5"></input>
+      <label id="lbl4" style="width: 105px; height: 20px; top: 39px; position: absolute; left: 38px">bTskSelected</label>
+      <input style="width: 74px; height: 26px; top: 66px; position: absolute; left: 144px" value="Abort" id="txt3_Copy6"></input>
+      <input style="width: 74px; height: 26px; top: 66px; position: absolute; left: 144px" value="Cycle" id="txt3_Copy8"></input>
+      <input style="top: 66px; width: 89px; height: 26px; position: absolute; left: 222px; visibility: hidden" value="Secondary" id="txt3_Copy9"></input>
+      <label style="width: 94px; height: 20px; top: 69px; position: absolute; left: 48px" id="lbl4_Copy1">bTskStatus</label>
+      <label style="background-color: #1DFF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 179px" id="lbl2_Copy2">atCAPTURE</label>
+      <label style="background-color: #1DFF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 201px" id="lbl2_Copy4">atSTART</label>
+      <label style="background-color: #08FF00; width: 134px; height: 20px; position: absolute; top: 138px; left: 196px" id="lbl2_Copy5">Trajectory Found</label>
+      <label style="background-color: #1DFF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 223px" id="lbl2_Copy6">atEND</label>
+      <label style="background-color: #1DFF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 246px" id="lbl2_Copy7">atACCEPT</label>
+      <label style="background-color: #1DFF00; height: 20px; width: 100px; left: 350px; position: absolute; top: 268px" id="lbl2_Copy8">atREJECT</label>
+      <label style="background-color: #08FF00; width: 141px; height: 20px; position: absolute; top: 114px; left: 196px" id="lbl2_Copy9">Conveyor ON_FWD</label>
+      <button style="background-color: #D6CD11; top: 368px; position: absolute; left: 323px; width: 112px; height: 33px" id="btn2">RESTART VUE</button>
+      <label style="width: 81px; height: 26px; visibility: visible; top: 388px; position: absolute; left: 32px; background-color: #ED2A08" id="lbl2_Copy10">Stop1</label>
+      <label style="width: 81px; height: 26px; background-color: #FF1000; left: 120px; position: absolute; top: 388px" id="lbl2_Copy12">Door</label>
+      <input value="0" type="number" style="width: 120px; height: 26px; top: 350px; position: absolute; left: 148px" id="nmb1"></input>
+      <label style="width: 120px; height: 20px; top: 353px; position: absolute; left: 30px" id="lbl3_Copy2">nPartsFound</label>
+      <input value="0" type="number" style="width: 38px; height: 26px; top: 101px; position: absolute; left: 147px" id="nmb2"></input>
+      <input value="Text" style="left: 31px; position: absolute; top: 103px; height: 26px; width: 105px" id="txt4"></input>
+      <input value="Text" style="left: 31px; position: absolute; top: 137px; height: 26px; width: 105px" id="txt4_Copy1"></input>
+      <input value="Text" style="left: 31px; position: absolute; top: 173px; height: 26px; width: 105px" id="txt4_Copy2"></input>
+      <input value="0" type="number" style="width: 38px; height: 26px; top: 135px; position: absolute; left: 147px" id="nmb2_Copy1"></input>
+      <input value="0" type="number" style="width: 38px; height: 26px; top: 171px; position: absolute; left: 147px" id="nmb2_Copy2"></input>
+      <input value="0" type="number" style="width: 38px; height: 26px; top: 206px; position: absolute; left: 147px" id="nmb2_Copy3"></input>
+      <input value="Text" style="left: 31px; position: absolute; top: 208px; height: 26px; width: 105px" id="txt4_Copy3"></input>
+      <input value="0" type="number" style="width: 38px; height: 26px; top: 237px; position: absolute; left: 147px" id="nmb2_Copy4"></input>
+      <input value="Text" style="left: 31px; position: absolute; top: 239px; height: 26px; width: 105px" id="txt4_Copy4"></input>
+      <input type="number" style="width: 120px; height: 26px; left: 121px; position: absolute; top: 480px" id="nmb3" value="0"></input>
+      <select size="1" style="top: 592px; position: absolute; left: 0px; width: 166px; height: 26px" id="cbx1">
+        <option>bin1_TCPA200</option>
+        <option>bin1_TCPA200_detect</option>
+      </select>
+      <input value="Text" style="width: 120px; height: 26px; position: absolute; top: 270px; left: 150px" id="txt5"></input>
+      <select size="1" style="top: 592px; width: 190px; height: 26px; position: absolute; left: 290px" id="cbx1_Copy1">
+        <option>bin1_TCPA200</option>
+        <option>bin1_TCPA200_detect</option>
+      </select>
+      <label style="width: 120px; height: 20px; top: 273px; position: absolute; left: 30px" id="lbl3_Copy3">sPipeLine</label>
+      <button style="white-space: normal; word-break: break-word; width: 105px; height: 40px; top: 49px; position: absolute; left: 348px" id="btn1_Copy4">SETUP_ CAP</button>
+      <label style="background-color: #08FF00; width: 134px; height: 20px; top: 161px; position: absolute; left: 196px" id="lbl2_Copy11">bTrajectoryLOGIC</label>
+      <label style="background-color: #FF9400; border-color: #181615; border-style: solid; text-align: center; width: 134px; height: 28px; top: 194px; position: absolute; left: 203px" id="lbl2_Copy13">areaCONVEYOR</label>
+      <label style="background-color: #FF9400; border-color: #181615; border-style: solid; text-align: center; width: 134px; height: 28px; left: 203px; position: absolute; top: 225px" id="lbl2_Copy14">areaREJECT STAT</label>
+      <input id="chkEarlyKick" type="checkbox" style="left: 8px; top: 628px; position: absolute; transform: scale(1.65)"></input>
+      <label id="lblEarlyKick" style="left: 40px; top: 630px; width: 215px; height: 20px; position: absolute">Early Belt Kick (last part)</label>
+      <label id="lblEarlyKickON" style="background-color: #FF9400; border-color: #181615; border-style: solid; text-align: center; width: 200px; height: 26px; left: 260px; top: 626px; position: absolute">EARLY KICK ARMED</label>
+    </body>
+  </html>

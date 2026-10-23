@@ -1,0 +1,54 @@
+<!DOCTYPE html SYSTEM "-//W3C//DTD VALHTML Strict//EN">
+  <html xmlns="http://www.staubli.com/robotics/2016/03/valhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"></meta>
+      <meta http-equiv="Pragma" content="no-cache"></meta>
+      <meta http-equiv="Expires" content="0"></meta>
+      <script type="text/javascript" src="/vendor/libs/stblUserPage.min.js"></script>
+      <link href="/vendor/libs/up.min.v2.css" rel="stylesheet" media="all" type="text/css"></link>
+      <meta name="src-version" content="8.15.1"></meta>
+    </head>
+    <body style="width: 480px; height: 690px; margin: 0">
+      <label id="lb0_DETAIL" style="left: 6px; top: 6px; width: 420px; height: 20px; position: absolute; font-weight: bold; font-size: 15px">RAIV LAB   DETAIL</label>
+      <input id="v_State_DETAIL" value="--" readonly="readonly" style="left: 6px; top: 30px; width: 462px; height: 24px; position: absolute; background-color: #E8E8E8; font-weight: bold"></input>
+      <label id="lb2_DETAIL" style="left: 6px; top: 62px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">PLATE COUNTS</label>
+      <label id="lb3_DETAIL" style="left: 6px; top: 86px; width: 122px; height: 20px; position: absolute;">Plates</label>
+      <input id="v_Plates" value="--" readonly="readonly" style="left: 132px; top: 84px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb5_DETAIL" style="left: 246px; top: 86px; width: 122px; height: 20px; position: absolute;">Accepted</label>
+      <input id="v_Acc" value="--" readonly="readonly" style="left: 372px; top: 84px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb7_DETAIL" style="left: 6px; top: 110px; width: 122px; height: 20px; position: absolute;">Rejected</label>
+      <input id="v_Rej" value="--" readonly="readonly" style="left: 132px; top: 108px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb9_DETAIL" style="left: 246px; top: 110px; width: 122px; height: 20px; position: absolute;">Accepted (%)</label>
+      <input id="v_AccPct" value="--" readonly="readonly" style="left: 372px; top: 108px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb11_DETAIL" style="left: 6px; top: 136px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">PART TYPE</label>
+      <label id="lb12_DETAIL" style="left: 6px; top: 160px; width: 122px; height: 20px; position: absolute;">14 inch</label>
+      <input id="v_P14" value="--" readonly="readonly" style="left: 132px; top: 158px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb14_DETAIL" style="left: 246px; top: 160px; width: 122px; height: 20px; position: absolute;">18 inch</label>
+      <input id="v_P18" value="--" readonly="readonly" style="left: 372px; top: 158px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb16_DETAIL" style="left: 6px; top: 184px; width: 122px; height: 20px; position: absolute;">Pandrol</label>
+      <input id="v_PPan" value="--" readonly="readonly" style="left: 132px; top: 182px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb18_DETAIL" style="left: 246px; top: 184px; width: 122px; height: 20px; position: absolute;">Spike</label>
+      <input id="v_PSpk" value="--" readonly="readonly" style="left: 372px; top: 182px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb20_DETAIL" style="left: 6px; top: 208px; width: 122px; height: 20px; position: absolute;">Anchor</label>
+      <input id="v_PAnc" value="--" readonly="readonly" style="left: 132px; top: 206px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb22_DETAIL" style="left: 6px; top: 234px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">VISION</label>
+      <label id="lb23_DETAIL" style="left: 6px; top: 258px; width: 122px; height: 20px; position: absolute;">Camera mean (s)</label>
+      <input id="v_CamMean" value="--" readonly="readonly" style="left: 132px; top: 256px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb25_DETAIL" style="left: 246px; top: 258px; width: 122px; height: 20px; position: absolute;">Looks</label>
+      <input id="v_CamRuns" value="--" readonly="readonly" style="left: 372px; top: 256px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb27_DETAIL" style="left: 6px; top: 282px; width: 122px; height: 20px; position: absolute;">PartFinder loop</label>
+      <input id="v_FindLoop" value="--" readonly="readonly" style="left: 132px; top: 280px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb29_DETAIL" style="left: 246px; top: 282px; width: 122px; height: 20px; position: absolute;">Parts in scene</label>
+      <input id="v_PartsFnd" value="--" readonly="readonly" style="left: 372px; top: 280px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb31_DETAIL" style="left: 6px; top: 308px; width: 462px; height: 20px; position: absolute; font-weight: bold; background-color: #D9D9D9">MOTION</label>
+      <label id="lb32_DETAIL" style="left: 6px; top: 332px; width: 122px; height: 20px; position: absolute;">Peak TCP (mm/s)</label>
+      <input id="v_TcpPeak" value="--" readonly="readonly" style="left: 132px; top: 330px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb34_DETAIL" style="left: 246px; top: 332px; width: 122px; height: 20px; position: absolute;">TCP now (mm/s)</label>
+      <input id="v_TcpNow" value="--" readonly="readonly" style="left: 372px; top: 330px; width: 96px; height: 22px; position: absolute; text-align: right"></input>
+      <label id="lb36_DETAIL" style="left: 6px; top: 356px; width: 122px; height: 20px; position: absolute;">Move ID</label>
+      <input id="v_MoveID" value="--" readonly="readonly" style="left: 132px; top: 354px; width: 88px; height: 22px; position: absolute; text-align: right"></input>
+      <button id="btnP3" style="left: 6px; top: 390px; width: 148px; height: 46px; position: absolute; white-space: normal; word-break: break-word">&lt; PHASES</button>
+      <button id="btnB3" style="left: 162px; top: 390px; width: 148px; height: 46px; position: absolute; white-space: normal; word-break: break-word">BASIC</button>
+    </body>
+  </html>

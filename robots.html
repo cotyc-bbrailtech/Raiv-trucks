@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RAIV Robots</title>
+<style>
+  /* Same tokens as index.html. Robots are told apart by their id label, never by
+     colour, so this page uses no categorical accents. */
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --border:         rgba(11,11,11,0.10);
+    --warn:           #b4541f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page:           #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --border:         rgba(255,255,255,0.10);
+      --warn:           #e08a55;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 56px 20px;
+    background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px; line-height: 1.55;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.015em; }
+  h2 { font-size: 16px; font-weight: 600; margin: 32px 0 12px; }
+  .lede { color: var(--text-secondary); margin: 0 0 28px; max-width: 760px; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+
+  .site-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 22px; }
+  .nav-btn {
+    display: inline-flex; align-items: center; font-size: 13px; font-weight: 500;
+    text-decoration: none; color: var(--text-secondary); background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px;
+  }
+  .nav-btn:hover { background: var(--border); color: var(--text-primary); }
+  .nav-btn.is-current {
+    color: var(--text-primary); font-weight: 600; background: var(--border);
+    border-color: var(--text-primary); cursor: default; pointer-events: none;
+  }
+
+  .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-1); }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child th, tr:last-child td { border-bottom: 0; }
+  thead th { font-size: 12px; font-weight: 600; color: var(--text-secondary); }
+  tbody th { font-weight: 500; color: var(--text-secondary); white-space: nowrap; }
+  td.num { font-variant-numeric: tabular-nums; }
+  .unknown { color: var(--text-muted); }
+
+  .robots { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  .robot { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+  .robot h3 { font-size: 16px; font-weight: 600; margin: 0; }
+  .robot .sub { color: var(--text-secondary); font-size: 13px; margin: 2px 0 12px; }
+  .robot ul { margin: 0; padding-left: 18px; font-size: 13px; color: var(--text-secondary); }
+  .robot li { margin-bottom: 6px; }
+  .robot .links { margin-top: 12px; font-size: 13px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .robot .links a { color: var(--text-primary); font-weight: 600; }
+  .robot .src { font-size: 12px; color: var(--text-muted); margin-top: 10px; word-break: break-word; }
+  .issues-h { font-size: 12px; font-weight: 600; color: var(--warn); margin: 0 0 6px; }
+
+  .note { margin-top: 32px; border: 1px solid var(--border); background: var(--surface-1);
+          border-radius: 12px; padding: 18px 20px; font-size: 13px; color: var(--text-secondary); }
+  .note h3 { font-size: 13px; font-weight: 600; color: var(--text-primary); margin: 0 0 8px; }
+  .note p { margin: 0 0 10px; }
+  .note p:last-child { margin-bottom: 0; }
+  #err { color: var(--warn); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="RAIV Fleet dashboards">
+    <a class="nav-btn" href="index.html">Overview</a>
+    <a class="nav-btn" href="cm5.html">RAIV-2 Truck</a>
+    <a class="nav-btn" href="lab.html">Lab Bench</a>
+    <a class="nav-btn" href="stridelinx.html">StrideLinx</a>
+    <a class="nav-btn is-current" href="robots.html" aria-current="page">Robots</a>
+  </nav>
+  <h1>RAIV robots</h1>
+  <p class="lede">
+    What is on record for each Stäubli/Apera cell, pulled from the OneDrive project folders
+    (0RLab, 1RT53, 2RT57, 3RT51). Every figure comes from a file in <code>robots/&lt;id&gt;/</code>;
+    a blank means no pulled file stated it, not that it is zero.
+  </p>
+  <p id="err" hidden></p>
+
+  <h2>Side by side</h2>
+  <div class="table-scroll"><table id="compare"></table></div>
+
+  <h2>Per robot</h2>
+  <div class="robots" id="robots"></div>
+
+  <div class="note">
+    <h3>Reading the cycle figures</h3>
+    <p>
+      The cycle numbers are not all measured the same way. Some come from the controller's own
+      cycle log (<code>cycles_ALL.csv</code>), and 2RT57's latest figures come from OCR of Apera Vue logs.
+      The windows and the programs differ too, so compare robots with care. Each card names its source file.
+    </p>
+    <p>
+      Robot code (<code>.pgx</code>, <code>.dtx</code>, <code>.cfx</code>) and backups are listed in each
+      robot's <code>manifest.csv</code> with their OneDrive location but are not copied here: the
+      connector used to pull this data returns them as binary.
+    </p>
+  </div>
+</div>
+<script>
+  const REPO = 'https://github.com/cotyc-bbrailtech/Raiv-trucks/blob/main/';
+  const esc = (v) => String(v).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const val = (v, unit = '') =>
+    v === null || v === undefined || v === '' ? '<span class="unknown">—</span>' : esc(v) + unit;
+  const sec = (v) => (typeof v === 'number' ? val(v.toFixed(2), ' s') : val(v));
+
+  const ROWS = [
+    ['Truck unit', (r) => val(r.unit ?? 'Lab')],
+    ['Arm', (r) => val(r.arm_model)],
+    ['Arm serial', (r) => val(r.arm_serial)],
+    ['Controller serial', (r) => val(r.controller_serial)],
+    ['VAL3', (r) => val(r.val3_version)],
+    ['Apera pipeline', (r) => val(r.apera_pipeline)],
+    ['Apera serial', (r) => val(r.apera_serial)],
+    ['PLC program', (r) => val(r.plc)],
+    ['HMI', (r) => val(r.hmi)],
+    ['Cycles measured', (r) => val(r.metrics.cycles?.toLocaleString())],
+    ['Median cycle', (r) => sec(r.metrics.median_s)],
+    ['Mean cycle', (r) => sec(r.metrics.mean_s)],
+    ['p90 cycle', (r) => sec(r.metrics.p90_s)],
+    ['Best cycle', (r) => sec(r.metrics.best_s)],
+    ['Plates / min', (r) => val(r.metrics.per_min)],
+    ['Metrics window', (r) => val(r.metrics.date_range)],
+    ['Latest backup', (r) => val(r.latest_backup)],
+    ['Latest code', (r) => val(r.latest_code)],
+    ['Files on OneDrive / pulled', (r) => val(r.files_total) + ' / ' + val(r.files_pulled)],
+  ];
+  const NUMERIC = new Set(['Cycles measured', 'Median cycle', 'Mean cycle', 'p90 cycle', 'Best cycle', 'Plates / min']);
+
+  function render(robots) {
+    const head = '<thead><tr><th></th>' + robots.map((r) => `<th>${esc(r.id)}</th>`).join('') + '</tr></thead>';
+    const body = ROWS.map(([label, f]) =>
+      `<tr><th scope="row">${label}</th>` +
+      robots.map((r) => `<td class="${NUMERIC.has(label) ? 'num' : ''}">${f(r)}</td>`).join('') + '</tr>'
+    ).join('');
+    document.getElementById('compare').innerHTML = head + '<tbody>' + body + '</tbody>';
+
+    document.getElementById('robots').innerHTML = robots.map((r) => `
+      <article class="robot">
+        <h3>${esc(r.id)}</h3>
+        <div class="sub">${val(r.name)}${r.unit ? ' · unit ' + esc(r.unit) : ''}</div>
+        ${r.open_issues.length ? `<div class="issues-h">Open issues (${r.open_issues.length})</div>
+        <ul>${r.open_issues.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>` : '<div class="unknown">No open issues recorded.</div>'}
+        <div class="links">
+          <a href="${REPO + r.readme}">README</a>
+          <a href="${REPO + r.summary}">summary.json</a>
+          <a href="${REPO}robots/${esc(r.id)}/manifest.csv">manifest</a>
+        </div>
+        ${r.metrics.source ? `<div class="src">Metrics: ${esc(r.metrics.source)}</div>` : ''}
+      </article>`).join('');
+  }
+
+  fetch('robots/index.json')
+    .then((res) => { if (!res.ok) throw new Error(res.status + ' ' + res.statusText); return res.json(); })
+    .then((d) => render(d.robots))
+    .catch((e) => {
+      const el = document.getElementById('err');
+      el.hidden = false;
+      el.textContent = 'Could not load robots/index.json (' + e.message + '). Open this page from the published site, not from disk.';
+    });
+</script>
+</body>
+</html>

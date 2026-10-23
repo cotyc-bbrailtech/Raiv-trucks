@@ -1,0 +1,18 @@
+3RT51 cycle metrics - Stäubli TX2 / CS9, controller F_24_0064095_C_002					
+Application PlateSorter (a second project, binpick_TiePlates, is present on the controller but has never actually been run - all 101 logged run sessions are PlateSorter). Compiled 2026-10-03 from 4 controller backups. Per-cycle data comes from the RAIV/CSV lines PlateSorter's LogCycleCSV.pgx writes (added 2026-09-04, deployed by Coty before the 2026-09-04_17h02m backup was pulled) - the first backup (13h03m) predates that deployment and has zero cycle rows.					
+					
+					
+Headline					
+					
+Metric	Value	Where it comes from			
+Cycles logged	2587	Every complete (A+B) RAIV/CSV pair across all backups so far - one continuous run, 2026-09-04 20:13-20:29.			
+Mean cycle, s (all logged cycles)	5.38	Every row on Cycle Data, including the one outlier below.			
+Mean cycle, s (clean, excl. outlier)	4.93	Excludes seq 93 (cycle_s=27.25s) - see note below.			
+Best cycle, s	3.34	Fastest single logged cycle.			
+Clean-cycle rate, plates/min	12.18	60 / clean mean cycle.			
+Clean-cycle rate, plates/hour	730.8	3600 / clean mean cycle.			
+Instrumentation coverage (clean cycles)	0.9995	1 - |mean unaccounted| / mean cycle. The 7 measured segments plus carry-over motion account for essentially the whole cycle (see Phase Budget).			
+Outlier cycle	seq 93, 27.25s	Last cycle in the 17h02m backup (seq 93) - approach segment alone measured 24.28s, almost certainly the robot sitting idle/paused between cycle 92 and the backup being pulled, with the queued approach move only completing once it resumed. Excluded from the clean figures above; kept on Cycle Data for traceability.			
+Total events logged (all time)	6050	events_ALL.csv - every unique log line across all backups.			
+Run sessions logged (all time)	101	runs_ALL.csv - PlateSorter application start/stop pairs, back to 2026-04-03.			
+Error classes tracked	3	See Errors sheet.			

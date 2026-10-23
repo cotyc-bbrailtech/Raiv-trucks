@@ -1,0 +1,202 @@
+Workbook: 6 worksheets. Cell values are tab-separated rows; "Formulas" lists formula cells by source (which can differ from the displayed value).
+Worksheets (startPage and endPage select them by these numbers):
+1. Summary
+2. Cycle Data
+3. Runs
+4. Errors
+5. Backup History
+6. Header Key
+
+## Sheet: Summary — 26 rows × 6 columns (A1:F26)
+Raiv-T2 / Truck 57 cycle metrics - Stäubli TX2 / CS9, controller F_24_0064095_C_003
+Compiled 2026-09-28 from 3 controller backups: two pulled 2026-09-28 10:37/10:45 (8 minutes apart, same underlying log - effectively one snapshot), plus a third pulled 2026-09-28 13:11 after a supervised test run. The log runs continuously from 2026-08-17 through the latest backup. FIVE VAL3 applications exist on this controller's disk: binpick_TiePlates (never run), PlateSorter (this cell's original app), PlateSorter2 (production through 2026-09-28), PlateSorterREWRITE_2 (a 2026-08-21 validation build, ran once, withdrawn), and PlateSorter3 (production PlateSorter2 + telemetry, deployed 2026-09-28 - see the finding below).
+[1 empty row]
+KEY FINDING: this cell now has TWO cycle-time samples, from two different builds, and they are not directly comparable. Run 1 (2026-08-21) was PlateSorterREWRITE_2 - a validation build with several untested behavior changes (later withdrawn) - picking 14in STEEL plates. Run 2 (2026-09-28) was PlateSorter3 - production PlateSorter2 plus only cycle telemetry added, nothing else changed - picking RUBBER tie plates. Run 2 is the one that matters going forward: it's the actual production logic, instrumented, and (once PlateSorter3 stays selected) will keep collecting real ongoing data the way T1 and T3 already do.
+[1 empty row]
+Run 1 - 2026-08-21, PlateSorterREWRITE_2 validation build, STEEL 14in plates (withdrawn build)
+Metric	Value	Where it comes from
+Cycles logged (this test)	29	All RAIVCYC lines across both backups (same underlying log) - one continuous ~7-minute test, plates 2-29, 2026-08-21 13:06-13:13 local.
+Mean cycle, s (all 29, incl. warm-up)	7.93	Includes the slow start (26.7s, 21.2s, 12.8s...) while motion/vision settled after the app launched.
+Mean cycle, s (steady state, <=8s)	5.76	23 of 29 cycles once the ramp finished (from plate 7 on) - the number that reflects real running speed.
+Steady-state rate, plates/min	10.41	60 / steady-state mean cycle.
+Best single cycle, s	5.204	Fastest logged cycle in the test.
+Accept / reject / part-not-found	29 / 0 / 0	accept_reject and has_part columns on Cycle Data - all 29 test cycles accepted a 14in plate. has_part isn't available for run 2 - see below.
+[1 empty row]
+Run 2 - 2026-09-28, PlateSorter3 (production PlateSorter2 + telemetry), RUBBER tie plates
+Metric	Value	Where it comes from
+Cycles logged (this test)	29	5m10s supervised run, plates 1-29, 2026-09-28 09:03-09:08 local. Zero errors or faults logged during the run.
+Mean cycle, s (all 29)	7.15	No warm-up ramp (not a cold start) - includes the 4 periodic slow cycles below.
+Mean cycle, s (baseline, <=8s)	6.05	25 of 29 cycles - excludes the 4 slow ones. Comparable in kind to run 1's steady-state figure, though the two builds and plate materials differ - see caveat below.
+Baseline rate, plates/min	9.92	60 / baseline mean cycle.
+Periodic slow cycles	4 of 29 (plates 6, 12, 18, 24, ~14.0s each vs ~6.0s baseline)	Every 6th plate exactly (6, 12, 18, 24). No error or log line explains it - most likely the belt re-jog ('no trajectory found') branch in tkCycle.pgx running an extra pass, not a fault. Worth watching whether this rate holds over a longer run.
+Accept / reject	29 / 0	All 29 cycles classified 'ACCEPT' by vision. IMPORTANT: this truck's gripper runs blind (tTool.pgx/PartPick.pgx have no part-detect feedback - see PlateSorter3's DEPLOY_README.md), so a completed, non-erroring cycle confirms the MOTION sequence ran to completion, not that a plate was physically retained the whole way. If this run wasn't watched in person, that's worth confirming separately (e.g. checking the accept bin) before treating rubber tie plates as validated on this gripper.
+Part classification	All 29 classified '14in'	sPart["Picked"] - this is a SIZE class from the existing vision pipeline (RAIV_pick_AR70), not a material class; there is no rubber-specific classification in this system. Geometric detection generalising to rubber is a reasonable sign, but 29 plates on one pipeline is a small sample for a material change - worth a longer run before calling it validated.
+[1 empty row]
+Caveat - 2019-02-14 clock-reset dates
+This log carries a large block of entries dated 2019-02-14 - the controller's placeholder clock before it syncs to real time on boot, not a real 2019 event. It mainly affects PlateSorter's (the original app's) logged run history and two Apera pipeline-error classes (apera_bad_pipeline_id, apera_pipeline_missing), which is why those are excluded/near-zero above and on the Errors sheet's count_since_2020 column. Because different real reboots can collide on the same placeholder timestamp, PlateSorter's true 2026 run count/duration cannot be reconstructed from this log - only that it was the app in use before PlateSorter2 took over.
+
+## Sheet: Cycle Data — 60 rows × 12 columns (A1:L60)
+Per-cycle data - run 1: 2026-08-21 PlateSorterREWRITE_2 (steel, withdrawn build) / run 2: 2026-09-28 PlateSorter3 (rubber, production+telemetry). has_part/speed_step/blend_step are blank for run 2 - see Summary.
+source_backup	run	plate	date	ts	cycle_s	ppm	part_type	accept_reject	has_part	speed_step	blend_step
+2026-09-28_10h37m	0	2	2026-08-21T13:06:48	5615.810604	26.73	2.24	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	2	2026-08-21T13:10:05	5812.774688	21.176	2.83	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	3	2026-08-21T13:10:18	5825.534686	12.828	4.68	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	4	2026-08-21T13:10:30	5837.914723	12.76	4.7	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	5	2026-08-21T13:11:04	5871.518792	12.76	4.7	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	6	2026-08-21T13:11:09	5876.723204	11.325	5.3	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	7	2026-08-21T13:11:14	5882.11872	5.204	11.53	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	8	2026-08-21T13:11:20	5887.646762	5.396	11.12	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	9	2026-08-21T13:11:25	5893.190574	5.528	10.85	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	10	2026-08-21T13:11:32	5899.370888	5.543	10.82	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	11	2026-08-21T13:11:44	5911.562734	5.543	10.82	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	12	2026-08-21T13:11:49	5917.094894	6.528	9.19	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	13	2026-08-21T13:11:59	5926.486715	6.528	9.19	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	14	2026-08-21T13:12:05	5932.763833	5.61	10.7	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	15	2026-08-21T13:12:11	5938.882866	6.277	9.56	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	16	2026-08-21T13:12:17	5944.598736	6.119	9.81	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	17	2026-08-21T13:12:22	5950.200384	5.716	10.5	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	18	2026-08-21T13:12:28	5956.242966	5.601	10.71	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	19	2026-08-21T13:12:38	5966.331219	5.601	10.71	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	20	2026-08-21T13:12:44	5971.976292	6.421	9.34	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	21	2026-08-21T13:12:50	5977.97493	5.645	10.63	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	22	2026-08-21T13:12:56	5983.622875	5.998	10	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	23	2026-08-21T13:13:01	5989.03067	5.648	10.62	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	24	2026-08-21T13:13:07	5994.358947	5.408	11.1	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	25	2026-08-21T13:13:16	6003.878727	5.408	11.1	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	26	2026-08-21T13:13:21	6009.146573	5.749	10.44	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	27	2026-08-21T13:13:28	6015.498908	5.268	11.39	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	28	2026-08-21T13:13:33	6020.91073	6.352	9.45	14in	ACCEPT	1	1	2
+2026-09-28_10h37m	1	29	2026-08-21T13:13:39	6027.143219	5.412	11.09	14in	ACCEPT	1	1	2
+2026-09-28_13h11m	2	1	2026-09-28T09:04:10	10286.01092	6.136	9.78	14in	ACCEPT
+2026-09-28_13h11m	2	2	2026-09-28T09:04:16	10292.15111	5.84	10.27	14in	ACCEPT
+2026-09-28_13h11m	2	3	2026-09-28T09:04:22	10298.19274	6.14	9.77	14in	ACCEPT
+2026-09-28_13h11m	2	4	2026-09-28T09:04:28	10304.45847	6.042	9.93	14in	ACCEPT
+2026-09-28_13h11m	2	5	2026-09-28T09:04:33	10309.63489	6.266	9.58	14in	ACCEPT
+2026-09-28_13h11m	2	6	2026-09-28T09:04:48	10324.59084	14.071	4.26	14in	ACCEPT
+2026-09-28_13h11m	2	7	2026-09-28T09:04:54	10330.55585	6.061	9.9	14in	ACCEPT
+2026-09-28_13h11m	2	8	2026-09-28T09:05:00	10336.53787	5.965	10.06	14in	ACCEPT
+2026-09-28_13h11m	2	9	2026-09-28T09:05:06	10342.5769	5.982	10.03	14in	ACCEPT
+2026-09-28_13h11m	2	10	2026-09-28T09:05:12	10348.64969	6.039	9.94	14in	ACCEPT
+2026-09-28_13h11m	2	11	2026-09-28T09:05:18	10353.83089	6.073	9.88	14in	ACCEPT
+2026-09-28_13h11m	2	12	2026-09-28T09:05:32	10368.75569	14.053	4.27	14in	ACCEPT
+2026-09-28_13h11m	2	13	2026-09-28T09:05:38	10374.6659	6.053	9.91	14in	ACCEPT
+2026-09-28_13h11m	2	14	2026-09-28T09:05:44	10380.62555	5.91	10.15	14in	ACCEPT
+2026-09-28_13h11m	2	15	2026-09-28T09:05:50	10386.74501	5.96	10.07	14in	ACCEPT
+2026-09-28_13h11m	2	16	2026-09-28T09:05:56	10392.79043	6.119	9.8	14in	ACCEPT
+2026-09-28_13h11m	2	17	2026-09-28T09:06:02	10397.97508	6.046	9.92	14in	ACCEPT
+2026-09-28_13h11m	2	18	2026-09-28T09:06:17	10412.88378	13.99	4.29	14in	ACCEPT
+2026-09-28_13h11m	2	19	2026-09-28T09:06:22	10418.74901	6.103	9.83	14in	ACCEPT
+2026-09-28_13h11m	2	20	2026-09-28T09:06:28	10424.80246	5.865	10.23	14in	ACCEPT
+2026-09-28_13h11m	2	21	2026-09-28T09:06:35	10430.87278	6.053	9.91	14in	ACCEPT
+2026-09-28_13h11m	2	22	2026-09-28T09:06:41	10437.01329	6.071	9.88	14in	ACCEPT
+2026-09-28_13h11m	2	23	2026-09-28T09:06:46	10442.14289	6.14	9.77	14in	ACCEPT
+2026-09-28_13h11m	2	24	2026-09-28T09:07:01	10457.21578	13.97	4.29	14in	ACCEPT
+2026-09-28_13h11m	2	25	2026-09-28T09:07:07	10463.14563	6.232	9.63	14in	ACCEPT
+2026-09-28_13h11m	2	26	2026-09-28T09:07:13	10469.12012	5.93	10.12	14in	ACCEPT
+2026-09-28_13h11m	2	27	2026-09-28T09:07:19	10475.16487	5.974	10.04	14in	ACCEPT
+2026-09-28_13h11m	2	28	2026-09-28T09:07:25	10481.28264	6.045	9.93	14in	ACCEPT
+2026-09-28_13h11m	2	29	2026-09-28T09:07:30	10486.44703	6.118	9.81	14in	ACCEPT
+
+## Sheet: Runs — 46 rows × 10 columns (A1:J46)
+Application run sessions (real, 2026-dated only - see Summary caveat on PlateSorter's own history)
+Application	Run start	Run stop	Minutes	Ended	Month		Month	Runs	Total minutes
+Disk://PlateSorter2	2026-08-17T09:30:13	2026-08-17T10:21:55	51.7	stopped	2026-08		2026-08	23	279.45
+Disk://PlateSorter2	2026-08-17T10:24:30	2026-08-17T11:08:47	44.28	stopped	2026-08		2026-09	21	391.75
+Disk://PlateSorter2	2026-08-17T11:12:37	2026-08-17T11:14:22	1.75	stopped	2026-08
+Disk://PlateSorter2	2026-08-19T10:48:29	2026-08-19T10:54:33	6.06	stopped	2026-08
+Disk://PlateSorter2	2026-08-19T10:54:42	2026-08-19T10:55:39	0.95	stopped	2026-08
+Disk://PlateSorter2	2026-08-19T11:07:23	2026-08-19T11:08:47	1.41	stopped	2026-08
+Disk://PlateSorter2	2026-08-21T03:44:25	2026-08-21T03:46:51	2.43	stopped	2026-08
+Disk://PlateSorter2	2026-08-21T09:00:48	2026-08-21T09:01:32	0.73	stopped	2026-08
+Disk://PlateSorter2	2026-08-21T09:01:45	2026-08-21T09:07:24	5.64	stopped	2026-08
+Disk://PlateSorterREWRITE2026_08_22	2026-08-21T11:08:25	2026-08-21T11:18:43	10.3	stopped	2026-08
+Disk://PlateSorterREWRITE_2	2026-08-21T12:50:15	2026-08-21T12:56:18	6.05	stopped	2026-08
+Disk://PlateSorterREWRITE_2	2026-08-21T12:57:28	2026-08-21T13:00:30	3.02	stopped	2026-08
+Disk://PlateSorterREWRITE_2	2026-08-21T13:03:48	2026-08-21T13:06:56	3.13	stopped	2026-08
+Disk://PlateSorter2	2026-08-24T09:57:25	2026-08-24T10:08:07	10.71	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T07:47:19	2026-08-25T08:45:07	57.8	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T08:48:40	2026-08-25T08:51:05	2.42	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T08:51:18	2026-08-25T08:52:40	1.36	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T08:53:22	2026-08-25T08:58:40	5.31	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T13:39:17	2026-08-25T13:49:25	10.13	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T13:49:29	2026-08-25T14:02:38	13.15	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T14:06:36	2026-08-25T14:14:07	7.52	stopped	2026-08
+Disk://PlateSorter2	2026-08-25T14:14:10	2026-08-25T14:23:56	9.78	stopped	2026-08
+Disk://PlateSorter2	2026-08-26T14:44:40	2026-08-26T15:08:30	23.82	stopped	2026-08
+Disk://PlateSorter2	2026-09-03T09:35:45	2026-09-03T09:49:04	13.3	stopped	2026-09
+Disk://PlateSorter2	2026-09-03T09:49:07	2026-09-03T10:31:15	42.12	stopped	2026-09
+Disk://PlateSorter2	2026-09-03T10:48:17	2026-09-03T11:00:30	12.22	stopped	2026-09
+Disk://PlateSorter2	2026-09-08T09:37:08	2026-09-08T09:54:05	16.95	stopped	2026-09
+Disk://PlateSorter2	2026-09-10T04:55:51	2026-09-10T05:09:14	13.39	stopped	2026-09
+Disk://PlateSorter2	2026-09-16T08:59:28	2026-09-16T09:06:26	6.98	stopped	2026-09
+Disk://PlateSorter2	2026-09-16T09:06:40	2026-09-16T09:11:41	5.01	stopped	2026-09
+Disk://PlateSorter2	2026-09-16T09:12:28	2026-09-16T09:28:24	15.93	stopped	2026-09
+Disk://PlateSorter2	2026-09-16T09:47:35	2026-09-16T09:54:00	6.42	stopped	2026-09
+Disk://PlateSorter2	2026-09-16T09:59:24	2026-09-16T10:04:14	4.84	stopped	2026-09
+Disk://PlateSorter2	2026-09-17T05:11:15	2026-09-17T05:19:59	8.72	stopped	2026-09
+Disk://PlateSorter2	2026-09-22T06:04:40	2026-09-22T06:13:51	9.18	stopped	2026-09
+Disk://PlateSorter2	2026-09-22T06:15:33	2026-09-22T06:26:39	11.1	stopped	2026-09
+Disk://PlateSorter2	2026-09-23T05:43:47	2026-09-23T05:49:32	5.76	stopped	2026-09
+Disk://PlateSorter2	2026-09-23T05:49:51	2026-09-23T05:55:30	5.65	stopped	2026-09
+Disk://PlateSorter2	2026-09-23T05:58:37	2026-09-23T06:02:13	3.61	stopped	2026-09
+Disk://PlateSorter2	2026-09-24T06:10:54	2026-09-24T07:25:30	74.59	stopped	2026-09
+Disk://PlateSorter2	2026-09-28T06:13:32	2026-09-28T06:39:31	25.99	stopped	2026-09
+Disk://PlateSorter2	2026-09-28T07:12:25	2026-09-28T07:12:50	0.43	stopped	2026-09
+Disk://PlateSorter2	2026-09-28T07:12:56	2026-09-28T08:57:20	104.4	stopped	2026-09
+Disk://PlateSorter3	2026-09-28T09:03:04	2026-09-28T09:08:14	5.16	stopped	2026-09
+
+## Sheet: Errors — 14 rows × 8 columns (A1:H14)
+Error and warning classes - see count_since_2020 for the trustworthy figure (count includes 2019 clock-reset noise)
+Error class	Log text matched	Count (all-time, incl. 2019 noise)	Count since 2020 (real)	First seen (real)	Last seen (real)	Example line
+io_no_answer	No answer from input-output	344	56	2026-08-17T08:42:29	2026-09-03T09:45:12	VAL 3 runtime error. No answer from input-output.. ~PlateSorter2.
+motion_cancelled	pending motion was cancelled	72	15	2026-08-17T10:21:55	2026-09-24T07:25:30	Application has ended, the pending motion was cancelled.
+motion_stack_conflict	currently pushing movements on the motion stack	14	14	2026-08-31T20:07:02	2026-09-22T06:24:37	VAL 3 runtime error. Another task is currently pushing movements on the motion stack.. Cycle.
+calib_instability	Instability detected while performing calibration call	14	12	2026-08-24T06:49:26	2026-09-11T03:07:53	er,Instability detected while performing calibration call,-1
+calib_handeye_error	Hand-eye calibration end internal error	8	8	2026-09-03T03:45:03	2026-09-11T03:11:14	er,Hand-eye calibration end internal error,-1
+apera_bad_pipeline_id	The provided pipeline id	1763	6	2026-08-21T11:15:31	2026-08-21T11:15:42	er,The provided pipeline id "RAIV_pick_belt_1" does not exist,-1
+val3_err60_timeout	ERR 60 Instruction timeout	30	5	2026-08-21T09:00:54	2026-09-03T10:59:21	ERR 60 Instruction timeout. PlateSorter~.
+workspace_out_of_range	cartesian position is out of the workspace	22	4	2026-09-01T20:35:11	2026-09-22T06:24:13	VAL 3 runtime error. The cartesian position is out of the workspace.. Cycle.
+apera_image_capture	Image capture error	1	1	2026-08-25T06:35:03	2026-08-25T06:35:03	er,Image capture error,-1
+userpage_not_found	Userpage: Page not found	1	0			Userpage: Page not found. Fullpath is '%s'.
+apera_pipeline_missing	is either not queued to run	1755	0			er,Pipeline 'RAIV_pick_belt_1' is either not queued to run or does not exist,-1
+apera_no_trajectory	Cannot follow trajectory	1	0			Apera Error: Cannot follow trajectory. No valid trajectories were returned
+
+## Sheet: Backup History — 17 rows × 26 columns (A1:Z17)
+Backup History - point-in-time .dtx state, per project
+bLogCycle/nPlateCount/Average*/Best*/Last*/Worse* only exist in PlateSorterREWRITE_2's .dtx (it's the only project with the cycle-logging globals declared at all) - blank on PlateSorter and PlateSorter2 rows is not missing data, it's the instrumentation gap itself (see Summary).
+[1 empty row]
+backup	project	dtx	events_in_this_backup	new_windows_populated	_nCycleTimeIndex	_nTimer	_nCycleTime_nonzero	_nCycleTime_samples	bLogCycle	nPlateCount	_nWorkingMode	_nWorkingStatus	sPipeline	nPartsFound	nPartsDet	nClassesFound	nMoveID	AveragePPM	AverageSec	BestPPM	BestSec	LastPPM	LastSec	WorsePPM	WorseSec
+2026-09-28_10h37m	binpick_TiePlates	binpick_TiePlates.dtx	16295	False			1	100			4	2	14in_tieplate
+2026-09-28_10h37m	PlateSorter	PlateSorter.dtx	16295	False			0				1	4	RAIV_pick_belt_1	5		-1
+2026-09-28_10h37m	PlateSorter2	PlateSorter2.dtx	16295	False			0				4	2	RAIV_pick_AR70			-1	3
+2026-09-28_10h37m	PlateSorterREWRITE_2	PlateSorterREWRITE_2.dtx	16295	False	2		2	26.730002;34.280104	true	2	1		RAIV_pick_AR70	10		-1	104.307854	2.2	26.73			2.2	26.73
+2026-09-28_10h45m	binpick_TiePlates	binpick_TiePlates.dtx	16296	False			1	100			4	2	14in_tieplate
+2026-09-28_10h45m	PlateSorter	PlateSorter.dtx	16296	False			0				1	4	RAIV_pick_belt_1	5		-1
+2026-09-28_10h45m	PlateSorter2	PlateSorter2.dtx	16296	False			0				4	2	RAIV_pick_AR70			-1	3
+2026-09-28_10h45m	PlateSorterREWRITE_2	PlateSorterREWRITE_2.dtx	16296	False	2		2	26.730002;34.280104	true	2	1		RAIV_pick_AR70	10		-1	104.307854	2.2	26.73			2.2	26.73
+2026-09-28_13h11m	binpick_TiePlates	binpick_TiePlates.dtx	16331	False			1	100			4	2	14in_tieplate
+2026-09-28_13h11m	PlateSorter	PlateSorter.dtx	16331	False			0				1	4	RAIV_pick_belt_1	5		-1
+2026-09-28_13h11m	PlateSorter2	PlateSorter2.dtx	16331	False			0				4	2	RAIV_pick_AR70			-1	3
+2026-09-28_13h11m	PlateSorterREWRITE_2	PlateSorterREWRITE_2.dtx	16331	False	2		2	26.730002;34.280104	true	2	1		RAIV_pick_AR70	10		-1	104.307854	2.2	26.73			2.2	26.73
+2026-09-28_13h11m	PlateSorter3	PlateSorter3.dtx	16331	False	0		0		true	0	4	2	RAIV_pick_AR70			-1	3	0.0	0.00			0.0	0.00
+
+## Sheet: Header Key — 19 rows × 3 columns (A1:C19)
+Column glossary
+Sheet	Column	Meaning
+Cycle Data	source_backup	Which backup this cycle's log line came from (both backups here carry the same underlying log, 8 min apart).
+Cycle Data	run	0-based counter that increments whenever plate# resets/repeats within a backup - i.e. PlateSorterREWRITE_2 was restarted. Run 0 = the first, slow attempt (1 cycle); run 1 = the real 28-cycle test.
+Cycle Data	plate	nPlateCount at the time LogCycle() ran - resets to 0 on every app restart, does not persist across restarts.
+Cycle Data	cycle_s	Whole pick-to-place cycle time for this plate, x_nCycleSec as measured by tkCycle.
+Cycle Data	ppm	60/cycle_s, computed on the controller.
+Cycle Data	part_type	sPart["Picked"] - the part size/class Apera identified (all 29 rows: 14in).
+Cycle Data	accept_reject	Whether the place went to the accept or reject destination.
+Cycle Data	has_part	bPlatePicked - 1 if the gripper actually had a part for this cycle, 0 if not (not bGripper["HasPart"], which clears on release).
+Cycle Data	speed_step / blend_step	nSpeedStep / nBlendStep - which motion speed/blend profile was active for this cycle.
+Backup History	bLogCycle	Whether LogCycle()'s enable flag is on - only declared in PlateSorterREWRITE_2's .dtx.
+Backup History	AveragePPM / AverageSec / BestPPM / BestSec / LastPPM / LastSec / WorsePPM / WorseSec	_sCycleTime display strings as saved from SP2 - stale, frozen at the very first (slow) cycle of the 2026-08-21 test, because REWRITE_2 hasn't run since.
+Backup History	_nWorkingMode / _nWorkingStatus	Project working-mode/status globals at backup time - general cell state, not cycle-timing specific.
+Backup History	sPipeline	Which Apera vision pipeline was active for that project.
+Backup History	nPartsFound / nPartsDet / nClassesFound / nMoveID	Snapshot values of these globals at backup time.
+Runs	duration_min	Minutes between the application's logged start and stop. A long-running session with no stop event still inside the retained log window shows 'no stop logged' - this is a LOWER BOUND on real runtime, not the true total, since the log's limited size ages out older lines.
+Errors	count	All-time match count, including 2019 clock-reset noise - see Summary caveat.
+Errors	count_since_2020	Match count restricted to real (2020+) dates - the trustworthy figure for how often this actually happens.

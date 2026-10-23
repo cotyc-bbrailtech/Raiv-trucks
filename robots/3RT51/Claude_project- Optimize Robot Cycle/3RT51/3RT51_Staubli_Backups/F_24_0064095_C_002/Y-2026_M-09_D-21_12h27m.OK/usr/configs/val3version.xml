@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+        <Versions xmlns="http://www.staubli.com/robotics/VAL3/Config/1">
+        <Version name="val3" compatibility="13">s8.18.2cs9_BS4179</Version>
+        </Versions>

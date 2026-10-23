@@ -1,0 +1,9 @@
+error_class,match,count,first_seen,last_seen,example
+apera_pipeline_missing,is either not queued to run,608,2025-03-31T15:21:46,2026-10-08T09:21:09,"er,Pipeline 'Pick_IdsBelt_new' is either not queued to run or does not exist,-1"
+apera_bad_pipeline_id,The provided pipeline id,602,2025-03-31T15:28:48,2026-10-08T09:21:09,"er,The provided pipeline id ""14in_plate det"" does not exist,-1"
+val3_err70_bad_param,ERR 70 Invalid value,263,2025-03-25T19:59:30,2026-10-12T13:35:25,ERR 70 Invalid value for an instruction parameter. Consult the VAL 3 reference manual.. HMI.
+userpage_not_found,Userpage: Page not found,263,2025-03-25T19:59:30,2026-10-12T13:35:25,Userpage: Page not found. Fullpath is '%s'.
+apera_image_capture,Image capture error,244,2026-01-15T12:01:48,2026-10-08T09:36:22,"er,Image capture error,-1"
+apera_no_trajectory,Cannot follow trajectory,195,2025-03-31T15:21:46,2026-10-08T09:36:22,Apera Error: Cannot follow trajectory. No valid trajectories were returned
+motion_cancelled,pending motion was cancelled,86,2025-04-02T16:57:23,2026-10-08T10:06:18,"Application has ended, the pending motion was cancelled."
+val3_err60_timeout,ERR 60 Instruction timeout,50,2025-03-21T18:06:20,2026-10-08T13:06:14,ERR 60 Instruction timeout. cycle.
